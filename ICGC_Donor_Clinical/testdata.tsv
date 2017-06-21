@@ -1,9 +1,9 @@
-Sample  Variable    Value
-DO48316 project_code    ESCA-CN
-DO48316 donor_sex    male
-DO48316 cancer_type_prior_malignancy    
-DO48316 cancer_history_first_degree_relative   unknown 
-DO52021 project_code    LUSC-US
-DO52021 donor_sex    male
-DO52021 cancer_type_prior_malignancy    
-DO52021 cancer_history_first_degree_relative    unknown
+Sample	Variable	Value
+DO48316	project_code	ESCA-CN
+DO48316	donor_sex	male
+DO48316	cancer_type_prior_malignancy	""
+DO48316	cancer_history_first_degree_relative	unknown
+DO52021	project_code	LUSC-US
+DO52021	donor_sex	male
+DO52021	cancer_type_prior_malignancy	""
+DO52021	cancer_history_first_degree_relative	unknown
