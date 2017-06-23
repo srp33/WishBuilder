@@ -2,7 +2,7 @@
 
 ## Prepping Data for Geney
 
-Fortunately, many valuable biology-related datasets are publicly available on the Web. Commonly, a researcher wants to filter a dataset to include biological samples that meet specific criteria and perhaps to examine data for a few specific entities (genes, proteins, etc.). Unfortunately, researchers often have a difficult time working with these datasets due to their large size or because they are stored in a wide variety of formats. Accordingly, computational skills are required to _extract_ such data and _transform_ it into a format that can be _loaded_ easily into analytical tools. However, many biologists lack the expertise to _extract_, _transform_, and _load_ (ETL) such data.
+Fortunately, many valuable biology-related datasets are publicly available on the Web. Commonly, a researcher wants to filter a dataset to include biological samples that meet specific criteria and perhaps to examine data for a few specific entities (genes, proteins, etc.). Unfortunately, researchers often have a difficult time working with these datasets due to their large size or because they are stored in a wide variety of formats. Accordingly, computational skills are required to _extract_ such data and _transform_ them into a format that can be _loaded_ easily into analytical tools. However, many biologists lack the expertise to _extract_, _transform_, and _load_ (ETL) such data.
 
 To address this problem, the Piccolo lab is developing _Geney_, a Web-based tool that will enable researchers to query such datasets in a consistent and easy manner. In addition to Geney, we are developing _WishBuilder_ (name subject to change), a system that enables datasets to be imported into Geney, irrespective of the format in which the data were originally stored. This system downloads data from public Web servers, reformats the data, and stores it in a consistent, queryable format. To facilitate this process, we are asking for help from students to write scripts to prepare such datasets. The more datasets we prepare, the more useful Geney will be!
 
@@ -10,15 +10,16 @@ To address this problem, the Piccolo lab is developing _Geney_, a Web-based tool
 
 Please complete the following steps to get started.
 
-- You will need an active account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain this research project briefly. Indicate that you will execute custom Python and/or R scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-4 GB of memory per job.
-- If you haven't already done so, create a [GitHub](https://github.com/) account.
+1. You will need an active account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain this research project briefly. Indicate that you will execute custom Python and/or R scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-4 GB of memory per job.
+2. If you haven't already done so, create a [GitHub](https://github.com/) account.
+3. Send an email to me with your GitHub user ID and request that I add you as a contributor to [https://github.com/srp33/WishBuilder](https://github.com/srp33/WishBuilder).
 
 ## Preparing a Dataset
 
-Please complete the following steps for each data set. Please talk to me if you have any questions or run into any problems.
+Please complete the following steps for each dataset that you prepare. Let me know if you have any questions or run into any problems.
 
-1. Examine the list of datasets below and identify one that you would like to work with.
-2. Put your name where it says "Status." Put **"IN PROGRESS" and the current date** next to your name.
+1. Examine the list of [open issues](https://github.com/srp33/WishBuilder/issues). Each "issue" represents a dataset that needs to be prepared. Identify one that you would like to work with.
+2. Edit the issue. Put your name where it says "Status." Put IN PROGRESS next to your name.
 3. Log in to the Supercomputer. Then clone the WishBuilder git repository:
 
   ```
@@ -38,15 +39,16 @@ Please complete the following steps for each data set. Please talk to me if you 
   git checkout -b <new-branch-name>
   ```
 
-6. Create a new directory within your branched repository; the name of this directory should also be the ID of the dataset you are working with. Then `cd` into the new directory.
-7. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
-8. Create a file called `.gitignore`. Within that file, list the name(s) of the file(s) that were downloaded. You can learn more about `.gitignore` files [here](https://help.github.com/articles/ignoring-files/).
-9. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
-10. Using a text editor, create a file called `testdata.tsv`. [Below](#datasets) you can learn about the purpose of this file and how it should be structured. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
-11. Write a bash script called `parse.sh`. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical). This script should parse the data file(s) and reformat the data (as needed) into the output format described below. In most cases, `parse.sh` will invoke other script(s) written in Python or R. The name of the output file must be `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially so it is easier to test._
-12. Compare `data.tsv.gz` and `testdata.tsv` and make sure the data values were parsed correctly.
-13. Add a line to `.gitignore` for `data.tsv.gz`.
-14. Add, commit, and push your changes to the GitHub branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
+6. Create a new directory within your branched repository; the name of this directory should also be the ID of the dataset you are working with.
+7. Now `cd` into the new directory.
+8. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+9. Create a file called `.gitignore`. Within that file, list the name(s) of the file(s) that were downloaded. You can learn more about `.gitignore` files [here](https://help.github.com/articles/ignoring-files/).
+10. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
+11. Using a text editor, create a file called `testdata.tsv`. [Below](#testfiles) you can learn about the purpose of this file and how it should be structured. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+12. Write a bash script called `parse.sh`. This script should parse the data file(s) and reformat the data (as needed) into the output format described [below](#Output file format). In most cases, `parse.sh` will invoke other script(s) written in Python or R. The name of the output file *must* be `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical). 
+13. Compare `data.tsv.gz` and `testdata.tsv`. Make sure the data values were parsed correctly.
+14. Add a line to `.gitignore` for `data.tsv.gz`.
+15. Add, commit, and push your changes to the GitHub branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
   ```
   git add --all
@@ -55,7 +57,7 @@ Please complete the following steps for each data set. Please talk to me if you 
   ```
 
 15. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request".
-16. Below, where it says, "Status," put **"READY FOR TESTING" and the current date** next to your name.
+16. Modify the [issue](https://github.com/srp33/WishBuilder/issues) for this dataset. Where it says, "Status," put READY FOR TESTING next to your name.
 17. Send me an email indicating that your dataset is ready for testing.
 
 ## Notes
@@ -95,54 +97,3 @@ All of the sample names should be unique. All of the column names should be uniq
 | TCGA-02-5678 | 92  | F   | 0     | 1     | ... |
 | ...          | ... | ... | ...   | ...   | ... |
 
-## <a name="datasets"></a>Datasets
-
-### Cancer Cell Line Encyclopedia – mRNA isoform
-
-Status: Maddy IN PROGRESS 6/16/17  
-ID: CCLE_mRNA_isoform_kallisto_Tatlow  
-Download URL: https://files.osf.io/v1/resources/gqrz9/providers/osfstorage/5783dacd9ad5a101f66b5daa?action=download&version=1&direct  
-Notes:
-
-- Each column (except the first) contains data for a single cell line (sample).
-- Each row contains data for a specific transcript.
-- The first column contains multiple identifiers separated by vertical bars (|). Please parse out the first identifier (for example, ENST00000000233.9), use that, and discard the rest.
-- After we get this done, we will want to parse the clinical data as well. But let's deal with that later.
-
-Sources:
-
-- https://www.nature.com/articles/srep39259
-- https://www.ncbi.nlm.nih.gov/pubmed/22460905
-
-### GSE10320 - Predicting Relapse in Favorable Histology Wilms Tumor Using Gene Expression
-Status:  
-ID: GSE10320_SCAN  
-Download URLs:
-
-- https://files.osf.io/v1/resources/ssk3t/providers/osfstorage/594047f09ad5a100458248cf?action=download&version=1&direct
-- https://files.osf.io/v1/resources/ssk3t/providers/osfstorage/592605289ad5a1024f3e59c8?action=download&version=1&direct
-
-Notes:
-
-- This one should be pretty easy because the data files are already structured how they need to be structured. But the two data files will need to be merged. The Class variable should be the first column in the output file.
-
-Source:
-
-- https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10320
-
-
-### GSE62944
-
-Status: Jake Hogan IN PROGRESS 6/17/17  
-ID: GSE62944_Tumor_TPM  
-Download URLs:
-
-- https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE62944&format=file&file=GSE62944%5F06%5F01%5F15%5FTCGA%5F24%5F548%5FClinical%5FVariables%5F9264%5FSamples%2Etxt%2Egz
-- https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE62944&format=file&file=GSE62944%5F06%5F01%5F15%5FTCGA%5F24%5FNormal%5FCancerType%5FSamples%2Etxt%2Egz
-- https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE62944&format=file (TAR file- 5.9 gb)
-
-Notes:
-
-- Jake, please fill in any details here that you think are relevant.
-
-Source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62944
