@@ -12,7 +12,7 @@ Please complete the following steps to get started.
 
 1. You will need an active account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain this research project briefly. Indicate that you will execute custom Python and/or R scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-4 GB of memory per job.
 2. If you haven't already done so, create a [GitHub](https://github.com/) account.
-3. Send an email to me with your GitHub user ID and request that I add you as a contributor to [https://github.com/srp33/WishBuilder](https://github.com/srp33/WishBuilder).
+3. Send an email to me with your GitHub user ID and request to be added as a contributor to [https://github.com/srp33/WishBuilder](https://github.com/srp33/WishBuilder).
 
 ## Preparing a Dataset
 
