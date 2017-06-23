@@ -18,8 +18,8 @@ Please complete the following steps to get started.
 
 Please complete the following steps for each dataset that you prepare. Let me know if you have any questions or run into any problems.
 
-1. Examine the list of [open issues](https://github.com/srp33/WishBuilder/issues). Each "issue" represents a dataset that needs to be prepared. Identify one that you would like to work with.
-2. Edit the issue. Put your name where it says "Status." Put IN PROGRESS next to your name.
+1. Examine the list of [open issues](https://github.com/srp33/WishBuilder/issues). Each "issue" represents a dataset that needs to be prepared. Identify one issue that you would like to work on (and that nobody else is currently working on).
+2. Edit the issue you selected. Put your name where it says "Status." Put **IN PROGRESS** next to your name.
 3. Log in to the Supercomputer. Then clone the WishBuilder git repository:
 
   ```
@@ -57,7 +57,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   ```
 
 15. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request".
-16. Modify the [issue](https://github.com/srp33/WishBuilder/issues) for this dataset. Where it says, "Status," put READY FOR TESTING next to your name.
+16. Modify the [issue](https://github.com/srp33/WishBuilder/issues) for this dataset. Where it says, "Status," put **READY FOR TESTING** next to your name.
 17. Send me an email indicating that your dataset is ready for testing.
 
 ## Notes
