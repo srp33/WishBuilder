@@ -102,6 +102,8 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 - R is also installed on the Supercomputer; use `module load r/3/3`.
 - As you write your parsing scripts, please make sure they use no more than 4 GB of memory. For larger datasets, avoid reading the whole file into memory. You can test your parse.sh script on the Supercomputer. But **please request no more than 4 GB of memory**.
 - You can download files via the interactive nodes of the Supercomputer but not via the compute nodes. The latter do not have access to the Web.
+- If you create temporary files, please store these within the same directory as your scripts (or a subdirectory). This will ensure that everything needed to process each dataset is contained within the same location.
+- When you specify file or directory paths in your scripts, please use *relative* rather than *absolute* paths.
 
 ## Test files
 
