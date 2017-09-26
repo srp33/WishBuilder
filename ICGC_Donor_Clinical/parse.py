@@ -11,7 +11,7 @@ with gzip.open(inFilePath, 'r') as inFile:
     with gzip.open(outFilePath, 'wb') as outFile:
         inHeaderItems = inFile.readline().decode().rstrip("\n").split("\t")
 
-        indicesOfInterest = [i for i in range(len(columnsOfInterest)) if inHeaderItems[i] in columnsOfInterest]
+        indicesOfInterest = [i for i in range(len(inHeaderItems)) if inHeaderItems[i] in columnsOfInterest]
         outHeaderItems = [inHeaderItems[i] for i in indicesOfInterest]
         outHeaderItems[0] = "Sample"
         outLine = "\t".join(outHeaderItems) + "\n"
