@@ -2,19 +2,19 @@
 
 ## Prepping Data for Geney
 
-Fortunately, thousands of biology-related datasets are publicly available on the Web. Commonly, a researcher wants to filter a dataset to include biological samples that meet specific criteria and perhaps to examine data for a few specific variables (genes, proteins, etc.). Unfortunately, researchers often have a difficult time working with these datasets due to their large size or because they are stored in a wide variety of formats. Accordingly, computational skills are required to _extract_ such data and _transform_ them into a format that can be _loaded_ easily into analytical tools. However, many biologists lack the expertise to _extract_, _transform_, and _load_ (ETL) such data.
+Fortunately, thousands of biology-related datasets are publicly available on the Web. Commonly, researchers want to filter individual datasets to include biological samples that meet specific criteria and to examine data for a few variables (e.g., genes, proteins) at a time. Unfortunately, researchers often have a difficult time performing these tasks because many datasets are large in size, and they are stored in a wide variety of formats.
 
-To address this problem, the Piccolo lab is developing _Geney_, a Web-based tool that will enable researchers to query such datasets in a consistent and easy manner. In addition to Geney, we are developing _WishBuilder_, a system that enables datasets to be imported into Geney, irrespective of the format in which the data were originally stored. This system downloads data from public Web servers, reformats the data, and stores it in a consistent, queryable format. To facilitate this process, we are asking for help from students to write scripts to prepare such datasets. The more datasets we prepare, the more useful Geney will be!
+To address this problem, the Piccolo lab is developing _Geney_, a Web-based tool that will enable researchers to query such datasets in a consistent and easy manner. In addition to _Geney_, we are developing _WishBuilder_, a system that enables datasets to be imported into _Geney_, irrespective of the format in which the data were originally stored. This system downloads data from public Web servers, reformats the data, and stores it in a consistent, queryable format. To facilitate this process, we are asking for help from BYU students to write computer scripts for preparing the data. The more datasets we prepare, the more useful Geney will be!
 
 ## Getting Started
 
-Please complete the following steps to get started.
+Please complete the following steps to get started as a contributor.
 
-1. You will need an active account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain this research project briefly. Indicate that you will execute custom Python and/or R scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-4 GB of memory per job.
+1. You will need an account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain briefly that you will execute custom Python scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-16 GB of memory per job.
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
-3. Send an email to me with your GitHub user ID and request to be added as a contributor to this repository.
+3. Send an email to me with your GitHub user ID and request to be added as a contributor to the WishBuilder repository.
 
 4. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
 
@@ -26,13 +26,13 @@ Please complete the following steps to get started.
 
 6. When it asks you to enter a passphrase, press Enter (twice).
 
-7. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy this output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
+7. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
 
   ```
   cat ~/.ssh/id_rsa.pub
   ```
   
-8. Go to https://github.com/settings/keys. This should display the SSH keys that are currently set for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
+8. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
 
 ## Preparing a Dataset
@@ -43,7 +43,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 2. Send an email to me indicating which issue you would like to work on.
 
-3. Clone the WishBuilder git repository:
+3. At the command line on the Supercomputer, clone the WishBuilder git repository:
 
   ```
   git clone https://github.com/srp33/WishBuilder.git
@@ -56,7 +56,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git pull origin master
   ```
 
-5. Create a new branch on your copy of the git repository (see below). Replace `<new-branch-name>` with the ID of the dataset you are working with.
+5. Create a new branch on your copy of the git repository (see below). Replace `<new-branch-name>` with the ID of the dataset you are working with (the ID will be listed under the issue).
 
   ```
   git checkout -b <new-branch-name>
@@ -72,17 +72,19 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 10. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
 
-11. Using a text editor, create a file called `testdata.tsv`. [Below](#test-files) you can learn about the purpose of this file and how it should be structured. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+11. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-12. Write a bash script called `parse.sh`. This script should parse the data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke other script(s) written in Python or R. The name of the output file *must* be `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+12. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
 13. Write a bash script called `install.sh` that installs any software that are necessary to execute `parse.sh`. If no extra software must be installed, it can be blank. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-14. Compare `data.tsv.gz` and `testdata.tsv`. Make sure the data values were parsed correctly.
+14. Compare `metadata.tsv.gz` against `test_metadata.tsv`. Make sure the metadata values were parsed correctly.
 
-15. Add a line to `.gitignore` for `data.tsv.gz`.
+15. Compare `data.tsv.gz` against `test_data.tsv`. Make sure the data values were parsed correctly.
 
-16. Add, commit, and push your changes to the GitHub branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
+16. Add a line to `.gitignore` for `metadata.tsv.gz` and `data.tsv.gz`.
+
+17. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
   ```
   git add --all
@@ -90,26 +92,23 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git push origin <new-branch-name>
   ```
 
-17. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request".
-
-18. Modify the [issue](https://github.com/srp33/WishBuilder/issues) for this dataset. Where it says, "Status," put **READY FOR TESTING** next to your name.
-
-19. Send me an email indicating that your dataset is ready for testing.
+18. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
 
 ## Notes
 
 - Python 3.5 is installed on the Supercomputer; use `module load python/3/5`.
 - R is also installed on the Supercomputer; use `module load r/3/3`.
-- As you write your parsing scripts, please make sure they use no more than 4 GB of memory. For larger datasets, avoid reading the whole file into memory. You can test your parse.sh script on the Supercomputer. But **please request no more than 4 GB of memory**.
-- You can download files via the interactive nodes of the Supercomputer but not via the compute nodes. The latter do not have access to the Web.
+- As you write your parsing scripts, please make sure they use no more than 4 GB of memory.
+- For larger datasets, avoid reading the whole file into memory. You can test your parse.sh script on the Supercomputer. But **please request no more than 4 GB of memory**.
+- You can download files when you are executing code on the *interactive* nodes of the Supercomputer. But the *compute* nodes do not have access to the Internet.
 - If you create temporary files, please store these within the same directory as your scripts (or a subdirectory). This will ensure that everything needed to process each dataset is contained within the same location.
 - When you specify file or directory paths in your scripts, please use *relative* rather than *absolute* paths.
 
 ## Test files
 
-We will use your test file to verify that your scripts are working properly. We will execute your scripts and verify that the data values produced by your scripts match the data values in the test file (even though the format of these files will be different). You will need to create the test file using a text editor (see below).
+We will use your test files to verify that your scripts are working properly. We will execute your scripts and then verify that the data values produced by your scripts match the data values in the test files, even though the format of these files will be different. You will need to create the test files using a text editor.
 
-The following table shows how your test file should be structured. This file should be tab delimited and should contain a header line with column names as shown below. This file should have at least 8 lines in it (not including the header). These lines should contain data values that you have extracted from the input file(s) for your dataset. Please include data values for at least two different samples and four different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far left of each file and the far-right side of each file.
+The following table shows how your test files should be structured. The files should be tab delimited and should contain a header line with column names as shown below.
 
 | Sample       | Variable | Value |
 |--------------|----------|-------|
@@ -123,11 +122,17 @@ The following table shows how your test file should be structured. This file sho
 | TCGA-02-5678 | BRCA2    | 1     |
 | ...          | ...      | ...   |
 
+You should create two test files: `test_metadata.tsv` and `test_data.tsv`. The first (`test_metadata.tsv`) should contain metadata values as described in the GitHub issue for your dataset. The second (`test_data.tsv`) should contain regular data values as described in the GitHub issue.
+
+Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and four different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far left of each file and the far-right side of each file.
+
 ## Output file format
 
-Your scripts should produce a single, tab-delimited text file that follows the structure shown below. Geney will import this data file.
+Your scripts should produce two tab-delimited text files: `metadata.tsv.gz` and `data.tsv.gz` (see below). Geney will import these data files.
 
-All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample". This file should be gzipped and should be called `data.tsv.gz`.
+`metadata.tsv.gz` should be structured the same as `test_metadata.tsv`, except that it should contain all metadata values and should be gzipped.
+
+The table below illustrates how `data.tsv.gz` should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample". This file should be gzipped.
 
 | Sample       | Age | Sex | BRCA1 | BRCA2 | ... |
 |--------------|-----|-----|-------|-------|-----|
