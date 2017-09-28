@@ -124,7 +124,7 @@ The following table shows how your test files should be structured. The files sh
 
 You should create two test files: `test_metadata.tsv` and `test_data.tsv`. The first (`test_metadata.tsv`) should contain metadata values as described in the GitHub issue for your dataset. The second (`test_data.tsv`) should contain regular data values as described in the GitHub issue.
 
-Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and four different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far left of each file and the far-right side of each file.
+Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and at least two different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far-left side of each input file and at least one from the far-right side of each input file.
 
 ## Output file format
 
@@ -140,3 +140,4 @@ The table below illustrates how `data.tsv.gz` should be structured. All of the s
 | TCGA-02-5678 | 92  | F   | 0     | 1     | ... |
 | ...          | ... | ... | ...   | ...   | ... |
 
+The sample identifiers listed in `metadata.tsv.gz` and `data.tsv.gz` should overlap with each other. Neither file should contain any sample identifier that is not listed in both files (all non-overlapping samples should be excluded from both files).
