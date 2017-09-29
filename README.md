@@ -68,23 +68,21 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 8. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-9. Create a file called `.gitignore`. Within that file, list the name(s) of the file(s) that were downloaded. You can learn more about `.gitignore` files [here](https://help.github.com/articles/ignoring-files/).
+9. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
 
-10. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
+10. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-11. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+11. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-12. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+12. Write a bash script called `install.sh` that installs any software that are necessary to execute `parse.sh`. If no extra software must be installed, it can be blank. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
 
-13. Write a bash script called `install.sh` that installs any software that are necessary to execute `parse.sh`. If no extra software must be installed, it can be blank. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+13. Compare `metadata.tsv.gz` against `test_metadata.tsv`. Make sure the metadata values were parsed correctly.
 
-14. Compare `metadata.tsv.gz` against `test_metadata.tsv`. Make sure the metadata values were parsed correctly.
+14. Compare `data.tsv.gz` against `test_data.tsv`. Make sure the data values were parsed correctly.
 
-15. Compare `data.tsv.gz` against `test_data.tsv`. Make sure the data values were parsed correctly.
+15. Create a bash script called `cleanup.sh`. Within that script, use the `rm` command to delete `metadata.tsv.gz`, `data.tsv.gz`, and any other non-script files. **Please do not commit (see next step) any data files to GitHub.**
 
-16. Add a line to `.gitignore` for `metadata.tsv.gz` and `data.tsv.gz`.
-
-17. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
+16. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
   ```
   git add --all
@@ -92,7 +90,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git push origin <new-branch-name>
   ```
 
-18. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
+17. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
 
 ## Notes
 
