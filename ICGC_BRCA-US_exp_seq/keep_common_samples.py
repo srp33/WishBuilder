@@ -1,7 +1,7 @@
-import gzip
+import gzip, sys
 
-inFilePath1 = "metadata.tsv.gz"
-inFilePath2 = "data.tsv.gz"
+inFilePath1 = sys.argv[1]
+inFilePath2 = sys.argv[2]
 
 inFile1 = gzip.open(inFilePath1)
 inFile2 = gzip.open(inFilePath2)

@@ -1,7 +1,7 @@
 import sys, gzip
 
-inFilePath = "exp_seq.BRCA-US.tsv.gz"
-outFilePath = "data.tsv.gz"
+inFilePath = sys.argv[1]
+outFilePath = sys.argv[2]
 
 uniqueSampleIDs = set()
 uniqueGeneIDs = set()

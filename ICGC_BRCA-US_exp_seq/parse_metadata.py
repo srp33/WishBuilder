@@ -1,7 +1,7 @@
 import sys, gzip
 
-inFilePath = "donor.BRCA-US.tsv.gz"
-outFilePath = "metadata.tsv.gz"
+inFilePath = sys.argv[1]
+outFilePath = sys.argv[2]
 
 # This dataset is pretty straightforward. It is already in the correct format. Just need to leave out certain columns and rename the first column.
 
