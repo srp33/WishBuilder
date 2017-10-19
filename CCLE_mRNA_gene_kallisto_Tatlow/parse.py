@@ -42,7 +42,6 @@ with open(expressionData, 'r')  as inFile:
             if expressionList[0][i] == lineList[0] :
                 for j in range(len(lineList) - 1) :
                     expressionList[j + 1][i] = float(expressionList[j + 1][i]) + float(lineList[j + 1])
-                print("fixed: " + str(lineList[0]))
                 present = True
                 break
         if present == False :
@@ -55,7 +54,6 @@ with open(metedataOutFile, 'w') as ofMeta:
         first = True
         headerList = PrimaryNameToAnnotations["header"]
         for i in range(len(expressionList) - 1) :
-            print(str(i) + " of 934")
             try:
                 if first :
                     first = False
@@ -72,7 +70,6 @@ print("writing expression data")
 with open(dataOutFile, 'w') as ofData:
     first = True
     for i in range(len(expressionList)) :
-        print(str(i) + " of 935")
         if first :
             first = False
             ofData.write("Sample" + "\t" + "\t".join(expressionList[i][1:]) + "\n")
