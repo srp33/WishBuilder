@@ -111,5 +111,5 @@
 ---
 ##### Testing Directory after cleanup . . .
 
-###### Results: **FAIL**
+###### Results: PASS
 ---
