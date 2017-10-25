@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1019138	adjuvant_treatment	no
+GSM1019138	tumor_stage	2b
+GSM1019140	adjuvant_treatment	no
+GSM1019140	tumor_stage	1a
+GSM1019332	age	47
+GSM1019332	tumor_stage	2a
+GSM1019333	age	70
+GSM1019333	tumor_stage	1b
