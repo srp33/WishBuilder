@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1559299	adjuwant_chemotherapy	platinum/cyclophosphamide
+GSM1559299	tumor_grade_g1_-_well_differentiated;_g2_-_moderately_differentiated;_g3_-_poorly_differentiated;_g4_-_undifferentiated	G4
+GSM1559300	adjuwant_chemotherapy	platinum/cyclophosphamide
+GSM1559300	tumor_grade_g1_-_well_differentiated;_g2_-_moderately_differentiated;_g3_-_poorly_differentiated;_g4_-_undifferentiated	G4
+GSM1559301	adjuwant_chemotherapy	taxane/platinum no mutation
+GSM1559399	brca1_mutation	no mutation
+GSM1559399	tp53_accumulation_in_cancer_cells_assesed_by_immunohistochemistry	no accumulation
+GSM1559394	brca1_mutation	no mutation
