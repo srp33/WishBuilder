@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1416998	age_at_diagnosis	39
+GSM1416998	tumor_size_mm	55
+GSM1417000	age_at_diagnosis	42
+GSM1417000	tumor_size_mm	50
+GSM1417119	recurrence	Y
+GSM1417119	tumor_location	extra abdominal
+GSM1417123	age_at_diagnosis	13
+GSM1417123	tumor_location	extra abdominal
