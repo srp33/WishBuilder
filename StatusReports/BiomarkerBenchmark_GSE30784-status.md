@@ -1,7 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE30784</center></h1>
-
-### Testing Directory . . .
 ## Status: Complete
+### Testing Directory . . .
 
 #### Results: PASS
 ---
