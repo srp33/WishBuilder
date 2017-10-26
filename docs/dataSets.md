@@ -9,3 +9,4 @@
 | Data Set  | User  | Status | Merged |
 | --------  | ----  | ------ | ------ |
 |	[BiomarkerBenchmark_GSE25507]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE25507-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE25507-status)	|	no	|
+|	[BiomarkerBenchmark_GSE30219]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE30219-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE30219-status)	|	no	|
