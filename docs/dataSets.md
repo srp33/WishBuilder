@@ -8,8 +8,4 @@
 
 | Data Set  | User  | Status | Merged |
 | --------  | ----  | ------ | ------ |
-| GSE10320_SCAN | glenrs  | [Complete]({{site.url}}/StatusReports/GSE10320_SCAN-status) | No |
-| GSE2109_Colon_SCAN  | glenrs  | [Complete]({{site.url}}/StatusReports/GSE2109_Colon_SCAN-status)  | No  |
-| CCLE_mRNA_isoform_kallisto_Tatlow | glenrs  | [Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status) | No  ||
 |	[BiomarkerBenchmark_GSE25507]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE25507-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE25507-status)	|	no	|
-|	[BiomarkerBenchmark_GSE30219]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE30219-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE30219-status)	|	no	|
