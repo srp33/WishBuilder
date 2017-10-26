@@ -17,7 +17,7 @@
 
 &#9989;	cleanup.sh exists.
 
-Running user code . . .
+*Running user code . . .*
 
 &#9989;	data.tsv.gz was created and zipped correctly.
 
@@ -70,7 +70,7 @@ Running user code . . .
 
 &#9989;	Row 8: Success
 
-##### Results: PASS
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
