@@ -104,7 +104,7 @@
 
 &#9989;	Row 8: Success
 
-##### Results: PASS
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
