@@ -1,9 +1,9 @@
 ## Status: Complete
-##### Testing Directory . . .
+### Testing Directory . . .
 
-###### Results: PASS
+#### Results: PASS
 ---
-##### Testing file paths:
+### Testing file paths:
 
 &#9989;	test_data.tsv exists.
 
@@ -17,15 +17,15 @@
 
 &#9989;	cleanup.sh exists.
 
-**Running user code . . .**
+Running user code . . .
 
 &#9989;	data.tsv.gz was created and zipped correctly.
 
 &#9989;	metadata.tsv.gz was created and zipped correctly.
 
-###### Results: PASS
+#### Results: PASS
 ---
-##### Testing Key Files:
+### Testing Key Files:
 
 &#9989;	test_data.tsv contains enough unique samples to test
 
@@ -35,10 +35,10 @@
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-###### Results: PASS
+#### Results: PASS
 ---
 
-##### First 5 columns and 5 rows of data.tsv.gz:
+### First 5 columns and 5 rows of data.tsv.gz:
 
 |	Sample	|	ENSG00000000003	|	ENSG00000000005	|	ENSG00000000419	|	ENSG00000000457	|
 |	---	|	---	|	---	|	---	|	---	|
@@ -72,7 +72,7 @@
 
 ##### Results: PASS
 ---
-##### First 3 columns and 5 rows of metadata.tsv.gz:
+### First 3 columns and 5 rows of metadata.tsv.gz:
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
@@ -106,12 +106,12 @@
 
 ##### Results: PASS
 ---
-##### Comparing samples in both files . . .
+### Comparing samples in both files . . .
 
-###### Results: PASS
+#### Results: PASS
 
 ---
-##### Testing Directory after cleanup . . .
+### Testing Directory after cleanup . . .
 
-###### Results: PASS
+#### Results: PASS
 ---
