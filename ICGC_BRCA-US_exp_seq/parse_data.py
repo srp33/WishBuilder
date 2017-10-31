@@ -7,7 +7,7 @@ uniqueSampleIDs = set()
 uniqueGeneIDs = set()
 
 # Get all unique sample IDs and gene IDs
-with gzip.open(inFilePath, 'r') as inFile:
+with gzip.open(inFilePath, 'rb') as inFile:
     inHeaderItems = inFile.readline().decode().rstrip("\n").split("\t")
 
     sampleIDIndex = inHeaderItems.index("icgc_donor_id")
@@ -53,8 +53,10 @@ with gzip.open(inFilePath, 'r') as inFile:
 
 # Create output file
 with gzip.open(outFilePath, 'wb') as outFile:
-    outFile.write("\t".join(["Sample"] + uniqueGeneIDs) + "\n")
+    outText = "\t".join(["Sample"] + uniqueGeneIDs) + "\n"
+    outFile.write(outText.encode())
 
     for sampleID in uniqueSampleIDs:
         dataItems = [dataDict[sampleID][geneID] for geneID in uniqueGeneIDs]
-        outFile.write("\t".join([sampleID] + dataItems) + "\n")
+        outText = "\t".join([sampleID] + dataItems) + "\n"
+        outFile.write(outText.encode())
