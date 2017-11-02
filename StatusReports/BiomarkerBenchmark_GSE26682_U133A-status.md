@@ -118,4 +118,5 @@
 ---
 Last 20 lines from running install.sh
 ~~~~bash
+success
 ~~~~
