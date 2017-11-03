@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE26682_U133A</center></h1>
-## Status: In Progress
+## Status: Complete
 ### Testing Directory . . .
 
 #### Results: PASS
@@ -116,7 +116,3 @@
 
 #### Results: PASS
 ---
-Last 20 lines from running install.sh
-~~~~bash
-success
-~~~~
