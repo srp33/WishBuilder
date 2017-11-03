@@ -1,5 +1,5 @@
-<h1><center>BiomarkerBenchmark_GSE37199</center></h1>
-## Status: In Progress
+<h1><center>BiomarkerBenchmark_GSE30219</center></h1>
+## Status: Complete
 ### Testing Directory . . .
 
 #### Results: PASS
@@ -43,12 +43,12 @@
 
 |	Sample	|	ENSG00000000003	|	ENSG00000000005	|	ENSG00000000419	|	ENSG00000000457	|
 |	---	|	---	|	---	|	---	|	---	|
-|	GSM913413	|	-0.0762748623529412	|	-0.21174261625	|	1.49106462555556	|	0.9648578815625	|
-|	GSM913414	|	-0.119372013529412	|	-0.1761557575	|	1.21681543777778	|	0.7463705246875	|
-|	GSM913415	|	0.0242800317647059	|	-0.15666065875	|	1.2706031	|	0.77944182	|
-|	GSM913416	|	-0.116959667647059	|	-0.16585688125	|	1.29088456555556	|	0.6715411259375	|
+|	GSM1465989	|	2.05427252941176	|	-0.18814726625	|	2.13505803444444	|	0.523828755	|
+|	GSM1465990	|	2.38591473470588	|	-0.22116824125	|	2.78432002888889	|	0.4807718146875	|
+|	GSM1465991	|	2.50706494588235	|	-0.25247381375	|	2.61063488111111	|	0.78544667375	|
+|	GSM1465992	|	1.36965303529412	|	-0.171055715	|	2.44443693666667	|	1.0092989790625	|
 
-**Columns: 20025 Rows: 94**
+**Columns: 20025 Rows: 286**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
@@ -61,13 +61,7 @@
 
 &#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
-|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
-
+&#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
@@ -77,18 +71,18 @@
 
 &#9989;	Row 8: Success
 
-#### Results: **FAIL**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	GSM913413	|	centre	|	Beatson	|
-|	GSM913413	|	patient	|	E00029024	|
-|	GSM913413	|	plate	|	1	|
-|	GSM913413	|	replicate	|	No	|
+|	GSM748053	|	age_at_surgery	|	62	|
+|	GSM748053	|	disease_free_survival_in_months	|	121	|
+|	GSM748053	|	follow-up_time_months	|	121	|
+|	GSM748053	|	gender	|	F	|
 
-**Columns: 3 Rows: 466**
+**Columns: 3 Rows: 3110**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -115,13 +109,10 @@
 ---
 ### Comparing samples in both files . . .
 
-#### Results: **FAIL**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
 
 #### Results: PASS
 ---
-Last 20 lines from running install.sh
-~~~~bash
-~~~~

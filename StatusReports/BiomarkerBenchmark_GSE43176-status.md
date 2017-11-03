@@ -1,4 +1,4 @@
-<h1><center>BiomarkerBenchmark_GSE37199</center></h1>
+<h1><center>BiomarkerBenchmark_GSE43176</center></h1>
 ## Status: In Progress
 ### Testing Directory . . .
 
@@ -43,55 +43,15 @@
 
 |	Sample	|	ENSG00000000003	|	ENSG00000000005	|	ENSG00000000419	|	ENSG00000000457	|
 |	---	|	---	|	---	|	---	|	---	|
-|	GSM913413	|	-0.0762748623529412	|	-0.21174261625	|	1.49106462555556	|	0.9648578815625	|
-|	GSM913414	|	-0.119372013529412	|	-0.1761557575	|	1.21681543777778	|	0.7463705246875	|
-|	GSM913415	|	0.0242800317647059	|	-0.15666065875	|	1.2706031	|	0.77944182	|
-|	GSM913416	|	-0.116959667647059	|	-0.16585688125	|	1.29088456555556	|	0.6715411259375	|
+|	GSM1057836	|	-0.04165015	|	-0.11731505125	|	0.74634068	|	-0.10284184173913	|
+|	GSM1057837	|	-0.102259795882353	|	-0.2626097925	|	1.11522876333333	|	-0.0383493347826087	|
+|	GSM1057838	|	-0.222879033529412	|	-0.3286507475	|	1.06145151111111	|	-0.0790448365217391	|
+|	GSM1057839	|	-0.0998797111764706	|	-0.22587852	|	1.21281470444444	|	0.06549571	|
 
-**Columns: 20025 Rows: 94**
+**Columns: 11833 Rows: 104**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
-
-&#9989;	First column of file is titled "Sample"
-
-&#9989;	Row 1: Success
-
-&#9989;	Row 2: Success
-
-&#9989;	Row 3: Success
-
-&#10060;	Row 4: Fail
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
-|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
-
-
-&#9989;	Row 5: Success
-
-&#9989;	Row 6: Success
-
-&#9989;	Row 7: Success
-
-&#9989;	Row 8: Success
-
-#### Results: **FAIL**
----
-### First 3 columns and 5 rows of metadata.tsv.gz:
-
-|	Sample	|	Variable	|	Value	|
-|	---	|	---	|	---	|
-|	GSM913413	|	centre	|	Beatson	|
-|	GSM913413	|	patient	|	E00029024	|
-|	GSM913413	|	plate	|	1	|
-|	GSM913413	|	replicate	|	No	|
-
-**Columns: 3 Rows: 466**
-
----
-### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
@@ -112,6 +72,41 @@
 &#9989;	Row 8: Success
 
 #### Results: PASS
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	GSM1057836	|	cytogenetics	|	45,X,-Y,t(8;21)(q22;q22),del(10)(p14)	|
+|	GSM1057836	|	disease_state	|	AML	|
+|	GSM1057836	|	fab	|	M4E	|
+|	GSM1057836	|	kras_status	|	KRAS wild type	|
+
+**Columns: 3 Rows: 614**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#10060;	Row 1: Fail
+- "GSM1057836	cytogenetic	45,X,-Y,t(8;21)(q22;q22),del(10)(p14)" is not found.
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: **FAIL**
 ---
 ### Comparing samples in both files . . .
 

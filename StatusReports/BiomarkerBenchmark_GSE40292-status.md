@@ -1,5 +1,5 @@
-<h1><center>BiomarkerBenchmark_GSE37199</center></h1>
-## Status: In Progress
+<h1><center>BiomarkerBenchmark_GSE40292</center></h1>
+## Status: Complete
 ### Testing Directory . . .
 
 #### Results: PASS
@@ -43,12 +43,12 @@
 
 |	Sample	|	ENSG00000000003	|	ENSG00000000005	|	ENSG00000000419	|	ENSG00000000457	|
 |	---	|	---	|	---	|	---	|	---	|
-|	GSM913413	|	-0.0762748623529412	|	-0.21174261625	|	1.49106462555556	|	0.9648578815625	|
-|	GSM913414	|	-0.119372013529412	|	-0.1761557575	|	1.21681543777778	|	0.7463705246875	|
-|	GSM913415	|	0.0242800317647059	|	-0.15666065875	|	1.2706031	|	0.77944182	|
-|	GSM913416	|	-0.116959667647059	|	-0.16585688125	|	1.29088456555556	|	0.6715411259375	|
+|	GSM990776	|	1.4525783625	|	-0.0724773895833333	|	2.15692024391304	|	1.10963590242424	|
+|	GSM990777	|	1.26263939625	|	-0.0924803820833333	|	2.00489490956522	|	1.08784335818182	|
+|	GSM990778	|	1.42254848666667	|	-0.0463920316666667	|	2.16826352043478	|	1.13360760909091	|
+|	GSM990779	|	1.4046002275	|	-0.04800636375	|	1.96448153217391	|	1.04925336727273	|
 
-**Columns: 20025 Rows: 94**
+**Columns: 21615 Rows: 196**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
@@ -61,13 +61,7 @@
 
 &#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
-|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
-
+&#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
@@ -77,18 +71,18 @@
 
 &#9989;	Row 8: Success
 
-#### Results: **FAIL**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	GSM913413	|	centre	|	Beatson	|
-|	GSM913413	|	patient	|	E00029024	|
-|	GSM913413	|	plate	|	1	|
-|	GSM913413	|	replicate	|	No	|
+|	GSM990776	|	batch	|	1	|
+|	GSM990776	|	diagnosis	|	UC	|
+|	GSM990776	|	gender	|	F	|
+|	GSM990776	|	in_eqtl	|	yes	|
 
-**Columns: 3 Rows: 466**
+**Columns: 3 Rows: 781**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -115,13 +109,10 @@
 ---
 ### Comparing samples in both files . . .
 
-#### Results: **FAIL**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
 
 #### Results: PASS
 ---
-Last 20 lines from running install.sh
-~~~~bash
-~~~~

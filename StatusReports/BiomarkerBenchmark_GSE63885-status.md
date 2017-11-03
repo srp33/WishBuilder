@@ -1,4 +1,4 @@
-<h1><center>BiomarkerBenchmark_GSE37199</center></h1>
+<h1><center>BiomarkerBenchmark_GSE63885</center></h1>
 ## Status: In Progress
 ### Testing Directory . . .
 
@@ -34,64 +34,28 @@
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
+&#10060;	"GSM1559301" does not have enough features to test (min: 2)
+
+&#10060;	"GSM1559394" does not have enough features to test (min: 2)
+
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: PASS
+#### Results: **FAIL**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
 |	Sample	|	ENSG00000000003	|	ENSG00000000005	|	ENSG00000000419	|	ENSG00000000457	|
 |	---	|	---	|	---	|	---	|	---	|
-|	GSM913413	|	-0.0762748623529412	|	-0.21174261625	|	1.49106462555556	|	0.9648578815625	|
-|	GSM913414	|	-0.119372013529412	|	-0.1761557575	|	1.21681543777778	|	0.7463705246875	|
-|	GSM913415	|	0.0242800317647059	|	-0.15666065875	|	1.2706031	|	0.77944182	|
-|	GSM913416	|	-0.116959667647059	|	-0.16585688125	|	1.29088456555556	|	0.6715411259375	|
+|	GSM1559299	|	1.58190624764706	|	-0.15402261125	|	2.48422321444444	|	0.4192952234375	|
+|	GSM1559300	|	2.13530725882353	|	-0.04666310125	|	3.01121228	|	0.2587855653125	|
+|	GSM1559301	|	2.08582202823529	|	-0.21383749125	|	2.52594365	|	0.459416181875	|
+|	GSM1559302	|	2.26551759352941	|	-0.08622420625	|	2.42361450666667	|	0.4584177853125	|
 
-**Columns: 20025 Rows: 94**
+**Columns: 20025 Rows: 93**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
-
-&#9989;	First column of file is titled "Sample"
-
-&#9989;	Row 1: Success
-
-&#9989;	Row 2: Success
-
-&#9989;	Row 3: Success
-
-&#10060;	Row 4: Fail
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
-|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
-
-
-&#9989;	Row 5: Success
-
-&#9989;	Row 6: Success
-
-&#9989;	Row 7: Success
-
-&#9989;	Row 8: Success
-
-#### Results: **FAIL**
----
-### First 3 columns and 5 rows of metadata.tsv.gz:
-
-|	Sample	|	Variable	|	Value	|
-|	---	|	---	|	---	|
-|	GSM913413	|	centre	|	Beatson	|
-|	GSM913413	|	patient	|	E00029024	|
-|	GSM913413	|	plate	|	1	|
-|	GSM913413	|	replicate	|	No	|
-
-**Columns: 3 Rows: 466**
-
----
-### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
@@ -112,6 +76,43 @@
 &#9989;	Row 8: Success
 
 #### Results: PASS
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	GSM1559299	|	adjuwant_chemotherapy	|	platinum/cyclophosphamide	|
+|	GSM1559299	|	brca1_mutation	|	no mutation	|
+|	GSM1559299	|	clinical_status_at_last_follow-up_awd_-_alive_with_disease;_dod_-_dead_from_disease;_ned_-_no_evidence_of_disease	|	DOD	|
+|	GSM1559299	|	clinical_status_post_1st_line_chemotherapy_cr_-_complete_response;_pr_-_partial_response;_sd_-_stable_disease;_p_-_progression	|	P	|
+
+**Columns: 3 Rows: 931**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#10060;	Row 5: Fail
+- "GSM1559301	adjuwant_chemotherapy	taxane/platinum no mutation" is not found.
+
+&#9989;	Row 6: Success
+
+&#10060;	Row 7: Fail
+- "GSM1559399	tp53_accumulation_in_cancer_cells_assesed_by_immunohistochemistry	no accumulation" is not found.
+
+&#10060;	Row 8: Fail
+- "GSM1559394	brca1_mutation	no mutation" is not found.
+
+#### Results: **FAIL**
 ---
 ### Comparing samples in both files . . .
 
