@@ -60,3 +60,4 @@
 |	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	no	|
 |	[BiomarkerBenchmark_GSE26682_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	no	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/testBranch-status)	|	no	|
+|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
