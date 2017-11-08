@@ -6,16 +6,17 @@
 ---
 ### Testing Description File . . .
 
-&#9989;	Title is less than 100characters
+&#9989;	Title is less than 100 characters
 
 #### Results: PASS
+---
 ### Running Install . . .
 
 Executing install.sh: Success
 
 #### Results: PASS
 ---
----
+
 ### Testing file paths:
 
 &#9989;	test_data.tsv exists.
@@ -70,6 +71,40 @@ Executing parse.sh: Success
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: PASS
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	GSM656544	|	age	|	76	|
+|	GSM656544	|	gender	|	Female	|
+|	GSM656544	|	microsatellite_instability_msi_status	|	Stable [MSS]	|
+|	GSM656547	|	age	|	68	|
+
+**Columns: 3 Rows: 421**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
