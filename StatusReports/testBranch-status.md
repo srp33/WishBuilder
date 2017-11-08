@@ -14,14 +14,40 @@
 ---
 ### Running Install . . .
 
-Executing install.sh: 
+Executing install.sh: Success
 
-&#10060;	install.sh returned an error:
+#### Results: PASS
+---
+
+### Testing file paths:
+
+&#9989;	test_data.tsv exists.
+
+&#9989;	test_metadata.tsv exists.
+
+&#9989;	download.sh exists.
+
+&#9989;	install.sh exists.
+
+&#9989;	parse.sh exists.
+
+&#9989;	cleanup.sh exists.
+
+&#9989;	description.md exists.
+
+*Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: 
+
+&#10060;	parse.sh returned an error:
 ~~~bash
-./install.sh: line 8: echoe3: command not found
-./install.sh: line 9: wefse: command not found
-sed: -e expression #1, char 1: unknown command: `,'
+Traceback (most recent call last):
+  File "parse.py", line 9, in <module>
+    with open(expressionInfo, 'r')  as f1:
+IOError: [Errno 2] No such file or directory: 'tmp/Expression'
+gzip: metadata.tsv: No such file or directory
+gzip: data.tsv: No such file or directory
 ~~~
 
-#### Results: **FAIL**
----
