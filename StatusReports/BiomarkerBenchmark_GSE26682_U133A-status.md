@@ -2,8 +2,12 @@
 <h2><center> Status: Complete </center></h2>
 
 
+### Running Install . . .
+
 Executing install.sh: Success
 
+#### Results: PASS
+---
 ### Testing Directory . . .
 
 #### Results: PASS
