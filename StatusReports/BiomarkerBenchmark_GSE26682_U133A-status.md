@@ -1,6 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE26682_U133A</center></h1>
 
-## Status: Complete
+<h1><center>Status: Complete</center></h1>
 
 
 Executing install.sh: Success
