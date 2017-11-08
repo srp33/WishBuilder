@@ -52,17 +52,3 @@
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	no	|
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	no	|
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	no	|
-|	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	no	|
-|	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	no	|
-|	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	no	|
-|	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	no	|
-|	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	no	|
-|	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	no	|
-|	[BiomarkerBenchmark_GSE26682_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
-|	[BiomarkerBenchmark_GSE26682_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	no	|
