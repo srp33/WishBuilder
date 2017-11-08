@@ -1,4 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE26682_U133A</center></h1>
+<h2><center> Status: Complete </center></h2>
+
 
 ### Testing Directory . . .
 
@@ -123,6 +125,23 @@ Executing parse.sh: Success
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
+
+#### Results: PASS
+---
+### Making sure no commas exist in either file . . .
+
+&#9989;	No Commas in metadata.tsv.gz
+
+&#9989;	No Commas in data.tsv.gz
+
+#### Results: PASS
+---
+### Comparing samples in both files . . .
+
+#### Results: PASS
+
+---
+### Testing Directory after cleanup . . .
 
 #### Results: PASS
 ---
