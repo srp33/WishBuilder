@@ -1,6 +1,18 @@
 <h1><center>BiomarkerBenchmark_GSE2109_Colon</center></h1>
-## Status: Complete
+<h2><center> Status: Complete </center></h2>
+
+
+### Running Install . . .
+
+Executing install.sh: Success
+
+#### Results: PASS
+---
 ### Testing Directory . . .
+
+#### Results: PASS
+---
+### Testing Description File . . .
 
 #### Results: PASS
 ---
@@ -18,7 +30,13 @@
 
 &#9989;	cleanup.sh exists.
 
+&#9989;	description.md exists.
+
 *Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: Success
 
 &#9989;	data.tsv.gz was created and zipped correctly.
 
