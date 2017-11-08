@@ -2,6 +2,8 @@
 ## Status: Complete
 
 
+Executing install.sh: Success
+
 ### Testing Directory . . .
 
 #### Results: PASS
@@ -27,6 +29,10 @@
 &#9989;	description.md exists.
 
 *Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: Success
 
 &#9989;	data.tsv.gz was created and zipped correctly.
 
