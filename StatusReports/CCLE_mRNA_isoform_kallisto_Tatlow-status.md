@@ -138,7 +138,9 @@ Executing parse.sh: Success
 ---
 ### Comparing samples in both files . . .
 
-#### Results: **<font color="red">FAIL</font>**
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
