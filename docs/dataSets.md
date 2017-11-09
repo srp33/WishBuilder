@@ -64,3 +64,4 @@
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[In Progress]({{site.url}}/StatusReports/testBranch-status)	|	no	|
+|	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	no	|
