@@ -134,11 +134,11 @@ Executing parse.sh: Success
 
 &#9989;	No Commas in data.tsv.gz
 
-#### Results: **FAIL**
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 
-#### Results: **FAIL**
+#### Results: **<font color="red">FAIL</font>**
 
 ---
 ### Testing Directory after cleanup . . .
