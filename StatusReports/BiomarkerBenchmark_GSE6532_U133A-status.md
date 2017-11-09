@@ -1,9 +1,24 @@
 <h1><center>BiomarkerBenchmark_GSE6532_U133A</center></h1>
-## Status: Complete
+<h2><center> Status: Complete </center></h2>
+
+
 ### Testing Directory . . .
 
 #### Results: PASS
 ---
+### Testing Description File . . .
+
+&#9989;	Title is less than 100 characters
+
+#### Results: PASS
+---
+### Running Install . . .
+
+Executing install.sh: Success
+
+#### Results: PASS
+---
+
 ### Testing file paths:
 
 &#9989;	test_data.tsv exists.
@@ -18,7 +33,13 @@
 
 &#9989;	cleanup.sh exists.
 
+&#9989;	description.md exists.
+
 *Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: Success
 
 &#9989;	data.tsv.gz was created and zipped correctly.
 
@@ -104,6 +125,14 @@
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
+
+#### Results: PASS
+---
+### Making sure no commas exist in either file . . .
+
+&#9989;	No Commas in metadata.tsv.gz
+
+&#9989;	No Commas in data.tsv.gz
 
 #### Results: PASS
 ---
