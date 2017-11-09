@@ -55,3 +55,4 @@
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	no	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	glenrs	|	[]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	no	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	glenrs	|	[]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	no	|
+|	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	no	|
