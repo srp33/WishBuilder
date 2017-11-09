@@ -110,6 +110,10 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+&#10060;	All values for variable "Oncomap" are the same("yes").
+
+&#10060;	All values for variable "Hybrid Capture Sequencing" are the same("yes").
+
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
@@ -126,7 +130,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Making sure no commas exist in either file . . .
 
