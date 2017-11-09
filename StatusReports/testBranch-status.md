@@ -16,7 +16,7 @@
 
 Executing install.sh: Success
 
-#### Results: <font color="red">PASS</font>
+#### Results: <font color="red">**PASS**</font>
 ---
 
 ### Testing file paths:
