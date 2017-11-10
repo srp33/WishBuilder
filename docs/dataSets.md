@@ -42,3 +42,7 @@
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	no	|
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	no	|
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	no	|
+|	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	no	|
+|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	no	|
+|	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	no	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	no	|
