@@ -73,3 +73,4 @@
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	no	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	no	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	no	|
+|	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	no	|
