@@ -76,21 +76,21 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row 1: Success
+&#9989;	Row: 1 - Success
 
-&#9989;	Row 2: Success
+&#9989;	Row: 2 - Success
 
-&#9989;	Row 3: Success
+&#9989;	Row: 3 - Success
 
-&#9989;	Row 4: Success
+&#9989;	Row: 4 - Success
 
-&#9989;	Row 5: Success
+&#9989;	Row: 7 - Success
 
-&#9989;	Row 6: Success
+&#9989;	Row: 8 - Success
 
-&#9989;	Row 7: Success
+&#9989;	Row: 5 - Success
 
-&#9989;	Row 8: Success
+&#9989;	Row: 6 - Success
 
 #### Results: PASS
 ---
@@ -110,23 +110,23 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	All values for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" are the same("No").
-
-&#10060;	All values for variable "Clinical_Grade" are the same("2").
-
-&#10060;	All values for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" are the same("No").
-
-&#10060;	All values for variable "Clinical_Stage" are the same("1").
+&#10060;	All values for variable "Clinical_Dukes_Stage" are the same("A").
 
 &#10060;	All values for variable "Clinical_N" are the same("0").
 
-&#10060;	All values for variable "Clinical_M" are the same("0").
-
-&#10060;	All values for variable "Clinical_Dukes_Stage" are the same("A").
-
-&#10060;	All values for variable "Clinical_Multiple_Tumors" are the same("No").
+&#10060;	All values for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" are the same("No").
 
 &#10060;	All values for variable "Clinical_T" are the same("2").
+
+&#10060;	All values for variable "Clinical_Stage" are the same("1").
+
+&#10060;	All values for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" are the same("No").
+
+&#10060;	All values for variable "Clinical_M" are the same("0").
+
+&#10060;	All values for variable "Clinical_Grade" are the same("2").
+
+&#10060;	All values for variable "Clinical_Multiple_Tumors" are the same("No").
 
 &#9989;	Row 1: Success
 
