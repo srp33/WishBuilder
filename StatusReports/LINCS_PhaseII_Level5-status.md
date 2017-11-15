@@ -76,12 +76,6 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 10 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 11 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 12 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row: 5 - Success
 
 &#9989;	Row: 6 - Success
@@ -96,6 +90,12 @@ Executing parse.sh: Success
 
 &#9989;	Row: 9 - Success
 
+&#9989;	Row: 10 - Success
+
+&#9989;	Row: 11 - Success
+
+&#9989;	Row: 12 - Success
+
 &#9989;	Row: 3 - Success
 
 &#10060;	Row: 4 - FAIL
@@ -104,12 +104,6 @@ Executing parse.sh: Success
 |	---	|	---	|	---	|	---	|
 |	**Expected**	|	LJP005_HA1E_24H:M01	|	ACTB	|	0.598744034767	|
 |	**User Generated**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.522399544716	|
-
-&#10060;	Row: 4 - Sample "E" is not found in data.tsv.gz
-
-&#10060;	Row: 4 - Sample "S" is not found in data.tsv.gz
-
-&#10060;	Row: 4 - Sample "3" is not found in data.tsv.gz
 
 #### Results: **<font color="red">FAIL</font>**
 ---
