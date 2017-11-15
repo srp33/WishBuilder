@@ -76,27 +76,11 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row: 5 - Success
+&#9989;	Row 1: Success
 
-&#9989;	Row: 6 - Success
+&#9989;	Row 2: Success
 
-&#9989;	Row: 7 - Success
-
-&#9989;	Row: 8 - Success
-
-&#9989;	Row: 1 - Success
-
-&#9989;	Row: 2 - Success
-
-&#9989;	Row: 9 - Success
-
-&#9989;	Row: 10 - Success
-
-&#9989;	Row: 11 - Success
-
-&#9989;	Row: 12 - Success
-
-&#9989;	Row: 3 - Success
+&#9989;	Row 3: Success
 
 &#10060;	Row: 4 - FAIL
 
@@ -104,6 +88,22 @@ Executing parse.sh: Success
 |	---	|	---	|	---	|	---	|
 |	**Expected**	|	LJP005_HA1E_24H:M01	|	ACTB	|	0.598744034767	|
 |	**User Generated**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.522399544716	|
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
+
+&#9989;	Row 11: Success
+
+&#9989;	Row 12: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -123,9 +123,9 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	All values for variable "precursor_cell_id" are the same("NPC").
+&#10060;	All values for variable "donor_ethnicity" for all samples are the same ("Caucasian").
 
-&#10060;	All values for variable "donor_ethnicity" are the same("Caucasian").
+&#10060;	All values for variable "precursor_cell_id" for all samples are the same ("NPC").
 
 &#9989;	Row 1: Success
 
@@ -149,7 +149,8 @@ Executing parse.sh: Success
 
 &#9989;	Row 11: Success
 
-&#9989;	Row 12: Success
+&#10060;	Row 12: Fail
+- "LJP007_HUES3_24H:E15	pert_itime	24 h" is not found.
 
 &#9989;	Row 13: Success
 
@@ -181,7 +182,8 @@ Executing parse.sh: Success
 
 &#9989;	Row 27: Success
 
-&#9989;	Row 28: Success
+&#10060;	Row 28: Fail
+- "LJP005_A375_24H:A03	distil_nsample	3" is not found.
 
 &#9989;	Row 29: Success
 
