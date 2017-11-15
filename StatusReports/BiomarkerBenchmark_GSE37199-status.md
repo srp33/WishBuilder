@@ -76,6 +76,27 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#10060;	Row: 4 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
+|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
 #### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
