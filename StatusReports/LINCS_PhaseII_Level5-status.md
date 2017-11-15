@@ -1,4 +1,6 @@
 <h1><center>LINCS_PhaseII_Level5</center></h1>
+<h2><center> Status: In Progress </center></h2>
+
 
 ### Testing Directory . . .
 
@@ -127,9 +129,9 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	All values for variable "donor_ethnicity" are the same("Caucasian").
-
 &#10060;	All values for variable "precursor_cell_id" are the same("NPC").
+
+&#10060;	All values for variable "donor_ethnicity" are the same("Caucasian").
 
 &#9989;	Row 1: Success
 
@@ -232,4 +234,21 @@ Executing parse.sh: Success
 - "XPR002_YAPC.311_96H:N12	donor_sex	M" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
+---
+### Making sure no commas exist in either file . . .
+
+&#10060;	Comma(s) exist in "metadata.tsv.gz"
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### Comparing samples in both files . . .
+
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+
+#### Results: PASS
+
+---
+### Testing Directory after cleanup . . .
+
+#### Results: PASS
 ---
