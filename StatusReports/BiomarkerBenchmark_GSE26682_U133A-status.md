@@ -76,21 +76,21 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row 1: Success
+&#9989;	Row: 1 - Success
 
-&#9989;	Row 2: Success
+&#9989;	Row: 2 - Success
 
-&#9989;	Row 3: Success
+&#9989;	Row: 3 - Success
 
-&#9989;	Row 4: Success
+&#9989;	Row: 4 - Success
 
-&#9989;	Row 5: Success
+&#9989;	Row: 5 - Success
 
-&#9989;	Row 6: Success
+&#9989;	Row: 6 - Success
 
-&#9989;	Row 7: Success
+&#9989;	Row: 7 - Success
 
-&#9989;	Row 8: Success
+&#9989;	Row: 8 - Success
 
 #### Results: PASS
 ---
@@ -129,10 +129,6 @@ Executing parse.sh: Success
 #### Results: PASS
 ---
 ### Making sure no commas exist in either file . . .
-
-&#9989;	No Commas in metadata.tsv.gz
-
-&#9989;	No Commas in data.tsv.gz
 
 #### Results: PASS
 ---
