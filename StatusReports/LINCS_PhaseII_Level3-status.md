@@ -1,6 +1,4 @@
 <h1><center>LINCS_PhaseII_Level3</center></h1>
-<h2><center> Status: In Progress </center></h2>
-
 
 ### Testing Directory . . .
 
@@ -69,14 +67,45 @@ Executing parse.sh: Success
 |	LPROT001_A375_6H_X1_B20:B05	|	5.85659980774	|	6.10020017624	|	5.93030023575	|	9.55449962616	|
 |	LPROT002_A375_6H_X1_B22:B03	|	6.82100009918	|	3.99130010605	|	4.17999982834	|	6.34259986877	|
 
-**Columns: 12329 Rows: 1**
+**Columns: 12329 Rows: 345632**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 10 of data.tsv.gz does not contain 3 columns
+&#10060;	Row 10 of "test_data.tsv" does not contain 3 columns
+
+#### Results: **<font color="red">FAIL</font>**
+---&#10060;	Row 11 of "test_data.tsv" does not contain 3 columns
+
+#### Results: **<font color="red">FAIL</font>**
+---&#10060;	Row 12 of "test_data.tsv" does not contain 3 columns
+
+#### Results: **<font color="red">FAIL</font>**
+---&#9989;	Row: 3 - Success
+
+&#9989;	Row: 4 - Success
+
+&#9989;	Row: 5 - Success
+
+&#9989;	Row: 6 - Success
+
+&#9989;	Row: 1 - Success
+
+&#9989;	Row: 2 - Success
+
+&#9989;	Row: 7 - Success
+
+&#9989;	Row: 8 - Success
+
+&#9989;	Row: 9 - Success
+
+&#10060;	Row: 9 - Sample "3" is not found in data.tsv.gz
+
+&#10060;	Row: 9 - Sample "_" is not found in data.tsv.gz
+
+&#10060;	Row: 9 - Sample "2" is not found in data.tsv.gz
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -136,39 +165,4 @@ Executing parse.sh: Success
 - "REP.A028_YAPC_24H_X3_B25:P24	pert_iname	cyanocobalamin" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-&#10060;	Comma(s) exist in metadata.tsv.gz
-
-#### Results: **<font color="red">FAIL</font>**
----
-### Comparing samples in both files . . .
-
-&#10060;	 Sample "REP.A008_MCF7_24H_X3_B24:H17" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A006_HT29_24H_X2_B22:M11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP005_MCF7_3H_X1_B17:B11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A025_HELA_24H_X1_B23:N16" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A024_YAPC_24H_X3_B23:L11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP009_A549_24H_X1_F1B19:H13" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP006_HS578T_24H_X3_B17:D14" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A013_PC3_24H_X2_B22:J07" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A011_A375_24H_X3_B24:J17" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A017_MCF7_24H_X1_B23:N04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-#### Results: **<font color="red">FAIL</font>**
-
----
-### Testing Directory after cleanup . . .
-
-#### Results: PASS
 ---
