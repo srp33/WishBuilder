@@ -76,14 +76,11 @@ Executing parse.sh: Success
 
 &#10060;	Row 10 of "test_data.tsv" does not contain 3 columns
 
-#### Results: **<font color="red">FAIL</font>**
----&#10060;	Row 11 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row 11 of "test_data.tsv" does not contain 3 columns
 
-#### Results: **<font color="red">FAIL</font>**
----&#10060;	Row 12 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row 12 of "test_data.tsv" does not contain 3 columns
 
-#### Results: **<font color="red">FAIL</font>**
----&#9989;	Row: 5 - Success
+&#9989;	Row: 5 - Success
 
 &#9989;	Row: 6 - Success
 
