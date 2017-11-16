@@ -110,15 +110,15 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
-
-&#10060;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
+&#10060;	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No").
 
 &#10060;	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No").
 
-&#10060;	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No").
+&#10060;	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
 
 &#10060;	The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy").
+
+&#10060;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
 
 &#9989;	Row 1: Success
 

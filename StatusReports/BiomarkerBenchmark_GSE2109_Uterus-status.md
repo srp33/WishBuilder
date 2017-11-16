@@ -110,29 +110,29 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+&#10060;	The value for variable "Stage" for all samples is the same ("No AJCC Scheme for this site and histology").
+
 &#10060;	The value for variable "Clinical_M" for all samples is the same ("0").
-
-&#10060;	The value for variable "Relapse_Since_Primary_Treatment" for all samples is the same ("No").
-
-&#10060;	The value for variable "Type_of_Tobacco_Use" for all samples is the same ("Cigarettes").
-
-&#10060;	The value for variable "Grade" for all samples is the same ("3").
-
-&#10060;	The value for variable "Have_you_ever_been_diagnosed_as_having_HPV_on_your_PAP_smear" for all samples is the same ("No").
 
 &#10060;	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No").
 
-&#10060;	The value for variable "Primary_Site" for all samples is the same ("Endometrium").
+&#10060;	The value for variable "Relapse_Since_Primary_Treatment" for all samples is the same ("No").
 
-&#10060;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
-
-&#10060;	The value for variable "Ethnic_Background" for all samples is the same ("Caucasian").
+&#10060;	The value for variable "Grade" for all samples is the same ("3").
 
 &#10060;	The value for variable "Clinical_N" for all samples is the same ("0").
 
-&#10060;	The value for variable "Stage" for all samples is the same ("No AJCC Scheme for this site and histology").
+&#10060;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
 
 &#10060;	The value for variable "Presenting_Symptoms" for all samples is the same ("Vaginal bleeding").
+
+&#10060;	The value for variable "Type_of_Tobacco_Use" for all samples is the same ("Cigarettes").
+
+&#10060;	The value for variable "Ethnic_Background" for all samples is the same ("Caucasian").
+
+&#10060;	The value for variable "Have_you_ever_been_diagnosed_as_having_HPV_on_your_PAP_smear" for all samples is the same ("No").
+
+&#10060;	The value for variable "Primary_Site" for all samples is the same ("Endometrium").
 
 &#9989;	Row 1: Success
 
