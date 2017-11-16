@@ -1,4 +1,4 @@
-<h1><center>LINCS_PhaseII_Level4</center></h1>
+<h1><center>LINCS_PhaseI_Level5</center></h1>
 <h2><center> Status: In Progress </center></h2>
 
 
@@ -55,42 +55,40 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (15; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (16; min: 8)
 
 #### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|	Sample	|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
+|	Sample	|	PSME1	|	ATF1	|	RHEB	|	FOXO3	|
 |	---	|	---	|	---	|	---	|	---	|
-|	LJP005_A375_24H_X1_B19:A03	|	-0.318599998951	|	-0.869700014591	|	0.715499997139	|	-0.679000020027	|
-|	LPROT001_A375_6H_X1_B20:B03	|	-1.03359997272	|	-0.562600016594	|	0.214800000191	|	0.263099998236	|
-|	LPROT001_A375_6H_X1_B20:B05	|	0.294299989939	|	0.241500005126	|	-0.57380002737	|	1.8723000288	|
-|	LPROT002_A375_6H_X1_B22:B03	|	0.542800009251	|	-0.958100020885	|	-0.118100002408	|	0.0888999998569	|
+|	AML001_CD34_24H:BRD-A03772856:10	|	0.365400016308	|	0.693850040436	|	0.554350018501	|	-0.315799981356	|
+|	AML001_CD34_24H:BRD-A03772856:3.33333	|	0.296950012445	|	-0.126849994063	|	-1.42920005322	|	-0.332000017166	|
+|	AML001_CD34_24H:BRD-A03772856:1.11111	|	-1.16809999943	|	-0.548200011253	|	-0.0293999910355	|	0.570549964905	|
+|	AML001_CD34_24H:BRD-A03772856:0.37037	|	0.462899982929	|	-0.0881000012159	|	-0.486000001431	|	-0.664200007915	|
 
-**Columns: 12329 Rows: 345632**
+**Columns: 12329 Rows: 94775**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 7 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
-&#9989;	Row 3: Success
+&#10060;	Row: 3 - Sample "TAK004_U2OS_96H:TRCN0000381509:1" is not found in data.tsv.gz
 
-&#9989;	Row 4: Success
+&#10060;	Row: 4 - Sample "TAK004_U2OS_96H:TRCN0000381509:1" is not found in data.tsv.gz
 
 &#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row: 7 - Sample "REP.A028_YAPC_24H_X1_B25:G09" is not found in data.tsv.gz
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
@@ -108,12 +106,12 @@ Executing parse.sh: Success
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	LJP005_A375_24H_X1_B19:A03	|	cell_id	|	A375	|
-|	LJP005_A375_24H_X1_B19:A03	|	cell_type	|	cell line	|
-|	LJP005_A375_24H_X1_B19:A03	|	base_cell_id	|	A375	|
-|	LJP005_A375_24H_X1_B19:A03	|	sample_type	|	tumor	|
+|	AML001_CD34_24H:A05	|	pert_id	|	DMSO	|
+|	AML001_CD34_24H:A05	|	is_touchstone	|	1	|
+|	AML001_CD34_24H:A05	|	inchi_key_prefix	|	IAZDPXIOMUYVGZ	|
+|	AML001_CD34_24H:A05	|	inchi_key	|	IAZDPXIOMUYVGZ-UHFFFAOYSA-N	|
 
-**Columns: 3 Rows: 7778851**
+**Columns: 3 Rows: 2316880**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -121,6 +119,8 @@ Executing parse.sh: Success
 &#9989;	First column of file is titled "Sample"
 
 &#10060;	The value for variable "pert_time_unit" for all samples is the same ("h").
+
+&#10060;	The value for variable "donor_ethnicity" for all samples is the same ("Caucasian").
 
 &#9989;	Row 1: Success
 
@@ -138,26 +138,28 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-&#10060;	Row 9: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	cell_id	YAPC" is not found.
+&#9989;	Row 9: Success
 
 &#10060;	Row 10: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	cell_type	cell line" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	pert_itime	96 h " is not found.
 
 &#10060;	Row 11: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	donor_sex	M" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	pert_id	TRCN0000381509	" is not found.
 
 &#10060;	Row 12: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	det_plate	REP.A028_YAPC_24H_X3_B25" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	is_touchstone	0" is not found.
 
 &#10060;	Row 13: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	pert_id	BRD-A97502381" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	tas_q75	0.169385" is not found.
 
 &#10060;	Row 14: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	inchi_key	FMCRMSOQAVOHRD-SBGISONWSA-M" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	cell_id	U2OS" is not found.
 
 &#10060;	Row 15: Fail
-- "REP.A028_YAPC_24H_X3_B25:P24	pert_iname	cyanocobalamin" is not found.
+- "TAK004_U2OS_96H:TRCN0000381509:1	cell_type	cell line" is not found.
+
+&#10060;	Row 16: Fail
+- "TAK004_U2OS_96H:TRCN0000381509:1	donor_ethnicity	Caucasian" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
 ---
