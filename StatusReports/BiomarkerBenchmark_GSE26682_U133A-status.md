@@ -76,6 +76,22 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
 #### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:

@@ -110,7 +110,7 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	All values for variable "tissue" are the same("cancer, LCM").
+&#10060;	The value for variable "tissue" for all samples is the same ("cancer, LCM").
 
 &#9989;	Row 1: Success
 
@@ -132,9 +132,7 @@ Executing parse.sh: Success
 ---
 ### Making sure no commas exist in either file . . .
 
-&#10060;	Comma(s) exist in metadata.tsv.gz
-
-&#9989;	No Commas in data.tsv.gz
+&#10060;	Comma(s) exist in "metadata.tsv.gz"
 
 #### Results: **<font color="red">FAIL</font>**
 ---
