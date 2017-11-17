@@ -116,15 +116,15 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888; </font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
-<font color="orange">&#9888;	</font>The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
-<font color="orange">&#9888;	</font>The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
-<font color="orange">&#9888;	</font>The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz</p>
 
-<font color="orange">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -146,7 +146,7 @@ Executing parse.sh: Success
 ---
 ### Making sure no commas exist in either file . . .
 
-<font color="orange">&#9888;</font>	Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.
+<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
 
 #### Results: **<font color="orange">WARNED</font>**
 ---
