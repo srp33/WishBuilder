@@ -1,6 +1,4 @@
 <h1><center>BiomarkerBenchmark_GSE2109_Prostate</center></h1>
-<h2><center> Status: In Progress </center></h2>
-
 
 ### Testing Directory . . .
 
@@ -116,15 +114,15 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9888;	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<font color="orange">&#9888</font>;	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#9888;	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<font color="orange">&#9888</font>;	The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz
 
-&#9888;	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<font color="orange">&#9888</font>;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#9888;	The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz
+<font color="orange">&#9888</font>;	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#9888;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
+<font color="orange">&#9888</font>;	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
 &#9989;	Row 1: Success
 
@@ -146,9 +144,9 @@ Executing parse.sh: Success
 ---
 ### Making sure no commas exist in either file . . .
 
-&#10060;	Comma(s) exist in "metadata.tsv.gz"
+<font color="orange">&#9888</font>;	Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 
@@ -156,8 +154,4 @@ Executing parse.sh: Success
 
 #### Results: PASS
 
----
-### Testing Directory after cleanup . . .
-
-#### Results: PASS
 ---

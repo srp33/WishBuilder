@@ -1,14 +1,16 @@
 <h1><center>BiomarkerBenchmark_GSE26682_U133PLUS2</center></h1>
-<h2><center> Status: Complete </center></h2>
-
 
 ### Testing Directory . . .
 
 #### Results: PASS
 ---
-### Testing Description File . . .
+### Testing Configuration File . . .
+
+&#9989;	config.yaml contains all necessary configurations.
 
 &#9989;	Title is less than 100 characters
+
+&#9989;	description.md contains a description.
 
 #### Results: PASS
 ---
@@ -34,6 +36,8 @@ Executing install.sh: Success
 &#9989;	cleanup.sh exists.
 
 &#9989;	description.md exists.
+
+&#9989;	config.yaml exists.
 
 *Running user code . . .*
 
@@ -130,10 +134,6 @@ Executing parse.sh: Success
 ---
 ### Making sure no commas exist in either file . . .
 
-&#9989;	No Commas in metadata.tsv.gz
-
-&#9989;	No Commas in data.tsv.gz
-
 #### Results: PASS
 ---
 ### Comparing samples in both files . . .
@@ -142,8 +142,4 @@ Executing parse.sh: Success
 
 #### Results: PASS
 
----
-### Testing Directory after cleanup . . .
-
-#### Results: PASS
 ---
