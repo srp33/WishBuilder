@@ -6,9 +6,13 @@
 
 #### Results: PASS
 ---
-### Testing Description File . . .
+### Testing Configuration File . . .
+
+&#9989;	config.yaml contains all necessary configurations.
 
 &#9989;	Title is less than 100 characters
+
+&#9989;	description.md contains a description.
 
 #### Results: PASS
 ---
@@ -34,6 +38,8 @@ Executing install.sh: Success
 &#9989;	cleanup.sh exists.
 
 &#9989;	description.md exists.
+
+&#9989;	config.yaml exists.
 
 *Running user code . . .*
 
@@ -110,15 +116,15 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No").
+<font color=orange>&#9888;</font>	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#10060;	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No").
+<font color=orange>&#9888;</font>	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#10060;	The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
+<font color=orange>&#9888;</font>	The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#10060;	The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy").
+<font color=orange>&#9888;</font>	The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz
 
-&#10060;	The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No").
+<font color=orange>&#9888;</font>	The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz
 
 &#9989;	Row 1: Success
 
@@ -136,7 +142,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Making sure no commas exist in either file . . .
 
