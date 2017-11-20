@@ -59,3 +59,8 @@
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	no	|
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	no	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	no	|
+|	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	no	|
+|	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	no	|
+|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	no	|
+|	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	no	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	no	|

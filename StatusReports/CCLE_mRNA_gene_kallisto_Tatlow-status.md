@@ -1,4 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
+<h2><center> Status: In Progress </center></h2>
+
 
 ### Testing Directory . . .
 
@@ -143,4 +145,35 @@ Executing parse.sh: Success
 <p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
 
 #### Results: **<font color="orange">WARNED</font>**
+---
+### Comparing samples in both files . . .
+
+&#10060;	 Sample "MOLT-3" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "SNB75" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "SF539" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "HOP-62" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "WM983B" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "EKVX" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "UO-31" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "SF268" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "HOP-92" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 More errors are not being printed...
+
+<font color="red">Total sample mismatch errors: 11</font>
+
+#### Results: **<font color="red">FAIL</font>**
+
+---
+### Testing Directory after cleanup . . .
+
+#### Results: PASS
 ---
