@@ -28,8 +28,7 @@ metaDataOutFilePrefix=$metaDataOutFiles/LINCS_PhaseII_Level5_sig_id_group_metada
 expressionDataOutFilePrefix=$expressionDataOutFiles/LINCS_PhaseII_Level5_sig_id_group_expression_data_
 tmpHeaderFile=$createdFilesFolder/header.txt
 dataOutFile=data.tsv.gz
-metadataOutFile=$createdFilesFolder/tmp_metadata.tsv.gz
-finalMetadataOutFile=metadata.tsv.gz
+metadataOutFile=metadata.tsv.gz
 
 #Other Metadata files that are included in final output
 cellInfo=$redirectedTempFolder/GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz
@@ -48,26 +47,7 @@ mkdir -p $expressionDataOutFiles
 #miniconda is used to store panda software in environments need to activate environment
 echo "Setting up environment"
 cd $minicondaPath
-source activate my_cmapPy_env
+source activate lincs_env
 cd ../../..
 
-#Change format of Sig_info
-echo "Creating adjusted sig info file"
-python parse_scripts/adjust_sig_info.py $sigFileName $tempSigFileName
-
-#Creates the parallel execution File
-echo "Preparing for parallel execution"
-python parse_scripts/prep.py $tempSigFileName $gctxFileName $parallelFile $metaDataOutFilePrefix $expressionDataOutFilePrefix $tmpHeaderFile $geneFile $dataOutFile $metadataOutFile
-
-#Executes in Parallel
-echo "parallel executing"
-$parallelCommand --jobs 8 --tmpdir $redirectedTempFolder < $parallelFile
-
-#Merges files that were created in Parallel
-echo "merging"
-cat $expressionDataOutFilePrefix* >> $dataOutFile
-cat $metaDataOutFilePrefix* >> $metadataOutFile
-
-#Expands metadata.tsv.gz with files GSE92742_Broad_LINCS_cell_info.txt.gz, GSE92742_Broad_LINCS_pert_info.txt.gz, and GSE92742_Broad_LINCS_pert_metrics.txt.gz
-echo "matching additional metadata info to metadata.tsv.gz"
-python parse_scripts/adjustMetadata.py $metadataOutFile $finalMetadataOutFile $cellInfo $pertInfo $sigMetrics
+python parse.py $sigFileName $gctxFileName $metadataOutFile $dataOutFile $geneFile $cellInfo $pertInfo $sigMetrics
