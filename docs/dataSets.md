@@ -62,3 +62,6 @@
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	no	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	no	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	no	|
+|	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	no	|
+|	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	no	|
+|	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	no	|

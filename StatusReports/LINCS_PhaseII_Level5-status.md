@@ -6,9 +6,13 @@
 
 #### Results: PASS
 ---
-### Testing Description File . . .
+### Testing Configuration File . . .
+
+&#9989;	config.yaml contains all necessary configurations.
 
 &#9989;	Title is less than 100 characters
+
+&#9989;	description.md contains a description.
 
 #### Results: PASS
 ---
@@ -34,6 +38,8 @@ Executing install.sh: Success
 &#9989;	cleanup.sh exists.
 
 &#9989;	description.md exists.
+
+&#9989;	config.yaml exists.
 
 *Running user code . . .*
 
@@ -62,19 +68,19 @@ Executing parse.sh: Success
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|	Sample	|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
+|		|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
 |	---	|	---	|	---	|	---	|	---	|
-|	LJP005_A375_24H:A03	|	-0.154526472092	|	-1.16547966003	|	0.188776731491	|	-0.402407795191	|
-|	LJP005_A375_24H:A04	|	0.113874211907	|	-0.88341575861	|	-0.366105437279	|	0.392237842083	|
-|	LJP005_A375_24H:A05	|	-0.0382520332932	|	-0.18391340971	|	0.925739884377	|	0.0286308526993	|
-|	LJP005_A375_24H:A06	|	0.466993302107	|	-0.584318578243	|	-0.301697105169	|	0.594861209393	|
+|	REP.A001_A375_24H:A03	|	4.26414251328	|	0.0572491958737	|	-1.01247990131	|	0.308898389339	|
+|	REP.A001_A375_24H:A04	|	-0.382210791111	|	0.304313182831	|	-0.674991726875	|	-0.335931241512	|
+|	REP.A001_A375_24H:A05	|	-0.571710944176	|	-0.754998862743	|	0.414515376091	|	-0.502323210239	|
+|	REP.A001_A375_24H:A06	|	0.584376096725	|	-0.589973151684	|	-0.227603152394	|	-1.7752468586	|
 
-**Columns: 12329 Rows: 23601**
+**Columns: 12329 Rows: 118051**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#9989;	First column of file is titled "Sample"
+&#10060;	First column of file must be titled "Sample"
 
 &#9989;	Row 1: Success
 
@@ -116,16 +122,12 @@ Executing parse.sh: Success
 |	LJP005_A375_24H:A03	|	distil_ss	|	2.45357	|
 |	LJP005_A375_24H:A03	|	tas	|	0.150663	|
 
-**Columns: 3 Rows: 575205**
+**Columns: 3 Rows: 2891271**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-&#10060;	All values for variable "donor_ethnicity" for all samples are the same ("Caucasian").
-
-&#10060;	All values for variable "precursor_cell_id" for all samples are the same ("NPC").
 
 &#9989;	Row 1: Success
 
@@ -199,43 +201,34 @@ Executing parse.sh: Success
 
 &#9989;	Row 35: Success
 
-&#10060;	Row 36: Fail
-- "XPR002_YAPC.311_96H:N12	pert_id	BRDN0000735469" is not found.
+&#9989;	Row 36: Success
 
-&#10060;	Row 37: Fail
-- "XPR002_YAPC.311_96H:N12	pert_iname	ACLY" is not found.
+&#9989;	Row 37: Success
 
-&#10060;	Row 38: Fail
-- "XPR002_YAPC.311_96H:N12	cell_id	YAPC.311" is not found.
+&#9989;	Row 38: Success
 
-&#10060;	Row 39: Fail
-- "XPR002_YAPC.311_96H:N12	pert_itime	96 h" is not found.
+&#9989;	Row 39: Success
 
-&#10060;	Row 40: Fail
-- "XPR002_YAPC.311_96H:N12	distil_cc_q75	0.29" is not found.
+&#9989;	Row 40: Success
 
 &#10060;	Row 41: Fail
 - "XPR002_YAPC.311_96H:N12	distil_nsample	3.04514" is not found.
 
-&#10060;	Row 42: Fail
-- "XPR002_YAPC.311_96H:N12	tas	0.137759" is not found.
+&#9989;	Row 42: Success
 
-&#10060;	Row 43: Fail
-- "XPR002_YAPC.311_96H:N12	distil_nsample	2" is not found.
+&#9989;	Row 43: Success
 
-&#10060;	Row 44: Fail
-- "XPR002_YAPC.311_96H:N12	cell_type	cell line" is not found.
+&#9989;	Row 44: Success
 
-&#10060;	Row 45: Fail
-- "XPR002_YAPC.311_96H:N12	donor_sex	M" is not found.
+&#9989;	Row 45: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
-### Making sure no commas exist in either file . . .
+### Checking Files for commas . . .
 
-&#10060;	Comma(s) exist in "metadata.tsv.gz"
+<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 

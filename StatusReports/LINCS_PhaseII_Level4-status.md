@@ -50,15 +50,8 @@ Executing parse.sh:
 &#10060;	parse.sh returned an error:
 ~~~bash
 Traceback (most recent call last):
-  File "parse.py", line 14, in <module>
-    f = h5py.File(gctxFileName, "r")
-  File "/app/WishBuilder/testDirectory/Software/miniconda/envs/lincs_env/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
-    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
-  File "/app/WishBuilder/testDirectory/Software/miniconda/envs/lincs_env/lib/python2.7/site-packages/h5py/_hl/files.py", line 92, in make_fid
-    fid = h5f.open(name, flags, fapl=fapl)
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/home/ilan/minonda/conda-bld/work/h5py/_objects.c:2696)
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/home/ilan/minonda/conda-bld/work/h5py/_objects.c:2654)
-  File "h5py/h5f.pyx", line 76, in h5py.h5f.open (/home/ilan/minonda/conda-bld/work/h5py/h5f.c:1942)
-IOError: Unable to open file (Unable to open file: name = 'tmp/lincs_phaseii_level5.gctx', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+  File "parse.py", line 12, in <module>
+    sigMetrics = sys.argv[8]
+IndexError: list index out of range
 ~~~
 
