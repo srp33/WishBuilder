@@ -6,14 +6,20 @@
     position:relative;
     display: none;
 }
-#table-scroll {
+.table-scroll {
     width: auto;
     height: -webkit-fill-available;
     overflow-x: auto;
     overflow-y: auto;
     margin-top:20px;
     display: grid;
+    transform:rotateX(180deg);
 }
+
+.table-scroll table {
+    transform:rotateX(180deg);
+}
+
 #table-wrapper table {
     width:100%;
 
