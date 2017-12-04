@@ -4,7 +4,7 @@
 - CCLE_mRNA_isoform_kallisto_Tatlow
 
 ### In Progress
-<div id="table-scroll" markdown = "block">
+<div id="table-scroll" markdown = "block" max-width="100%">
 
 | Data Set  | User  | Status | Date |   Time Elapsed    |   Samples |   Meta Data Variables |   Feature Variables   |
 | --------  | ----  | ------ | ---- |   ------------    |   ------- |   ------------------- |   -----------------   |
