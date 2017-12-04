@@ -5,8 +5,8 @@
 
 ### In Progress
 
-| Data Set  | User  | Status | Date |   Time Elapsed    |
-| --------  | ----  | ------ | ---- |   ------------    |
+| Data Set  | User  | Status | Date |   Time Elapsed    |   Samples |   Meta Data Variables |   Feature Variables   |
+| --------  | ----  | ------ | ---- |   ------------    |   ------- |   ------------------- |   -----------------   |
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	N/A	|
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	N/A	|
 |	[BiomarkerBenchmark_GSE27279]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27279-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27279-status)	|	N/A	|
