@@ -116,9 +116,9 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Oncomap" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Hybrid Capture Sequencing" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Oncomap" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -137,12 +137,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 #### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 
