@@ -6,8 +6,9 @@
     position:relative;
   }
   #table-scroll {
-    height:150px;
-    overflow:auto;  
+    width: 300px;
+    overflow-x: auto;
+    overflow-y: 800px;
     margin-top:20px;
   }
   #table-wrapper table {
