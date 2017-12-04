@@ -72,3 +72,4 @@
 
 </div>|	[BiomarkerBenchmark_GSE26682_U133PLUS2]({site.url}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[In Progress]({site.url}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	12/04/17	|	00h:00m:10s	|
 |	[BiomarkerBenchmark_GSE26682_U133PLUS2]({site.url}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[In Progress]({site.url}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	12/04/17	|	00h:00m:08s	|
+|	[BiomarkerBenchmark_GSE26682_U133A]({site.url}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[In Progress]({site.url}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	12/04/17	|	00h:00m:07s	|
