@@ -4,7 +4,7 @@
 - CCLE_mRNA_isoform_kallisto_Tatlow
 
 ### In Progress
-<div id="table-wrapper">
+<div id="table-wrapper" markdown="block">
 | Data Set  | User  | Status | Date |   Time Elapsed    |   Samples |   Meta Data Variables |   Feature Variables   |
 | --------  | ----  | ------ | ---- |   ------------    |   ------- |   ------------------- |   -----------------   |
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	N/A	|
