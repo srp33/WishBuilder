@@ -4,7 +4,6 @@
 - CCLE_mRNA_isoform_kallisto_Tatlow
 
 ### In Progress
-<div id="table-wrapper">
 <div id="table-scroll" markdown = "block">
 
 | Data Set  | User  | Status | Date |   Time Elapsed    |   Samples |   Meta Data Variables |   Feature Variables   |
@@ -71,5 +70,4 @@
 |	[BiomarkerBenchmark_GSE27279]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27279-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27279-status)	|	N/A	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	N/A	|
 
-</div>
 </div>
