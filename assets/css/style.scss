@@ -8,10 +8,11 @@
 }
 #table-scroll {
     width: auto;
-    height: 700px;
+    height: -webkit-fill-available;
     overflow-x: auto;
     overflow-y: auto;
     margin-top:20px;
+    display: inline-table
 }
 #table-wrapper table {
     width:100%;
