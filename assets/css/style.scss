@@ -8,11 +8,11 @@
 }
 .table-scroll {
     width: auto;
-    height: -webkit-fill-available;
+    height: 500px;
     overflow-x: auto;
     overflow-y: auto;
     margin-top:20px;
-    display: grid;
+    display: flex;
 }
 
 #table-wrapper table {
