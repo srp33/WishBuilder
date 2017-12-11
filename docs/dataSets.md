@@ -72,3 +72,4 @@
 |	[BiomarkerBenchmark_GSE2109_Uterus]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Uterus-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Uterus-status)	|	12/04/17	|	00h:00m:10s	|
 |	[BiomarkerBenchmark_GSE2109_Uterus]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Uterus-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Uterus-status)	|	12/04/17	|	00h:00m:08s	|	0	|	0	|	0	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	12/04/17	|	00h:08m:24s	|	922	|	11	|	199169	|
+|	[BiomarkerBenchmark_GSE2109_Uterus]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Uterus-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Uterus-status)	|	12/11/17	|	00h:00m:05s	|	0	|	0	|	0	|
