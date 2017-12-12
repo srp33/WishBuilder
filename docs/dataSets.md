@@ -68,3 +68,5 @@
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	12/12/17	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	12/12/17	|	00h:00m:21s	|	260	|	36	|	20024	|
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	12/12/17	|	00h:00m:32s	|	247	|	23	|	20024	|
+|	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	12/12/17	|	00h:06m:58s	|	741	|	1	|	23368	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	12/12/17	|	00h:05m:47s	|	741	|	1	|	23368	|
