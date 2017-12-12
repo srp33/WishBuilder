@@ -55,7 +55,15 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
+&#10060;	Row 3 of "test_data.tsv" should contain exactly three columns.
+
+&#10060;	Row 5 of "test_data.tsv" should contain exactly three columns.
+
 &#9989;	test_data.tsv contains enough unique samples to test
+
+&#10060;	"GSM125237" does not have enough features to test (min: 2)
+
+&#10060;	"GSM506268" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
@@ -63,7 +71,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -110,19 +118,15 @@ Executing parse.sh: Success
 |	---	|	---	|	---	|
 |	GSM125124	|	ID	|	10B	|
 |	GSM125124	|	Treatment_Status	|	Letrozole, 2.5mg/day,oral, 10-14 days	|
-|	GSM125124	|	Sex	|	female	|
-|	GSM125124	|	Tissue_Type	|	breast tumor	|
+|	GSM125124	|	Treatment_Response	|	responder	|
+|	GSM125126	|	ID	|	11B	|
 
-**Columns: 3 Rows: 712**
+**Columns: 3 Rows: 496**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Sex" for all samples is the same ("female"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Tissue_Type" for all samples is the same ("breast tumor"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -141,12 +145,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 #### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 

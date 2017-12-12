@@ -109,24 +109,18 @@ Executing parse.sh: Success
 |	GSM38071	|	Ethnic_Background	|	Caucasian	|
 |	GSM38071	|	Family_History_of_Cancer	|	Yes	|
 
-**Columns: 3 Rows: 2317**
+**Columns: 3 Rows: 2211**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Ovary"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Grade" for all samples is the same ("1"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Type_of_Tobacco_Use" for all samples is the same ("Cigarettes"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_M" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Ovary"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -145,12 +139,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 #### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 

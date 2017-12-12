@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE2109_Breast</center></h1>
-<h2><center> Status: Complete </center></h2>
+<h2><center> Status: In Progress </center></h2>
 
 
 ### Testing Directory . . .
@@ -109,24 +109,23 @@ Executing parse.sh: Success
 |	GSM38051	|	Ethnic_Background	|	Caucasian	|
 |	GSM38051	|	Family_History_of_Cancer	|	No	|
 
-**Columns: 3 Rows: 5970**
+**Columns: 3 Rows: 5881**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_M" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Metastatic_Sites" for all samples is the same ("Pulmonary"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Type_of_Tobacco_Use" for all samples is the same ("Cigarettes"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_M" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
-&#9989;	Row 2: Success
+&#10060;	Row 2: Fail
+- "GSM38051	Type_of_Tobacco_Use	Cigarettes" is not found.
 
 &#9989;	Row 3: Success
 
@@ -140,11 +139,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 

@@ -59,23 +59,23 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#9989;	test_metadata.tsv contains enough unique samples to test
+&#10060;	Row 1 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM152660       Tobacco_Use" does not have enough features to test (min: 2)
+&#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM38067        Alcohol_Consumption" does not have enough features to test (min: 2)
+&#10060;	Row 3 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM76649        Tobacco_Use" does not have enough features to test (min: 2)
+&#10060;	Row 4 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM152660       Alcohol_Consumption" does not have enough features to test (min: 2)
+&#10060;	Row 5 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM38084        Alcohol_Consumption" does not have enough features to test (min: 2)
+&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM76649        Alcohol_Consumption" does not have enough features to test (min: 2)
+&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM38084        Tobacco_Use" does not have enough features to test (min: 2)
+&#10060;	Row 8 of "test_metadata.tsv" should contain exactly three columns.
 
-&#10060;	"GSM38067        Tobacco_Use" does not have enough features to test (min: 2)
+&#10060;	test_metadata.tsv does not contain enough unique samples to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
@@ -125,30 +125,20 @@ Executing parse.sh: Success
 |	GSM38067	|	Ethnic_Background	|	Caucasian	|
 |	GSM38067	|	Family_History_of_Cancer	|	No	|
 
-**Columns: 3 Rows: 719**
+**Columns: 3 Rows: 661**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
+
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Histology" for all samples is the same ("Endometrioid carcinoma"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Type_of_Tobacco_Use" for all samples is the same ("Cigarettes"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Endometrium"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_N" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
 &#10060;	Row 1: Fail
 - "GSM38067        Alcohol_Consumption	Yes" is not found.
@@ -175,10 +165,6 @@ Executing parse.sh: Success
 - "GSM76649        Tobacco_Use	No" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 

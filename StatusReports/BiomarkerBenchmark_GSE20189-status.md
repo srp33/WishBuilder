@@ -55,7 +55,11 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
+&#10060;	Row 5 of "test_data.tsv" should contain exactly three columns.
+
 &#9989;	test_data.tsv contains enough unique samples to test
+
+&#10060;	"GSM506584" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
@@ -137,10 +141,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 &#9989;	Row 9: Success
-
-#### Results: PASS
----
-### Making sure no commas exist in either file . . .
 
 #### Results: PASS
 ---

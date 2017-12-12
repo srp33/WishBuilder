@@ -142,10 +142,6 @@ Executing parse.sh: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
----
 ### Comparing samples in both files . . .
 
 &#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"

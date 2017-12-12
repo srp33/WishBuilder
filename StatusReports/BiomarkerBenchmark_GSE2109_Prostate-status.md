@@ -109,7 +109,7 @@ Executing parse.sh: Success
 |	GSM38079	|	Cancer_discovered_by_digital_exam	|	Yes	|
 |	GSM38079	|	Days_from_Patient_Diagnosis_to_Excision	|	21	|
 
-**Columns: 3 Rows: 1426**
+**Columns: 3 Rows: 1329**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -117,14 +117,6 @@ Executing parse.sh: Success
 &#9989;	First column of file is titled "Sample"
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Current_status_of_disease" for all samples is the same ("Under Therapy"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -143,12 +135,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 #### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 

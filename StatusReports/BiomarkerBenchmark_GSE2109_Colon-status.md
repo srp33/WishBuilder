@@ -109,30 +109,22 @@ Executing parse.sh: Success
 |	GSM38055	|	Diagnosis_made_by	|	Colonoscopy	|
 |	GSM38055	|	Ethnic_Background	|	Caucasian	|
 
-**Columns: 3 Rows: 4920**
+**Columns: 3 Rows: 4770**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_T" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_M" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage" for all samples is the same ("1"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Grade" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_N" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Dukes_Stage" for all samples is the same ("A"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Grade" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Stage_During_or_Following_Multimodality_Therapy" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_T" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Dukes_Stage" for all samples is the same ("A"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -149,10 +141,6 @@ Executing parse.sh: Success
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
-
-#### Results: PASS
----
-### Making sure no commas exist in either file . . .
 
 #### Results: PASS
 ---
