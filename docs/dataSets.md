@@ -70,3 +70,4 @@
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	12/12/17	|	00h:00m:32s	|	247	|	23	|	20024	|
 |	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	12/12/17	|	00h:06m:58s	|	741	|	1	|	23368	|
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	12/12/17	|	00h:05m:47s	|	741	|	1	|	23368	|
+|	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	12/12/17	|	00h:19m:28s	|	922	|	9	|	199169	|
