@@ -1,6 +1,6 @@
 SampleID	Variable	Value
 GSM38051	Alcohol_Consumption	Yes
-GSM38051	Type_of_Tobacco_Use	Cigarettes
+GSM38051	Tobacco_Use	Yes
 GSM38062	Alcohol_Consumption	Yes
 GSM38062	Tobacco_Use	No
 GSM231892	Alcohol_Consumption	No
