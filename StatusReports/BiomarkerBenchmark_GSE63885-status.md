@@ -61,9 +61,9 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"GSM1559301" does not have enough features to test (min: 2)
-
 &#10060;	"GSM1559394" does not have enough features to test (min: 2)
+
+&#10060;	"GSM1559301" does not have enough features to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
@@ -140,10 +140,6 @@ Executing parse.sh: Success
 - "GSM1559394	brca1_mutation	no mutation" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 

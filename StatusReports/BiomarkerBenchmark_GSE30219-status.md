@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE30219</center></h1>
-<h2><center> Status: Complete </center></h2>
+<h2><center> Status: In Progress </center></h2>
 
 
 ### Testing Directory . . .
@@ -109,36 +109,34 @@ Executing parse.sh: Success
 |	GSM748053	|	follow-up_time_months	|	121	|
 |	GSM748053	|	gender	|	F	|
 
-**Columns: 3 Rows: 3110**
+**Columns: 3 Rows: 2825**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "tissue" for all samples is the same ("lung tumour"). This variable has been removed from metadata.tsv.gz</p>
-
 &#9989;	Row 1: Success
 
-&#9989;	Row 2: Success
+&#10060;	Row 2: Fail
+- "GSM1465989	tissue	lung tumour" is not found.
 
 &#9989;	Row 3: Success
 
-&#9989;	Row 4: Success
+&#10060;	Row 4: Fail
+- "GSM1465990	tissue	lung tumour" is not found.
 
 &#9989;	Row 5: Success
 
-&#9989;	Row 6: Success
+&#10060;	Row 6: Fail
+- "GSM748160	tissue	lung tumour" is not found.
 
 &#9989;	Row 7: Success
 
-&#9989;	Row 8: Success
+&#10060;	Row 8: Fail
+- "GSM748174	tissue	lung tumour" is not found.
 
-#### Results: PASS
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 

@@ -134,12 +134,6 @@ Executing parse.sh: Success
 
 #### Results: PASS
 ---
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
----
 ### Comparing samples in both files . . .
 
 &#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"

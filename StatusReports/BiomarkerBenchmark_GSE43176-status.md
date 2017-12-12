@@ -107,16 +107,14 @@ Executing parse.sh: Success
 |	GSM1057836	|	cytogenetics	|	45,X,-Y,t(8;21)(q22;q22),del(10)(p14)	|
 |	GSM1057836	|	disease_state	|	AML	|
 |	GSM1057836	|	fab	|	M4E	|
-|	GSM1057836	|	kras_status	|	KRAS wild type	|
+|	GSM1057836	|	nras_status	|	NRAS wild type	|
 
-**Columns: 3 Rows: 614**
+**Columns: 3 Rows: 514**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "kras_status" for all samples is the same ("KRAS wild type"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "disease_state" for all samples is the same ("AML"). This variable has been removed from metadata.tsv.gz</p>
 
@@ -138,12 +136,6 @@ Executing parse.sh: Success
 &#9989;	Row 8: Success
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 

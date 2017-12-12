@@ -59,11 +59,19 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
+&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
+
+&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
+
+&#10060;	Row 8 of "test_metadata.tsv" should contain exactly three columns.
+
 &#9989;	test_metadata.tsv contains enough unique samples to test
+
+&#10060;	"GSM1656050" does not have enough features to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -137,10 +145,6 @@ Executing parse.sh: Success
 - "GSM1656051	V30M_Carrier" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 

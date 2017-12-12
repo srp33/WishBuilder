@@ -109,18 +109,12 @@ Executing parse.sh: Success
 |	GSM971957	|	chemotherapy.adjuvant	|	N	|
 |	GSM971957	|	cimp.status	|	-	|
 
-**Columns: 3 Rows: 12047**
+**Columns: 3 Rows: 11972**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "braf.mutation.exon.number" for all samples is the same ("c.1799T>A"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "braf.mutation.protein" for all samples is the same ("p.V600E"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "braf.mutation.dna" for all samples is the same ("c.1799T>A"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -142,10 +136,6 @@ Executing parse.sh: Success
 - "GSM972126	tumor.location	proximal" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
----
-### Making sure no commas exist in either file . . .
-
-#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
