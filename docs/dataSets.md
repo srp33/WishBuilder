@@ -72,3 +72,4 @@
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	12/12/17	|	00h:05m:47s	|	741	|	1	|	23368	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	12/12/17	|	00h:19m:28s	|	922	|	9	|	199169	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	12/14/17	|	00h:00m:22s	|	317	|	17	|	11832	|
+|	[BiomarkerBenchmark_GSE67784]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE67784-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE67784-status)	|	12/14/17	|	00h:00m:27s	|	263	|	4	|	21614	|
