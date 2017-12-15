@@ -49,3 +49,4 @@
 |	[BiomarkerBenchmark_GSE25507]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE25507-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE25507-status)	|	12/15/17	|	00h:00m:22s	|	130	|	5	|	20024	|
 |	[BiomarkerBenchmark_GSE27854]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27854-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27854-status)	|	12/15/17	|	00h:00m:16s	|	113	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE27342]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27342-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27342-status)	|	12/15/17	|	00h:00m:23s	|	155	|	5	|	16632	|
+|	[BiomarkerBenchmark_GSE27279]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27279-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27279-status)	|	12/15/17	|	00h:00m:21s	|	100	|	3	|	16632	|
