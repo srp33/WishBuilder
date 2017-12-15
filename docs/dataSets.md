@@ -60,3 +60,4 @@
 |	[BiomarkerBenchmark_GSE2109_Endometrium]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Endometrium-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Endometrium-status)	|	12/15/17	|	00h:00m:18s	|	51	|	17	|	20024	|
 |	[BiomarkerBenchmark_GSE2109_Kidney]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Kidney-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Kidney-status)	|	12/15/17	|	00h:00m:33s	|	209	|	25	|	20024	|
 |	[BiomarkerBenchmark_GSE20189]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20189-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20189-status)	|	12/15/17	|	00h:00m:14s	|	162	|	4	|	11832	|
+|	[BiomarkerBenchmark_GSE20181]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20181-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20181-status)	|	12/15/17	|	00h:00m:19s	|	165	|	3	|	11832	|
