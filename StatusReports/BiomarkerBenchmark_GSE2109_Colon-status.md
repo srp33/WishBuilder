@@ -118,13 +118,13 @@ Executing parse.sh: Success
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Stage" for all samples is the same ("1"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_N" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Grade" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Dukes_Stage" for all samples is the same ("A"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_T" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Dukes_Stage" for all samples is the same ("A"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_N" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Clinical_Grade" for all samples is the same ("2"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
