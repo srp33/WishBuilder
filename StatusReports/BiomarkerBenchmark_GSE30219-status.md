@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE30219</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -118,25 +118,21 @@ Executing parse.sh: Success
 
 &#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "GSM1465989	tissue	lung tumour" is not found.
+&#9989;	Row 2: Success
 
 &#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "GSM1465990	tissue	lung tumour" is not found.
+&#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "GSM748160	tissue	lung tumour" is not found.
+&#9989;	Row 6: Success
 
 &#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "GSM748174	tissue	lung tumour" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
