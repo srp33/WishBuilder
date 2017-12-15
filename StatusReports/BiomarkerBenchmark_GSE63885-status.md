@@ -61,9 +61,9 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"GSM1559394" does not have enough features to test (min: 2)
-
 &#10060;	"GSM1559301" does not have enough features to test (min: 2)
+
+&#10060;	"GSM1559394" does not have enough features to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
