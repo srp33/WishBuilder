@@ -116,11 +116,11 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Ovary"). This variable has been removed from metadata.tsv.gz</p>
+
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Grade" for all samples is the same ("1"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Ovary"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
