@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM125127	ID	12A
+GSM125127	Treatment_Response	responder
+GSM125129	ID	13A
+GSM125129	Treatment_Response	responder
+GSM125235	ID	8A
+GSM125235	Treatment_Response	nonresponder
+GSM125237	ID	9A
+GSM125237	Treatment_Response	responder
