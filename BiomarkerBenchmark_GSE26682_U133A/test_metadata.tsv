@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM656544	age	76
+GSM656544	microsatellite_instability_msi_status	Stable [MSS]
+GSM656547	age	68
+GSM656547	microsatellite_instability_msi_status	Stable [MSS]
+GSM656829	age	70
+GSM656829	microsatellite_instability_msi_status	High [MSI-H]
+GSM656835	age	76
+GSM656835	microsatellite_instability_msi_status	Stable [MSS]
