@@ -55,11 +55,7 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 5 of "test_data.tsv" should contain exactly three columns.
-
 &#9989;	test_data.tsv contains enough unique samples to test
-
-&#10060;	"GSM506584" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
@@ -88,8 +84,6 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 5 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
@@ -98,7 +92,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - Sample "GSM506584" is not found in data.tsv.gz
+&#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
 
@@ -106,7 +100,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
