@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1134064	gleason_score	7
+GSM1134064	metastatic_event	1
+GSM1134065	gleason_score	6
+GSM1134065	metastatic_event	0
+GSM1134607	gleason_score	9
+GSM1134607	metastatic_event	1
+GSM1134608	gleason_score	6
+GSM1134608	metastatic_event	0
