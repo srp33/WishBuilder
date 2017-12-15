@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE2109_Endometrium</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -59,27 +59,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 1 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 3 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 4 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 5 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 8 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	test_metadata.tsv does not contain enough unique samples to test (min: 2)
+&#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -132,39 +116,31 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Histology" for all samples is the same ("Endometrioid carcinoma"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Primary_Site" for all samples is the same ("Endometrium"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Pathological_Multiple_Tumors" for all samples is the same ("No"). This variable has been removed from metadata.tsv.gz</p>
 
-&#10060;	Row 1: Fail
-- "GSM38067        Alcohol_Consumption	Yes" is not found.
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Ethnic_Background" for all samples is the same ("Caucasian"). This variable has been removed from metadata.tsv.gz</p>
 
-&#10060;	Row 2: Fail
-- "GSM38067        Tobacco_Use	No" is not found.
+&#9989;	Row 1: Success
 
-&#10060;	Row 3: Fail
-- "GSM38084        Alcohol_Consumption	No" is not found.
+&#9989;	Row 2: Success
 
-&#10060;	Row 4: Fail
-- "GSM38084        Tobacco_Use	No" is not found.
+&#9989;	Row 3: Success
 
-&#10060;	Row 5: Fail
-- "GSM152660       Alcohol_Consumption	Yes" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 6: Fail
-- "GSM152660       Tobacco_Use	No" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 7: Fail
-- "GSM76649        Alcohol_Consumption	No" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 8: Fail
-- "GSM76649        Tobacco_Use	No" is not found.
+&#9989;	Row 7: Success
 
-#### Results: **<font color="red">FAIL</font>**
+&#9989;	Row 8: Success
+
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
