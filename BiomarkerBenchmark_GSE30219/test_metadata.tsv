@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1465989	age_at_surgery	60
+GSM1465989	disease_free_survival_in_months	221
+GSM1465990	age_at_surgery	52
+GSM1465990	follow-up_time_months	11
+GSM748160	age_at_surgery	63
+GSM748160	disease_free_survival_in_months	216
+GSM748174	age_at_surgery	81
+GSM748174	disease_free_survival_in_months	14
