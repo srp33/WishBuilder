@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE63885</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -130,15 +130,13 @@ Executing parse.sh: Success
 
 &#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "GSM1559399	dfs_-_disease-free_survival_[days]	clearcell ovarian ca." is not found.
+&#9989;	Row 8: Success
 
-&#10060;	Row 9: Fail
-- "GSM1559394	dfs_-_disease-free_survival_[days]	clearcell ovarian ca." is not found.
+&#9989;	Row 9: Success
 
 &#9989;	Row 10: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
