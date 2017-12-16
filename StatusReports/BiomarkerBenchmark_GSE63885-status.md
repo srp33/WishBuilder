@@ -61,13 +61,9 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"GSM1559301" does not have enough features to test (min: 2)
+&#9989;	test_metadata.tsv contains enough test cases (10; min: 8)
 
-&#10060;	"GSM1559394" does not have enough features to test (min: 2)
-
-&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -128,16 +124,19 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "GSM1559301	adjuwant_chemotherapy	taxane/platinum no mutation" is not found.
+&#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "GSM1559399	tp53_accumulation_in_cancer_cells_assesed_by_immunohistochemistry	no accumulation" is not found.
+&#9989;	Row 7: Success
 
 &#10060;	Row 8: Fail
-- "GSM1559394	brca1_mutation	no mutation" is not found.
+- "GSM1559399	dfs_-_disease-free_survival_[days]	clearcell ovarian ca." is not found.
+
+&#10060;	Row 9: Fail
+- "GSM1559394	dfs_-_disease-free_survival_[days]	clearcell ovarian ca." is not found.
+
+&#9989;	Row 10: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
