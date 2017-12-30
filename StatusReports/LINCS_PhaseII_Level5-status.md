@@ -61,14 +61,14 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (45; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (44; min: 8)
 
 #### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|		|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
+|	Sample	|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
 |	---	|	---	|	---	|	---	|	---	|
 |	REP.A001_A375_24H:A03	|	4.26414251328	|	0.0572491958737	|	-1.01247990131	|	0.308898389339	|
 |	REP.A001_A375_24H:A04	|	-0.382210791111	|	0.304313182831	|	-0.674991726875	|	-0.335931241512	|
@@ -80,7 +80,7 @@ Executing parse.sh: Success
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	First column of file must be titled "Sample"
+&#9989;	First column of file is titled "Sample"
 
 &#9989;	Row 1: Success
 
@@ -151,8 +151,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 11: Success
 
-&#10060;	Row 12: Fail
-- "LJP007_HUES3_24H:E15	pert_itime	24 h" is not found.
+&#9989;	Row 12: Success
 
 &#9989;	Row 13: Success
 
@@ -182,10 +181,10 @@ Executing parse.sh: Success
 
 &#9989;	Row 26: Success
 
-&#9989;	Row 27: Success
-
-&#10060;	Row 28: Fail
+&#10060;	Row 27: Fail
 - "LJP005_A375_24H:A03	distil_nsample	3" is not found.
+
+&#9989;	Row 28: Success
 
 &#9989;	Row 29: Success
 
@@ -209,10 +208,10 @@ Executing parse.sh: Success
 
 &#9989;	Row 39: Success
 
-&#9989;	Row 40: Success
-
-&#10060;	Row 41: Fail
+&#10060;	Row 40: Fail
 - "XPR002_YAPC.311_96H:N12	distil_nsample	3.04514" is not found.
+
+&#9989;	Row 41: Success
 
 &#9989;	Row 42: Success
 
@@ -220,15 +219,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 44: Success
 
-&#9989;	Row 45: Success
-
 #### Results: **<font color="red">FAIL</font>**
----
-### Checking Files for commas . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
 ---
 ### Comparing samples in both files . . .
 
