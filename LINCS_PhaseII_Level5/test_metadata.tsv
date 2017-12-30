@@ -10,7 +10,6 @@ LJP007_HUES3_24H:E15	cell_type	ESC
 LJP007_HUES3_24H:E15	original_growth_pattern	adherent
 LJP007_HUES3_24H:E15	pert_idose	1.11 um
 LJP007_HUES3_24H:E15	pert_itime	24 h
-LJP007_HUES3_24H:E15	pert_itime	24 h
 LJP005_HA1E_24H:M02	pert_id	BRD-K94176593
 LJP005_HA1E_24H:M02	distil_cc_q75	0.4
 LJP005_HA1E_24H:M02	distil_nsample	3

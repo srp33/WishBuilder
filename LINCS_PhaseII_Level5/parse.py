@@ -36,7 +36,7 @@ print("writing expression file")
 
 f = gzip.open(dataOut, 'w')
 try :
-    f.write("")
+    f.write("Sample")
     for value in colgrp["id"] :
         f.write('\t' + geneDict[value])
     f.write('\n')
@@ -90,7 +90,7 @@ sigInfo =  gzip.open(sigInfoFile, 'r')
 metaOut = gzip.open(metadataOut, 'w')
 try:
     headerList = sigInfo.readline().strip('\n').split('\t')
-    sigId = ""
+    sigId = "Sample"
     metaOut.write("Sample\tVariable\tValue\n")
     for row in sigInfo :
         rowList = row.strip('\n').split('\t')[:7]
