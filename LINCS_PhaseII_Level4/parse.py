@@ -21,7 +21,7 @@ rowgrp = subgrpMeta.require_group('/0/META/COL')
 
 subgrpData = grpname.require_group('/0/DATA')
 subsubgrpData = subgrpData.require_group('/0/DATA/0')
-
+print(subsubgrpData.items())
 
 geneDict = {}
 with gzip.open(geneFile, 'r') as f :
@@ -58,16 +58,15 @@ finally:
 
 instInfo =  gzip.open(instInfoFile, 'r')
 metaOut = gzip.open(metadataOut, 'w')
-instInfoSampleIds = []
 try:
     headerList = instInfo.readline().strip('\n').split('\t')
     sigId = ""
     metaOut.write("Sample\tVariable\tValue\n")
+    indeci = 0
     for row in instInfo :
+        indeci = indeci + 1
+        print(str(indeci) + " of 345976 molecular data")
         rowList = row.strip('\n').split('\t')
-        instInfoSampleIds.append(rowList[0])
-        if rowList[0] not in rowgrp["id"] :
-            break
         for i in range(len(rowList) - 1 ):
             if(str(rowList[i + 1]) != "-666") and (str(rowList[i + 1]) != "-666.0") :
                 metaOut.write(str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + '\n')
@@ -105,9 +104,8 @@ try :
     index = 0
     for line in subsubgrpData["matrix"] :
         a = np.asarray(line).astype(str)
-        if rowgrp["id"][index] not in instInfoSampleIds :
-            break 
         f.write(rowgrp["id"][index] + '\t' + '\t'.join(a) + '\n')
         index = index + 1 
+        print(str(index) + " of 345976 expression data")
 finally :
     f.close()
