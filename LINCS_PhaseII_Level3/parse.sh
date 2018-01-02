@@ -33,5 +33,6 @@ echo "Setting up environment"
 cd $minicondaPath
 source activate lincs_env
 cd ../../..
+pwd
 
 python parse.py $instInfoFileName $gctxFileName $metadataOutFile $dataOutFile $geneFile $cellInfo $pertInfo 
