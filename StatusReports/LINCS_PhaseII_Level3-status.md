@@ -55,7 +55,11 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
+&#10060;	Row 11 of "test_data.tsv" should contain exactly three columns.
+
 &#9989;	test_data.tsv contains enough unique samples to test
+
+&#10060;	"LJP006_A549_24H_X2_B19:J22" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (12; min: 8)
 
@@ -63,48 +67,50 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough test cases (15; min: 8)
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|		|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
+|	Sample	|	DDR1	|	PAX8	|	GUCA1A	|	EPHB3	|
 |	---	|	---	|	---	|	---	|	---	|
 |	REP.A001_A375_24H_X1_B22:A03	|	9.36979961395	|	4.41800022125	|	4.15040016174	|	6.43020009995	|
 |	REP.A001_A375_24H_X1_B22:A04	|	6.86800003052	|	5.36189985275	|	4.00960016251	|	5.30740022659	|
 |	REP.A001_A375_24H_X1_B22:A05	|	6.78369998932	|	4.17189979553	|	4.76579999924	|	5.5408000946	|
 |	REP.A001_A375_24H_X1_B22:A06	|	6.90380001068	|	4.31580018997	|	4.4060997963	|	5.52820014954	|
 
-**Columns: 12329 Rows: 7**
+**Columns: 12329 Rows: 345977**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	First column of file must be titled "Sample"
+&#9989;	First column of file is titled "Sample"
 
-&#10060;	Row: 1 - Sample "LJP009_PC3_24H_X2_B20:O08" is not found in data.tsv.gz
+&#10060;	Row 11 of "test_data.tsv" does not contain 3 columns
 
-&#10060;	Row: 2 - Sample "LJP009_PC3_24H_X2_B20:O08" is not found in data.tsv.gz
+&#9989;	Row 1: Success
 
-&#10060;	Row: 3 - Sample "LJP005_A375_24H_X1_B19:A03" is not found in data.tsv.gz
+&#9989;	Row 2: Success
 
-&#10060;	Row: 4 - Sample "LJP005_A375_24H_X1_B19:A03" is not found in data.tsv.gz
+&#9989;	Row 3: Success
 
-&#10060;	Row: 5 - Sample "LJP006_A375_24H_X1_B19:L06" is not found in data.tsv.gz
+&#9989;	Row 4: Success
 
-&#10060;	Row: 6 - Sample "LJP006_A375_24H_X1_B19:L06" is not found in data.tsv.gz
+&#9989;	Row 5: Success
 
-&#10060;	Row: 7 - Sample "REP.A028_YAPC_24H_X1_B25:G09" is not found in data.tsv.gz
+&#9989;	Row 6: Success
 
-&#10060;	Row: 8 - Sample "REP.A028_YAPC_24H_X1_B25:G09" is not found in data.tsv.gz
+&#9989;	Row 7: Success
 
-&#10060;	Row: 9 - Sample "REP.A028_YAPC_24H_X3_B25:B12" is not found in data.tsv.gz
+&#9989;	Row 8: Success
 
-&#10060;	Row: 10 - Sample "REP.A028_YAPC_24H_X3_B25:B12" is not found in data.tsv.gz
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
 
 &#10060;	Row: 11 - Sample "LJP006_A549_24H_X2_B19:J22" is not found in data.tsv.gz
 
-&#10060;	Row: 12 - Sample "LJP006_A549_24H_X2_B19:J22" is not found in data.tsv.gz
+&#9989;	Row 12: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -158,37 +164,11 @@ Executing parse.sh: Success
 
 #### Results: PASS
 ---
-### Checking Files for commas . . .
-
-<p><font color="orange" size="+2">&#9888;	</font>Comma(s) exist in "metadata.tsv.gz". This may create an issue if exported in .csv format.</p>
-
-#### Results: **<font color="orange">WARNED</font>**
----
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "REP.A017_MCF7_24H_X1_B23:L04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
 
-&#10060;	 Sample "REP.A026_A375_24H_X1_B25:C18" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP005_SKBR3_3H_X3_B17:O17" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A027_MCF7_24H_X1_B25:N03" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A016_HELA_24H_X3_B23:L14" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP006_SKBR3_3H_X1_B17:A24" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A006_PC3_24H_X2_B22:C02" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "LJP006_BT20_3H_X2_B17:K08" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "REP.A028_PC3_24H_X1_B25:O21" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 More errors are not being printed...
-
-<font color="red">Total sample mismatch errors: 345970</font>
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
