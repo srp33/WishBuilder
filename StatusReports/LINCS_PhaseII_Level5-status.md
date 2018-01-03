@@ -57,11 +57,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough unique samples to test
 
-&#9989;	test_data.tsv contains enough test cases (12; min: 8)
+&#9989;	test_data.tsv contains enough test cases (14; min: 8)
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (44; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (43; min: 8)
 
 #### Results: PASS
 ---
@@ -92,7 +92,7 @@ Executing parse.sh: Success
 
 ||	Sample	|	Column	|	Row	|
 |	---	|	---	|	---	|	---	|
-|	**Expected**	|	LJP005_HA1E_24H:M01	|	ACTB	|	0.598744034767	|
+|	**Expected**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.52239954	|
 |	**User Generated**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.522399544716	|
 
 &#9989;	Row 5: Success
@@ -110,6 +110,20 @@ Executing parse.sh: Success
 &#9989;	Row 11: Success
 
 &#9989;	Row 12: Success
+
+&#10060;	Row: 13 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	LJP007_SKL_24H:C19	|	DDR1	|	3.08069992	|
+|	**User Generated**	|	LJP007_SKL_24H:C19	|	DDR1	|	3.08069992065	|
+
+&#10060;	Row: 14 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	LJP007_SKL_24H:C19	|	ACTB	|	-0.30840001	|
+|	**User Generated**	|	LJP007_SKL_24H:C19	|	ACTB	|	-0.308400005102	|
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -181,8 +195,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 26: Success
 
-&#10060;	Row 27: Fail
-- "LJP005_A375_24H:A03	distil_nsample	3" is not found.
+&#9989;	Row 27: Success
 
 &#9989;	Row 28: Success
 
@@ -208,16 +221,14 @@ Executing parse.sh: Success
 
 &#9989;	Row 39: Success
 
-&#10060;	Row 40: Fail
-- "XPR002_YAPC.311_96H:N12	distil_nsample	3.04514" is not found.
+&#9989;	Row 40: Success
 
-&#9989;	Row 41: Success
+&#10060;	Row 41: Fail
+- "XPR002_YAPC.311_96H:N12	distil_nsample	2" is not found.
 
 &#9989;	Row 42: Success
 
 &#9989;	Row 43: Success
-
-&#9989;	Row 44: Success
 
 #### Results: **<font color="red">FAIL</font>**
 ---
