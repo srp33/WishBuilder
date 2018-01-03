@@ -55,15 +55,19 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
+&#10060;	Row 14 of "test_data.tsv" should contain exactly three columns.
+
 &#9989;	test_data.tsv contains enough unique samples to test
+
+&#10060;	"LJP007_SKL_24H:C19" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (14; min: 8)
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (43; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (42; min: 8)
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -82,18 +86,15 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
+&#10060;	Row 14 of "test_data.tsv" does not contain 3 columns
+
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
 &#9989;	Row 3: Success
 
-&#10060;	Row: 4 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.52239954	|
-|	**User Generated**	|	LJP005_HA1E_24H:M01	|	ACTB	|	-0.522399544716	|
+&#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
@@ -111,19 +112,9 @@ Executing parse.sh: Success
 
 &#9989;	Row 12: Success
 
-&#10060;	Row: 13 - FAIL
+&#9989;	Row 13: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	LJP007_SKL_24H:C19	|	DDR1	|	3.08069992	|
-|	**User Generated**	|	LJP007_SKL_24H:C19	|	DDR1	|	3.08069992065	|
-
-&#10060;	Row: 14 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	LJP007_SKL_24H:C19	|	ACTB	|	-0.30840001	|
-|	**User Generated**	|	LJP007_SKL_24H:C19	|	ACTB	|	-0.308400005102	|
+&#10060;	Row: 14 - Sample "LJP007_SKL_24H:C19" is not found in data.tsv.gz
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -223,14 +214,11 @@ Executing parse.sh: Success
 
 &#9989;	Row 40: Success
 
-&#10060;	Row 41: Fail
-- "XPR002_YAPC.311_96H:N12	distil_nsample	2" is not found.
+&#9989;	Row 41: Success
 
 &#9989;	Row 42: Success
 
-&#9989;	Row 43: Success
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
