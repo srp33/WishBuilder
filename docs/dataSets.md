@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/04/18	|	00h:00m:03s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/04/18	|	00h:00m:06s	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	01/04/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	01/04/18	|	N/A	|	0	|	0	|	0	|
@@ -61,5 +62,4 @@
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	12/14/17	|	00h:00m:22s	|	317	|	17	|	11832	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	12/12/17	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	N/A	|	N/A	|	0	|	0	|	0	|
-|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	N/A	|	N/A	|	0	|	0	|	0	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	N/A	|	N/A	|	0	|	0	|	0	|
