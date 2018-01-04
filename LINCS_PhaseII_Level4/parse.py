@@ -69,6 +69,9 @@ try:
         rowList = row.strip('\n').split('\t')
         for i in range(len(rowList) - 1 ):
             if(str(rowList[i + 1]) != "-666") and (str(rowList[i + 1]) != "-666.0") :
+                if(str(headerList[i + 1]) == "pert_time") :
+                    metaOut.write(str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + " " + str(rowList[i + 2]) + '\n')
+                    break
                 metaOut.write(str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + '\n')
                 
             if (headerList[i + 1] == "cell_id") :
