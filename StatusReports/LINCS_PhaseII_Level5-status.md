@@ -1,5 +1,5 @@
 <h1><center>LINCS_PhaseII_Level5</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -55,11 +55,7 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 14 of "test_data.tsv" should contain exactly three columns.
-
 &#9989;	test_data.tsv contains enough unique samples to test
-
-&#10060;	"LJP007_SKL_24H:C19" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (14; min: 8)
 
@@ -67,7 +63,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough test cases (42; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -85,8 +81,6 @@ Executing parse.sh: Success
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-&#10060;	Row 14 of "test_data.tsv" does not contain 3 columns
 
 &#9989;	Row 1: Success
 
@@ -114,9 +108,9 @@ Executing parse.sh: Success
 
 &#9989;	Row 13: Success
 
-&#10060;	Row: 14 - Sample "LJP007_SKL_24H:C19" is not found in data.tsv.gz
+&#9989;	Row 14: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
