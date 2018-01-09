@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE39582</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -124,18 +124,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "GSM972123	age.at.diagnosis_year	77" is not found.
+&#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "GSM972126	age.at.diagnosis_year	69" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "GSM972126	tumor.location	proximal" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
