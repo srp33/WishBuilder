@@ -59,19 +59,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 8 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
-
-&#10060;	"GSM1656050" does not have enough features to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -98,13 +90,33 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - Sample "GSM1656050" is not found in data.tsv.gz
+&#10060;	Row: 5 - FAIL
 
-&#10060;	Row: 6 - Sample "GSM1656050" is not found in data.tsv.gz
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	GSM1656004	|	ENSG00000000003	|	-0.0545333129166667	|
+|	**User Generated**	|	GSM1656004	|	ENSG00000000003	|	-0.141313842083333	|
 
-&#10060;	Row: 7 - Sample "GSM1656051" is not found in data.tsv.gz
+&#10060;	Row: 6 - FAIL
 
-&#10060;	Row: 8 - Sample "GSM1656051" is not found in data.tsv.gz
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	GSM1656004	|	ENSG00000282056	|	0.638603675	|
+|	**User Generated**	|	GSM1656004	|	ENSG00000282056	|	0.3094623175	|
+
+&#10060;	Row: 7 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	GSM1656005	|	ENSG00000000003	|	-0.116905915	|
+|	**User Generated**	|	GSM1656005	|	ENSG00000000003	|	-0.0742498745833333	|
+
+&#10060;	Row: 8 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	GSM1656005	|	ENSG00000282056	|	0.45451436	|
+|	**User Generated**	|	GSM1656005	|	ENSG00000282056	|	0.666431025	|
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -132,19 +144,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "GSM1656050	age	" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "GSM1656050	V30M_Carrier" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "GSM1656051	age" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "GSM1656051	V30M_Carrier" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
