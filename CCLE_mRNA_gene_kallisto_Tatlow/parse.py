@@ -49,11 +49,12 @@ with open(expressionData, 'r')  as inFile:
                 expressionList[i].append(lineList[i])
 
 print("writing metadata")
+metadataSamples = []
 with open(metedataOutFile, 'w') as ofMeta: 
     with open(expressionData, 'r')  as inFile:
         first = True
         headerList = PrimaryNameToAnnotations["header"]
-        for i in range(len(expressionList) - 1) :
+        for i in range(len(expressionList)) :
             try:
                 if first :
                     first = False
@@ -62,6 +63,7 @@ with open(metedataOutFile, 'w') as ofMeta:
                     lineList = line.strip('\n').split('\t')
                     for j in range(len(PrimaryNameToAnnotations[expressionList[i][0]]) - 1) :
                         if PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "" :
+                            metadataSamples.append(PrimaryNameToAnnotations[expressionList[i][0]][0])
                             ofMeta.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + '\t' + headerList[j + 1] + '\t' + PrimaryNameToAnnotations[expressionList[i][0]][j + 1] + '\n')
             except KeyError: 
                 continue #This will catch the following mismatches: RS4_11, EKVX, SF539, SNB75, SF268, MOLT-3, HOP-92, HOP-62, UO-31, WM983B, HOP-62, EKVX
@@ -74,4 +76,5 @@ with open(dataOutFile, 'w') as ofData:
             first = False
             ofData.write("Sample" + "\t" + "\t".join(expressionList[i][1:]) + "\n")
         else :
-            ofData.write("\t".join([str(element) for element in expressionList[i]]) + "\n")
+            if(any(str(expressionList[i][0]) == metadataSample for metadataSample in metadataSamples)) :
+                ofData.write("\t".join([str(element) for element in expressionList[i]]) + "\n")
