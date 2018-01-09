@@ -59,18 +59,16 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (12; min: 8)
 
-&#10060;	Row 11 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#9989;	test_metadata.tsv contains enough test cases (16; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|		|	PSME1	|	ATF1	|	RHEB	|	FOXO3	|
+|	Sample	|	PSME1	|	ATF1	|	RHEB	|	FOXO3	|
 |	---	|	---	|	---	|	---	|	---	|
 |	CPC005_A375_6H:BRD-A85280935-003-01-7:10	|	0.77376896143	|	-0.818468034267	|	0.189572289586	|	-0.146030768752	|
 |	CPC005_A375_6H:BRD-A07824748-001-02-6:10	|	-0.645586133003	|	-0.810748696327	|	0.459060251713	|	-0.224676460028	|
@@ -82,7 +80,7 @@ Executing parse.sh: Success
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	First column of file must be titled "Sample"
+&#9989;	First column of file is titled "Sample"
 
 &#9989;	Row 1: Success
 
@@ -154,8 +152,7 @@ Executing parse.sh: Success
 &#10060;	Row 10: Fail
 - "TAK004_U2OS_96H:TRCN0000381509:1	pert_itime	96 h " is not found.
 
-&#10060;	Row 11: Fail
-- "TAK004_U2OS_96H:TRCN0000381509:1	pert_id	TRCN0000381509	" is not found.
+&#9989;	Row 11: Success
 
 &#10060;	Row 12: Fail
 - "TAK004_U2OS_96H:TRCN0000381509:1	is_touchstone	0" is not found.
