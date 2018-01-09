@@ -1,0 +1,9 @@
+SampleID	Variable	Value
+GSM1057836	cytogenetic	45,X,-Y,t(8;21)(q22;q22),del(10)(p14)
+GSM1057836	subtype	AML1-ETO
+GSM1057837	cytogenetics	46,XY,t(8;21)(q22;q22)[32]
+GSM1057837	subtype	AML1-ETO
+GSM1057937	cytogenetics	46,XX,t(15;17)(q22;q12)[20]
+GSM1057937	subtype	PML-RARalpha
+GSM1057938	cytogenetics	46,XY,t(15;17)(q22;q12)[17]/46,XY[3]
+GSM1057938	subtype	PML-RARalpha
