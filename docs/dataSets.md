@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	01/09/18	|	00h:00m:31s	|	93	|	4	|	20024	|
 |	[BiomarkerBenchmark_GSE39582]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE39582-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE39582-status)	|	01/09/18	|	00h:01m:27s	|	556	|	28	|	20024	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	01/09/18	|	N/A	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE43176]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE43176-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE43176-status)	|	01/09/18	|	00h:00m:23s	|	103	|	4	|	11832	|
@@ -46,7 +47,6 @@
 |	[BiomarkerBenchmark_GSE37147]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37147-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37147-status)	|	12/15/17	|	00h:00m:34s	|	228	|	10	|	21614	|
 |	[BiomarkerBenchmark_GSE32646]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE32646-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE32646-status)	|	12/15/17	|	00h:00m:21s	|	111	|	9	|	20024	|
 |	[BiomarkerBenchmark_GSE37745]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37745-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37745-status)	|	12/15/17	|	00h:00m:27s	|	187	|	10	|	20024	|
-|	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	12/15/17	|	00h:00m:17s	|	93	|	4	|	20024	|
 |	[BiomarkerBenchmark_GSE37892]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37892-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37892-status)	|	12/15/17	|	00h:00m:22s	|	129	|	8	|	20024	|
 |	[BiomarkerBenchmark_GSE38958]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE38958-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE38958-status)	|	12/15/17	|	00h:00m:20s	|	115	|	6	|	16632	|
 |	[BiomarkerBenchmark_GSE39491]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE39491-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE39491-status)	|	12/15/17	|	00h:00m:16s	|	119	|	1	|	11832	|

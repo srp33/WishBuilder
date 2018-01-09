@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE37199</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -88,12 +88,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 3: Success
 
-&#10060;	Row: 4 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM913414	|	ENSG00000282742	|	0.18156365888888	|
-|	**User Generated**	|	GSM913414	|	ENSG00000282742	|	0.181563658888889	|
+&#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
@@ -103,7 +98,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
