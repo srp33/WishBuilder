@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE15296]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE15296-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE15296-status)	|	01/10/18	|	00h:00m:23s	|	74	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE20189]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20189-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20189-status)	|	01/10/18	|	00h:00m:18s	|	162	|	4	|	11832	|
 |	[BiomarkerBenchmark_GSE67784]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE67784-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE67784-status)	|	01/10/18	|	00h:00m:36s	|	263	|	4	|	21614	|
 |	[BiomarkerBenchmark_GSE27854]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27854-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27854-status)	|	01/10/18	|	00h:00m:23s	|	113	|	2	|	20024	|
@@ -27,7 +28,6 @@
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	12/15/17	|	00h:00m:37s	|	247	|	23	|	20024	|
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	12/15/17	|	00h:00m:41s	|	260	|	36	|	20024	|
 |	[BiomarkerBenchmark_GSE1456]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE1456-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE1456-status)	|	12/15/17	|	00h:00m:18s	|	159	|	7	|	11832	|
-|	[BiomarkerBenchmark_GSE15296]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE15296-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE15296-status)	|	12/15/17	|	00h:00m:16s	|	74	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE19804]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE19804-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE19804-status)	|	12/15/17	|	00h:00m:22s	|	117	|	3	|	20024	|
 |	[BiomarkerBenchmark_GSE20181]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20181-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20181-status)	|	12/15/17	|	00h:00m:19s	|	165	|	3	|	11832	|
 |	[BiomarkerBenchmark_GSE2109_Kidney]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Kidney-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Kidney-status)	|	12/15/17	|	00h:00m:33s	|	209	|	25	|	20024	|
