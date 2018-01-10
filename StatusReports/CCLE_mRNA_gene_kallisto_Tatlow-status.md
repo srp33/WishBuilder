@@ -90,9 +90,19 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - Sample "EKVX" is not found in data.tsv.gz
+&#10060;	Row: 5 - FAIL
 
-&#10060;	Row: 6 - Sample "EKVX" is not found in data.tsv.gz
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	HT55	|	ARF5	|	113.257	|
+|	**User Generated**	|	HT55	|	ARF5	|	179.484972	|
+
+&#10060;	Row: 6 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	HT55	|	RP4-726F1.2	|	0.329662	|
+|	**User Generated**	|	HT55	|	RP4-726F1.2	|	0	|
 
 &#9989;	Row 7: Success
 
