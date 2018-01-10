@@ -1,5 +1,5 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -90,25 +90,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - FAIL
+&#9989;	Row 5: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	HT55	|	ARF5	|	113.257	|
-|	**User Generated**	|	HT55	|	ARF5	|	179.484972	|
-
-&#10060;	Row: 6 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	HT55	|	RP4-726F1.2	|	0.329662	|
-|	**User Generated**	|	HT55	|	RP4-726F1.2	|	0	|
+&#9989;	Row 6: Success
 
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
