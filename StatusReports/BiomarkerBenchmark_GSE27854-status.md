@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE27854</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -61,13 +61,9 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"GSM687580" does not have enough features to test (min: 2)
-
-&#10060;	"GSM687468" does not have enough features to test (min: 2)
-
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
