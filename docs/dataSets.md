@@ -4,9 +4,9 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE67784]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE67784-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE67784-status)	|	01/10/18	|	00h:01m:31s	|	263	|	4	|	21614	|
 |	[BiomarkerBenchmark_GSE20189]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20189-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20189-status)	|	01/10/18	|	00h:00m:15s	|	162	|	4	|	11832	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	01/10/18	|	00h:30m:23s	|	922	|	9	|	58684	|
-|	[BiomarkerBenchmark_GSE67784]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE67784-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE67784-status)	|	01/10/18	|	N/A	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE15296]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE15296-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE15296-status)	|	01/10/18	|	00h:00m:23s	|	74	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE27854]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27854-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27854-status)	|	01/10/18	|	00h:00m:23s	|	113	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	01/10/18	|	00h:00m:17s	|	93	|	4	|	20024	|
