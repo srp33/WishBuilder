@@ -90,33 +90,13 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - FAIL
+&#10060;	Row: 5 - Sample "GSM1656050" is not found in data.tsv.gz
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM1656004	|	ENSG00000000003	|	-0.0545333129166667	|
-|	**User Generated**	|	GSM1656004	|	ENSG00000000003	|	-0.141313842083333	|
+&#10060;	Row: 6 - Sample "GSM1656050" is not found in data.tsv.gz
 
-&#10060;	Row: 6 - FAIL
+&#10060;	Row: 7 - Sample "GSM1656051" is not found in data.tsv.gz
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM1656004	|	ENSG00000282056	|	0.638603675	|
-|	**User Generated**	|	GSM1656004	|	ENSG00000282056	|	0.3094623175	|
-
-&#10060;	Row: 7 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM1656005	|	ENSG00000000003	|	-0.116905915	|
-|	**User Generated**	|	GSM1656005	|	ENSG00000000003	|	-0.0742498745833333	|
-
-&#10060;	Row: 8 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM1656005	|	ENSG00000282056	|	0.45451436	|
-|	**User Generated**	|	GSM1656005	|	ENSG00000282056	|	0.666431025	|
+&#10060;	Row: 8 - Sample "GSM1656051" is not found in data.tsv.gz
 
 #### Results: **<font color="red">FAIL</font>**
 ---
