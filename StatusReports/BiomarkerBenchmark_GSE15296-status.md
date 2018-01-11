@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE15296</center></h1>
-<h2><center> Status: Complete </center></h2>
+<h2><center> Status: In Progress </center></h2>
 
 
 ### Testing Directory . . .
@@ -116,23 +116,31 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row 1: Success
+&#10060;	Row 1: Fail
+- "GSM38055	Alcohol_Consumption	Yes" is not found.
 
-&#9989;	Row 2: Success
+&#10060;	Row 2: Fail
+- "GSM38055	Years_of_Tobacco_Use	46-50" is not found.
 
-&#9989;	Row 3: Success
+&#10060;	Row 3: Fail
+- "GSM38061	Alcohol_Consumption	No" is not found.
 
-&#9989;	Row 4: Success
+&#10060;	Row 4: Fail
+- "GSM38061	Years_of_Tobacco_Use	11-15" is not found.
 
-&#9989;	Row 5: Success
+&#10060;	Row 5: Fail
+- "GSM353939	Alcohol_Consumption	No" is not found.
 
-&#9989;	Row 6: Success
+&#10060;	Row 6: Fail
+- "GSM353939	Years_of_Tobacco_Use	16-20" is not found.
 
-&#9989;	Row 7: Success
+&#10060;	Row 7: Fail
+- "GSM353901	Alcohol_Consumption	No" is not found.
 
-&#9989;	Row 8: Success
+&#10060;	Row 8: Fail
+- "GSM353901	Years_of_Tobacco_Use	41-45" is not found.
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 
