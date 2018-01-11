@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/11/18	|	01h:23m:15s	|	9264	|	520	|	23368	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	01/11/18	|	00h:14m:59s	|	922	|	9	|	58684	|
 |	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	01/11/18	|	00h:00m:26s	|	92	|	12	|	20024	|
 |	[BiomarkerBenchmark_GSE39582]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE39582-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE39582-status)	|	01/11/18	|	00h:01m:07s	|	556	|	28	|	20024	|
@@ -17,7 +18,6 @@
 |	[BiomarkerBenchmark_GSE27854]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27854-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27854-status)	|	01/11/18	|	00h:00m:26s	|	113	|	2	|	20024	|
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	01/11/18	|	20h:00m:31s	|	345976	|	25	|	12328	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/10/18	|	00h:00m:06s	|	0	|	0	|	0	|
-|	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/09/18	|	00h:27m:48s	|	9264	|	520	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/09/18	|	00h:25m:35s	|	9264	|	520	|	23368	|
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
