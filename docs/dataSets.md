@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	01/11/18	|	00h:00m:26s	|	92	|	12	|	20024	|
 |	[BiomarkerBenchmark_GSE39582]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE39582-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE39582-status)	|	01/11/18	|	00h:01m:07s	|	556	|	28	|	20024	|
 |	[BiomarkerBenchmark_GSE67784]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE67784-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE67784-status)	|	01/11/18	|	00h:00m:34s	|	263	|	4	|	21614	|
 |	[BiomarkerBenchmark_GSE43176]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE43176-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE43176-status)	|	01/11/18	|	00h:00m:15s	|	103	|	4	|	11832	|
@@ -21,7 +22,6 @@
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	01/05/18	|	15h:19m:10s	|	118050	|	28	|	12328	|
-|	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	12/16/17	|	00h:00m:24s	|	92	|	12	|	20024	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	12/15/17	|	00h:17m:51s	|	922	|	9	|	199169	|
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	12/15/17	|	00h:06m:54s	|	741	|	1	|	23368	|
 |	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	12/15/17	|	00h:06m:14s	|	741	|	1	|	23368	|
