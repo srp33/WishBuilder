@@ -1,5 +1,5 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -75,7 +75,7 @@ Executing parse.sh: Success
 |	KMS-11	|	137.16564	|	120.717231	|	23.442103	|	168.42325	|
 |	C2BBe1	|	230.498743	|	211.752821304	|	35.423889	|	142.868279	|
 
-**Columns: 58685 Rows: 935**
+**Columns: 58685 Rows: 923**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
@@ -98,7 +98,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -109,7 +109,7 @@ Executing parse.sh: Success
 |	COR-L24	|	Histology	|	carcinoma	|
 |	COR-L24	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 8321**
+**Columns: 3 Rows: 8330**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -132,39 +132,17 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "COLO-680N	Gender	F" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "COLO-680N	Hybrid Capture Sequencing	yes" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "UO-31" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
 
-&#10060;	 Sample "SF268" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "EKVX" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "COLO-680N" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "MOLT-3" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "SF539" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "HOP-92" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "HOP-62" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "RS4_11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 More errors are not being printed...
-
-<font color="red">Total sample mismatch errors: 11</font>
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
