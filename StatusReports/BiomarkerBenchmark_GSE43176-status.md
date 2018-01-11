@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE43176</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -118,8 +118,7 @@ Executing parse.sh: Success
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "disease_state" for all samples is the same ("AML"). This variable has been removed from metadata.tsv.gz</p>
 
-&#10060;	Row 1: Fail
-- "GSM1057836	cytogenetic	45,X,-Y,t(8;21)(q22;q22),del(10)(p14)" is not found.
+&#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
@@ -135,7 +134,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
