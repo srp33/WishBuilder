@@ -1,5 +1,5 @@
 <h1><center>BiomarkerBenchmark_GSE67784</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -59,19 +59,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 8 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
-
-&#10060;	"GSM1656050" does not have enough features to test (min: 2)
 
 &#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -98,15 +90,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row: 5 - Sample "GSM1656050" is not found in data.tsv.gz
+&#9989;	Row 5: Success
 
-&#10060;	Row: 6 - Sample "GSM1656050" is not found in data.tsv.gz
+&#9989;	Row 6: Success
 
-&#10060;	Row: 7 - Sample "GSM1656051" is not found in data.tsv.gz
+&#9989;	Row 7: Success
 
-&#10060;	Row: 8 - Sample "GSM1656051" is not found in data.tsv.gz
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -132,19 +124,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "GSM1656050	age	" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "GSM1656050	V30M_Carrier" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "GSM1656051	age" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "GSM1656051	V30M_Carrier" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
