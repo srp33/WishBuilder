@@ -4,7 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	01/11/18	|	00h:00m:16s	|	93	|	4	|	20024	|
+|	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	01/11/18	|	00h:00m:17s	|	93	|	4	|	20024	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	01/11/18	|	00h:13m:04s	|	932	|	9	|	58684	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	01/11/18	|	22h:51m:23s	|	345976	|	25	|	12328	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	01/11/18	|	N/A	|	0	|	0	|	0	|
