@@ -1,5 +1,5 @@
 <h1><center>LINCS_PhaseII_Level4</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Complete </center></h2>
 
 
 ### Testing Directory . . .
@@ -55,11 +55,7 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 7 of "test_data.tsv" should contain exactly three columns.
-
 &#9989;	test_data.tsv contains enough unique samples to test
-
-&#10060;	"REP.A028_YAPC_24H_X1_B25:G09" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (12; min: 8)
 
@@ -67,7 +63,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough test cases (15; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -86,8 +82,6 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 7 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
@@ -100,7 +94,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row: 7 - Sample "REP.A028_YAPC_24H_X1_B25:G09" is not found in data.tsv.gz
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
@@ -112,7 +106,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 12: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -123,14 +117,12 @@ Executing parse.sh: Success
 |	LJP005_A375_24H_X1_B19:A03	|	base_cell_id	|	A375	|
 |	LJP005_A375_24H_X1_B19:A03	|	sample_type	|	tumor	|
 
-**Columns: 3 Rows: 7766814**
+**Columns: 3 Rows: 7420838**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "pert_time_unit" for all samples is the same ("h"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
