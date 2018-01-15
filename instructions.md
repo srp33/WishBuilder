@@ -58,15 +58,15 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 7. Now `cd` into the new directory.
 
-8. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+8. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
 9. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
 
-10. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+10. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
-11. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+11. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
-12. Write a bash script called `install.sh` that installs any software that are necessary to execute `parse.sh`. If no extra software must be installed, it can be blank. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical).
+12. Write a bash script called `install.sh` that installs any software that are necessary to execute `parse.sh`. If no extra software must be installed, it can be blank. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
 13. Compare `metadata.tsv.gz` against `test_metadata.tsv`. Make sure the metadata values were parsed correctly.
 
@@ -74,7 +74,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 15. Create a bash script called `cleanup.sh`. Within that script, use the `rm` command to delete `metadata.tsv.gz`, `data.tsv.gz`, and any other non-script files. **Please do not commit (see next step) any *data files* to GitHub.**
 
-16. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## ` that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/tree/master/ICGC_Donor_Clinical)
+16. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## `) that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/)
 
 17. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
