@@ -74,7 +74,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 15. Create a bash script called `cleanup.sh`. Within that script, use the `rm` command to delete `metadata.tsv.gz`, `data.tsv.gz`, and any other non-script files. **Please do not commit (see next step) any *data files* to GitHub.**
 
-16. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## `) that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/)
+16. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## `) that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
 17. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
