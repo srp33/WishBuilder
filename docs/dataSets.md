@@ -4,7 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/17/18	|	00h:00m:28s	|	144	|	1	|	11832	|
+|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/17/18	|	00h:00m:09s	|	0	|	0	|	0	|
+|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/17/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	01/13/18	|	13h:21m:24s	|	473647	|	17	|	12328	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/12/18	|	02h:17m:59s	|	9264	|	520	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/12/18	|	02h:13m:49s	|	9264	|	520	|	23368	|
@@ -19,7 +20,6 @@
 |	[BiomarkerBenchmark_GSE20189]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20189-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20189-status)	|	01/11/18	|	00h:00m:30s	|	162	|	4	|	11832	|
 |	[BiomarkerBenchmark_GSE27854]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27854-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27854-status)	|	01/11/18	|	00h:00m:26s	|	113	|	2	|	20024	|
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	01/11/18	|	20h:00m:31s	|	345976	|	25	|	12328	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/10/18	|	00h:00m:06s	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	01/05/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	01/05/18	|	15h:19m:10s	|	118050	|	28	|	12328	|
