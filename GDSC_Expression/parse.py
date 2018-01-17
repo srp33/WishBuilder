@@ -112,21 +112,41 @@ with gzip.open(expressionOut, 'w') as oF :
                 except KeyError :
                     headersNotConverted.append(headersList[i])
         first = True
+        firstOACp4C = True
         for i in indecisOfInterest :
             if first == True :
                 first = False
-                oF.write(headersList[i])
+                oF.write("Sample")
+            elif headersList[i] == "OACp4C" : #The original dataset has two variables titled OACp4C, this will label only the second in the header so we can average the values on each line and leave the value in this indeci
+                if firstOACp4C == True :
+                    firstOACp4C = False
+                    continue
+                else :
+                    oF.write("\t" + headersList[i])
             else :
                 oF.write("\t" + headersList[i])
         oF.write("\n")
 
+        j = 0
         for line in iF :
+            j = j + 1
             lineList = line.strip('\n').split('\t')
             first = True
+            firstOACp4C = True
+            firstValueOACp4C = 0
             for i in indecisOfInterest :
                 if first == True :
                     first = False
                     oF.write(lineList[i])
+                elif headersList[i] == "OACp4C" : #The original dataset has two variables titled OACp4C, this will label only the second in the header so we can average the values on each line and leave the value in this indeci
+                    if firstOACp4C == True :
+                        firstOACp4C = False
+                        firstValueOACp4C = float(lineList[i])
+                        continue
+                    else :
+                        averagedOACp4CValue = (firstValueOACp4C + float(lineList[i])) / 2
+                        print(str(averagedOACp4CValue))
+                        oF.write("\t" + str(averagedOACp4CValue))
                 else :
                     oF.write("\t" + str(lineList[i]))
             oF.write("\n")
@@ -222,9 +242,9 @@ with gzip.open(clinicalOut, 'w') as oFile :
             noVariants.append(i)
 
 
-#print("KeyError result: " + str(keyErrorSet))
-#print("Iterations no details: " + str(noDetailsList))
-#print("Iterations no racs info: " + str(noRACSList))
-#print("Iterations no variants info: " + str(noVariants))
-#print("Iterations no Dose Response: " + str(noDoseResposeList))
+print("KeyError result: " + str(keyErrorSet))
+print("Iterations no details: " + str(noDetailsList))
+print("Iterations no racs info: " + str(noRACSList))
+print("Iterations no variants info: " + str(noVariants))
+print("Iterations no Dose Response: " + str(noDoseResposeList))
 
