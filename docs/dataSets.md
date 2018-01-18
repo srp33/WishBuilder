@@ -4,9 +4,10 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/18/18	|	00h:00m:04s	|	0	|	0	|	0	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/18/18	|	In Progress	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/18/18	|	00h:00m:03s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Updated]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
-|	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/17/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	01/13/18	|	13h:21m:24s	|	473647	|	17	|	12328	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/12/18	|	02h:17m:59s	|	9264	|	520	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/12/18	|	02h:13m:49s	|	9264	|	520	|	23368	|
@@ -64,4 +65,3 @@
 |	[BiomarkerBenchmark_GSE58697]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE58697-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE58697-status)	|	12/14/17	|	00h:00m:24s	|	122	|	6	|	20024	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	12/14/17	|	00h:00m:22s	|	317	|	17	|	11832	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	12/12/17	|	00h:00m:14s	|	144	|	1	|	11832	|
-|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	N/A	|	In Progress	|	0	|	0	|	0	|
