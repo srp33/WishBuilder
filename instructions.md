@@ -80,8 +80,8 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
   ```
   title: Predicting Relapse in Favorable Histology Wilms Tumor Using Gene Expression
-  featureDescription:  gene
-  featureDescriptionPlural:  genes
+  featureDescription: gene
+  featureDescriptionPlural: genes
   ```
 
 18. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
