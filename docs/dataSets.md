@@ -4,7 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/18/18	|	00h:00m:04s	|	0	|	0	|	0	|
+|	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/18/18	|	00h:00m:06s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
