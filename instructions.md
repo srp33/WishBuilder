@@ -38,7 +38,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 3. At the command line on the Supercomputer, clone the WishBuilder git repository:
 
   ```
-  git clone https://github.com/srp33/WishBuilder.git
+  git clone git@github.com:srp33/WishBuilder.git
   cd WishBuilder
   ```
 
@@ -76,7 +76,15 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 16. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## `) that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
-17. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
+17. Create a [YAML-formatted](https://en.wikipedia.org/wiki/YAML) file called `config.yaml` that indicates additional information about the data set. Below is an example of how this file should look. The `title` is a user-friendly description of the dataset. This title will be displayed on the Geney web site. The `featureDescription` indicates what type of biological entity is being profiled in the "data" (not metadata). In the example below, gene-expression levels are being profiled, so we put the word "gene" (in lower case). Alternatively, if transcript or protein levels were being profiled, we might put "transcript" or "protein," respectively. Specifying these values enables us to customize the way each dataset is described in Geney. The `featureDescriptionPlural` is a plural version of `featureDescription`; it is not always easy for a computer to determine the plural version of a singular noun, so we specify it explicitly.
+
+  ```
+  title: Predicting Relapse in Favorable Histology Wilms Tumor Using Gene Expression
+  featureDescription:  gene
+  featureDescriptionPlural:  genes
+  ```
+
+18. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
 
   ```
   git add --all
@@ -84,7 +92,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git push origin <new-branch-name>
   ```
 
-18. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
+19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
 
 ## Notes
 
