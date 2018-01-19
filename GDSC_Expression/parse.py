@@ -151,6 +151,7 @@ with gzip.open(expressionOut, 'w') as oF :
                     oF.write("\t" + str(lineList[i]))
             oF.write("\n")
 
+
 print("number of values in header: " + str(headerValues))
 print("number of cellLineRows: " + str(numberOfCellLineRows))
 print("Headers not converted: " + str(headersNotConverted))
