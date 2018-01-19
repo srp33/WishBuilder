@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/19/18	|	06h:05m:52s	|	0	|	0	|	0	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/18/18	|	00h:00m:04s	|	0	|	0	|	0	|
-|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/18/18	|	In Progress	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/18/18	|	00h:00m:03s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Updated]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	01/13/18	|	13h:21m:24s	|	473647	|	17	|	12328	|
