@@ -40,12 +40,12 @@ def transposeMatrix(x):
 
 # code copied from fslg_piccololab/code/TransposeData.py
 # This code transposes tumorTPM and stores the transposed version in transposedTumorTPM
-#data = readMatrixFromFile(tumorTPM)
+data = readMatrixFromFile(tumorTPM)
 
-#if len(data) > 1 and len(data[0]) == len(data[1]) - 1:
+if len(data) > 1 and len(data[0]) == len(data[1]) - 1:
     data[0].insert(0, " ")
 
-#writeMatrixToFile(transposeMatrix(data), transposedTumorTPM)
+writeMatrixToFile(transposeMatrix(data), transposedTumorTPM)
 
 # This code takes the new transposedTumorTPM and addes the PatientCancerType to the second column and writes it to the outFile data.tsv.gz
 patientIDToCancerDict = {}
