@@ -1,0 +1,13 @@
+Sample	Variable	Value
+DO1808	study_donor_involved_in	
+DO1808	donor_age_at_diagnosis	61
+DO1808	cancer_history_first_degree_relative	unkown
+DO219611	study_donor_involved_in	
+DO219611	submitted_donor_id	TCGA-BH-A6R9
+DO219611	cancer_history_first_degree_relative	unknown
+DO1954	study_donor_involved_in	PCAWG
+DO1954	disease_status_last_followup	complete remission
+DO1954	donor_age_at_last_followup	59
+DO6144	project_code	BRCA-US
+DO6144	donor_diagnosis_icd10	C50.9
+DO6144	donor_interval_of_last_followup	227
