@@ -135,9 +135,9 @@ Your scripts should produce two tab-delimited text files: `metadata.tsv.gz` and 
 The table below illustrates how `data.tsv.gz` should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample". This file should be gzipped.
 
 | Sample       | Expressed_Gene1 | Expressed_Gene2 | Expressed_Gene3 | ... |
-|--------------|-----|-----|-------|-------|-----|
-| TCGA-01-1234 | 5.23  | 5.11   | 7.42     | ... |
-| TCGA-02-5678 | 4.67  | 9.82   | -0.98     | ... |
-| ...          | ... | ... | ...   | ...   |
+|--------------|---------------- |---------------- |---------------- |-----|
+| TCGA-01-1234 | 5.23            | 5.11            | 7.42            | ... |
+| TCGA-02-5678 | 4.67            | 9.82            | -0.98           | ... |
+| ...          | ...             | ...             | ...             | ...   |
 
 The sample identifiers listed in `metadata.tsv.gz` and `data.tsv.gz` should overlap with each other. Neither file should contain any sample identifier that is not listed in both files (all non-overlapping samples should be excluded from both files).
