@@ -1,7 +1,5 @@
 <h1><center>testBranch</center></h1>
 <h2><center> Status: In Progress </center></h2>
-<center>Jan 22, 18 09:01AM MST</center>
-
 
 ### Testing Directory . . .
 
