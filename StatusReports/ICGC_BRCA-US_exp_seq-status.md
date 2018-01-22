@@ -1,5 +1,6 @@
 <h1><center>ICGC_BRCA-US_exp_seq</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Failed </center></h2>
+<center>Jan 22, 18 16:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -27,9 +28,9 @@ Executing install.sh: Success
 
 ### Testing file paths:
 
-&#10060;	test_data.tsv does not exist.
+&#9989;	test_data.tsv exists.
 
-&#10060;	test_metadata.tsv does not exist.
+&#9989;	test_metadata.tsv exists.
 
 &#9989;	download.sh exists.
 
@@ -43,5 +44,3 @@ Executing install.sh: Success
 
 &#9989;	config.yaml exists.
 
-#### Results: **<font color="red">FAIL</font>**
----
