@@ -4,7 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/22/18	|	00h:00m:07s	|	0	|	0	|	0	|
+|	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/22/18	|	00h:06m:25s	|	1041	|	8	|	20501	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/22/18	|	06h:52m:45s	|	0	|	0	|	0	|
 |	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/22/18	|	00h:32m:52s	|	0	|	0	|	0	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/22/18	|	00h:00m:04s	|	0	|	0	|	0	|
