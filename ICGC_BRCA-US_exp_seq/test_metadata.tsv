@@ -1,10 +1,10 @@
 Sample	Variable	Value
 DO1808	TCGA_ID	TCGA-E2-A15C
-DO1808	donor_age_at_diagnosis	61
+DO1808	age_at_diagnosis	61
 DO1808	vital_status	alive
 DO219611	sex	female
 DO219611	TCGA_ID	TCGA-BH-A6R9
 DO219611	disease_status_last_followup	complete remission
-DO2425	age_at_diagnosis	64	
-DO2425	donor_interval_of_last_followup	13
+DO2425	age_at_diagnosis	64
+DO2425	interval_of_last_followup	13
 DO2425	vital_status	alive
