@@ -13,10 +13,10 @@ function download {
   curl --remote-name --remote-header-name $url
 }
 
-#download "https://api.gdc.cancer.gov/data/c6a029e5-0ea3-410d-9e67-360bdfee2914"
-#download "https://api.gdc.cancer.gov/data/8b1474b5-0216-4dbc-bc21-e5c6fcb5600f"
-#download "https://api.gdc.cancer.gov/data/2849f60b-c211-469a-a1ef-4105bb75d3ec"
-#download "https://api.gdc.cancer.gov/data/d9876b23-3e7d-4d7b-bc1b-3b4393cd2afb"
+download "https://api.gdc.cancer.gov/data/c6a029e5-0ea3-410d-9e67-360bdfee2914"
+download "https://api.gdc.cancer.gov/data/8b1474b5-0216-4dbc-bc21-e5c6fcb5600f"
+download "https://api.gdc.cancer.gov/data/2849f60b-c211-469a-a1ef-4105bb75d3ec"
+download "https://api.gdc.cancer.gov/data/d9876b23-3e7d-4d7b-bc1b-3b4393cd2afb"
 
 #downloading Clinical Variables
 url="https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE62944&format=file&file=GSE62944%5F06%5F01%5F15%5FTCGA%5F24%5F548%5FClinical%5FVariables%5F9264%5FSamples%2Etxt%2Egz"
