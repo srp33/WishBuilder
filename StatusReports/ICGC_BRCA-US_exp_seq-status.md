@@ -1,6 +1,6 @@
 <h1><center>ICGC_BRCA-US_exp_seq</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 22, 18 16:01PM MST</center>
+<center>Jan 22, 18 17:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -60,13 +60,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (9; min: 8)
 
-&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -109,10 +107,10 @@ Executing parse.sh: Success
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	DO1808	|	sex	|	female	|
-|	DO1808	|	disease_status_last_followup	|	complete remission	|
 |	DO1808	|	TCGA_ID	|	TCGA-E2-A15C	|
-|	DO1808	|	interval_of_last_followup	|	497	|
+|	DO1808	|	disease_status_last_followup	|	complete remission	|
+|	DO1808	|	vital_status	|	alive	|
+|	DO1808	|	age_at_diagnosis	|	61	|
 
 **Columns: 3 Rows: 8329**
 
@@ -123,8 +121,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "DO1808	donor_age_at_diagnosis	61" is not found.
+&#9989;	Row 2: Success
 
 &#9989;	Row 3: Success
 
@@ -137,11 +134,9 @@ Executing parse.sh: Success
 &#10060;	Row 6: Fail
 - "DO219611	disease_status_last_followup	complete remission" is not found.
 
-&#10060;	Row 7: Fail
-- "DO2425	age_at_diagnosis	64	" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "DO2425	donor_interval_of_last_followup	13" is not found.
+&#9989;	Row 8: Success
 
 &#9989;	Row 9: Success
 
