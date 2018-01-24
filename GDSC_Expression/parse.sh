@@ -23,4 +23,5 @@ cd $minicondaPath
 source activate my_GDSC_Expression_env
 cd ../../..
 
-python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $dataOutFilegz 
+#python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $dataOutFilegz 
+python grabFirstLineAndFindDuplicates.py $dataOutFilegz
