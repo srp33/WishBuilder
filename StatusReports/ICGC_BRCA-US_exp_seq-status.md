@@ -1,6 +1,6 @@
 <h1><center>ICGC_BRCA-US_exp_seq</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Jan 22, 18 17:01PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Jan 26, 18 10:01AM MST</center>
 
 
 ### Testing Directory . . .
@@ -107,10 +107,10 @@ Executing parse.sh: Success
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	DO1808	|	TCGA_ID	|	TCGA-E2-A15C	|
-|	DO1808	|	disease_status_last_followup	|	complete remission	|
-|	DO1808	|	vital_status	|	alive	|
+|	DO1808	|	age_at_last_followup	|	62	|
 |	DO1808	|	age_at_diagnosis	|	61	|
+|	DO1808	|	interval_of_last_followup	|	497	|
+|	DO1808	|	survival_time	|		|
 
 **Columns: 3 Rows: 8329**
 
@@ -125,14 +125,11 @@ Executing parse.sh: Success
 
 &#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "DO219611	sex	female" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "DO219611	TCGA_ID	TCGA-BH-A6R9" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "DO219611	disease_status_last_followup	complete remission" is not found.
+&#9989;	Row 6: Success
 
 &#9989;	Row 7: Success
 
@@ -140,7 +137,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 9: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
