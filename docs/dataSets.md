@@ -4,7 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	01/29/18	|	00h:17m:02s	|	7055	|	5	|	12080	|
+|	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	01/30/18	|	00h:16m:53s	|	7055	|	5	|	12080	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/26/18	|	00h:06m:09s	|	1041	|	8	|	20501	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/26/18	|	00h:00m:15s	|	144	|	1	|	11832	|

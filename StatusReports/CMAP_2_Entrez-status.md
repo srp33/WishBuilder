@@ -1,6 +1,6 @@
 <h1><center>CMAP_2_Entrez</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 29, 18 16:01PM MST</center>
+<center>Jan 29, 18 21:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -134,8 +134,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-&#10060;	Row 9: Fail
-- "5202764005791175120104.E10	Batch	Batch506" is not found.
+&#9989;	Row 9: Success
 
 &#9989;	Row 10: Success
 
