@@ -22,12 +22,12 @@ downloadAndInstall "https://repo.continuum.io/miniconda/Miniconda3-4.3.27.1-Linu
 
 #setting up environment for this project
 export PATH=$softwareName/bin:$PATH
-conda create --name R_env pip
+conda create -y --name R_env pip
 
 #install all the R packages in the environment
 source activate R_env
-conda install r-essentials
+conda install -y r-essentials
 conda install -y -c bioconda r-sleuth 
-conda install -c r r-xml=3.98_1.5
+conda install -y -c r r-xml=3.98_1.5
 Rscript installRPackages.R
 source deactivate R_env
