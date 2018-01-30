@@ -1,6 +1,6 @@
 <h1><center>CMAP_2_Entrez</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 29, 18 21:01PM MST</center>
+<center>Jan 30, 18 16:01PM MST</center>
 
 
 ### Testing Directory . . .
