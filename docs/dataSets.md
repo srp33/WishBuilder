@@ -4,12 +4,12 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	01/30/18	|	00h:29m:33s	|	7055	|	5	|	12080	|
+|	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/31/18	|	00h:20m:04s	|	943	|	86	|	23368	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/31/18	|	In Progress	|	0	|	0	|	0	|
+|	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	01/31/18	|	In Progress	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/26/18	|	00h:06m:09s	|	1041	|	8	|	20501	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/26/18	|	00h:00m:15s	|	144	|	1	|	11832	|
-|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/24/18	|	00h:02m:36s	|	0	|	0	|	0	|
-|	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/24/18	|	00h:26m:39s	|	0	|	0	|	0	|
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/22/18	|	00h:00m:04s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/19/18	|	02h:03m:04s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/19/18	|	01h:06m:12s	|	9264	|	513	|	23368	|
