@@ -26,7 +26,7 @@ conda create -y --name R_env pip
 
 #install all the R packages in the environment
 source activate R_env
-conda install -y r-essentials
+conda install -y r-essentials=1.5.2
 conda install -y -c bioconda r-sleuth 
 conda install -y -c r r-xml=3.98_1.5
 Rscript installRPackages.R
