@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 30, 18 17:01PM MST</center>
+<center>Jan 30, 18 18:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -127,37 +127,37 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "informed_consent_verified" for all samples is the same ("YES"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_positivity_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_er_positivity_define_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_cent_17_signal_number" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_signal_number" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "informed_consent_verified" for all samples is the same ("YES"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_positivity_other_scale" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "tumor_tissue_site" for all samples is the same ("Breast"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "her2_cent17_counted_cells_count" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "disease_code" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_fish_define_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "days_to_initial_pathologic_diagnosis" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_cent17_her2_other_scale" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "tumor_tissue_site" for all samples is the same ("Breast"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_pr_positivity_other_scale" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "clinical_T" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_positivity_other_scale" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_positivity_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_her2_signal_number" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "project_code" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_cent17_her2_other_scale" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_pr_positivity_define_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "disease_code" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "her2_cent17_counted_cells_count" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "clinical_T" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "nte_er_positivity_define_method" for all samples is the same ("[Not Available]"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "days_to_initial_pathologic_diagnosis" for all samples is the same ("0"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 

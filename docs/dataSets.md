@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/31/18	|	00h:21m:50s	|	943	|	86	|	23368	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	01/31/18	|	00h:31m:19s	|	7055	|	5	|	12080	|
-|	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/31/18	|	00h:20m:04s	|	943	|	86	|	23368	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	01/31/18	|	In Progress	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/26/18	|	00h:06m:09s	|	1041	|	8	|	20501	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	srp33	|	[In Progress]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/26/18	|	In Progress	|	0	|	0	|	0	|
