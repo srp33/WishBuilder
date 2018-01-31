@@ -8,7 +8,9 @@ RACS = sys.argv[4]
 variants = sys.argv[5]
 expressionIn = sys.argv[6]
 clinicalOut = sys.argv[7]
-expressionOut = sys.argv[8]
+tmpExpression = sys.argv[8]
+finalExpression = sys.argv[9]
+
 
 def readSheetToMultipleDfs(xl,sheetname, indecisBetweenTables) :
     line = []
@@ -95,7 +97,7 @@ headerValues = 0
 indecisOfInterest = []
 headersList = []
 print("Writing Expression data to data.tsv.gz")
-with gzip.open(expressionOut, 'w') as oF :
+with gzip.open(tmpExpression, 'w') as oF :
     with gzip.open(expressionIn, 'r') as iF :
         headersList = iF.readline().strip('\n').split('\t')
 
@@ -298,3 +300,10 @@ print("Iterations no racs info: " + str(noRACSList))
 print("Iterations no variants info: " + str(noVariants))
 print("Iterations no Dose Response: " + str(noDoseResposeList))
 
+#transpose the expressionFile
+with gzip.open(tmpExpression, 'r') as f :
+    with gzip.open(finalExpression, 'w') as oF : 
+        data = np.genfromtxt(f,delimiter='\t',dtype=str)
+        for line in data.T :
+            stringLine = ("\t").join([str(element) for element in line]) + "\n"
+            oF.write(stringLine)

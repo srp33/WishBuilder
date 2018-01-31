@@ -14,6 +14,7 @@ screenedComponents=$redirectedTempFolder/Screened_Compounds.xlsx
 RACS=$redirectedTempFolder/RACS_in_cell_lines.xlsx
 variants=$redirectedTempFolder/WES_variants.xlsx
 expression=$redirectedTempFolder/sanger1018_brainarray_ensemblgene_rma.txt.gz
+expressiontmp=$redirectedTempFolder/expressiontmp.tsv.gz
 dataOutFilegz=data.tsv.gz
 metadataOutFilegz=metadata.tsv.gz
 
@@ -23,4 +24,4 @@ cd $minicondaPath
 source activate my_GDSC_Expression_env
 cd ../../..
 
-python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $dataOutFilegz 
+python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $expressiontmp $dataOutFilegz 
