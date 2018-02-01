@@ -1,5 +1,6 @@
 import pandas as pd
 import sys, re, math, gzip 
+import numpy as np
 
 cellLine = sys.argv[1]
 doseResponse = sys.argv[2]
