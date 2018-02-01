@@ -1,6 +1,6 @@
 <h1><center>CMAP_2_Entrez</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 30, 18 19:01PM MST</center>
+<center>Jan 31, 18 17:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -69,56 +69,39 @@ Executing parse.sh: Success
 
 ### First 5 columns and 5 rows of data.tsv.gz:
 
-|	5202764005791175120104.E08	|	-0.07604248	|	1.0043152	|	-0.06929116	|	-0.19717948	|
+|	Sample	|	AKT3	|	MED6	|	NR2E3	|	NAALAD2	|
 |	---	|	---	|	---	|	---	|	---	|
+|	5202764005791175120104.E08	|	-0.07604248	|	1.0043152	|	-0.06929116	|	-0.19717948	|
 |	5202764005791175120104.E10	|	-0.11460035	|	1.28248579	|	-0.03530519	|	-0.1545126	|
 |	5202764005791175120104.E11	|	-0.09928488	|	1.29957722	|	-0.0648402	|	-0.11181129	|
 |	5202764005791175120104.E12	|	-0.10193789	|	1.23273062	|	-0.05491299	|	-0.10846203	|
-|	5202764005791175120104.D07	|	-0.12884382	|	0.96603081	|	-0.11027136	|	-0.0751726	|
 
-**Columns: 12081 Rows: 7056**
+**Columns: 0 Rows: 1**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	First column of file must be titled "Sample"
-
-&#10060;	Row: 1 - Sample "5202764005791175120104.E08" is not found in data.tsv.gz
-
-&#10060;	Row: 2 - Sample "5202764005791175120104.E08" is not found in data.tsv.gz
-
-&#10060;	Row: 3 - AKT3 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 4 - NAT1 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 5 - AKT3 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 6 - NAT1 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 7 - AKT3 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 8 - NAT1 is not found in "data.tsv.gz" column headers
+&#10060;	NA is in data.tsv.gz column headers more than once
 
 #### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
-|	5202764005791175120104.E08	|	Perturbagen	|	vorinostat	|
+|	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
+|	5202764005791175120104.E08	|	Perturbagen	|	vorinostat	|
 |	5202764005791175120104.E08	|	Concentration	|	0.00001	|
 |	5202764005791175120104.E08	|	Cell Line Name	|	MCF7	|
 |	5202764005791175120104.E08	|	Batch	|	506	|
-|	5202764005791175120104.E08	|	Array	|	HT_HG-U133A_EA	|
 
-**Columns: 3 Rows: 34324**
+**Columns: 3 Rows: 34325**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	First column of file must be titled "Sample"
+&#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1: Fail
-- "5202764005791175120104.E08	Perturbagen	vorinostat" is not found.
+&#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
@@ -154,11 +137,31 @@ Executing parse.sh: Success
 
 &#9989;	Row 18: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "5202764005791175120104.E08" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024034290101707050.F06" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024037498121108437.D09" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024031723100807769.F11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "614615111406.G02" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024031723100807773.B05" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024024213121906563.E09" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024024213121906560.E05" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024031723100807773.A01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "5500024031723100807776.H04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 More errors are not being printed...
+
+<font color="red">Total sample mismatch errors: 7056</font>
 
 #### Results: **<font color="red">FAIL</font>**
 
