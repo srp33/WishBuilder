@@ -92,7 +92,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git push origin <new-branch-name>
   ```
 
-19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". We will then check to make sure your code is working properly. If it is, we will integrate your code into the WishBuilder repository.
+19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". **Please do not click on "Merge pull request" on the following page.** We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository. You can check the status [here](https://srp33.github.io/WishBuilder/docs/dataSets). It may take hours (or even days) to finish processing, depending on the size of your data. 
 
 ## Notes
 
