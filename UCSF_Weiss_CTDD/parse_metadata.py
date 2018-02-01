@@ -58,4 +58,3 @@ with gzip.open(outFilePath, 'w') as outFile:
 
              outText = "\t".join([sample,"Color",color]) + "\n"
              outFile.write(outText.encode())
-

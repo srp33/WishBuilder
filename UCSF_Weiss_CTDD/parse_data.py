@@ -23,6 +23,10 @@ with open(crypticPath, 'r') as crypticFile:
         identifier = lineItems[geneIden]
         geneSymbol = lineItems[symbolIdentifier]
         isRefSeq = lineItems[booleanIdentifier]
+        if isRefSeq == "true":
+            isRefSeq = True
+        if isRefSeq == "false":
+            isRefSeq = False	
         #Linking cryptic identifier to gene, and boolean for later reference
         #Gene is index #0, isRefSeq is index #1
         probeAttributes[identifier] = [geneSymbol,isRefSeq]
@@ -61,7 +65,7 @@ with open(inFilePath, 'r') as inFile:
 
 
 uniqueSampleIDs = sorted(list(uniqueSampleIDs))
-uniqueGeneIDs = sorted(list(uniqueGeneIDs))
+#uniqueGeneIDs = sorted(list(uniqueGeneIDs))
 
 # Create output file
 with gzip.open(outFilePath, 'w') as outFile:
