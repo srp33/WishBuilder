@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Failed]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/01/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/01/18	|	00h:29m:24s	|	0	|	5	|	-1	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/01/18	|	07h:22m:41s	|	0	|	0	|	0	|
 |	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	01/31/18	|	00h:13m:28s	|	0	|	0	|	0	|
