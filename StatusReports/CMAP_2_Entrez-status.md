@@ -1,6 +1,6 @@
 <h1><center>CMAP_2_Entrez</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Jan 31, 18 17:01PM MST</center>
+<center>Jan 31, 18 18:01PM MST</center>
 
 
 ### Testing Directory . . .
@@ -141,23 +141,23 @@ Executing parse.sh: Success
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "5500024034290101707050.F06" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024024214122006606.C01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024037498121108437.D09" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024034290101707050.G04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024031723100807769.F11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024031723100807775.H09" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "614615111406.G02" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024024214122006604.A01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024031723100807773.B05" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5202764005790181113004.A04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024024213121906563.E09" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024031723100807769.H10" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024024213121906560.E05" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024030760072207028.B01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024031723100807773.A01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024031723100807772.G08" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "5500024031723100807776.H04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "5500024024213121906562.A02" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
 &#10060;	 More errors are not being printed...
 
