@@ -65,7 +65,7 @@ with open(inFilePath, 'r') as inFile:
 
 
 uniqueSampleIDs = sorted(list(uniqueSampleIDs))
-#uniqueGeneIDs = sorted(list(uniqueGeneIDs))
+uniqueGeneIDs = sorted(list(uniqueGeneIDs))
 
 # Create output file
 with gzip.open(outFilePath, 'w') as outFile:
