@@ -73,7 +73,7 @@ with gzip.open(outFilePath, 'w') as outFile:
         for geneID in uniqueGeneIDs:
              geneValue = miceSamples[sampleID][geneID][0]
              geneCount = miceSamples[sampleID][geneID][1]
-             geneValue = str(geneValue/geneCount)
+             geneValue = "{0:.4f}".format(geneValue/geneCount)
              dataItems.append(geneValue)
         outText = "\t".join([sampleID] + dataItems) + "\n"
         outFile.write(outText.encode())
