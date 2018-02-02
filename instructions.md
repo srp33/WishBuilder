@@ -6,25 +6,23 @@ Please complete the following steps to get started as a contributor.
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
-3. Send an email to me with your GitHub user ID and request to be added as a contributor to the WishBuilder repository.
-
-4. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
+3. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
 
   ```
   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   ```
 
-5. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
+4. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
 
-6. When it asks you to enter a passphrase, press Enter (twice).
+5. When it asks you to enter a passphrase, press Enter (twice).
 
-7. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
+6. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
 
   ```
   cat ~/.ssh/id_rsa.pub
   ```
   
-8. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
+7. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
 
 ## Preparing a Dataset
