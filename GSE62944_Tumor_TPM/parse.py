@@ -60,8 +60,6 @@ data = readMatrixFromFile(metadata)
 if len(data) > 1 and len(data[0]) == len(data[1]) - 1:
     data[0].insert(0, " ")
 
-#writeMatrixToFile(transposeMatrix(data), transposedMetadata)
-
 metadataDict = {}
 first = True
 for list in transposeMatrix(data) :
@@ -81,7 +79,21 @@ with open(transposedTumorTPM, 'r') as iF:
                 lineList = line.strip('\n').split('\t')
                 ofMeta.write(lineList[0] + "\tCancer_Type\t" + patientIDToCancerDict[lineList[0]] + "\n")
                 metaDataList = metadataDict[lineList[0]]
+
+                allNA = True
+                notAvailableMetaVariables = []
                 for i in range(len(metaDataList)) :
-                    if(metaDataList[i] != "NA") :
+                    if(metaDataList[i] != "NA" and metaDataList[i] != "[Not Applicable]") : #exclude NA and [Not Applicable] keep [Not Available]
+                        if(metaDataList[i] != "[Not Available]") :
+                            ofMeta.write(lineList[0] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
+                            allNA = False
+                        else :
+                            #If all the values are [Not Available] we do not want to include them because we won't have any metavariables for the patient
+                            notAvailableMetaVariables.append(i)
+
+                if allNA == False :
+                    for i in notAvailableMetaVariables : #Include the metavariables if not all of them are NA, [Not Applicable], and [Not Available]
                         ofMeta.write(lineList[0] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
+
                 ofData.write('\t'.join(lineList) + '\n')
+
