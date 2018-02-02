@@ -10,7 +10,10 @@ with open(headers, 'r') as f :
         dO.write(("Sample").encode())
         for line in f :
             lineList = line.strip('\n').split('\t')
-            dO.write(("\t" + lineList[1]).encode())
+            if lineList[1] == "NA" :
+                dO.write(("\tLOC" + lineList[0]).encode())
+            else :
+                dO.write(("\t" + lineList[1]).encode())
         dO.write(("\n").encode())
 
 with gzip.open(metadataOut, 'w') as f :

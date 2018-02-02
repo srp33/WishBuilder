@@ -29,9 +29,7 @@ rm -f $expressionOut
 
 #setting up java environment to read gene symbols from Entrez Gene
 echo "Setting up environment"
-cd $minicondaPath
-source activate R_env 
-cd ../../..
+#source activate WishBuilderDependencies
 
 #grab all the file names from CMAP_SCAN_EntrezGene
 ls tmp/CMap_SCAN_EntrezGene > $fileNames
