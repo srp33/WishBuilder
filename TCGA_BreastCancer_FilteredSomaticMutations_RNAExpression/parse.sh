@@ -35,5 +35,5 @@ python3 parse.py $mutect $varscan $muse $somaticsniper $mutectOut $varscanOut $m
 python3 parse2.py $mutectOut $varscanOut $museOut $somaticsniperOut $singleOut
 python2 parse3.py $clinical $patientCancerType $expression $transposedTumorTPM $dataOutFilegz $metadataOutFilegz $singleOut 
 
-gzip dataOutFilegz
-gzip metadataOutFilegz
+gzip $dataOutFilegz
+gzip $metadataOutFilegz
