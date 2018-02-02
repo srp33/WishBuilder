@@ -1,13 +1,9 @@
 <h1><center>METABRIC_cBio</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Feb 01, 18 11:02AM MST</center>
-
+<h2><center> Status: In Progress </center></h2>
 
 ### Testing Directory . . .
 
-&#10060;	 Neither data.tsv.gz nor metadata.tsv.gz nor .gitignore should exist in directory.
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Testing Configuration File . . .
 
@@ -44,3 +40,15 @@ Executing install.sh: Success
 
 &#9989;	config.yaml exists.
 
+*Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: Success
+
+&#9989;	data.tsv.gz was created and zipped correctly.
+
+&#9989;	metadata.tsv.gz was created and zipped correctly.
+
+#### Results: PASS
+---

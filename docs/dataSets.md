@@ -4,7 +4,10 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/02/18	|	00h:16m:29s	|	0	|	0	|	0	|
+|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Failed]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/02/18	|	00h:13m:10s	|	0	|	0	|	0	|
+|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[In Progress]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/02/18	|	In Progress	|	0	|	0	|	0	|
+|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/02/18	|	In Progress	|	0	|	0	|	0	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/02/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320 Update]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320 Update-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320 Update-status)	|	02/02/18	|	N/A	|	0	|	0	|	0	|
 |	[UCSF_Weiss_CTDD]({{site.url}}/Descriptions/UCSF_Weiss_CTDD-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/UCSF_Weiss_CTDD-status)	|	02/02/18	|	00h:00m:10s	|	0	|	0	|	0	|
 |	[revert-182-UCSF_Weiss_CTDD]({{site.url}}/Descriptions/revert-182-UCSF_Weiss_CTDD-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/revert-182-UCSF_Weiss_CTDD-status)	|	02/01/18	|	In Progress	|	0	|	0	|	0	|
@@ -16,7 +19,7 @@
 |	[testBranch]({{site.url}}/Descriptions/testBranch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/testBranch-status)	|	01/22/18	|	00h:00m:04s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/19/18	|	02h:03m:04s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/19/18	|	01h:06m:12s	|	9264	|	513	|	23368	|
-|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Updated]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
+|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	01/18/18	|	N/A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	01/13/18	|	13h:21m:24s	|	473647	|	17	|	12328	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	01/12/18	|	02h:17m:59s	|	9264	|	520	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	01/12/18	|	02h:13m:49s	|	9264	|	520	|	23368	|
