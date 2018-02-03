@@ -1,5 +1,6 @@
 import sys, gzip
 
+
 headers = sys.argv[1]
 dataOut = sys.argv[2]
 metadataOut = sys.argv[3]
