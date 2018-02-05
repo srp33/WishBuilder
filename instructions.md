@@ -36,7 +36,7 @@ B. Please find your repository api by navigating to your new forked repository a
   git@github.com:glenrs/WishBuilder.git
   ```
 
-C. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved :
+C. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved:
 
   ```
   git clone <your-forked-repository-api>
