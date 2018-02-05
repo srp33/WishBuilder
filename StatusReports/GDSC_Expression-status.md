@@ -1,5 +1,7 @@
 <h1><center>GDSC_Expression</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Failed </center></h2>
+<center>Feb 05, 18 13:02PM MST</center>
+
 
 ### Testing Directory . . .
 
@@ -44,11 +46,16 @@ Executing install.sh: Success
 
 Executing download.sh: Success
 
-Executing parse.sh: Success
+Executing parse.sh: 
 
-&#9989;	data.tsv.gz was created and zipped correctly.
+&#10060;	parse.sh returned an error:
+~~~bash
+Could not find conda environment: my_GDSC_Expression_env
+You can list all discoverable environments with `conda info --envs`.
 
-&#10060;	metadata.tsv.gz does not exist.
+Traceback (most recent call last):
+  File "parse.py", line 103, in <module>
+    headersList = iF.readline().strip('\n').split('\t')
+TypeError: a bytes-like object is required, not 'str'
+~~~
 
-#### Results: **<font color="red">FAIL</font>**
----
