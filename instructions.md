@@ -8,7 +8,7 @@ Please complete the following steps to get started as a contributor.
 
 3. Please create your own forked repository of WishBuilder by clicking on "Fork" (upper right hand corner of the webpage). Please make all of your future pull requests from your forked repository.
 
-### 3. Setting Up Your SSH Key
+### 4. Setting Up Your SSH Key
 
 A. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
 
@@ -28,11 +28,11 @@ D. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command 
   
 E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
-### Setting Up WishBuilder Dependencies
+### 5. Setting Up WishBuilder Dependencies
 
-1. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
+A. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
 
-2. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
+B. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
 
 ```
 export PATH=$PATH
@@ -40,7 +40,7 @@ PATH=~/Software/miniconda/bin:$PATH
 export PATH
 ```
 
-3. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
+C. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
 
 ```
   source activate WishBuilderDependencies 
@@ -51,7 +51,7 @@ export PATH
   source deactivate WishBuilderDependencies
 ```
 
-4. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container, so if you try to activate the environment in your code this container will not find it. You can easily download the needed software without making the environment. For example:
+D. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container, so if you try to activate the environment in your code this container will not find it. You can easily download the needed software without making the environment. For example:
 
 ```
   #source activate WishBuilderDependencies 
@@ -62,16 +62,16 @@ export PATH
   #source deactivate WishBuilderDependencies
 ```
 
-5. Each time you would like to use the environment, you can easily activate it and use it in your code. This will commonly be used in the parse.sh (will be discussed below). Make sure that you comment out the environment activation commands before creating a pull request because this environment is not found on the container.
+E. Each time you would like to use the environment, you can easily activate it and use it in your code. This will commonly be used in the parse.sh (will be discussed below). Make sure that you comment out the environment activation commands before creating a pull request because this environment is not found on the container.
 
-#### On the supercomputer
+On the supercomputer
 ```
   source activate WishBuilderDependencies 
   <execute-your-code>
   source deactivate WishBuilderDependencies
 ```
 
-#### Submitted pull requests
+Submitted pull requests
 ```
   #source activate WishBuilderDependencies 
   <execute-your-code>
