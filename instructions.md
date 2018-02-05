@@ -43,7 +43,7 @@ C. At the command line on the Supercomputer, clone your forked WishBuilder git r
   cd WishBuilder
   ```
 
-D. In this directory, you can make GitHub commands. It is your repository so you are now certified to make branches, which you will be able to make pull requests to add your data sets to the master branch on srp33/WishBuilder.
+D. In this directory, you can make GitHub commands. This directory is your cloned repository so you are now certified to make branches on your repository, which you will be able to use to make pull requests to add your data sets to the master branch on srp33/WishBuilder.
 
 ### 5. Setting Up WishBuilder Dependencies
 
