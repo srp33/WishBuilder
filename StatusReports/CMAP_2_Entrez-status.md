@@ -1,6 +1,6 @@
 <h1><center>CMAP_2_Entrez</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Jan 31, 18 19:01PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Feb 05, 18. 11:02 MST</center>
 
 
 ### Testing Directory . . .
@@ -76,14 +76,30 @@ Executing parse.sh: Success
 |	5202764005791175120104.E11	|	-0.09928488	|	1.29957722	|	-0.0648402	|	-0.11181129	|
 |	5202764005791175120104.E12	|	-0.10193789	|	1.23273062	|	-0.05491299	|	-0.10846203	|
 
-**Columns: 0 Rows: 1**
+**Columns: 12081 Rows: 7057**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
 
-&#10060;	NA is in data.tsv.gz column headers more than once
+&#9989;	First column of file is titled "Sample"
 
-#### Results: **<font color="red">FAIL</font>**
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -141,29 +157,9 @@ Executing parse.sh: Success
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "5500024030403071907257.E03" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
 
-&#10060;	 Sample "5500024024214122006606.A04" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024031723100807776.B07" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024031330081907229.B11" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024028849050407169.C07" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "610611110806.A06" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024037289120508304.G10" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024030700072107991.F02" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "5500024030401071707292.G12" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 More errors are not being printed...
-
-<font color="red">Total sample mismatch errors: 7056</font>
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
