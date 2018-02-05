@@ -24,6 +24,7 @@ Please complete the following steps to get started as a contributor.
   
 7. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
+8. After you have set up your ssh key so that GitHub can recognize your pull requests please return to this repository and fork this repository by clicking on "Fork" (upper right hand corner of the webpage). Please make all your pull requests from your forked repository.
 
 ## Preparing a Dataset
 
@@ -33,14 +34,20 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 2. Send an email to me indicating which issue you would like to work on.
 
-3. At the command line on the Supercomputer, clone the WishBuilder git repository:
+3. Please find your repository api by navigating to your new forked repository and clicking on "clone or download". Your repository api should look something like this:
 
   ```
-  git clone git@github.com:srp33/WishBuilder.git
+  git@github.com:glenrs/WishBuilder.git
+  ```
+
+3. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved :
+
+  ```
+  git clone <your-forked-repository-api>
   cd WishBuilder
   ```
 
-4. Or if you previously cloned the WishBuilder git repository, make sure it is up to date:
+4. Or if you previously cloned the your forked WishBuilder git repository, make sure it is up to date:
 
   ```
   git pull origin master
@@ -90,7 +97,41 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   git push origin <new-branch-name>
   ```
 
-19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Put "master" as the base branch and your new branch as the compare branch. Click on "Create pull request". **Please do not click on "Merge pull request" on the following page.** We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository. You can check the status [here](https://srp33.github.io/WishBuilder/docs/dataSets). It may take hours (or even days) to finish processing, depending on the size of your data. 
+19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Before navigating to any branches, please click on "compare accross forks". Put "srp33/Wishbuilder" as the base fork and "master" as the base branch and your repository as the head for and your new branch as the compare branch. Click on "Create pull request". We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository. You can check the status [here](https://srp33.github.io/WishBuilder/docs/dataSets). It may take hours (or even days) to finish processing, depending on the size of your data. 
+
+## Setting Up WishBuilder Dependencies
+
+1. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
+
+2. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
+
+```
+export PATH=$PATH
+PATH=~/Software/miniconda/bin:$PATH
+export PATH
+```
+
+3. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary:
+
+```
+  source activate WishBuilderDependencies 
+  conda install -y -c bioconda r-sleuth
+  conda install -y -c r r-xml=3.98_1.5
+  conda install -y gcc
+  Rscript installRPackages.R
+  source deactivate WishBuilderDependencies
+```
+
+4. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container. You can easily download the needed software without making the environment. 
+
+```
+  #source activate WishBuilderDependencies 
+  conda install -y -c bioconda r-sleuth
+  conda install -y -c r r-xml=3.98_1.5
+  conda install -y gcc
+  Rscript installRPackages.R
+  #source deactivate WishBuilderDependencies
+```
 
 ## Notes
 
@@ -102,7 +143,7 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 - If you create temporary files, please store these within the same directory as your scripts (or a subdirectory). This will ensure that everything needed to process each dataset is contained within the same location.
 - When you specify file or directory paths in your scripts, please use *relative* rather than *absolute* paths.
 
-## Test files
+## Test Files
 
 We will use your test files to verify that your scripts are working properly. We will execute your scripts and then verify that the data values produced by your scripts match the data values in the test files, even though the format of these files will be different. You will need to create the test files using a text editor.
 
@@ -124,7 +165,7 @@ You should create two test files: `test_metadata.tsv` and `test_data.tsv`. The f
 
 Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and at least two different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far-left side of each input file and at least one from the far-right side of each input file.
 
-## Output file format
+## Output File Format
 
 Your scripts should produce two tab-delimited text files: `metadata.tsv.gz` and `data.tsv.gz` (see below). Geney will import these data files.
 
