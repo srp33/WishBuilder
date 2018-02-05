@@ -6,9 +6,7 @@ Please complete the following steps to get started as a contributor.
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
-3. Please create your own forked repository of WishBuilder by clicking on "Fork" (upper right hand corner of the webpage). Please make all of your future pull requests from your forked repository.
-
-### 4. Setting Up Your SSH Key
+### 3. Setting Up Your SSH Key
 
 A. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
 
@@ -28,6 +26,25 @@ D. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command 
   
 E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
+### 4. Creating Your Forked Repository 
+
+A. Please create your own forked repository of WishBuilder by clicking on "Fork" (upper right hand corner of the webpage). Please make all of your future pull requests from your forked repository.
+
+B. Please find your repository api by navigating to your new forked repository and clicking on "clone or download". Your repository api should look something like this:
+
+  ```
+  git@github.com:glenrs/WishBuilder.git
+  ```
+
+C. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved :
+
+  ```
+  git clone <your-forked-repository-api>
+  cd WishBuilder
+  ```
+
+D. In this directory, you can make GitHub commands. It is your repository so you are now certified to make branches, which you will be able to make pull requests to add your data sets to the master branch on srp33/WishBuilder.
+
 ### 5. Setting Up WishBuilder Dependencies
 
 A. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
@@ -40,7 +57,7 @@ PATH=~/Software/miniconda/bin:$PATH
 export PATH
 ```
 
-C. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
+C. Your data set may require additional software to run commands that will download, parse, and filter. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
 
 ```
   source activate WishBuilderDependencies 
@@ -86,26 +103,14 @@ Please complete the following steps for each dataset that you prepare. Let me kn
 
 2. Send an email to me indicating which issue you would like to work on.
 
-3. Please find your repository api by navigating to your new forked repository and clicking on "clone or download". Your repository api should look something like this:
+3. Make sure your forked repository is up to date:
 
   ```
-  git@github.com:glenrs/WishBuilder.git
+  git checkout master
+  git pull git@github.com:srp33/WishBuilder.git master
   ```
 
-3. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved :
-
-  ```
-  git clone <your-forked-repository-api>
-  cd WishBuilder
-  ```
-
-4. Or if you previously cloned the your forked WishBuilder git repository, make sure it is up to date:
-
-  ```
-  git pull origin master
-  ```
-
-5. Create a new branch on your copy of the git repository (see below). Replace `<new-branch-name>` with the ID of the dataset you are working with (the ID will be listed under the issue).
+5. Create a new branch on your forked reposity (see below). Replace `<new-branch-name>` with the ID of the dataset you are working with (the ID will be listed under the issue).
 
   ```
   git checkout -b <new-branch-name>
