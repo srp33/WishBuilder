@@ -6,25 +6,77 @@ Please complete the following steps to get started as a contributor.
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
-3. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
+3. Please create your own forked repository of WishBuilder by clicking on "Fork" (upper right hand corner of the webpage). Please make all of your future pull requests from your forked repository.
+
+### 3. Setting Up Your SSH Key
+
+A. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
 
   ```
   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   ```
 
-4. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
+B. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
 
-5. When it asks you to enter a passphrase, press Enter (twice).
+C. When it asks you to enter a passphrase, press Enter (twice).
 
-6. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
+D. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
 
   ```
   cat ~/.ssh/id_rsa.pub
   ```
   
-7. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
+E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
 
-8. After you have set up your ssh key so that GitHub can recognize your pull requests please return to this repository and fork this repository by clicking on "Fork" (upper right hand corner of the webpage). Please make all your pull requests from your forked repository.
+### Setting Up WishBuilder Dependencies
+
+1. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
+
+2. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
+
+```
+export PATH=$PATH
+PATH=~/Software/miniconda/bin:$PATH
+export PATH
+```
+
+3. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
+
+```
+  source activate WishBuilderDependencies 
+  conda install -y -c bioconda r-sleuth
+  conda install -y -c r r-xml=3.98_1.5
+  conda install -y gcc
+  Rscript installRPackages.R
+  source deactivate WishBuilderDependencies
+```
+
+4. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container, so if you try to activate the environment in your code this container will not find it. You can easily download the needed software without making the environment. For example:
+
+```
+  #source activate WishBuilderDependencies 
+  conda install -y -c bioconda r-sleuth
+  conda install -y -c r r-xml=3.98_1.5
+  conda install -y gcc
+  Rscript installRPackages.R
+  #source deactivate WishBuilderDependencies
+```
+
+5. Each time you would like to use the environment, you can easily activate it and use it in your code. This will commonly be used in the parse.sh (will be discussed below). Make sure that you comment out the environment activation commands before creating a pull request because this environment is not found on the container.
+
+#### On the supercomputer
+```
+  source activate WishBuilderDependencies 
+  <execute-your-code>
+  source deactivate WishBuilderDependencies
+```
+
+#### Submitted pull requests
+```
+  #source activate WishBuilderDependencies 
+  <execute-your-code>
+  #source deactivate WishBuilderDependencies
+```
 
 ## Preparing a Dataset
 
@@ -98,40 +150,6 @@ Please complete the following steps for each dataset that you prepare. Let me kn
   ```
 
 19. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Before navigating to any branches, please click on "compare accross forks". Put "srp33/Wishbuilder" as the base fork and "master" as the base branch and your repository as the head for and your new branch as the compare branch. Click on "Create pull request". We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository. You can check the status [here](https://srp33.github.io/WishBuilder/docs/dataSets). It may take hours (or even days) to finish processing, depending on the size of your data. 
-
-### Setting Up WishBuilder Dependencies
-
-1. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
-
-2. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
-
-```
-export PATH=$PATH
-PATH=~/Software/miniconda/bin:$PATH
-export PATH
-```
-
-3. Your datset may require additional software to download, parse, and filter your dataset. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary:
-
-```
-  source activate WishBuilderDependencies 
-  conda install -y -c bioconda r-sleuth
-  conda install -y -c r r-xml=3.98_1.5
-  conda install -y gcc
-  Rscript installRPackages.R
-  source deactivate WishBuilderDependencies
-```
-
-4. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container. You can easily download the needed software without making the environment. 
-
-```
-  #source activate WishBuilderDependencies 
-  conda install -y -c bioconda r-sleuth
-  conda install -y -c r r-xml=3.98_1.5
-  conda install -y gcc
-  Rscript installRPackages.R
-  #source deactivate WishBuilderDependencies
-```
 
 ## Notes
 
