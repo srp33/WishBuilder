@@ -4,13 +4,13 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Failed]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/06/18	|	00h:15m:27s	|	1904	|	22913	|	24367	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	02/05/18	|	00h:06m:42s	|	1041	|	8	|	20501	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/05/18	|	00h:04m:28s	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	02/05/18	|	00h:00m:07s	|	0	|	0	|	0	|
 |	[TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression]({{site.url}}/Descriptions/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/TCGA_BreastCancer_FilteredSomaticMutations_RNAExpression-status)	|	02/05/18	|	00h:17m:58s	|	943	|	86	|	23368	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/05/18	|	00h:23m:51s	|	7056	|	5	|	12080	|
 |	[UCSF_Weiss_CTDD]({{site.url}}/Descriptions/UCSF_Weiss_CTDD-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/UCSF_Weiss_CTDD-status)	|	02/05/18	|	00h:00m:28s	|	20	|	3	|	19340	|
-|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Failed]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/02/18	|	00h:16m:53s	|	1904	|	22913	|	24367	|
 |	[BiomarkerBenchmark_GSE10320 Update]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320 Update-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320 Update-status)	|	02/02/18	|	N/A	|	0	|	0	|	0	|
 |	[UCSF_Weiss_CTDD]({{site.url}}/Descriptions/UCSF_Weiss_CTDD-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/UCSF_Weiss_CTDD-status)	|	02/02/18	|	00h:00m:10s	|	0	|	0	|	0	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	srp33	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	01/26/18	|	00h:06m:09s	|	1041	|	8	|	20501	|

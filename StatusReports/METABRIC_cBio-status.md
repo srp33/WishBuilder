@@ -1,6 +1,6 @@
 <h1><center>METABRIC_cBio</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 02, 18 13:02PM MST</center>
+<center>Feb 06, 18 11:02AM MST</center>
 
 
 ### Testing Directory . . .
@@ -56,37 +56,25 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 1 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 2 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 3 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 4 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 5 of "test_data.tsv" should contain exactly three columns.
-
 &#10060;	Row 6 of "test_data.tsv" should contain exactly three columns.
 
 &#10060;	Row 7 of "test_data.tsv" should contain exactly three columns.
 
-&#10060;	Row 8 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	test_data.tsv does not contain enough unique samples to test (min: 2)
+&#9989;	test_data.tsv contains enough unique samples to test
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
+
+&#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
+
+&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
+
+&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
 
 &#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"MB-6020" does not have enough features to test (min: 2)
-
-&#10060;	"MB-0906" does not have enough features to test (min: 2)
-
-&#10060;	"MB-0045" does not have enough features to test (min: 2)
-
-&#9989;	test_metadata.tsv contains enough test cases (10; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -107,63 +95,9 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 2 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 3 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 4 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 5 of "test_data.tsv" does not contain 3 columns
-
 &#10060;	Row 6 of "test_data.tsv" does not contain 3 columns
 
 &#10060;	Row 7 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 8 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row: 1 - Sample "MB-0362" is not found in data.tsv.gz
-
-&#10060;	Row: 2 - Sample "MB-0346" is not found in data.tsv.gz
-
-&#10060;	Row: 3 - Sample "MB-0386" is not found in data.tsv.gz
-
-&#10060;	Row: 4 - Sample "MB-0574" is not found in data.tsv.gz
-
-&#10060;	Row: 5 - Sample "MB-5453" is not found in data.tsv.gz
-
-&#10060;	Row: 6 - Sample "MB-5471" is not found in data.tsv.gz
-
-&#10060;	Row: 7 - Sample "MB-5127" is not found in data.tsv.gz
-
-&#10060;	Row: 8 - Sample "MB-4313" is not found in data.tsv.gz
-
-#### Results: **<font color="red">FAIL</font>**
----
-### First 3 columns and 5 rows of metadata.tsv.gz:
-
-|	Sample	|	Variable	|	Value	|
-|	---	|	---	|	---	|
-|	MB-0000	|	INTCLUST	|	4ER+	|
-|	MB-0000	|	GRADE	|	3	|
-|	MB-0000	|	LATERALITY	|	r	|
-|	MB-0000	|	CHEMOTHERAPY	|	NO	|
-
-**Columns: 3 Rows: 11984852**
-
----
-### "metadata.tsv.gz" Test Cases (from rows in test file). . .
-
-&#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__NRAS__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__AGTR2__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__KRAS__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SAMPLE_TYPE" for all samples is the same ("Primary"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -175,17 +109,59 @@ Executing parse.sh: Success
 
 &#9989;	Row 5: Success
 
-&#9989;	Row 6: Success
+&#10060;	Row: 6 - Sample "MB-4313 RNF165" is not found in data.tsv.gz
+
+&#10060;	Row: 7 - Sample "MB-4313 PHF7" is not found in data.tsv.gz
+
+&#9989;	Row 8: Success
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	MB-0000	|	OS_MONTHS	|	140.5	|
+|	MB-0000	|	OS_STATUS	|	LIVING	|
+|	MB-0000	|	VITAL_STATUS	|	Living	|
+|	MB-0000	|	INTCLUST	|	4ER+	|
+
+**Columns: 3 Rows: 11984852**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SAMPLE_TYPE" for all samples is the same ("Primary"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__KRAS__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__NRAS__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "SomaticMutation__AGTR2__Variant_Classification" for all samples is the same ("Missense_Mutation"). This variable has been removed from metadata.tsv.gz</p>
+
+&#9989;	Row 1: Success
+
+&#10060;	Row 2: Fail
+- "MB-0045 TUMOR_SIZE	19" is not found.
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#10060;	Row 6: Fail
+- "MB-0046 CNA__ABCA9-AS1	Low-level amplification" is not found.
 
 &#10060;	Row 7: Fail
-- "MB-6020	CNA__ZZZ3	High-level amplification" is not found.
+- "MB-0046 CNA__ZZEF1	Heterozygous deletion" is not found.
 
 &#9989;	Row 8: Success
 
 &#10060;	Row 9: Fail
-- "MB-7299 HISTOLOGICAL_SUBTYPE	IDC" is not found.
-
-&#9989;	Row 10: Success
+- "MB-0046 SomaticMutation__TP53__Variant_Classification	Missense_Mutation" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -198,7 +174,5 @@ Executing parse.sh: Success
 ---
 ### Testing Directory after cleanup . . .
 
-&#10060;	"brca_metabric" should have been deleted during cleanup.
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
