@@ -4,7 +4,7 @@ MB-0045 TUMOR_SIZE	19
 MB-0045	OS_MONTHS	164.9
 MB-0045	HISTOLOGICAL_SUBTYPE	IDC
 MB-0046	CNA__A2M	Heterozygous deletion
-MB-0046 CNA__ABCA9-AS1	Low-level amplification
-MB-0046 CNA__ZZEF1	Heterozygous deletion
+MB-0046	CNA__ABCA9-AS1	Low-level amplification
+MB-0046	CNA__ZSWIM7	Heterozygous deletion
 MB-0046	SomaticMutation__PIK3CA__Variant_Classification	Missense_Mutation
 MB-0046 SomaticMutation__TP53__Variant_Classification	Missense_Mutation
