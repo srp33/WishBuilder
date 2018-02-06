@@ -1,13 +1,11 @@
 <h1><center>UCSF_Weiss_CTDD</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 06, 18 14:02PM MST</center>
+<center>Feb 06, 18 16:02PM MST</center>
 
 
 ### Testing Directory . . .
 
-&#10060;	 Neither data.tsv.gz nor metadata.tsv.gz nor .gitignore should exist in directory.
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Testing Configuration File . . .
 
@@ -43,4 +41,18 @@ Executing install.sh: Success
 &#9989;	description.md exists.
 
 &#9989;	config.yaml exists.
+
+*Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: 
+
+&#10060;	parse.sh returned an error:
+~~~bash
+  File "parse_metadata.py", line 27
+    elif genotype == "KO"
+                        ^
+SyntaxError: invalid syntax
+~~~
 
