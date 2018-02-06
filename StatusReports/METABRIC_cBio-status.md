@@ -1,6 +1,6 @@
 <h1><center>METABRIC_cBio</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 06, 18 11:02AM MST</center>
+<center>Feb 06, 18 15:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -56,19 +56,11 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 6 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 7 of "test_data.tsv" should contain exactly three columns.
-
 &#9989;	test_data.tsv contains enough unique samples to test
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
 &#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 7 of "test_metadata.tsv" should contain exactly three columns.
 
 &#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
 
@@ -95,10 +87,6 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 6 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row 7 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
@@ -109,13 +97,13 @@ Executing parse.sh: Success
 
 &#9989;	Row 5: Success
 
-&#10060;	Row: 6 - Sample "MB-4313 RNF165" is not found in data.tsv.gz
+&#9989;	Row 6: Success
 
-&#10060;	Row: 7 - Sample "MB-4313 PHF7" is not found in data.tsv.gz
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -153,10 +141,9 @@ Executing parse.sh: Success
 &#9989;	Row 5: Success
 
 &#10060;	Row 6: Fail
-- "MB-0046 CNA__ABCA9-AS1	Low-level amplification" is not found.
+- "MB-0046	CNA__ABCA9-AS1	Low-level amplification" is not found.
 
-&#10060;	Row 7: Fail
-- "MB-0046 CNA__ZZEF1	Heterozygous deletion" is not found.
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
