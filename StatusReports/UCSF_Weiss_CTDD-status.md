@@ -1,6 +1,6 @@
 <h1><center>UCSF_Weiss_CTDD</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 06, 18 16:02PM MST</center>
+<center>Feb 06, 18 20:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -46,13 +46,126 @@ Executing install.sh: Success
 
 Executing download.sh: Success
 
-Executing parse.sh: 
+Executing parse.sh: Success
 
-&#10060;	parse.sh returned an error:
-~~~bash
-  File "parse_metadata.py", line 27
-    elif genotype == "KO"
-                        ^
-SyntaxError: invalid syntax
-~~~
+&#9989;	data.tsv.gz was created and zipped correctly.
 
+&#9989;	metadata.tsv.gz was created and zipped correctly.
+
+#### Results: PASS
+---
+### Testing Key Files:
+
+&#10060;	Row 2 of "test_data.tsv" should contain exactly three columns.
+
+&#9989;	test_data.tsv contains enough unique samples to test
+
+&#10060;	"RU109_1358" does not have enough features to test (min: 2)
+
+&#9989;	test_data.tsv contains enough test cases (11; min: 8)
+
+&#10060;	Row 5 of "test_metadata.tsv" should contain exactly three columns.
+
+&#9989;	test_metadata.tsv contains enough unique samples to test
+
+&#10060;	"RU109_1445" does not have enough features to test (min: 2)
+
+&#9989;	test_metadata.tsv contains enough test cases (10; min: 8)
+
+#### Results: **<font color="red">FAIL</font>**
+---
+
+### First 5 columns and 5 rows of data.tsv.gz:
+
+|	Sample	|	0610007C21Rik	|	0610007L01Rik	|	0610007P08Rik	|	0610007P14Rik	|
+|	---	|	---	|	---	|	---	|	---	|
+|	RU109_1355	|	9.1900	|	8.3670	|	6.2000	|	8.9890	|
+|	RU109_1358	|	8.8340	|	8.5230	|	5.9945	|	9.3620	|
+|	RU109_1359	|	9.1900	|	8.2750	|	5.9500	|	8.9350	|
+|	RU109_1361	|	9.1380	|	8.3780	|	5.8920	|	8.8210	|
+
+**Columns: 19341 Rows: 21**
+
+---
+### "data.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#10060;	Row 2 of "test_data.tsv" does not contain 3 columns
+
+&#9989;	Row 1: Success
+
+&#10060;	Row: 2 - Sample "RU109_1358" is not found in data.tsv.gz
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
+
+&#9989;	Row 11: Success
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	RU109_1355	|	Sex	|	M	|
+|	RU109_1355	|	Germline Hras1 status	|	Hras1-/-	|
+|	RU109_1355	|	Color	|	agouti (tan)	|
+|	RU109_1358	|	Sex	|	M	|
+
+**Columns: 3 Rows: 1201**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#10060;	Row 5: Fail
+- "RU109_1455	Color	white (albino)	" is not found.
+
+&#10060;	Row 6: Fail
+- "RU109_1455	Germline Hras1 status	Hras1-/-" is not found.
+
+&#10060;	Row 7: Fail
+- "RU109_1455	Color	white (albino)" is not found.
+
+&#9989;	Row 8: Success
+
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### Comparing samples in both files . . .
+
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+
+#### Results: PASS
+
+---
+### Testing Directory after cleanup . . .
+
+#### Results: PASS
+---
