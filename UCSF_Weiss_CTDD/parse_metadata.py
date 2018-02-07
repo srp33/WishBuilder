@@ -24,7 +24,7 @@ with open(inFilePath, 'r') as inFile:
 
          if genotype == "WT":
              genotype = "Wild Type"
-         elif genotype == "KO"
+         elif genotype == "KO":
              genotype = "Hras1-/-"
          if color == "A":
              color = "agouti (tan)"
