@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/07/18	|	06h:27m:03s	|	976	|	2238	|	17737	|
 |	[UCSF_Weiss_CTDD]({{site.url}}/Descriptions/UCSF_Weiss_CTDD-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/UCSF_Weiss_CTDD-status)	|	02/07/18	|	00h:00m:25s	|	20	|	3	|	19340	|
-|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/06/18	|	In Progress	|	0	|	0	|	0	|
 |	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Failed]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/06/18	|	00h:16m:35s	|	1904	|	22913	|	24367	|
 |	[ICGC_BRCA-US_exp_seq]({{site.url}}/Descriptions/ICGC_BRCA-US_exp_seq-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/ICGC_BRCA-US_exp_seq-status)	|	02/05/18	|	00h:06m:42s	|	1041	|	8	|	20501	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/05/18	|	00h:04m:28s	|	0	|	0	|	0	|
