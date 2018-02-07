@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	02/07/18	|	00h:57m:14s	|	0	|	0	|	0	|
 |	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Complete]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/07/18	|	00h:15m:07s	|	1904	|	22913	|	24367	|
-|	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	02/07/18	|	00h:48m:13s	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	02/07/18	|	01h:36m:30s	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	02/07/18	|	In Progress	|	0	|	0	|	0	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/07/18	|	In Progress	|	0	|	0	|	0	|
