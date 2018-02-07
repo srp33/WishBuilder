@@ -1,6 +1,6 @@
 <h1><center>METABRIC_cBio</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Feb 06, 18 15:02PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Feb 07, 18. 14:02 MST</center>
 
 
 ### Testing Directory . . .
@@ -60,15 +60,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -131,8 +127,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "MB-0045 TUMOR_SIZE	19" is not found.
+&#9989;	Row 2: Success
 
 &#9989;	Row 3: Success
 
@@ -140,17 +135,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "MB-0046	CNA__ABCA9-AS1	Low-level amplification" is not found.
+&#9989;	Row 6: Success
 
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-&#10060;	Row 9: Fail
-- "MB-0046 SomaticMutation__TP53__Variant_Classification	Missense_Mutation" is not found.
+&#9989;	Row 9: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
