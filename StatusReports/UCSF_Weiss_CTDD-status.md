@@ -1,6 +1,6 @@
 <h1><center>UCSF_Weiss_CTDD</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Feb 06, 18 23:02PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Feb 08, 18. 11:02 MST</center>
 
 
 ### Testing Directory . . .
@@ -56,23 +56,15 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 2 of "test_data.tsv" should contain exactly three columns.
-
 &#9989;	test_data.tsv contains enough unique samples to test
-
-&#10060;	"RU109_1358" does not have enough features to test (min: 2)
 
 &#9989;	test_data.tsv contains enough test cases (11; min: 8)
 
-&#10060;	Row 5 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"RU109_1445" does not have enough features to test (min: 2)
+&#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
-&#9989;	test_metadata.tsv contains enough test cases (10; min: 8)
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -91,11 +83,9 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 2 of "test_data.tsv" does not contain 3 columns
-
 &#9989;	Row 1: Success
 
-&#10060;	Row: 2 - Sample "RU109_1358" is not found in data.tsv.gz
+&#9989;	Row 2: Success
 
 &#9989;	Row 3: Success
 
@@ -115,7 +105,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 11: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -141,22 +131,17 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "RU109_1455	Color	white (albino)	" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "RU109_1455	Germline Hras1 status	Hras1-/-" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "RU109_1455	Color	white (albino)" is not found.
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
 &#9989;	Row 9: Success
 
-&#9989;	Row 10: Success
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
