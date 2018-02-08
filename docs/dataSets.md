@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	02/08/18	|	11h:53m:11s	|	473647	|	32	|	12328	|
 |	[UCSF_Weiss_CTDD]({{site.url}}/Descriptions/UCSF_Weiss_CTDD-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/UCSF_Weiss_CTDD-status)	|	02/08/18	|	00h:00m:28s	|	20	|	3	|	19340	|
-|	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	02/08/18	|	In Progress	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	02/07/18	|	01h:17m:51s	|	0	|	0	|	0	|
 |	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	frytime32	|	[Complete]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/07/18	|	00h:15m:15s	|	1904	|	22913	|	24367	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/07/18	|	07h:11m:15s	|	976	|	2238	|	17737	|
