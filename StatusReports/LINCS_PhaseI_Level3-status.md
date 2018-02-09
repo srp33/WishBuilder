@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level3</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 07, 18 15:02PM MST</center>
+<center>Feb 08, 18 18:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -51,8 +51,8 @@ Executing parse.sh:
 &#10060;	parse.sh returned an error:
 ~~~bash
 Traceback (most recent call last):
-  File "parse.py", line 32, in <module>
-    list = line.strip('\n').split('\t')
-TypeError: a bytes-like object is required, not 'str'
+  File "parse.py", line 108, in <module>
+    f.write(('\t' + geneDict[str(value)]).encode())
+KeyError: "b'5720'"
 ~~~
 
