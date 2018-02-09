@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level4</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 07, 18 16:02PM MST</center>
+<center>Feb 08, 18 19:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -50,9 +50,12 @@ Executing parse.sh:
 
 &#10060;	parse.sh returned an error:
 ~~~bash
+Could not find conda environment: WishBuilderDependencies
+You can list all discoverable environments with `conda info --envs`.
+
 Traceback (most recent call last):
-  File "parse.py", line 33, in <module>
-    list = line.strip('\n').split('\t')
-TypeError: a bytes-like object is required, not 'str'
+  File "parse.py", line 108, in <module>
+    f.write(('\t' + geneDict[str(value)]).encode())
+KeyError: "b'5720'"
 ~~~
 
