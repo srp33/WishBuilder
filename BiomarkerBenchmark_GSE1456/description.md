@@ -1,4 +1,4 @@
-These data were derived from Gene Expression Omnibus data set 1456
+These data were derived from Gene Expression Omnibus data set GSE1456.
 
 "Gene expression of breast cancer tissue in a large population-based cohort of Swedish patients"
 
