@@ -1,16 +1,15 @@
-#make redirectedTempFolder
-redirectedTempFolder=tmp
-mkdir -p $redirectedTempFolder
 
-#downloading expression data
+#Downloading data
 url="{urlExpression}"
-fileName=$redirectedTempFolder/Expression.gz
+wget -P tmp "$url"
 
-wget -O $fileName $url
-gunzip $fileName
+#Dealing with Tar and Gzipped files
+cd tmp
+tar -xvf download?version=4 
+gzip -d *Expression.txt.gz
 
-#downloading clinical data
-url="{urlClinical}"
-fileName=$redirectedTempFolder/Clinical
-
-wget -O $fileName $url
+#Renaming files to be generic names
+mv *Clinical.txt Clinical
+mv *Expression.txt Expression
+#return to main directory
+cd ..
