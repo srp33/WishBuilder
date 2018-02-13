@@ -1,8 +1,7 @@
-These data were derived from Gene Expression Omnibus data set {$1}
-{$2}
+These data were derived from Gene Expression Omnibus data set GSE{dataset}. "{title}."
 
-Comment(s): The expression data were normalized using the [SCAN algorithm](https://bioconductor.org/packages/release/bioc/html/SCAN.UPC.html) and summarized at the gene level using Ensembl identifiers
+Comment(s): This data set was curated as part of the [Biomarker Benchmark project](https://osf.io/ssk3t/). The expression data were normalized using the [SCAN algorithm](https://bioconductor.org/packages/release/bioc/html/SCAN.UPC.html) and summarized at the gene level using Ensemble identifiers.
 
-Data Source(s): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE{$1}
+Data Source(s): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE{dataset}
 
-Citation(s): {$3}
+Citation(s): {source}
