@@ -5,3 +5,4 @@ rm -f download.sh
 rm -f parse.py
 rm -f parse.sh
 rm -f cleanup.sh
+rm -f descriptionData*
