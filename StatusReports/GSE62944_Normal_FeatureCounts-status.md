@@ -1,6 +1,6 @@
 <h1><center>GSE62944_Normal_FeatureCounts</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 09, 18 16:02PM MST</center>
+<center>Feb 15, 18 16:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -9,11 +9,13 @@
 ---
 ### Testing Configuration File . . .
 
-&#10060;	 config.yaml does not exist
+&#9989;	config.yaml contains all necessary configurations.
+
+&#9989;	Title is less than 100 characters
 
 &#9989;	description.md contains a description.
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Running Install . . .
 
@@ -38,7 +40,21 @@ Executing install.sh: Success
 
 &#9989;	description.md exists.
 
-&#10060;	config.yaml does not exist.
+&#9989;	config.yaml exists.
 
-#### Results: **<font color="red">FAIL</font>**
----
+*Running user code . . .*
+
+Executing download.sh: Success
+
+Executing parse.sh: 
+
+&#10060;	parse.sh returned an error:
+~~~bash
+Error in library(XML) : there is no package called ‘XML’
+Execution halted
+Traceback (most recent call last):
+  File "parse.py", line 12, in <module>
+    with open(namesToAbbreviations, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'tmp/nameToAbbreviation.txt'
+~~~
+

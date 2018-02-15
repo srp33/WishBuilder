@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/15/18	|	00h:05m:18s	|	0	|	0	|	0	|
 |	[TCGA_BreastCancer_GDC]({{site.url}}/Descriptions/TCGA_BreastCancer_GDC-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/TCGA_BreastCancer_GDC-status)	|	02/15/18	|	00h:12m:40s	|	943	|	86	|	23368	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/15/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/15/18	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/15/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE1456]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE1456-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE1456-status)	|	02/15/18	|	00h:00m:21s	|	159	|	7	|	11832	|
