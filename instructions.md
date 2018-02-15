@@ -192,7 +192,7 @@ Each of these files should have at least 8 lines of data (not including the head
 
 Your scripts should produce two tab-delimited text files: `metadata.tsv.gz` and `data.tsv.gz` (see below). Geney will import these data files.
 
-`metadata.tsv.gz` should be structured the same as `test_metadata.tsv`, except that it should contain all metadata values and should be gzipped.
+`metadata.tsv.gz` should be structured the same as `test_metadata.tsv`, except that it should contain all metadata values and should be gzipped. Do not include any rows in `metadata.tsv.gz` that would have blank or empty values in the "Value" column. If the value to be parsed in a file is blank or empty, skip it.
 
 The table below illustrates how `data.tsv.gz` should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample". This file should be gzipped.
 
