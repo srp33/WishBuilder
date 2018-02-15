@@ -3,16 +3,12 @@
 redirectedTempFolder=tmp
 PatientCancerType=$redirectedTempFolder/GSE62944_06_01_15_TCGA_24_Normal_CancerType_Samples.txt
 NormalTPM=$redirectedTempFolder/GSM1697009_06_01_15_TCGA_24.normal_Rsubread_TPM.txt
-transposedNormalTPM=$redirectedTempFolder/transposedNormalTPM.txt
-dataOutFile=data.tsv
-metadataOutFile=metadata.tsv
+tcgaHtml=$redirectedTempFolder/"tcga_abbreviations.html"
+nameToAbbreviation=$redirectedTempFolder/"nameToAbbreviation.txt"
 dataOutFilegz=data.tsv.gz
 metadataOutFilegz=metadata.tsv.gz
 
-rm -f $metadataOutFilegz
-rm -f $dataOutFilegz
+#source activate WishBuilderDependencies
 
-python parse.py $PatientCancerType $NormalTPM $transposedNormalTPM $dataOutFile $metadataOutFile
-
-gzip $metadataOutFile
-gzip $dataOutFile
+Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
+python parse.py $PatientCancerType $NormalFeatureCounts $transposedNormalFeatureCounts $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
