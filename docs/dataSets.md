@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/15/18	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/10/18	|	00h:00m:21s	|	144	|	1	|	11832	|
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/09/18	|	00h:00m:08s	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	02/09/18	|	01h:36m:15s	|	0	|	0	|	0	|
@@ -83,4 +84,3 @@
 |	[BiomarkerBenchmark_GSE6532_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133PLUS2-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133PLUS2-status)	|	12/15/17	|	00h:00m:12s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE58697]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE58697-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE58697-status)	|	12/14/17	|	00h:00m:24s	|	122	|	6	|	20024	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	12/14/17	|	00h:00m:22s	|	317	|	17	|	11832	|
-|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	12/12/17	|	00h:00m:14s	|	144	|	1	|	11832	|
