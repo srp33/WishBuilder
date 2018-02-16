@@ -1,5 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE20181</center></h1>
-<h2><center> Status: Complete </center></h2>
+<h2><center> Status: Failed </center></h2>
+<center>Feb 16, 18 15:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -143,5 +144,7 @@ Executing parse.sh: Success
 ---
 ### Testing Directory after cleanup . . .
 
-#### Results: PASS
+&#10060;	"newDescription" should have been deleted during cleanup.
+
+#### Results: **<font color="red">FAIL</font>**
 ---
