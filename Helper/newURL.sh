@@ -1,6 +1,6 @@
 #!/bin/bash
 
-newURL = $1
+newURL=$1
 
 echo "#! /bin/bash
 
