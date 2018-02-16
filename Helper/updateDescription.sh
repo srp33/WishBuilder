@@ -8,7 +8,7 @@ bash install.sh
 bash download.sh
 
 #Get lines from Description File
-SOURCE=$(cat descriptionData | grep "Citation" -A1 | tail -n 1)
+SOURCE=$(cat newDescription | grep "Citation" -A1 | tail -n 1)
 
 
 sed -e "s,{dataset},$2,g" -e "s,{source},$SOURCE,g"  ../Helper/BiomarkerBenchmark/description.md > description.md

@@ -1,4 +1,4 @@
-These data were derived from Gene Expression Omnibus data set GSE19804. "This report is a comprehensive analysis of the molecular signature of non-smoking female lung cancer in Taiwan."
+These data were derived from Gene Expression Omnibus data set GSE19804. "Although smoking is the major risk factor for lung cancer, only 7% of female lung cancer patients in Taiwan have a history of cigarette smoking, extremely lower than those in Caucasian females. This report is a comprehensive analysis of the molecular signature of non-smoking female lung cancer in Taiwan."
 
 Comment(s): This data set was curated as part of the [Biomarker Benchmark project](https://osf.io/ssk3t/). The expression data were normalized using the [SCAN algorithm](https://bioconductor.org/packages/release/bioc/html/SCAN.UPC.html) and summarized at the gene level using Ensembl identifiers.
 
