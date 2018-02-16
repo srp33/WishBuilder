@@ -4,4 +4,4 @@ Comment(s): This data set was curated as part of the [Biomarker Benchmark projec
 
 Data source(s): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10320
 
-Citation(s):  https://www.ncbi.nlm.nih.gov/pubmed/19208794
+Citation(s): https://www.ncbi.nlm.nih.gov/pubmed/19208794
