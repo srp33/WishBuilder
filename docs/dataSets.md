@@ -4,9 +4,9 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/20/18	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[BiomarkerBenchmark_GSE25507]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE25507-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE25507-status)	|	02/20/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	02/20/18	|	00h:00m:14s	|	0	|	0	|	0	|
-|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/19/18	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[BiomarkerBenchmark_GSE2109_Uterus]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Uterus-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Uterus-status)	|	02/17/18	|	00h:00m:36s	|	112	|	19	|	20024	|
 |	[BiomarkerBenchmark_GSE2109_Prostate]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Prostate-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Prostate-status)	|	02/17/18	|	00h:00m:33s	|	76	|	26	|	20024	|
 |	[BiomarkerBenchmark_GSE20181]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20181-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20181-status)	|	02/16/18	|	00h:00m:56s	|	165	|	3	|	11832	|
