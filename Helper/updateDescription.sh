@@ -9,5 +9,10 @@ bash download.sh
 
 #Get lines from Description File3
 SOURCE=$(cat newDescription | grep "Citation" -A1 | tail -n 1)
+TITLE=$(cat newDescription | grep "Title" -A1 | tail -n 1)
 
 sed -e "s,{dataset},$2,g" -e "s,{source},$SOURCE,g"   ../Helper/BiomarkerBenchmark/description.md > description.md
+TITLE="title: $TITLE ($2)"
+
+$ sed '1 c\
+> $TITLE' config.yaml
