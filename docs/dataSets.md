@@ -4,9 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[TCGA_BreastCancer_GDC]({{site.url}}/Descriptions/TCGA_BreastCancer_GDC-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/TCGA_BreastCancer_GDC-status)	|	02/23/18	|	00h:09m:55s	|	943	|	86	|	23368	|
-|	[METABRIC_cBio]({{site.url}}/Descriptions/METABRIC_cBio-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/METABRIC_cBio-status)	|	02/23/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/23/18	|	00h:00m:14s	|	144	|	1	|	11832	|
+|	[TCGA_BreastCancer_GDC]({{site.url}}/Descriptions/TCGA_BreastCancer_GDC-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/TCGA_BreastCancer_GDC-status)	|	02/23/18	|	00h:09m:55s	|	943	|	86	|	23368	|
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/23/18	|	00h:02m:36s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	02/23/18	|	00h:02m:07s	|	0	|	0	|	0	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	02/23/18	|	00h:00m:13s	|	0	|	0	|	0	|
