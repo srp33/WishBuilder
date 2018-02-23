@@ -1,6 +1,6 @@
 <h1><center>GSE62944_Normal_FeatureCounts</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 15, 18 16:02PM MST</center>
+<center>Feb 23, 18 14:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -50,6 +50,9 @@ Executing parse.sh:
 
 &#10060;	parse.sh returned an error:
 ~~~bash
+Could not find conda environment: WishBuilderDependencies
+You can list all discoverable environments with `conda info --envs`.
+
 Error in library(XML) : there is no package called ‘XML’
 Execution halted
 Traceback (most recent call last):

@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/23/18	|	00h:02m:36s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/23/18	|	00h:00m:14s	|	144	|	1	|	11832	|
 |	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	02/23/18	|	In Progress	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	02/21/18	|	In Progress	|	0	|	0	|	0	|
@@ -73,7 +74,6 @@
 |	[BiomarkerBenchmark_GSE2109_Uterus]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Uterus-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Uterus-status)	|	12/15/17	|	00h:00m:23s	|	112	|	19	|	20024	|
 |	[BiomarkerBenchmark_GSE21510]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE21510-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE21510-status)	|	12/15/17	|	00h:00m:20s	|	104	|	2	|	20024	|
 |	[BiomarkerBenchmark_GSE26682_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133A-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133A-status)	|	12/15/17	|	00h:00m:16s	|	140	|	3	|	11832	|
-|	[BiomarkerBenchmark_GSE26682_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE26682_U133PLUS2-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE26682_U133PLUS2-status)	|	12/15/17	|	00h:00m:16s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE27279]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27279-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27279-status)	|	12/15/17	|	00h:00m:21s	|	100	|	3	|	16632	|
 |	[BiomarkerBenchmark_GSE27342]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE27342-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE27342-status)	|	12/15/17	|	00h:00m:23s	|	155	|	5	|	16632	|
 |	[BiomarkerBenchmark_GSE25507]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE25507-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE25507-status)	|	12/15/17	|	00h:00m:22s	|	130	|	5	|	20024	|
@@ -93,6 +93,5 @@
 |	[BiomarkerBenchmark_GSE48391]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE48391-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE48391-status)	|	12/15/17	|	00h:00m:18s	|	80	|	7	|	20024	|
 |	[BiomarkerBenchmark_GSE5460]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE5460-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE5460-status)	|	12/15/17	|	00h:00m:21s	|	127	|	7	|	20024	|
 |	[BiomarkerBenchmark_GSE5462]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE5462-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE5462-status)	|	12/15/17	|	00h:00m:22s	|	47	|	2	|	11832	|
-|	[BiomarkerBenchmark_GSE6532_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133PLUS2-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133PLUS2-status)	|	12/15/17	|	00h:00m:12s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE58697]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE58697-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE58697-status)	|	12/14/17	|	00h:00m:24s	|	122	|	6	|	20024	|
 |	[BiomarkerBenchmark_GSE6532_U133A]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133A-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133A-status)	|	12/14/17	|	00h:00m:22s	|	317	|	17	|	11832	|
