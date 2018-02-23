@@ -1,6 +1,6 @@
 <h1><center>GSE62944_Normal_FeatureCounts</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 23, 18 14:02PM MST</center>
+<center>Feb 23, 18 16:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -50,10 +50,9 @@ Executing parse.sh:
 
 &#10060;	parse.sh returned an error:
 ~~~bash
-Could not find conda environment: WishBuilderDependencies
-You can list all discoverable environments with `conda info --envs`.
-
-Error in library(XML) : there is no package called ‘XML’
+Error in contrib.url(repos, type) : 
+  trying to use CRAN without setting a mirror
+Calls: install.packages -> grep -> contrib.url
 Execution halted
 Traceback (most recent call last):
   File "parse.py", line 12, in <module>
