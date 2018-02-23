@@ -14,9 +14,6 @@ sigFileName=$redirectedTempFolder/GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.g
 gctxFileName=$redirectedTempFolder/LINCS_PhaseII_Level5.gctx
 geneFile=$redirectedTempFolder/GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz
 
-#Downloaded and Installed in install.sh
-minicondaPath=$softwareFolder/miniconda/bin/
-
 #Will Create
 dataOutFile=data.tsv.gz
 metadataOutFile=metadata.tsv.gz
@@ -26,13 +23,8 @@ cellInfo=$redirectedTempFolder/GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz
 pertInfo=$redirectedTempFolder/GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz
 sigMetrics=$redirectedTempFolder/GSE70138_Broad_LINCS_sig_metrics_2017-03-06.txt.gz
 
-rm -f $metadataOutFile
-rm -f $dataOutFile
-
 #miniconda is used to store panda software in environments need to activate environment
-echo "Setting up environment"
-cd $minicondaPath
+#source activate WishBuilderDependencies2 
 source activate lincs_env
-cd ../../..
 
-python parse.py $sigFileName $gctxFileName $metadataOutFile $dataOutFile $geneFile $cellInfo $pertInfo $sigMetrics
+python2 parse.py $sigFileName $gctxFileName $metadataOutFile $dataOutFile $geneFile $cellInfo $pertInfo $sigMetrics
