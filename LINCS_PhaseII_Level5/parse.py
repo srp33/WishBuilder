@@ -46,6 +46,9 @@ try :
         a = np.asarray(line).astype(str)
         f.write(rowgrp["id"][index] + '\t' + '\t'.join(a) + '\n')
         index = index + 1 
+        if index % 1000 == 0 :
+            print(str(index) + " of 473647 expression")
+
 finally :
     f.close()
 
