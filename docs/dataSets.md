@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	02/26/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[test_branch]({{site.url}}/Descriptions/test_branch-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/test_branch-status)	|	02/26/18	|	00h:00m:11s	|	5	|	2	|	5	|
