@@ -56,35 +56,11 @@ Executing parse.sh: Success
 ---
 ### Testing Key Files:
 
-&#10060;	Row 1 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 2 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 3 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 4 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 5 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	Row 6 of "test_data.tsv" should contain exactly three columns.
-
-&#10060;	test_data.tsv does not contain enough unique samples to test (min: 2)
+&#9989;	test_data.tsv contains enough unique samples to test
 
 &#10060;	test_data.tsv does not contain enough test cases. (6; min: 8)
 
-&#10060;	Row 1 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 2 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 3 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 4 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 5 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 6 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	test_metadata.tsv does not contain enough unique samples to test (min: 2)
+&#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#10060;	test_metadata.tsv does not contain enough test cases. (6; min: 8)
 
@@ -107,29 +83,17 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row: 1 - age is not found in "data.tsv.gz" column headers
 
-&#10060;	Row 2 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row: 2 - color is not found in "data.tsv.gz" column headers
 
-&#10060;	Row 3 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row: 3 - age is not found in "data.tsv.gz" column headers
 
-&#10060;	Row 4 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row: 4 - color is not found in "data.tsv.gz" column headers
 
-&#10060;	Row 5 of "test_data.tsv" does not contain 3 columns
+&#10060;	Row: 5 - age is not found in "data.tsv.gz" column headers
 
-&#10060;	Row 6 of "test_data.tsv" does not contain 3 columns
-
-&#10060;	Row: 1 - Sample "1       age     10" is not found in data.tsv.gz
-
-&#10060;	Row: 2 - Sample "1       color   blue" is not found in data.tsv.gz
-
-&#10060;	Row: 3 - Sample "2       age     20" is not found in data.tsv.gz
-
-&#10060;	Row: 4 - Sample "2       color   green" is not found in data.tsv.gz
-
-&#10060;	Row: 5 - Sample "3       age     30" is not found in data.tsv.gz
-
-&#10060;	Row: 6 - Sample "3       color   red" is not found in data.tsv.gz
+&#10060;	Row: 6 - color is not found in "data.tsv.gz" column headers
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -150,22 +114,22 @@ Executing parse.sh: Success
 &#9989;	First column of file is titled "Sample"
 
 &#10060;	Row 1: Fail
-- "1       gne1   1" is not found.
+- "1	gne1	1" is not found.
 
 &#10060;	Row 2: Fail
-- "1       gene2   11" is not found.
+- "1	gene2	11" is not found.
 
 &#10060;	Row 3: Fail
-- "2       gene1   2" is not found.
+- "2	gene1	2" is not found.
 
 &#10060;	Row 4: Fail
-- "2       gene2   22" is not found.
+- "2	gene2	22" is not found.
 
 &#10060;	Row 5: Fail
-- "5       gene5   55555" is not found.
+- "5	gene5	55555" is not found.
 
 &#10060;	Row 6: Fail
-- "5       gene3   555" is not found.
+- "5	gene3	555" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
 ---
