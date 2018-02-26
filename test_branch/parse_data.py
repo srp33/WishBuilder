@@ -25,7 +25,7 @@ with open(inFilePath, 'r') as inFile:
             if i in geneColumns:
                 data[lineItems[sampleIDIndex]].append(lineItems[i])
 
-with open(outFilePath, 'wb') as outFile:
+with gzip.open(outFilePath, 'wb') as outFile:
     outText = "\t".join(["Sample"] + genes) + "\n"
     outFile.write(outText.encode())
     for sampleID in data.keys():
