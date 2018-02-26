@@ -20,6 +20,6 @@ metadataOutFilegz=metadata.tsv.gz
 
 #miniconda is used to store panda software in environments need to activate environment
 echo "Setting up environment"
-source activate WishBuilderDependencies 
+#source activate WishBuilderDependencies 
 
 python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $expressiontmp $dataOutFilegz 
