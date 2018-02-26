@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/26/18	|	00h:07m:17s	|	741	|	1	|	23368	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/26/18	|	00h:29m:55s	|	7056	|	5	|	12080	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	02/26/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[test_branch]({{site.url}}/Descriptions/test_branch-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/test_branch-status)	|	02/26/18	|	00h:00m:11s	|	5	|	2	|	5	|

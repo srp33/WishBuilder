@@ -1,6 +1,6 @@
 <h1><center>GSE62944_Normal_FeatureCounts</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 23, 18 16:02PM MST</center>
+<center>Feb 26, 18 16:02PM MST</center>
 
 
 ### Testing Directory . . .
@@ -46,17 +46,103 @@ Executing install.sh: Success
 
 Executing download.sh: Success
 
-Executing parse.sh: 
+Executing parse.sh: Success
 
-&#10060;	parse.sh returned an error:
-~~~bash
-Error in contrib.url(repos, type) : 
-  trying to use CRAN without setting a mirror
-Calls: install.packages -> grep -> contrib.url
-Execution halted
-Traceback (most recent call last):
-  File "parse.py", line 12, in <module>
-    with open(namesToAbbreviations, 'r') as f:
-FileNotFoundError: [Errno 2] No such file or directory: 'tmp/nameToAbbreviation.txt'
-~~~
+&#9989;	data.tsv.gz was created and zipped correctly.
 
+&#9989;	metadata.tsv.gz was created and zipped correctly.
+
+#### Results: PASS
+---
+### Testing Key Files:
+
+&#9989;	test_data.tsv contains enough unique samples to test
+
+&#9989;	test_data.tsv contains enough test cases (8; min: 8)
+
+&#9989;	test_metadata.tsv contains enough unique samples to test
+
+&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
+
+#### Results: PASS
+---
+
+### First 5 columns and 5 rows of data.tsv.gz:
+
+|	SampleID	|	1/2-SBSRNA4	|	A1BG	|	A1BG-AS1	|	A1CF	|
+|	---	|	---	|	---	|	---	|	---	|
+|	TCGA-06-0675-11A-32R-A36H-07	|	48	|	206	|	87	|	8	|
+|	TCGA-06-0678-11A-32R-A36H-07	|	25	|	112	|	44	|	2	|
+|	TCGA-06-0680-11A-32R-A36H-07	|	36	|	223	|	122	|	5	|
+|	TCGA-06-0681-11A-41R-A36H-07	|	28	|	361	|	120	|	1	|
+
+**Columns: 23369 Rows: 742**
+
+---
+### "data.tsv.gz" Test Cases (from rows in test file). . .
+
+&#10060;	First column of file must be titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: PASS
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	SampleID	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	TCGA-06-0675-11A-32R-A36H-07	|	Cancer_Type	|	Glioblastoma multiforme	|
+|	TCGA-06-0678-11A-32R-A36H-07	|	Cancer_Type	|	Glioblastoma multiforme	|
+|	TCGA-06-0680-11A-32R-A36H-07	|	Cancer_Type	|	Glioblastoma multiforme	|
+|	TCGA-06-0681-11A-41R-A36H-07	|	Cancer_Type	|	Glioblastoma multiforme	|
+
+**Columns: 3 Rows: 742**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#10060;	First column of file must be titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### Comparing samples in both files . . .
+
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+
+#### Results: PASS
+
+---
+### Testing Directory after cleanup . . .
+
+#### Results: PASS
+---
