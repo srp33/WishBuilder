@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/GDSC_Expression-status)	|	02/26/18	|	In Progress	|	0	|	0	|	0	|
 |	[test_branch]({{site.url}}/Descriptions/test_branch-description)	|	kimballh	|	[Complete]({{site.url}}/StatusReports/test_branch-status)	|	02/26/18	|	00h:00m:11s	|	5	|	2	|	5	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	02/25/18	|	20h:40m:08s	|	345976	|	25	|	12328	|
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	02/25/18	|	14h:19m:36s	|	345976	|	25	|	12328	|
