@@ -85,32 +85,17 @@ Executing parse.sh: Success
 
 &#9989;	Row 1: Success
 
-&#10060;	Row: 2 - FAIL
+&#9989;	Row 2: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	1	|	gene2	|	11	|
-|	**User Generated**	|	1	|	gene2	|	2	|
-
-&#10060;	Row: 3 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	2	|	gene1	|	2	|
-|	**User Generated**	|	2	|	gene1	|	11	|
+&#9989;	Row 3: Success
 
 &#9989;	Row 4: Success
 
 &#9989;	Row 5: Success
 
-&#10060;	Row: 6 - FAIL
+&#9989;	Row 6: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	5	|	gene3	|	555	|
-|	**User Generated**	|	5	|	gene3	|	33333	|
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
