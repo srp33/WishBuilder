@@ -83,17 +83,32 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row: 1 - age is not found in "data.tsv.gz" column headers
+&#10060;	Row: 1 - gne1 is not found in "data.tsv.gz" column headers
 
-&#10060;	Row: 2 - color is not found in "data.tsv.gz" column headers
+&#10060;	Row: 2 - FAIL
 
-&#10060;	Row: 3 - age is not found in "data.tsv.gz" column headers
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	1	|	gene2	|	11	|
+|	**User Generated**	|	1	|	gene2	|	2	|
 
-&#10060;	Row: 4 - color is not found in "data.tsv.gz" column headers
+&#10060;	Row: 3 - FAIL
 
-&#10060;	Row: 5 - age is not found in "data.tsv.gz" column headers
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	2	|	gene1	|	2	|
+|	**User Generated**	|	2	|	gene1	|	11	|
 
-&#10060;	Row: 6 - color is not found in "data.tsv.gz" column headers
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#10060;	Row: 6 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	5	|	gene3	|	555	|
+|	**User Generated**	|	5	|	gene3	|	33333	|
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -113,25 +128,19 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1: Fail
-- "1	gne1	1" is not found.
+&#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "1	gene2	11" is not found.
+&#9989;	Row 2: Success
 
-&#10060;	Row 3: Fail
-- "2	gene1	2" is not found.
+&#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "2	gene2	22" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "5	gene5	55555" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "5	gene3	555" is not found.
+&#9989;	Row 6: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
