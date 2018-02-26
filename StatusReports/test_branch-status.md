@@ -1,6 +1,6 @@
 <h1><center>test_branch</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Feb 26, 18 14:02PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Feb 26, 18. 14:02 MST</center>
 
 
 ### Testing Directory . . .
@@ -58,13 +58,13 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough unique samples to test
 
-&#10060;	test_data.tsv does not contain enough test cases. (6; min: 8)
+&#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	test_metadata.tsv does not contain enough test cases. (6; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -95,6 +95,10 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
 #### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
@@ -124,6 +128,10 @@ Executing parse.sh: Success
 &#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
 
 #### Results: PASS
 ---
