@@ -4,7 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
-|	[test_branch]({{site.url}}/Descriptions/test_branch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/test_branch-status)	|	02/26/18	|	N\A	|	0	|	0	|	0	|
+|	[test_branch]({{site.url}}/Descriptions/test_branch-description)	|	kimballh	|	[Failed]({{site.url}}/StatusReports/test_branch-status)	|	02/26/18	|	00h:00m:09s	|	5	|	2	|	5	|
 |	[LINCS_PhaseII_Level4]({{site.url}}/Descriptions/LINCS_PhaseII_Level4-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level4-status)	|	02/25/18	|	20h:40m:08s	|	345976	|	25	|	12328	|
 |	[LINCS_PhaseII_Level3]({{site.url}}/Descriptions/LINCS_PhaseII_Level3-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level3-status)	|	02/25/18	|	14h:19m:36s	|	345976	|	25	|	12328	|
 |	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	02/24/18	|	16h:42m:07s	|	118050	|	28	|	12328	|
