@@ -83,7 +83,7 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row: 1 - gne1 is not found in "data.tsv.gz" column headers
+&#9989;	Row 1: Success
 
 &#10060;	Row: 2 - FAIL
 
