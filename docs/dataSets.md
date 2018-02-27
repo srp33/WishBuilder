@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE39582]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE39582-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE39582-status)	|	02/27/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE40292]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE40292-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE40292-status)	|	02/27/18	|	00h:00m:10s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE43176]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE43176-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE43176-status)	|	02/27/18	|	00h:00m:09s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE46449]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE46449-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE46449-status)	|	02/27/18	|	00h:00m:24s	|	53	|	2	|	20024	|
