@@ -5,5 +5,4 @@ cp ../Helper/BiomarkerBenchmark/parse.py .
 cp ../Helper/BiomarkerBenchmark/parse.sh .
 cp ../Helper/BiomarkerBenchmark/cleanup.sh .
 
-sed -e "s,{urlExpression},https://osf.io/c3ej4/download,g" -e "s,{urlClinical},https://osf.io/agkd2/download,g" ../Helper/BiomarkerBenchmark/download.sh > download.sh 
-
+sed -e s,{urlExpression},https://osf.io/8p9th/download?version=4,g  ../Helper/BiomarkerBenchmark/download.sh > download.sh
