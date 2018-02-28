@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level4</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 08, 18 19:02PM MST</center>
+<center>Feb 28, 18 10:02AM MST</center>
 
 
 ### Testing Directory . . .
@@ -50,12 +50,12 @@ Executing parse.sh:
 
 &#10060;	parse.sh returned an error:
 ~~~bash
-Could not find conda environment: WishBuilderDependencies
+Could not find conda environment: WishBuilderDependencies2
 You can list all discoverable environments with `conda info --envs`.
 
 Traceback (most recent call last):
-  File "parse.py", line 108, in <module>
-    f.write(('\t' + geneDict[str(value)]).encode())
-KeyError: "b'5720'"
+  File "parse.py", line 1, in <module>
+    import h5py
+ImportError: No module named h5py
 ~~~
 
