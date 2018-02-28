@@ -1,48 +1,21 @@
 <h1><center>GSE62944_Tumor_TPM</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 23, 18 15:02PM MST</center>
 
-
-### Testing Directory . . .
-
-&#10060;	nohup.out is not a text file.
-
-&#10060;	nohup.out is too large ( 9MB; max size: 1MB)
-
-#### Results: **<font color="red">FAIL</font>**
----
-### Testing Configuration File . . .
-
-&#9989;	config.yaml contains all necessary configurations.
-
-&#9989;	Title is less than 100 characters
-
-&#9989;	description.md contains a description.
-
-#### Results: PASS
----
-### Running Install . . .
-
-Executing install.sh: Success
-
-#### Results: PASS
----
-
-### Testing file paths:
-
-&#9989;	test_data.tsv exists.
-
-&#9989;	test_metadata.tsv exists.
-
-&#9989;	download.sh exists.
-
-&#9989;	install.sh exists.
-
-&#9989;	parse.sh exists.
-
-&#9989;	cleanup.sh exists.
-
-&#9989;	description.md exists.
-
-&#9989;	config.yaml exists.
-
+Only files in the "GSE62944_Tumor_TPM" directory should be changed. The following files were also changed in this branch:
+- BiomarkerBenchmark_GSE25507/config.yaml
+- BiomarkerBenchmark_GSE25507/description.md
+- BiomarkerBenchmark_GSE25507/install.sh
+- Helper/LINCS/install_helper.sh
+- Helper/updateDescription.sh
+- LINCS_PhaseII_Level3/config.yaml
+- LINCS_PhaseII_Level3/description.md
+- LINCS_PhaseII_Level3/parse.sh
+- LINCS_PhaseII_Level4/config.yaml
+- LINCS_PhaseII_Level4/description.md
+- LINCS_PhaseII_Level4/parse.sh
+- LINCS_PhaseII_Level5/config.yaml
+- LINCS_PhaseII_Level5/description.md
+- LINCS_PhaseII_Level5/parse.py
+- LINCS_PhaseII_Level5/parse.sh
+- TCGA_BreastCancer_GDC/description.md
+- master
