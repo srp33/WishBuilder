@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level5</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 28, 18 10:02AM MST</center>
+<center>Feb 28, 18 11:02AM MST</center>
 
 
 ### Testing Directory . . .
@@ -50,7 +50,7 @@ Executing parse.sh:
 
 &#10060;	parse.sh returned an error:
 ~~~bash
-Could not find conda environment: WishBuilderDependencies2
+Could not find conda environment: lincs_env
 You can list all discoverable environments with `conda info --envs`.
 
 Traceback (most recent call last):
