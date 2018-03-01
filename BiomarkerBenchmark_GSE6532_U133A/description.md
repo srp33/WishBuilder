@@ -6,5 +6,5 @@ Data Source(s): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE6532_U133A
 
 Citation(s): 
 * [PubMed article](https://www.ncbi.nlm.nih.gov/pubmed/17401012) 
-* [PubMed article](https://www.ncbi.nlm.nih.gov/pubmed/18498629 
+* [PubMed article](https://www.ncbi.nlm.nih.gov/pubmed/18498629) 
 * [PubMed article](https://www.ncbi.nlm.nih.gov/pubmed/20479250)
