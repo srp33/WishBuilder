@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level3</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Feb 28, 18 12:02PM MST</center>
+<center>Mar 02, 18 10:03AM MST</center>
 
 
 ### Testing Directory . . .
@@ -11,7 +11,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
@@ -54,8 +54,8 @@ Could not find conda environment: lincs_env
 You can list all discoverable environments with `conda info --envs`.
 
 Traceback (most recent call last):
-  File "parse.py", line 33, in <module>
-    list = line.strip('\n').split('\t')
-TypeError: a bytes-like object is required, not 'str'
+  File "parse.py", line 1, in <module>
+    import h5py
+ImportError: No module named h5py
 ~~~
 
