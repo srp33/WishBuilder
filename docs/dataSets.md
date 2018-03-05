@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	03/05/18	|	N\A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	03/03/18	|	16h:52m:31s	|	1319138	|	20	|	12328	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	03/03/18	|	10h:21m:45s	|	473647	|	34	|	12328	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	03/02/18	|	In Progress	|	0	|	0	|	0	|
@@ -12,13 +13,11 @@
 |	[BiomarkerBenchmark_GSE46691]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE46691-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE46691-status)	|	03/01/18	|	00h:00m:11s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	03/01/18	|	00h:00m:12s	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE43176]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE43176-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE43176-status)	|	03/01/18	|	00h:00m:10s	|	0	|	0	|	0	|
-|	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	02/28/18	|	N\A	|	0	|	0	|	0	|
 |	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	02/28/18	|	00h:08m:09s	|	741	|	1	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	02/28/18	|	00h:40m:17s	|	9264	|	513	|	23368	|
 |	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/28/18	|	00h:08m:49s	|	741	|	1	|	23368	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	02/28/18	|	00h:45m:46s	|	9264	|	513	|	23368	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	02/28/18	|	N\A	|	0	|	0	|	0	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/28/18	|	N\A	|	0	|	0	|	0	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	02/28/18	|	00h:17m:51s	|	922	|	9	|	199169	|
 |	[BiomarkerBenchmark_GSE6532_U133PLUS2]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE6532_U133PLUS2-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE6532_U133PLUS2-status)	|	02/28/18	|	00h:00m:31s	|	85	|	11	|	20024	|
 |	[BiomarkerBenchmark_GSE37199]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE37199-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE37199-status)	|	02/28/18	|	00h:00m:35s	|	93	|	4	|	20024	|
@@ -58,7 +57,6 @@
 |	[BiomarkerBenchmark_GSE2109_Prostate]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Prostate-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Prostate-status)	|	02/17/18	|	00h:00m:33s	|	76	|	26	|	20024	|
 |	[BiomarkerBenchmark_GSE20181]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE20181-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE20181-status)	|	02/16/18	|	00h:00m:56s	|	165	|	3	|	11832	|
 |	[BiomarkerBenchmark_GSE15296]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE15296-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE15296-status)	|	02/16/18	|	00h:00m:44s	|	74	|	2	|	20024	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/15/18	|	00h:05m:18s	|	0	|	0	|	0	|
 |	[TCGA_BreastCancer_GDC]({{site.url}}/Descriptions/TCGA_BreastCancer_GDC-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/TCGA_BreastCancer_GDC-status)	|	02/15/18	|	00h:12m:40s	|	943	|	86	|	23368	|
 |	[CMAP_2_Entrez]({{site.url}}/Descriptions/CMAP_2_Entrez-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/CMAP_2_Entrez-status)	|	02/15/18	|	In Progress	|	0	|	0	|	0	|
 |	[BiomarkerBenchmark_GSE1456]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE1456-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE1456-status)	|	02/15/18	|	00h:00m:21s	|	159	|	7	|	11832	|
@@ -101,7 +99,6 @@
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	01/05/18	|	In Progress	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level4]({{site.url}}/Descriptions/LINCS_PhaseI_Level4-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level4-status)	|	01/05/18	|	In Progress	|	0	|	0	|	0	|
 |	[LINCS_PhaseII_Level5]({{site.url}}/Descriptions/LINCS_PhaseII_Level5-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/LINCS_PhaseII_Level5-status)	|	01/05/18	|	15h:19m:10s	|	118050	|	28	|	12328	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	12/15/17	|	00h:06m:54s	|	741	|	1	|	23368	|
 |	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	12/15/17	|	00h:06m:14s	|	741	|	1	|	23368	|
 |	[BiomarkerBenchmark_GSE2109_Colon]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Colon-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Colon-status)	|	12/15/17	|	00h:00m:37s	|	247	|	23	|	20024	|
 |	[BiomarkerBenchmark_GSE2109_Breast]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE2109_Breast-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE2109_Breast-status)	|	12/15/17	|	00h:00m:41s	|	260	|	36	|	20024	|
