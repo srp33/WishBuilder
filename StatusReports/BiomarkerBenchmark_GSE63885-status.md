@@ -1,46 +1,8 @@
 <h1><center>BiomarkerBenchmark_GSE63885</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 05, 18 13:03PM MST</center>
 
-
-### Testing Directory . . .
-
-&#10060;	description.md is not a text file.
-
-#### Results: **<font color="red">FAIL</font>**
----
-### Testing Configuration File . . .
-
-&#9989;	config.yaml contains all necessary configurations.
-
-&#9989;	Title is less than 300 characters
-
-&#9989;	description.md contains a description.
-
-#### Results: PASS
----
-### Running Install . . .
-
-Executing install.sh: Success
-
-#### Results: PASS
----
-
-### Testing file paths:
-
-&#9989;	test_data.tsv exists.
-
-&#9989;	test_metadata.tsv exists.
-
-&#9989;	download.sh exists.
-
-&#9989;	install.sh exists.
-
-&#9989;	parse.sh exists.
-
-&#9989;	cleanup.sh exists.
-
-&#9989;	description.md exists.
-
-&#9989;	config.yaml exists.
-
+Only files in the "BiomarkerBenchmark_GSE63885" directory should be changed. The following files were also changed in this branch:
+- Helper/gitUpdate.sh
+- Helper/gitpush.sh
+- Helper/newURL.sh
+- Helper/updateDescription.sh
