@@ -1,6 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE63885</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 01, 18 16:03PM MST</center>
+<center>Mar 05, 18 13:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -13,7 +13,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
