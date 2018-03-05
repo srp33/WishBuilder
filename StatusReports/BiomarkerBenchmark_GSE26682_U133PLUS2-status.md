@@ -1,6 +1,6 @@
 <h1><center>BiomarkerBenchmark_GSE26682_U133PLUS2</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Mar 05, 18 13:03PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Mar 05, 18. 14:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -97,14 +97,9 @@ Executing parse.sh: Success
 
 &#9989;	Row 7: Success
 
-&#10060;	Row: 8 - FAIL
+&#9989;	Row 8: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	GSM656872	|	ENSG00000282742	|	:wq-0.151199122222222	|
-|	**User Generated**	|	GSM656872	|	ENSG00000282742	|	-0.151199122222222	|
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
