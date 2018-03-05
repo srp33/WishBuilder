@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	03/05/18	|	00h:06m:17s	|	741	|	1	|	23368	|
 |	[BiomarkerBenchmark_GSE10320]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE10320-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE10320-status)	|	03/05/18	|	N\A	|	0	|	0	|	0	|
 |	[LINCS_PhaseI_Level3]({{site.url}}/Descriptions/LINCS_PhaseI_Level3-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level3-status)	|	03/03/18	|	16h:52m:31s	|	1319138	|	20	|	12328	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	03/03/18	|	10h:21m:45s	|	473647	|	34	|	12328	|
@@ -15,7 +16,6 @@
 |	[BiomarkerBenchmark_GSE43176]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE43176-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE43176-status)	|	03/01/18	|	00h:00m:10s	|	0	|	0	|	0	|
 |	[GSE62944_Normal_TPM]({{site.url}}/Descriptions/GSE62944_Normal_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_TPM-status)	|	02/28/18	|	00h:08m:09s	|	741	|	1	|	23368	|
 |	[GSE62944_Tumor_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Tumor_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_FeatureCounts-status)	|	02/28/18	|	00h:40m:17s	|	9264	|	513	|	23368	|
-|	[GSE62944_Normal_FeatureCounts]({{site.url}}/Descriptions/GSE62944_Normal_FeatureCounts-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Normal_FeatureCounts-status)	|	02/28/18	|	00h:08m:49s	|	741	|	1	|	23368	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	02/28/18	|	00h:45m:46s	|	9264	|	513	|	23368	|
 |	[GSE62944_Tumor_TPM]({{site.url}}/Descriptions/GSE62944_Tumor_TPM-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GSE62944_Tumor_TPM-status)	|	02/28/18	|	N\A	|	0	|	0	|	0	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	02/28/18	|	00h:17m:51s	|	922	|	9	|	199169	|

@@ -1,6 +1,6 @@
 <h1><center>GSE62944_Normal_FeatureCounts</center></h1>
 <h2><center> Status: Complete </center></h2>
-<center>Feb 28, 18. 10:02 MST</center>
+<center>Mar 05, 18. 13:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -11,7 +11,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
