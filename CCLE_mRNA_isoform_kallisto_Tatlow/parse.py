@@ -80,7 +80,6 @@ with open(dataOutFile, 'w') as ofData:
                     ofMeta.write("Sample\tVariable\tValue\n")
                     ofData.write("Sample" + "\t" + "\t".join(expressionList[i][1:]) + "\n")
                 else :
-                    print("this is the expression List:", expressionList[i][0], sep=" ")
                     ## Note that there are sometimes question marks after certain Drugs in the giving file. I removed the ones I saw.
                     if expressionList[i][0] in DrugDataDict :
                         ## There is several lines of information for each cell line
@@ -93,14 +92,8 @@ with open(dataOutFile, 'w') as ofData:
                                 ofMeta.write(sample + '\t' + "Drug__" + list[0] + "__" + DrugDataDict["Header"][i + 1] + '\t' + list[i + 1] + '\n')
                                 ##Somtimes there are brand names. We want a duplicate with brand name info and gene info.
                                 if list[0] in genericToBrand :
-                                    print("found brand")
                                     brand = genericToBrand[list[0]]
                                     ofMeta.write(sample + '\t' + "Drug__" + brand + "__" + DrugDataDict["Header"][i + 1] + '\t' + list[i + 1] + '\n')
-                                else :
-                                    print("didn't find brand for:",list[0], sep=" ")
-                        break
-                    else :
-                        print("didn't find sample:", expressionList[i][0], sep=" ")
                     for j in range(len(PrimaryNameToAnnotations[expressionList[i][0]]) - 1) :
                         if PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "" and PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "NA" :
                             ofMeta.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + '\t' + headerList[j + 1] + '\t' + PrimaryNameToAnnotations[expressionList[i][0]][j + 1] + '\n')
