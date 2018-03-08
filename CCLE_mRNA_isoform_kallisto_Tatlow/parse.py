@@ -33,11 +33,6 @@ with codecs.open(profilingData, 'r', "iso-8859-1") as f :
 
             genericToBrand[generic] = brand
 
-for item,key in genericToBrand.items():
-    print(item,key,sep=" ")
-    print(len(item),len(key), sep=" ")
-
-#quit()
 
 PrimaryNameToAnnotations = {}
 with open(clinicalAnnotations, 'r') as f:
@@ -85,15 +80,15 @@ with open(dataOutFile, 'w') as ofData:
                         ## There is several lines of information for each cell line
                         for list in DrugDataDict[expressionList[i][0]] :
                             sample = expressionList[i][0]
-                            for i in range(len(list) - 1) : 
+                            for k in range(len(list) - 1) : 
                                 ## We don't want blank vaulues or NA values.
-                                if list[i + 1] == "NA" or list[i + 1] == "" :
+                                if list[k + 1] == "NA" or list[k + 1] == "" :
                                     continue
-                                ofMeta.write(sample + '\t' + "Drug__" + list[0] + "__" + DrugDataDict["Header"][i + 1] + '\t' + list[i + 1] + '\n')
+                                ofMeta.write(sample + '\t' + "Drug__" + list[0] + "__" + DrugDataDict["Header"][k + 1] + '\t' + list[k + 1] + '\n')
                                 ##Somtimes there are brand names. We want a duplicate with brand name info and gene info.
                                 if list[0] in genericToBrand :
                                     brand = genericToBrand[list[0]]
-                                    ofMeta.write(sample + '\t' + "Drug__" + brand + "__" + DrugDataDict["Header"][i + 1] + '\t' + list[i + 1] + '\n')
+                                    ofMeta.write(sample + '\t' + "Drug__" + brand + "__" + DrugDataDict["Header"][k + 1] + '\t' + list[k + 1] + '\n')
                     for j in range(len(PrimaryNameToAnnotations[expressionList[i][0]]) - 1) :
                         if PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "" and PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "NA" :
                             ofMeta.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + '\t' + headerList[j + 1] + '\t' + PrimaryNameToAnnotations[expressionList[i][0]][j + 1] + '\n')
