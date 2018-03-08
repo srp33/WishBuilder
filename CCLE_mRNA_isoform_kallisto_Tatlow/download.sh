@@ -15,3 +15,15 @@ fileName=$redirectedTempFolder/CCLE_tpm_Clinical.tsv
 
 wget -O $fileName $url
 
+#downloading Pharmacological profiling responses
+url="https://portals.broadinstitute.org/ccle_legacy/downloadFile/DefaultSystemRoot/exp_10/ds_27/CCLE_NP24.2009_Drug_data_2015.02.24.csv?downloadff=true&fileId=20777"
+fileName=$redirectedTempFolder/CCLE_NP24.2009_Drug_data_2015.02.24.csv
+
+wget -O $fileName $url
+
+#downloading Drug Information
+url="https://portals.broadinstitute.org/ccle_legacy/downloadFile/DefaultSystemRoot/exp_10/ds_27/CCLE_NP24.2009_profiling_2012.02.20.csv?downloadff=true&fileId=3422"
+fileName=$redirectedTempFolder/CCLE_NP24.2009_profiling_2012.02.20.csv
+
+
+wget -O $fileName $url
