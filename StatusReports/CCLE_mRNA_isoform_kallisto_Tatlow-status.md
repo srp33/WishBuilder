@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_isoform_kallisto_Tatlow</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Mar 07, 18 09:03AM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Mar 08, 18. 15:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -74,7 +74,7 @@ Executing parse.sh: Success
 |	COR-L24	|	119.261	|	53.0379	|	6.99391	|	77.702	|
 |	HSC-3	|	86.1598	|	106.027	|	13.0669	|	67.9185	|
 |	KMS-11	|	101.817	|	79.8547	|	5.65856	|	116.169	|
-|	KMS-11	|	101.817	|	79.8547	|	5.65856	|	116.169	|
+|	C2BBe1	|	149.497	|	155.488	|	9.85457	|	110.965	|
 
 **Columns: 199170 Rows: 923**
 
@@ -110,7 +110,7 @@ Executing parse.sh: Success
 |	COR-L24	|	Histology	|	carcinoma	|
 |	COR-L24	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 60848**
+**Columns: 3 Rows: 60882**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -141,17 +141,13 @@ Executing parse.sh: Success
 
 &#9989;	Row 10: Success
 
-&#10060;	Row 11: Fail
-- "HT-144	Drug__Erlotinib__EC50 (uM)	9.204066346" is not found.
+&#9989;	Row 11: Success
 
-&#10060;	Row 12: Fail
-- "HT-144	Drug__Erlotinib__ActArea	0.5338" is not found.
+&#9989;	Row 12: Success
 
-&#10060;	Row 13: Fail
-- "HT-144	Drug__Tarceva__EC50 (uM)	9.204066346" is not found.
+&#9989;	Row 13: Success
 
-&#10060;	Row 14: Fail
-- "HT-144	Drug__Tarceva__ActArea	0.5338" is not found.
+&#9989;	Row 14: Success
 
 &#9989;	Row 15: Success
 
@@ -165,33 +161,13 @@ Executing parse.sh: Success
 
 &#9989;	Row 20: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "KE-97" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
 
-&#10060;	 Sample "KMS-12-BM" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "NCI-H1869" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "SW403" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "MONO-MAC-1" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "SUP-M2" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "HCC4006" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "OVMANA" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "UM-UC-3" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 More errors are not being printed...
-
-<font color="red">Total sample mismatch errors: 415</font>
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
