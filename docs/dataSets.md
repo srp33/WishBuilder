@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	03/08/18	|	00h:29m:29s	|	922	|	153	|	58684	|
 |	[CCLE_mRNA_isoform_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_isoform_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_isoform_kallisto_Tatlow-status)	|	03/08/18	|	00h:28m:48s	|	922	|	153	|	199169	|
 |	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	03/05/18	|	00h:00m:37s	|	92	|	12	|	20024	|
 |	[BiomarkerBenchmark_GSE63885]({{site.url}}/Descriptions/BiomarkerBenchmark_GSE63885-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/BiomarkerBenchmark_GSE63885-status)	|	03/05/18	|	N\A	|	0	|	0	|	0	|

@@ -1,5 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Complete </center></h2>
+<h2><center> Status: Failed </center></h2>
+<center>Mar 08, 18 16:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -10,7 +11,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
@@ -61,7 +62,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (20; min: 8)
 
 #### Results: PASS
 ---
@@ -70,10 +71,10 @@ Executing parse.sh: Success
 
 |	Sample	|	ARF5	|	M6PR	|	ESRRA	|	FKBP4	|
 |	---	|	---	|	---	|	---	|	---	|
-|	COR-L24	|	185.743215	|	102.686215319	|	18.638011	|	114.562929	|
-|	HSC-3	|	111.760973	|	137.565799	|	33.803128	|	90.439629	|
-|	KMS-11	|	137.16564	|	120.717231	|	23.442103	|	168.42325	|
-|	C2BBe1	|	230.498743	|	211.752821304	|	35.423889	|	142.868279	|
+|	COR-L24	|	185.74321500000002	|	102.68621531890001	|	18.638011	|	114.56292900000001	|
+|	HSC-3	|	111.76097300000002	|	137.56579900000003	|	33.803128	|	90.439629	|
+|	KMS-11	|	137.16564	|	120.71723099999998	|	23.442102999999996	|	168.42325000000002	|
+|	C2BBe1	|	230.49874299999996	|	211.75282130402402	|	35.42388900000001	|	142.86827899999997	|
 
 **Columns: 58685 Rows: 923**
 
@@ -82,11 +83,21 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row 1: Success
+&#10060;	Row: 1 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	COR-L24	|	ARF5	|	185.743215	|
+|	**User Generated**	|	COR-L24	|	ARF5	|	185.74321500000002	|
 
 &#9989;	Row 2: Success
 
-&#9989;	Row 3: Success
+&#10060;	Row: 3 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	HSC-3	|	ARF5	|	111.760973	|
+|	**User Generated**	|	HSC-3	|	ARF5	|	111.76097300000002	|
 
 &#9989;	Row 4: Success
 
@@ -94,11 +105,16 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#9989;	Row 7: Success
+&#10060;	Row: 7 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	COLO-680N	|	ARF5	|	110.45471	|
+|	**User Generated**	|	COLO-680N	|	ARF5	|	110.45470999999999	|
 
 &#9989;	Row 8: Success
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -109,16 +125,16 @@ Executing parse.sh: Success
 |	COR-L24	|	Histology	|	carcinoma	|
 |	COR-L24	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 8330**
+**Columns: 3 Rows: 60882**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
 
 &#9989;	First column of file is titled "Sample"
 
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Hybrid Capture Sequencing" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
-
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Oncomap" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Hybrid Capture Sequencing" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
 
 &#9989;	Row 1: Success
 
@@ -135,6 +151,30 @@ Executing parse.sh: Success
 &#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
+
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
+
+&#9989;	Row 11: Success
+
+&#9989;	Row 12: Success
+
+&#9989;	Row 13: Success
+
+&#9989;	Row 14: Success
+
+&#9989;	Row 15: Success
+
+&#9989;	Row 16: Success
+
+&#9989;	Row 17: Success
+
+&#9989;	Row 18: Success
+
+&#9989;	Row 19: Success
+
+&#9989;	Row 20: Success
 
 #### Results: PASS
 ---
