@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Mar 08, 18 16:03PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Mar 08, 18. 17:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -83,21 +83,11 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row: 1 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	COR-L24	|	ARF5	|	185.743215	|
-|	**User Generated**	|	COR-L24	|	ARF5	|	185.74321500000002	|
+&#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
-&#10060;	Row: 3 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	HSC-3	|	ARF5	|	111.760973	|
-|	**User Generated**	|	HSC-3	|	ARF5	|	111.76097300000002	|
+&#9989;	Row 3: Success
 
 &#9989;	Row 4: Success
 
@@ -105,16 +95,11 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row: 7 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	COLO-680N	|	ARF5	|	110.45471	|
-|	**User Generated**	|	COLO-680N	|	ARF5	|	110.45470999999999	|
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
