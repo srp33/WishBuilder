@@ -1,6 +1,6 @@
 <h1><center>LINCS_PhaseI_Level5</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 03, 18 00:03AM MST</center>
+<center>Mar 09, 18 02:03AM MST</center>
 
 
 ### Testing Directory . . .
@@ -60,13 +60,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (12; min: 8)
 
-&#10060;	Row 3 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#9989;	test_metadata.tsv contains enough test cases (40; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -85,91 +83,31 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row: 1 - FAIL
+&#9989;	Row 1: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_24H:A05	|	PSME1	|	0.5774000287055969	|
-|	**User Generated**	|	AML001_CD34_24H:A05	|	PSME1	|	0.577400028706	|
+&#9989;	Row 2: Success
 
-&#10060;	Row: 2 - FAIL
+&#9989;	Row 3: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_24H:A05	|	ACTB	|	0.4219000041484833	|
-|	**User Generated**	|	AML001_CD34_24H:A05	|	ACTB	|	0.421900004148	|
+&#9989;	Row 4: Success
 
-&#10060;	Row: 3 - FAIL
+&#9989;	Row 5: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	TAK004_U2OS_96H:TRCN0000381509:1	|	PSME1	|	0.42134159803390503	|
-|	**User Generated**	|	TAK004_U2OS_96H:TRCN0000381509:1	|	PSME1	|	0.421341598034	|
+&#9989;	Row 6: Success
 
-&#10060;	Row: 4 - FAIL
+&#9989;	Row 7: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	TAK004_U2OS_96H:TRCN0000381509:1	|	ACTB	|	-0.16842639446258545	|
-|	**User Generated**	|	TAK004_U2OS_96H:TRCN0000381509:1	|	ACTB	|	-0.168426394463	|
+&#9989;	Row 8: Success
 
-&#10060;	Row: 5 - FAIL
+&#9989;	Row 9: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_24H:BRD-A03772856:10	|	PSME1	|	0.3654000163078308	|
-|	**User Generated**	|	AML001_CD34_24H:BRD-A03772856:10	|	PSME1	|	0.365400016308	|
+&#9989;	Row 10: Success
 
-&#10060;	Row: 6 - FAIL
+&#9989;	Row 11: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_24H:BRD-A03772856:10	|	ACTB	|	-0.48750001192092896	|
-|	**User Generated**	|	AML001_CD34_24H:BRD-A03772856:10	|	ACTB	|	-0.487500011921	|
+&#9989;	Row 12: Success
 
-&#10060;	Row: 7 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_6H:A05	|	PSME1	|	-0.12240000069141388	|
-|	**User Generated**	|	AML001_CD34_6H:A05	|	PSME1	|	-0.122400000691	|
-
-&#10060;	Row: 8 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	AML001_CD34_6H:A05	|	ACTB	|	1.1224000453948975	|
-|	**User Generated**	|	AML001_CD34_6H:A05	|	ACTB	|	1.12240004539	|
-
-&#10060;	Row: 9 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	CPC009_PC3_6H:BRD-A05565054-001-01-7:10	|	PSME1	|	-2.7532787322998047	|
-|	**User Generated**	|	CPC009_PC3_6H:BRD-A05565054-001-01-7:10	|	PSME1	|	-2.7532787323	|
-
-&#10060;	Row: 10 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	CPC009_PC3_6H:BRD-A05565054-001-01-7:10	|	ACTB	|	0.47179681062698364	|
-|	**User Generated**	|	CPC009_PC3_6H:BRD-A05565054-001-01-7:10	|	ACTB	|	0.471796810627	|
-
-&#10060;	Row: 11 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	CPC009_PC3_6H:A17	|	PSME1	|	-0.003567064180970192	|
-|	**User Generated**	|	CPC009_PC3_6H:A17	|	PSME1	|	-0.00356706418097	|
-
-&#10060;	Row: 12 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	CPC009_PC3_6H:A17	|	ACTB	|	-0.693475604057312	|
-|	**User Generated**	|	CPC009_PC3_6H:A17	|	ACTB	|	-0.693475604057	|
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -180,7 +118,7 @@ Executing parse.sh: Success
 |	AML001_CD34_24H:A05	|	distil_ss	|	4.78894	|
 |	AML001_CD34_24H:A05	|	ngenes_modulated_up_lm	|	35	|
 
-**Columns: 3 Rows: 12786191**
+**Columns: 3 Rows: 14244671**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -193,8 +131,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 2: Success
 
-&#10060;	Row 3: Fail
-- "AML001_CD34_24H:A05	pert_itime 24 h" is not found.
+&#9989;	Row 3: Success
 
 &#9989;	Row 4: Success
 
@@ -226,8 +163,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 18: Success
 
-&#10060;	Row 19: Fail
-- "AML001_CD34_24H:A06	is_touchstone	0" is not found.
+&#9989;	Row 19: Success
 
 &#9989;	Row 20: Success
 
@@ -249,11 +185,9 @@ Executing parse.sh: Success
 
 &#9989;	Row 29: Success
 
-&#10060;	Row 30: Fail
-- "TAK004_U2OS_96H:TRCN0000370751:1	is_touchstone	0" is not found.
+&#9989;	Row 30: Success
 
-&#10060;	Row 31: Fail
-- "TAK004_U2OS_96H:TRCN0000370751:1	tas_q75	0.288657" is not found.
+&#9989;	Row 31: Success
 
 &#9989;	Row 32: Success
 
@@ -269,8 +203,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 38: Success
 
-&#10060;	Row 39: Fail
-- "TAK004_U2OS_96H:TRCN0000381509:1	is_touchstone	0" is not found.
+&#9989;	Row 39: Success
 
 &#10060;	Row 40: Fail
 - "TAK004_U2OS_96H:TRCN0000381509:1	tas_q75	0.288657" is not found.
