@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 09, 18 16:03PM MST</center>
+<center>Mar 09, 18 17:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -197,23 +197,23 @@ Executing parse.sh: Success
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "TC32_BONE" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
 &#10060;	 Sample "KELLY_p_CCLE_AffySNP_Oct2012_01_GenomeWideSNP_6_B01_1217624_KMS18_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "HS618T_LUNG" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "RCC4_KIDNEY" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "KCIMOH1_PANCREAS" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "HCC1897_LUNG" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "BJHTERT_SKIN" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "HS229T_LUNG" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 Sample "HNT34" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "YMB1_BREAST" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "NHA_HT_DD" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "T173_BONE" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 Sample "HS616T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "HS698T_LARGE_INTESTINE" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "SNB19_CENTRAL_NERVOUS_SYSTEM" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 More errors are not being printed...
 
