@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#SBATCH --time=10:00:00   # walltime
+#SBATCH --time=12:00:00   # walltime
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --mem-per-cpu=4096M   # memory per CPU core
@@ -21,5 +21,6 @@ metadataOutFilegz=metadata.tsv.gz
 #miniconda is used to store panda software in environments need to activate environment
 echo "Setting up environment"
 #source activate WishBuilderDependencies 
+source activate my_GDSC_Expression_env
 
 python parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $expressiontmp $dataOutFilegz 
