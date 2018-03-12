@@ -1,6 +1,6 @@
 <h1><center>GDSC_Expression</center></h1>
-<h2><center> Status: Complete </center></h2>
-<center>Feb 26, 18. 21:02 MST</center>
+<h2><center> Status: Failed </center></h2>
+<center>Mar 12, 18 16:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -11,7 +11,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
@@ -95,11 +95,21 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#9989;	Row 7: Success
+&#10060;	Row: 7 - FAIL
 
-&#9989;	Row 8: Success
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	SK-MEL-28	|	ENSG00000000003	|	7.31906561147659	|
+|	**User Generated**	|	SK-MEL-28	|	ENSG00000000003	|	7.31906561148	|
 
-#### Results: PASS
+&#10060;	Row: 8 - FAIL
+
+||	Sample	|	Column	|	Row	|
+|	---	|	---	|	---	|	---	|
+|	**Expected**	|	SK-MEL-28	|	ENSG00000266753	|	7.350374611598085	|
+|	**User Generated**	|	SK-MEL-28	|	ENSG00000266753	|	7.3503746116	|
+
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
