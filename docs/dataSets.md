@@ -4,6 +4,7 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	03/13/18	|	00h:38m:25s	|	0	|	0	|	0	|
 |	[GDSC_Expression]({{site.url}}/Descriptions/GDSC_Expression-description)	|	glenrs	|	[Failed]({{site.url}}/StatusReports/GDSC_Expression-status)	|	03/12/18	|	07h:11m:02s	|	976	|	2238	|	17737	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	03/10/18	|	00h:41m:58s	|	1964	|	154	|	58684	|
 |	[LINCS_PhaseI_Level5]({{site.url}}/Descriptions/LINCS_PhaseI_Level5-description)	|	glenrs	|	[In Progress]({{site.url}}/StatusReports/LINCS_PhaseI_Level5-status)	|	03/09/18	|	In Progress	|	0	|	0	|	0	|
