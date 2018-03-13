@@ -18,7 +18,7 @@ rm -f $dataOutFilegz
 python parse.py $expressionData $clinicalAnnotations $dataOutFile $metadataOutFile $drugData $profilingData
 
 gzip $metadataOutFile
-gzip $dataOutFile
+gzip $metadataOutFile
 
 python3 parseMeta1.py $meta1 $dataOutFilegz
 python3 parseMeta2.py $meta2 $metadataOutFilegz
