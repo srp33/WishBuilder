@@ -23,3 +23,7 @@ COLO-680N	Hybrid Capture Sequencing	yes
 22RV1_PROSTATE	SomaticMutation	DOPEY2
 OUMS27_BONE	SomaticMutation	TP53
 OUMS27_BONE	SomaticMutation	FMN2
+LOUNH91_LUNG    CNV__A1BG       -0.0259
+LOUNH91_LUNG    CNV__SCO2       -0.103
+RH18_SOFT_TISSUE        CNV__A1BG       -0.0433
+RH18_SOFT_TISSUE        CNV__SCO2       -0.3008
