@@ -58,14 +58,6 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 25 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 26 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 27 of "test_metadata.tsv" should contain exactly three columns.
-
-&#10060;	Row 28 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
 &#10060;	"22RV1_PROSTATE" does not have enough features to test (min: 2)
