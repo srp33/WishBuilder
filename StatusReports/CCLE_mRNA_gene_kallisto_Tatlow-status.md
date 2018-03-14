@@ -64,10 +64,6 @@ Executing parse.sh: Success
 
 &#10060;	"OUMS27_BONE" does not have enough features to test (min: 2)
 
-&#10060;	"RH18_SOFT_TISSUE\" does not have enough features to test (min: 2)
-
-&#10060;	"RH18_SOFT_TISSUE" does not have enough features to test (min: 2)
-
 &#9989;	test_metadata.tsv contains enough test cases (28; min: 8)
 
 #### Results: **<font color="red">FAIL</font>**
