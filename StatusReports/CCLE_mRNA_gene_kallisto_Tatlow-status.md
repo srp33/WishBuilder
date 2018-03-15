@@ -1,5 +1,7 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: In Progress </center></h2>
+<h2><center> Status: Failed </center></h2>
+<center>Mar 15, 18 16:03PM MST</center>
+
 
 ### Testing Directory . . .
 
@@ -44,27 +46,17 @@ Executing install.sh: Success
 
 Executing download.sh: Success
 
-Executing parse.sh: Success
+Executing parse.sh: 
 
-&#9989;	data.tsv.gz was created and zipped correctly.
+&#10060;	parse.sh returned an error:
+~~~bash
+Traceback (most recent call last):
+  File "parseMeta2.py", line 14, in <module>
+    hugoIndex = inHeaderItems.index("Hugo_Symbol")
+ValueError: 'Hugo_Symbol' is not in list
+Traceback (most recent call last):
+  File "parseMeta1.py", line 15, in <module>
+    symbolIndex = inHeaderItems.index("SYMBOL")
+ValueError: 'SYMBOL' is not in list
+~~~
 
-&#9989;	metadata.tsv.gz was created and zipped correctly.
-
-#### Results: PASS
----
-### Testing Key Files:
-
-&#9989;	test_data.tsv contains enough unique samples to test
-
-&#9989;	test_data.tsv contains enough test cases (8; min: 8)
-
-&#9989;	test_metadata.tsv contains enough unique samples to test
-
-&#10060;	"22RV1_PROSTATE" does not have enough features to test (min: 2)
-
-&#10060;	"OUMS27_BONE" does not have enough features to test (min: 2)
-
-&#9989;	test_metadata.tsv contains enough test cases (28; min: 8)
-
-#### Results: **<font color="red">FAIL</font>**
----
