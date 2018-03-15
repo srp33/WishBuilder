@@ -1,6 +1,6 @@
 <h1><center>GDSC_Expression</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Mar 12, 18 16:03PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Mar 14, 18. 16:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -95,21 +95,11 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row: 7 - FAIL
+&#9989;	Row 7: Success
 
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	SK-MEL-28	|	ENSG00000000003	|	7.31906561147659	|
-|	**User Generated**	|	SK-MEL-28	|	ENSG00000000003	|	7.31906561148	|
+&#9989;	Row 8: Success
 
-&#10060;	Row: 8 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	SK-MEL-28	|	ENSG00000266753	|	7.350374611598085	|
-|	**User Generated**	|	SK-MEL-28	|	ENSG00000266753	|	7.3503746116	|
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
