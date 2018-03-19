@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 15, 18 16:03PM MST</center>
+<center>Mar 19, 18 10:03AM MST</center>
 
 
 ### Testing Directory . . .
@@ -51,12 +51,10 @@ Executing parse.sh:
 &#10060;	parse.sh returned an error:
 ~~~bash
 Traceback (most recent call last):
-  File "parseMeta2.py", line 14, in <module>
-    hugoIndex = inHeaderItems.index("Hugo_Symbol")
-ValueError: 'Hugo_Symbol' is not in list
-Traceback (most recent call last):
-  File "parseMeta1.py", line 15, in <module>
-    symbolIndex = inHeaderItems.index("SYMBOL")
-ValueError: 'SYMBOL' is not in list
+  File "parse.py", line 13, in <module>
+    with open(drugData, 'r') as f :
+FileNotFoundError: [Errno 2] No such file or directory: 'tmp/CCLE_NP24.2009_Drug_data_2015.02.24.csv'
+gzip: metadata.tsv: No such file or directory
+gzip: data.tsv: No such file or directory
 ~~~
 
