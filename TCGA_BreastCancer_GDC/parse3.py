@@ -121,7 +121,7 @@ with open(transposedTumorTPM, 'r') as iF:
                         continue
                     if(metaDataList[i] != "NA" and metaDataList[i] != "[Not Applicable]") : #excluding NA and [Not Applicable], but keeping [Not Available] unless they are the only values
                         if(metaDataList[i] != "[Not Available]") :
-                            ofMeta.write(lineList[0] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
+                            ofMeta.write(lineList[0][:15] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
                             allNA = False
                         else :
                             #If all the values are [Not Available] we do not want to include them because we won't have any metavariables for the patient
@@ -129,9 +129,9 @@ with open(transposedTumorTPM, 'r') as iF:
                              
                 if allNA == False :
                     for i in notAvailableMetaVariables : #Include the metavariables if not all of them are NA, [Not Applicable], and [Not Available]
-                        ofMeta.write(lineList[0] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
+                        ofMeta.write(lineList[0][:15] + '\t' + metadataDict["header"][i] + '\t' + metaDataList[i] + '\n')
                     for mutation in mutationList :
-                        ofMeta.write(lineList[0] + "\tSomatic mutation\t" + mutation + "\n")
-                    ofData.write('\t'.join(lineList) + '\n')
+                        ofMeta.write(lineList[0][:15] + "\tSomatic mutation\t" + mutation + "\n")
+                    ofData.write(lineList[0][:15] + "\t" + '\t'.join(lineList[1:]) + '\n')
 
 
