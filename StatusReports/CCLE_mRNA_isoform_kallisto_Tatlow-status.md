@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_isoform_kallisto_Tatlow</center></h1>
 <h2><center> Status: Complete </center></h2>
-<center>Mar 08, 18. 15:03 MST</center>
+<center>Mar 19, 18. 10:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -71,10 +71,10 @@ Executing parse.sh: Success
 
 |	Sample	|	ENST00000000233.9	|	ENST00000000412.7	|	ENST00000000442.10	|	ENST00000001008.5	|
 |	---	|	---	|	---	|	---	|	---	|
-|	COR-L24	|	119.261	|	53.0379	|	6.99391	|	77.702	|
-|	HSC-3	|	86.1598	|	106.027	|	13.0669	|	67.9185	|
-|	KMS-11	|	101.817	|	79.8547	|	5.65856	|	116.169	|
-|	C2BBe1	|	149.497	|	155.488	|	9.85457	|	110.965	|
+|	CORL24_LUNG	|	119.261	|	53.0379	|	6.99391	|	77.702	|
+|	HSC3_UPPER_AERODIGESTIVE_TRACT	|	86.1598	|	106.027	|	13.0669	|	67.9185	|
+|	KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	|	101.817	|	79.8547	|	5.65856	|	116.169	|
+|	C2BBE1_LARGE_INTESTINE	|	149.497	|	155.488	|	9.85457	|	110.965	|
 
 **Columns: 199170 Rows: 923**
 
@@ -105,12 +105,12 @@ Executing parse.sh: Success
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	COR-L24	|	Gender	|	M	|
-|	COR-L24	|	Site Primary	|	lung	|
-|	COR-L24	|	Histology	|	carcinoma	|
-|	COR-L24	|	Hist Subtype1	|	small_cell_carcinoma	|
+|	CORL24_LUNG	|	Gender	|	M	|
+|	CORL24_LUNG	|	Site Primary	|	lung	|
+|	CORL24_LUNG	|	Histology	|	carcinoma	|
+|	CORL24_LUNG	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 60882**
+**Columns: 3 Rows: 67350**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
