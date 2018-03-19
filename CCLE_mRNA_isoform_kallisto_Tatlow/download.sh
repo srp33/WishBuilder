@@ -27,3 +27,15 @@ fileName=$redirectedTempFolder/CCLE_NP24.2009_profiling_2012.02.20.csv
 
 
 wget -O $fileName $url
+
+#downloading CCLE_copynumber_byGene_2013-12-03.txt.gz
+url="https://portals.broadinstitute.org/ccle_legacy/downloadFile/DefaultSystemRoot/exp_10/ds_20/CCLE_copynumber_byGene_2013-12-03.txt.gz?downloadff=true&fileId=17599"
+fileName=$redirectedTempFolder/CCLE_copynumber_byGene_2013-12-03.txt.gz
+
+wget -O $fileName $url
+
+#downloading
+url="https://portals.broadinstitute.org/ccle_legacy/downloadFile/DefaultSystemRoot/exp_10/ds_32/ccle2maf_20170805f.txt?downloadff=true&fileId=27366"
+fileName=$redirectedTempFolder/ccle2maf_20170805f.txt
+
+wget -O $fileName $url
