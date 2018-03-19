@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_GDC</center></h1>
 <h2><center> Status: Complete </center></h2>
-<center>Feb 23, 18. 16:02 MST</center>
+<center>Mar 19, 18. 12:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -11,7 +11,7 @@
 
 &#9989;	config.yaml contains all necessary configurations.
 
-&#9989;	Title is less than 100 characters
+&#9989;	Title is less than 300 characters
 
 &#9989;	description.md contains a description.
 
@@ -71,10 +71,10 @@ Executing parse.sh: Success
 
 |	Sample	|	1/2-SBSRNA4	|	A1BG	|	A1BG-AS1	|	A1CF	|
 |	---	|	---	|	---	|	---	|	---	|
-|	TCGA-3C-AAAU-01A-11R-A41B-07	|	5.54232446204596	|	12.9679516712473	|	3.14176915832577	|	0.00520202913308217	|
-|	TCGA-3C-AALI-01A-11R-A41B-07	|	3.39482819338405	|	17.1577035101616	|	4.32682026222599	|	0.118286519300192	|
-|	TCGA-3C-AALJ-01A-31R-A41B-07	|	2.50640106626595	|	31.6096061992498	|	2.866475585645	|	0.102975760042304	|
-|	TCGA-3C-AALK-01A-11R-A41B-07	|	1.84821794433028	|	13.2984130137491	|	1.61465988642	|	0.02062411320675	|
+|	TCGA-3C-AAAU-01	|	5.54232446204596	|	12.9679516712473	|	3.14176915832577	|	0.00520202913308217	|
+|	TCGA-3C-AALI-01	|	3.39482819338405	|	17.1577035101616	|	4.32682026222599	|	0.118286519300192	|
+|	TCGA-3C-AALJ-01	|	2.50640106626595	|	31.6096061992498	|	2.866475585645	|	0.102975760042304	|
+|	TCGA-3C-AALK-01	|	1.84821794433028	|	13.2984130137491	|	1.61465988642	|	0.02062411320675	|
 
 **Columns: 23369 Rows: 944**
 
@@ -105,10 +105,10 @@ Executing parse.sh: Success
 
 |	Sample	|	Variable	|	Value	|
 |	---	|	---	|	---	|
-|	TCGA-3C-AAAU-01A-11R-A41B-07	|	form_completion_date	|	2014-1-13	|
-|	TCGA-3C-AAAU-01A-11R-A41B-07	|	prospective_collection	|	NO	|
-|	TCGA-3C-AAAU-01A-11R-A41B-07	|	retrospective_collection	|	YES	|
-|	TCGA-3C-AAAU-01A-11R-A41B-07	|	gender	|	FEMALE	|
+|	TCGA-3C-AAAU-01	|	form_completion_date	|	2014-1-13	|
+|	TCGA-3C-AAAU-01	|	prospective_collection	|	NO	|
+|	TCGA-3C-AAAU-01	|	retrospective_collection	|	YES	|
+|	TCGA-3C-AAAU-01	|	gender	|	FEMALE	|
 
 **Columns: 3 Rows: 118957**
 
