@@ -16,9 +16,9 @@ with open(drugData, 'r') as f :
 
     for line in f :
         lineList = line.strip('\n').strip('\r').split(',')
-        if lineList[1] not in DrugDataDict :
-            DrugDataDict[lineList[1]] = []
-        DrugDataDict[lineList[1]].append([lineList[2], lineList[-4], lineList[-3], lineList[-2], lineList[-1]])
+        if lineList[0] not in DrugDataDict :
+            DrugDataDict[lineList[0]] = []
+        DrugDataDict[lineList[0]].append([lineList[2], lineList[-4], lineList[-3], lineList[-2], lineList[-1]])
 
 genericToBrand = {}
 with codecs.open(profilingData, 'r', "iso-8859-1") as f : 
@@ -42,7 +42,7 @@ with open(clinicalAnnotations, 'r') as f:
         lineList[1] = lineList[1].replace("(", "_")
         lineList[1] = lineList[1].replace(")", "_")
         lineList[1] = lineList[1].replace(",", "")
-        PrimaryNameToAnnotations[lineList[1]] = lineList[1:]
+        PrimaryNameToAnnotations[lineList[1]] = [lineList[0]] + lineList[2:]
 
 print("organizing data")
 expressionList = []
@@ -81,10 +81,10 @@ with open(metedataOutFile, 'w') as ofMeta:
                     first = False
                     ofMeta.write("Sample\tVariable\tValue\n")
                 else :
-                    if expressionList[i][0] in DrugDataDict :
+                    sample = PrimaryNameToAnnotations[expressionList[i][0]][0]
+                    if sample in DrugDataDict :
                         ## There is several lines of information for each cell line
-                        for list in DrugDataDict[expressionList[i][0]] :
-                            sample = expressionList[i][0]
+                        for list in DrugDataDict[sample] :
                             for k in range(len(list) - 1) : 
                                 ## We don't want blank vaulues or NA values.
                                 if list[k + 1] == "NA" or list[k + 1] == "" :
@@ -97,7 +97,7 @@ with open(metedataOutFile, 'w') as ofMeta:
 #                    lineList = line.strip('\n').split('\t')
                     for j in range(len(PrimaryNameToAnnotations[expressionList[i][0]]) - 1) :
                         if PrimaryNameToAnnotations[expressionList[i][0]][j + 1] != "" :
-                            metadataSamples.append(PrimaryNameToAnnotations[expressionList[i][0]][0])
+                            metadataSamples.append(expressionList[i][0])
                             ofMeta.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + '\t' + headerList[j + 1] + '\t' + PrimaryNameToAnnotations[expressionList[i][0]][j + 1] + '\n')
             except KeyError: 
                 continue #This will catch the following mismatches: RS4_11, EKVX, SF539, SNB75, SF268, MOLT-3, HOP-92, HOP-62, UO-31, WM983B, HOP-62, EKVX
@@ -111,4 +111,4 @@ with open(dataOutFile, 'w') as ofData:
             ofData.write("Sample" + "\t" + "\t".join(expressionList[i][1:]) + "\n")
         else :
             if(any(str(expressionList[i][0]) == metadataSample for metadataSample in metadataSamples)) :
-                ofData.write("\t".join([str(element) for element in expressionList[i]]) + "\n")
+                ofData.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + "\t" + "\t".join([str(element) for element in expressionList[i][1:]]) + "\n")
