@@ -20,5 +20,5 @@ python parse.py $expressionData $clinicalAnnotations $dataOutFile $metadataOutFi
 gzip $metadataOutFile
 gzip $dataOutFile
 
-python3 parseMeta2.py $meta1 $dataOutFilegz
-python3 parseMeta1.py $meta2 $metadataOutFilegz
+python3 parseMeta1.py $meta1 $dataOutFilegz
+python3 parseMeta2.py $meta2 $metadataOutFilegz
