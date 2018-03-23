@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Mar 22, 18 16:03PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Mar 23, 18. 09:03 MST</center>
 
 
 ### Testing Directory . . .
@@ -58,7 +58,7 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough unique samples to test
 
-&#9989;	test_data.tsv contains enough test cases (12; min: 8)
+&#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
@@ -99,15 +99,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-&#10060;	Row: 9 - CNV__A1BG is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 10 - CNV__SCO2 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 11 - CNV__A1BG is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 12 - CNV__SCO2 is not found in "data.tsv.gz" column headers
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
