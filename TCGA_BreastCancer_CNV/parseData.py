@@ -1,6 +1,5 @@
 import sys, gzip
 import numpy as np
-from numpy import genfromtxt, savetxt
 
 CNVdata = sys.argv[1]
 outFilePath = sys.argv[2]
