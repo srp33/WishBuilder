@@ -17,7 +17,7 @@ patientCancerType=$redirectedTemp/"GSE62944_06_01_15_TCGA_24_CancerType_Samples.
 dataOutFilegz=data.tsv
 metadataOutFilegz=metadata.tsv
 
-#source activate WishBuilderDependencies
+source activate WishBuilderDependencies
 
 python3 parseData.py $CNVdata $dataOutFilegz
 python3 parseMeta.py $patientCancerType $metadataOutFilegz
