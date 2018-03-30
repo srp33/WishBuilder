@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Complete </center></h2>
-<center>Mar 23, 18. 09:03 MST</center>
+<h2><center> Status: Failed </center></h2>
+<center>Mar 30, 18 14:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -62,7 +62,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (20; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (28; min: 8)
 
 #### Results: PASS
 ---
@@ -83,23 +83,23 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#9989;	Row 1: Success
+&#10060;	Row: 1 - Sample "COR-L24" is not found in data.tsv.gz
 
-&#9989;	Row 2: Success
+&#10060;	Row: 2 - Sample "COR-L24" is not found in data.tsv.gz
 
-&#9989;	Row 3: Success
+&#10060;	Row: 3 - Sample "HSC-3" is not found in data.tsv.gz
 
-&#9989;	Row 4: Success
+&#10060;	Row: 4 - Sample "HSC-3" is not found in data.tsv.gz
 
-&#9989;	Row 5: Success
+&#10060;	Row: 5 - Sample "HT55" is not found in data.tsv.gz
 
-&#9989;	Row 6: Success
+&#10060;	Row: 6 - Sample "HT55" is not found in data.tsv.gz
 
-&#9989;	Row 7: Success
+&#10060;	Row: 7 - Sample "COLO-680N" is not found in data.tsv.gz
 
-&#9989;	Row 8: Success
+&#10060;	Row: 8 - Sample "COLO-680N" is not found in data.tsv.gz
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -110,7 +110,7 @@ Executing parse.sh: Success
 |	CORL24_LUNG	|	Histology	|	carcinoma	|
 |	CORL24_LUNG	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 67350**
+**Columns: 3 Rows: 212420**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -121,53 +121,114 @@ Executing parse.sh: Success
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Hybrid Capture Sequencing" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
 
-&#9989;	Row 1: Success
+&#10060;	Row 1: Fail
+- "COR-L24	Gender	M" is not found.
 
-&#9989;	Row 2: Success
+&#10060;	Row 2: Fail
+- "COR-L24	Hybrid Capture Sequencing	yes" is not found.
 
-&#9989;	Row 3: Success
+&#10060;	Row 3: Fail
+- "KMS-11	Drug__AEW541__EC50 (uM)	0.236332193" is not found.
 
-&#9989;	Row 4: Success
+&#10060;	Row 4: Fail
+- "KMS-11	Drug__AEW541__ActArea	3.2272" is not found.
 
-&#9989;	Row 5: Success
+&#10060;	Row 5: Fail
+- "KMS-11	Drug__Erlotinib__IC50 (uM)	8" is not found.
 
-&#9989;	Row 6: Success
+&#10060;	Row 6: Fail
+- "KMS-11	Drug__Erlotinib__ActArea	0.2748" is not found.
 
-&#9989;	Row 7: Success
+&#10060;	Row 7: Fail
+- "KMS-11	Drug__Tarceva__IC50 (uM)	8" is not found.
 
-&#9989;	Row 8: Success
+&#10060;	Row 8: Fail
+- "KMS-11	Drug__Tarceva__ActArea	0.2748" is not found.
 
-&#9989;	Row 9: Success
+&#10060;	Row 9: Fail
+- "HT-144	Drug__AEW541__EC50 (uM)	3.215185642" is not found.
 
-&#9989;	Row 10: Success
+&#10060;	Row 10: Fail
+- "HT-144	Drug__AEW541__ActArea	0.8903" is not found.
 
-&#9989;	Row 11: Success
+&#10060;	Row 11: Fail
+- "HT-144	Drug__Erlotinib__EC50 (uM)	9.204066346" is not found.
 
-&#9989;	Row 12: Success
+&#10060;	Row 12: Fail
+- "HT-144	Drug__Erlotinib__ActArea	0.5338" is not found.
 
-&#9989;	Row 13: Success
+&#10060;	Row 13: Fail
+- "HT-144	Drug__Tarceva__EC50 (uM)	9.204066346" is not found.
 
-&#9989;	Row 14: Success
+&#10060;	Row 14: Fail
+- "HT-144	Drug__Tarceva__ActArea	0.5338" is not found.
 
-&#9989;	Row 15: Success
+&#10060;	Row 15: Fail
+- "HSC-3	Gender	M" is not found.
 
-&#9989;	Row 16: Success
+&#10060;	Row 16: Fail
+- "HSC-3	Hybrid Capture Sequencing	yes" is not found.
 
-&#9989;	Row 17: Success
+&#10060;	Row 17: Fail
+- "HT55	Site Primary	large_intestine" is not found.
 
-&#9989;	Row 18: Success
+&#10060;	Row 18: Fail
+- "HT55	Hybrid Capture Sequencing	yes" is not found.
 
-&#9989;	Row 19: Success
+&#10060;	Row 19: Fail
+- "COLO-680N	Gender	F" is not found.
 
-&#9989;	Row 20: Success
+&#10060;	Row 20: Fail
+- "COLO-680N	Hybrid Capture Sequencing	yes" is not found.
 
-#### Results: PASS
+&#9989;	Row 21: Success
+
+&#9989;	Row 22: Success
+
+&#9989;	Row 23: Success
+
+&#10060;	Row 24: Fail
+- "OUMS27_BONE	SomaticMutation	FMN2" is not found.
+
+&#10060;	Row 25: Fail
+- "LOUNH91_LUNG	CNV__A1BG	-0.0259" is not found.
+
+&#10060;	Row 26: Fail
+- "LOUNH91_LUNG	CNV__SCO2	-0.103" is not found.
+
+&#10060;	Row 27: Fail
+- "RH18_SOFT_TISSUE	CNV__A1BG	-0.0433" is not found.
+
+&#10060;	Row 28: Fail
+- "RH18_SOFT_TISSUE	CNV__SCO2	-0.3008" is not found.
+
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 
-&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+&#10060;	 Sample "MS1_LUNG" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-#### Results: PASS
+&#10060;	 Sample "CP66EBV_MATCHED_NORMAL_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "INA6_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "D336MG_CENTRAL_NERVOUS_SYSTEM" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "MLMA_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "SW156_KIDNEY" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "ES4_BONE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "HS751T_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "ARH77_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 More errors are not being printed...
+
+<font color="red">Total sample mismatch errors: 575</font>
+
+#### Results: **<font color="red">FAIL</font>**
 
 ---
 ### Testing Directory after cleanup . . .
