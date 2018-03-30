@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_CNV</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 30, 18 12:03PM MST</center>
+<center>Mar 30, 18 13:03PM MST</center>
 
 
 ### Testing Directory . . .
@@ -145,23 +145,23 @@ Executing parse.sh: Success
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "TCGA-AC-A5EI-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
 &#10060;	 Sample "TCGA-AR-A0U1-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 Sample "TCGA-C8-A9FZ-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-13-0765-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-AC-A5EI-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-DS-A7WF-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-AB-2821-03" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "TCGA-AB-2988-03" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-EM-A4FH-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "TCGA-AB-2885-03" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-24-1425-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "TCGA-13-1492-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-AA-A00E-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
-&#10060;	 Sample "TCGA-06-0644-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#10060;	 Sample "TCGA-CM-4750-01" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+
+&#10060;	 Sample "TCGA-EE-A2MC-06" is in "metadata.tsv.gz" but not in "data.tsv.gz"
 
 &#10060;	 More errors are not being printed...
 
