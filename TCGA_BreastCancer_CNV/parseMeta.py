@@ -1,7 +1,16 @@
 import sys, gzip
 
 PatientCancerType = sys.argv[1]
-outFilePath = sys.argv[2]
+commonValues = sys.argv[2]
+outFilePath = sys.argv[3]
+
+inCommon = []
+
+with open(commonValues, 'r') as c:
+	for line in c:
+        	value = line.strip('\n').split('\t')
+        	value = value[0]
+        	inCommon.append(value)	
 
 #Read in Patient Cancer Types (Sample ID's and Values)
 patientIDToCancerDict = {}
@@ -17,5 +26,7 @@ with open(outFilePath, 'w') as outFile:
 
 	for cancerType in patientIDToCancerDict:
 		mutation = patientIDToCancerDict[cancerType]
-		outFile.write(cancerType[:15] + "\tSomatic mutation\t" + mutation + "\n")
+		sample = cancerType[:15]
+		if sample in inCommon:
+			outFile.write(sample + "\tSomatic mutation\t" + mutation + "\n")
 
