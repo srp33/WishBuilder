@@ -1,29 +1,21 @@
 Sample	Variable	Value
-COR-L24	Gender	M
-COR-L24	Hybrid Capture Sequencing	yes
-KMS-11	Drug__AEW541__EC50 (uM)	0.236332193
-KMS-11	Drug__AEW541__ActArea	3.2272
-KMS-11	Drug__Erlotinib__IC50 (uM)	8
-KMS-11	Drug__Erlotinib__ActArea	0.2748
-KMS-11	Drug__Tarceva__IC50 (uM)	8
-KMS-11	Drug__Tarceva__ActArea	0.2748
-HT-144	Drug__AEW541__EC50 (uM)	3.215185642
-HT-144	Drug__AEW541__ActArea	0.8903
-HT-144	Drug__Erlotinib__EC50 (uM)	9.204066346
-HT-144	Drug__Erlotinib__ActArea	0.5338
-HT-144	Drug__Tarceva__EC50 (uM)	9.204066346
-HT-144	Drug__Tarceva__ActArea	0.5338
-HSC-3	Gender	M
-HSC-3	Hybrid Capture Sequencing	yes
-HT55	Site Primary	large_intestine
-HT55	Hybrid Capture Sequencing	yes
-COLO-680N	Gender	F
-COLO-680N	Hybrid Capture Sequencing	yes
-22RV1_PROSTATE	SomaticMutation	AGRN
-22RV1_PROSTATE	SomaticMutation	DOPEY2
-OUMS27_BONE	SomaticMutation	TP53
-OUMS27_BONE	SomaticMutation	FMN2
-LOUNH91_LUNG	CNV__A1BG	-0.0259
-LOUNH91_LUNG	CNV__SCO2	-0.103
-RH18_SOFT_TISSUE	CNV__A1BG	-0.0433
-RH18_SOFT_TISSUE	CNV__SCO2	-0.3008
+CORL24_LUNG	Gender	M
+CORL24_LUNG	Hybrid Capture Sequencing	yes
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__AEW541__EC50 (uM)	0.236332193
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__AEW541__ActArea	3.2272
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__Erlotinib__IC50 (uM)	8
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__Erlotinib__ActArea	0.2748
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__Tarceva__IC50 (uM)	8
+KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	Drug__Tarceva__ActArea	0.2748
+HT144_SKIN	Drug__AEW541__EC50 (uM)	3.215185642
+HT144_SKIN	Drug__AEW541__ActArea	0.8903
+HT144_SKIN	Drug__Erlotinib__EC50 (uM)	9.204066346
+HT144_SKIN	Drug__Erlotinib__ActArea	0.5338
+HT144_SKIN	Drug__Tarceva__EC50 (uM)	9.204066346
+HT144_SKIN	Drug__Tarceva__ActArea	0.5338
+HSC3_UPPER_AERODIGESTIVE_TRACT	Gender	M
+HSC3_UPPER_AERODIGESTIVE_TRACT	Hybrid Capture Sequencing	yes
+HT55_LARGE_INTESTINE	Site Primary	large_intestine
+HT55_LARGE_INTESTINE	Hybrid Capture Sequencing	yes
+COLO680N_OESOPHAGUS	Gender	F
+COLO680N_OESOPHAGUS	Hybrid Capture Sequencing	yes:set
