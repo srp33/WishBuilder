@@ -29,4 +29,6 @@ gzip $dataOutFilegz
 gzip $metadataOutFilegz
 
 
+#To insure only common samples
+python3 keep_common_samples.py "metadata.tsv.gz" "data.tsv.gz"
 #source deactivate WishBuilderDependencies
