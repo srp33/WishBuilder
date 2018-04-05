@@ -9,9 +9,9 @@ data = []
 notIncluded = ["TCGA-AC-A5EI-01","TCGA-AR-A0U1-01","TCGA-C8-A9FZ-01"]
 
 with open(CNVdata, 'r') as f:
-	lineNum = 1
 	for line in f:
-		lineItems = line.rstrip("\n").split("\n")
+		lineItems = line.rstrip("\n").split("\t")
+		data.append(lineItems)
 npArray = np.array(data)
 npArray = npArray.T
 
@@ -19,10 +19,12 @@ npArray = npArray.T
 firstLine = True
 with open(outFilePath, 'w') as outFile:
 	for line in npArray:
+	#	for row in line:
 		if firstLine:
 			line[0] = 'Sample'
 			firstLine = False
 		sample = line[0]
 		if sample not in notIncluded:
-			outFile.write("\t".join(line) + '\n')
+			#	sys.stdout.write("\t".join(line)+ '\n')
+			outFile.write("\t".join(line) + '\n') 
 
