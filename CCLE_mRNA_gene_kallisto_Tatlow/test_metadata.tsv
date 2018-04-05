@@ -18,4 +18,4 @@ HSC3_UPPER_AERODIGESTIVE_TRACT	Hybrid Capture Sequencing	yes
 HT55_LARGE_INTESTINE	Site Primary	large_intestine
 HT55_LARGE_INTESTINE	Hybrid Capture Sequencing	yes
 COLO680N_OESOPHAGUS	Gender	F
-COLO680N_OESOPHAGUS	Hybrid Capture Sequencing	yes:set
+COLO680N_OESOPHAGUS	Hybrid Capture Sequencing	yes

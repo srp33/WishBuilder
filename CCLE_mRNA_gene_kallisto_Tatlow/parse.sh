@@ -22,3 +22,4 @@ gzip $dataOutFile
 
 python3 parseMeta1.py $meta1 $dataOutFilegz
 python3 parseMeta2.py $meta2 $metadataOutFilegz
+python3 keep_common_samples.py $metadataOutFilegz $dataOutFilegz
