@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Apr 03, 18 15:04PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Apr 05, 18. 16:04 MST</center>
 
 
 ### Testing Directory . . .
@@ -110,7 +110,7 @@ Executing parse.sh: Success
 |	CORL24_LUNG	|	Histology	|	carcinoma	|
 |	CORL24_LUNG	|	Hist Subtype1	|	small_cell_carcinoma	|
 
-**Columns: 3 Rows: 212420**
+**Columns: 3 Rows: 178199**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -159,36 +159,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 19: Success
 
-&#10060;	Row 20: Fail
-- "COLO680N_OESOPHAGUS	Hybrid Capture Sequencing	yes:set" is not found.
+&#9989;	Row 20: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "HNT34_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE" is in "metadata.tsv.gz" but not in "data.tsv.gz"
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
 
-&#10060;	 Sample "A427_LUNG" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "H290_PLEURA" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "KON_UPPER_AERODIGESTIVE_TRACT" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "U138MG_CENTRAL_NERVOUS_SYSTEM" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "SLR25_KIDNEY" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "SW954_VULVA" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "ETK1_BILIARY_TRACT" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 Sample "HS742T_FIBROBLAST" is in "metadata.tsv.gz" but not in "data.tsv.gz"
-
-&#10060;	 More errors are not being printed...
-
-<font color="red">Total sample mismatch errors: 575</font>
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 
 ---
 ### Testing Directory after cleanup . . .
