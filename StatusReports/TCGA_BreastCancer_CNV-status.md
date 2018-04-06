@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_CNV</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Apr 06, 18 16:04PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Apr 06, 18. 16:04 MST</center>
 
 
 ### Testing Directory . . .
@@ -60,13 +60,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
-
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -78,7 +76,7 @@ Executing parse.sh: Success
 |	TCGA-3C-AALJ-01	|	-1	|	-1	|	-1	|	-1	|
 |	TCGA-3C-AALK-01	|	0	|	0	|	0	|	0	|
 
-**Columns: 24777 Rows: 1066**
+**Columns: 24777 Rows: 1078**
 
 ---
 ### "data.tsv.gz" Test Cases (from rows in test file). . .
@@ -112,7 +110,7 @@ Executing parse.sh: Success
 |	TCGA-AO-A126-01	|	Somatic mutation	|	BRCA	|
 |	TCGA-E2-A14X-01	|	Somatic mutation	|	BRCA	|
 
-**Columns: 3 Rows: 1066**
+**Columns: 3 Rows: 1078**
 
 ---
 ### "metadata.tsv.gz" Test Cases (from rows in test file). . .
@@ -133,15 +131,11 @@ Executing parse.sh: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "TCGA-A7-A0DC-01	Somatic mutation	BRCA" is not found.
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-&#10060;	Row 9: Fail
-- "" is not found.
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
