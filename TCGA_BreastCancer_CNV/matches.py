@@ -1,3 +1,6 @@
+#This code reads through the datafile and the metadata file, and forms a list of all the values the two hold in common
+
+
 import sys, gzip, re
 
 data = sys.argv[1]

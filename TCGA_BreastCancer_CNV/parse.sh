@@ -16,6 +16,7 @@ patientCancerType=$redirectedTemp/"GSE62944_06_01_15_TCGA_24_CancerType_Samples.
 #OutFile
 dataOutFilegz=data.tsv
 metadataOutFilegz=metadata.tsv
+#Values is a file previously created by matches.py that contains the common samples of data and metadata
 commonValues=values
 
 #source activate WishBuilderDependencies
