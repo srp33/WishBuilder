@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_CNV</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Apr 05, 18 17:04PM MST</center>
+<center>Apr 06, 18 16:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -60,11 +60,13 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
+&#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
+
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
-#### Results: PASS
+#### Results: **<font color="red">FAIL</font>**
 ---
 
 ### First 5 columns and 5 rows of data.tsv.gz:
@@ -119,29 +121,25 @@ Executing parse.sh: Success
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Somatic mutation" for all samples is the same ("BRCA"). This variable has been removed from metadata.tsv.gz</p>
 
-&#10060;	Row 1: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	SRBD1" is not found.
+&#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	PTCHD1" is not found.
+&#9989;	Row 2: Success
 
-&#10060;	Row 3: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	ADRA2C" is not found.
+&#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	NUDT10" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DHX9" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DYNC1I1" is not found.
+&#9989;	Row 6: Success
 
 &#10060;	Row 7: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	PRMT6" is not found.
+- "TCGA-A7-A0DC-01	Somatic mutation	BRCA" is not found.
 
-&#10060;	Row 8: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	STAG2" is not found.
+&#9989;	Row 8: Success
+
+&#10060;	Row 9: Fail
+- "" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
 ---
