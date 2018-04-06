@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_RPPA</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 22, 18 16:03PM MST</center>
+<center>Apr 06, 18 16:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -64,7 +64,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (12; min: 8)
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -91,12 +91,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 2: Success
 
-&#10060;	Row: 3 - FAIL
-
-||	Sample	|	Column	|	Row	|
-|	---	|	---	|	---	|	---	|
-|	**Expected**	|	TCGA-E2-A15A-06	|	14-3-3_beta-R-V	|		|
-|	**User Generated**	|	TCGA-E2-A15A-06	|	14-3-3_beta-R-V	|	-0.22705919575	|
+&#9989;	Row 3: Success
 
 &#9989;	Row 4: Success
 
@@ -128,51 +123,51 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	SRBD1" is not found.
+&#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	PTCHD1" is not found.
+&#9989;	Row 2: Success
 
-&#10060;	Row 3: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	ADRA2C" is not found.
+&#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	NUDT10" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DHX9" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DYNC1I1" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	PRMT6" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	STAG2" is not found.
+&#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+&#9989;	Row 9: Success
+
+&#9989;	Row 10: Success
+
+&#9989;	Row 11: Success
+
+&#9989;	Row 12: Success
+
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "TCGA-BH-A1FN-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A208-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A18L-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-A7-A4SA-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-A7-A4SE-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "TCGA-BH-A0DK-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "TCGA-E9-A1RD-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "TCGA-E9-A1N8-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A18N-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 Sample "TCGA-AC-A5EI-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-E9-A1RC-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A0HA-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-E9-A1N5-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-E9-A1RF-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "TCGA-BH-A0DK-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "TCGA-AR-A0U1-01" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "TCGA-E9-A1NG-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 More errors are not being printed...
 
