@@ -29,8 +29,7 @@ with open(outFilePath, 'w') as outFile:
 	for cancerType in patientIDToCancerDict:
 		mutation = patientIDToCancerDict[cancerType]
 		sample = cancerType[:15]
-		if sample in duplicates:
-			duplicated.append(sample)
 		if sample in inCommon and sample not in duplicated:
 			outFile.write(sample + "\tSomatic mutation\t" + mutation + "\n")
-
+		if sample in duplicates:
+			duplicated.append(sample)
