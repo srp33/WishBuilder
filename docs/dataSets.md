@@ -4,8 +4,8 @@
 
 |	Data Set	|	User	|	Status	|	Date	|	Time Elapsed	|	Samples	|	Meta Data Variables	|	Feature Variables	|
 |	----	|	----	|	----	|	----	|	----	|	----	|	----	|	----	|
+|	[TCGA_BreastCancer_CNV]({{site.url}}/Descriptions/TCGA_BreastCancer_CNV-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_CNV-status)	|	04/06/18	|	00h:00m:42s	|	1065	|	0	|	24776	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	btc36	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	04/05/18	|	00h:27m:44s	|	922	|	154	|	58684	|
-|	[TCGA_BreastCancer_CNV]({{site.url}}/Descriptions/TCGA_BreastCancer_CNV-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_CNV-status)	|	04/05/18	|	00h:00m:33s	|	1077	|	0	|	24776	|
 |	[CCLE_mRNA_gene_kallisto_Tatlow]({{site.url}}/Descriptions/CCLE_mRNA_gene_kallisto_Tatlow-description)	|	glenrs	|	[Complete]({{site.url}}/StatusReports/CCLE_mRNA_gene_kallisto_Tatlow-status)	|	03/23/18	|	00h:37m:19s	|	922	|	153	|	58684	|
 |	[TCGA_BreastCancer_miRNA]({{site.url}}/Descriptions/TCGA_BreastCancer_miRNA-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_miRNA-status)	|	03/22/18	|	00h:00m:24s	|	832	|	1	|	2238	|
 |	[TCGA_BreastCancer_RPPA]({{site.url}}/Descriptions/TCGA_BreastCancer_RPPA-description)	|	btc36	|	[Failed]({{site.url}}/StatusReports/TCGA_BreastCancer_RPPA-status)	|	03/22/18	|	00h:00m:29s	|	937	|	1	|	281	|
