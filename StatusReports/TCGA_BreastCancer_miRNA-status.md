@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_miRNA</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Mar 22, 18 16:03PM MST</center>
+<center>Apr 06, 18 16:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -60,11 +60,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough test cases (8; min: 8)
 
-&#10060;	Row 17 of "test_metadata.tsv" should contain exactly three columns.
+&#10060;	Row 9 of "test_metadata.tsv" should contain exactly three columns.
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (17; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (9; min: 8)
 
 #### Results: **<font color="red">FAIL</font>**
 ---
@@ -119,78 +119,46 @@ Executing parse.sh: Success
 
 &#9989;	First column of file is titled "Sample"
 
-&#10060;	Row 1: Fail
-- "TCGA-3C-AAAU-01	form_completion_date	2014-1-13" is not found.
+&#9989;	Row 1: Success
 
-&#10060;	Row 2: Fail
-- "TCGA-3C-AAAU-01	metastatic_tumor_indicator	[Not Available]" is not found.
+&#9989;	Row 2: Success
 
-&#10060;	Row 3: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	SRBD1" is not found.
+&#9989;	Row 3: Success
 
-&#10060;	Row 4: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	PTCHD1" is not found.
+&#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "TCGA-3C-AALI-01	form_completion_date	2014-7-28" is not found.
+&#9989;	Row 5: Success
 
-&#10060;	Row 6: Fail
-- "TCGA-3C-AALI-01	metastatic_tumor_indicator	[Not Available]" is not found.
+&#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	ADRA2C" is not found.
+&#9989;	Row 7: Success
 
-&#10060;	Row 8: Fail
-- "TCGA-3C-AALI-01	Somatic mutation	NUDT10" is not found.
+&#9989;	Row 8: Success
 
 &#10060;	Row 9: Fail
-- "TCGA-Z7-A8R5-01	form_completion_date	2014-7-9" is not found.
-
-&#10060;	Row 10: Fail
-- "TCGA-Z7-A8R5-01	metastatic_tumor_indicator	[Not Available]" is not found.
-
-&#10060;	Row 11: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DHX9" is not found.
-
-&#10060;	Row 12: Fail
-- "TCGA-Z7-A8R5-01	Somatic mutation	DYNC1I1" is not found.
-
-&#10060;	Row 13: Fail
-- "TCGA-Z7-A8R6-01	form_completion_date	2014-7-9" is not found.
-
-&#10060;	Row 14: Fail
-- "TCGA-Z7-A8R6-01	metastatic_tumor_indicator	[Not Available]" is not found.
-
-&#10060;	Row 15: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	PRMT6" is not found.
-
-&#10060;	Row 16: Fail
-- "TCGA-Z7-A8R6-01	Somatic mutation	STAG2" is not found.
-
-&#10060;	Row 17: Fail
 - "" is not found.
 
 #### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 
-&#10060;	 Sample "TCGA-BH-A1FJ-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A1F6-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A18S-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A18N-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A0H5-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
-
-&#10060;	 Sample "TCGA-A7-A13E-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A18L-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 Sample "TCGA-BH-A208-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A1EN-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-E2-A1LH-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-E2-A1L7-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A1ET-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A0HA-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A1FH-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
-&#10060;	 Sample "TCGA-BH-A1FD-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+&#10060;	 Sample "TCGA-BH-A18Q-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
+
+&#10060;	 Sample "TCGA-E2-A1BC-11" is in "data.tsv.gz" but not in "metadata.tsv.gz"
 
 &#10060;	 More errors are not being printed...
 
