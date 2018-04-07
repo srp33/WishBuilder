@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_miRNA</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Apr 06, 18 16:04PM MST</center>
+<center>Apr 06, 18 17:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -46,10 +46,107 @@ Executing install.sh: Success
 
 Executing download.sh: Success
 
-Executing parse.sh: 
+Executing parse.sh: Success
 
-&#10060;	parse.sh returned an error:
-~~~bash
-python3: can't open file 'keep_common_samples.py': [Errno 2] No such file or directory
-~~~
+&#9989;	data.tsv.gz was created and zipped correctly.
 
+&#9989;	metadata.tsv.gz was created and zipped correctly.
+
+#### Results: PASS
+---
+### Testing Key Files:
+
+&#9989;	test_data.tsv contains enough unique samples to test
+
+&#9989;	test_data.tsv contains enough test cases (8; min: 8)
+
+&#9989;	test_metadata.tsv contains enough unique samples to test
+
+&#9989;	test_metadata.tsv contains enough test cases (8; min: 8)
+
+#### Results: PASS
+---
+
+### First 5 columns and 5 rows of data.tsv.gz:
+
+|	Sample	|	MIMAT0019868	|	MIMAT0019869	|	MIMAT0019860	|	MIMAT0019862	|
+|	---	|	---	|	---	|	---	|	---	|
+|	TCGA-OL-A66H-01	|	0.2381	|	NA	|	NA	|	NA	|
+|	TCGA-3C-AALK-01	|	NA	|	0.2117	|	NA	|	NA	|
+|	TCGA-AR-A1AH-01	|	NA	|	NA	|	NA	|	NA	|
+|	TCGA-AC-A5EH-01	|	NA	|	NA	|	NA	|	NA	|
+
+**Columns: 2239 Rows: 755**
+
+---
+### "data.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#9989;	Row 5: Success
+
+&#9989;	Row 6: Success
+
+&#9989;	Row 7: Success
+
+&#9989;	Row 8: Success
+
+#### Results: PASS
+---
+### First 3 columns and 5 rows of metadata.tsv.gz:
+
+|	Sample	|	Variable	|	Value	|
+|	---	|	---	|	---	|
+|	TCGA-A7-A3J0-01	|	Somatic mutation	|	BRCA	|
+|	TCGA-E2-A14X-01	|	Somatic mutation	|	BRCA	|
+|	TCGA-A7-A13G-01	|	Somatic mutation	|	BRCA	|
+|	TCGA-E2-A15S-01	|	Somatic mutation	|	BRCA	|
+
+**Columns: 3 Rows: 769**
+
+---
+### "metadata.tsv.gz" Test Cases (from rows in test file). . .
+
+&#9989;	First column of file is titled "Sample"
+
+<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Somatic mutation" for all samples is the same ("BRCA"). This variable has been removed from metadata.tsv.gz</p>
+
+&#9989;	Row 1: Success
+
+&#9989;	Row 2: Success
+
+&#9989;	Row 3: Success
+
+&#9989;	Row 4: Success
+
+&#10060;	Row 5: Fail
+- "TCGA-A2-A0T1-01	Somatic mutation	BRCA" is not found.
+
+&#9989;	Row 6: Success
+
+&#10060;	Row 7: Fail
+- "TCGA-A7-A0DC-01	Somatic mutation	BRCA" is not found.
+
+&#9989;	Row 8: Success
+
+#### Results: **<font color="red">FAIL</font>**
+---
+### Comparing samples in both files . . .
+
+&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
+
+#### Results: PASS
+
+---
+### Testing Directory after cleanup . . .
+
+#### Results: PASS
+---
