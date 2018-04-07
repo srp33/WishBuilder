@@ -111,4 +111,5 @@ with open(dataOutFile, 'w') as ofData:
             ofData.write("Sample" + "\t" + "\t".join(expressionList[i][1:]) + "\n")
         else :
             if(any(str(expressionList[i][0]) == metadataSample for metadataSample in metadataSamples)) :
-                ofData.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + "\t" + "\t".join([str(element) for element in expressionList[i][1:]]) + "\n") 
+                ofData.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + "\t" + "\t".join([str(element) for element in expressionList[i][1:]]) + "\n")
+
