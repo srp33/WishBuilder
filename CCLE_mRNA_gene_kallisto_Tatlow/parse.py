@@ -112,4 +112,3 @@ with open(dataOutFile, 'w') as ofData:
         else :
             if(any(str(expressionList[i][0]) == metadataSample for metadataSample in metadataSamples)) :
                 ofData.write(PrimaryNameToAnnotations[expressionList[i][0]][0] + "\t" + "\t".join([str(element) for element in expressionList[i][1:]]) + "\n")
-
