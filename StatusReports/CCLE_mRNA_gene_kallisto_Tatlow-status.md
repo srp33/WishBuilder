@@ -1,6 +1,6 @@
 <h1><center>CCLE_mRNA_gene_kallisto_Tatlow</center></h1>
-<h2><center> Status: Complete </center></h2>
-<center>Apr 06, 18. 18:04 MST</center>
+<h2><center> Status: Failed </center></h2>
+<center>Apr 10, 18 16:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -58,11 +58,11 @@ Executing parse.sh: Success
 
 &#9989;	test_data.tsv contains enough unique samples to test
 
-&#9989;	test_data.tsv contains enough test cases (8; min: 8)
+&#9989;	test_data.tsv contains enough test cases (12; min: 8)
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#9989;	test_metadata.tsv contains enough test cases (20; min: 8)
+&#9989;	test_metadata.tsv contains enough test cases (24; min: 8)
 
 #### Results: PASS
 ---
@@ -99,7 +99,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 8: Success
 
-#### Results: PASS
+&#10060;	Row: 9 - CNV__A1BG is not found in "data.tsv.gz" column headers
+
+&#10060;	Row: 10 - CNV__SCO2 is not found in "data.tsv.gz" column headers
+
+&#10060;	Row: 11 - CNV__A1BG is not found in "data.tsv.gz" column headers
+
+&#10060;	Row: 12 - CNV__SCO2 is not found in "data.tsv.gz" column headers
+
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### First 3 columns and 5 rows of metadata.tsv.gz:
 
@@ -161,7 +169,17 @@ Executing parse.sh: Success
 
 &#9989;	Row 20: Success
 
-#### Results: PASS
+&#9989;	Row 21: Success
+
+&#9989;	Row 22: Success
+
+&#10060;	Row 23: Fail
+- "OUMS27_BONE	SomaticMutation	TP53" is not found.
+
+&#10060;	Row 24: Fail
+- "OUMS27_BONE	SomaticMutation	FMN2" is not found.
+
+#### Results: **<font color="red">FAIL</font>**
 ---
 ### Comparing samples in both files . . .
 
