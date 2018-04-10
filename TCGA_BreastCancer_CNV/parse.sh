@@ -16,13 +16,20 @@ patientCancerType=$redirectedTemp/"GSE62944_06_01_15_TCGA_24_CancerType_Samples.
 #OutFile
 dataOutFilegz=data.tsv
 metadataOutFilegz=metadata.tsv
+#Values is a file previously created by matches.py that contains the common samples of data and metadata
+commonValues=values
 
+#source activate WishBuilderDependencies
+
+#python3 matches.py $CNVdata $patientCancerType $commonValues
 python3 parseData.py $CNVdata $dataOutFilegz
-python3 parseMeta.py $patientCancerType $metadataOutFilegz
+python3 parseMeta.py $patientCancerType $commonValues $metadataOutFilegz
 
 
 gzip $dataOutFilegz
 gzip $metadataOutFilegz
 
 
+#To insure only common samples
+python3 keep_common_samples.py "metadata.tsv.gz" "data.tsv.gz"
 #source deactivate WishBuilderDependencies
