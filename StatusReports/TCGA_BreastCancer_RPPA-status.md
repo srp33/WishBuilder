@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_RPPA</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Apr 06, 18 17:04PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Apr 10, 18. 15:04 MST</center>
 
 
 ### Testing Directory . . .
@@ -119,8 +119,7 @@ Executing parse.sh: Success
 
 <p><font color="orange" size="+2">&#9888;	</font>The value for variable "Somatic mutation" for all samples is the same ("BRCA"). This variable has been removed from metadata.tsv.gz</p>
 
-&#10060;	Row 1: Fail
-- "TCGA-3C-AAAU-01	Somatic mutation	BRCA" is not found.
+&#9989;	Row 1: Success
 
 &#9989;	Row 2: Success
 
@@ -144,7 +143,7 @@ Executing parse.sh: Success
 
 &#9989;	Row 12: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
