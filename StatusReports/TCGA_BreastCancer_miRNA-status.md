@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_miRNA</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Apr 06, 18 17:04PM MST</center>
+<h2><center> Status: Complete </center></h2>
+<center>Apr 10, 18. 15:04 MST</center>
 
 
 ### Testing Directory . . .
@@ -127,17 +127,15 @@ Executing parse.sh: Success
 
 &#9989;	Row 4: Success
 
-&#10060;	Row 5: Fail
-- "TCGA-A2-A0T1-01	Somatic mutation	BRCA" is not found.
+&#9989;	Row 5: Success
 
 &#9989;	Row 6: Success
 
-&#10060;	Row 7: Fail
-- "TCGA-A7-A0DC-01	Somatic mutation	BRCA" is not found.
+&#9989;	Row 7: Success
 
 &#9989;	Row 8: Success
 
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
 ### Comparing samples in both files . . .
 
