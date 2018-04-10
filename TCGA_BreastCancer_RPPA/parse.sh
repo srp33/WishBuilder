@@ -10,14 +10,14 @@
 redirectedTemp=tmp
 
 #InFile
-RPPAdata=$redirectedTemp/"TCGA.BRCA.sampleMap"
+miRNAdata=$redirectedTemp/"TCGA.BRCA.sampleMap"
 patientCancerType=$redirectedTemp/"GSE62944_06_01_15_TCGA_24_CancerType_Samples.txt"
 
 #OutFile
 dataOutFilegz=data.tsv
 metadataOutFilegz=metadata.tsv
 
-python3 parseData.py $RPPAdata $dataOutFilegz
+python3 parseData.py $CNVdata $dataOutFilegz
 python3 parseMeta.py $patientCancerType $metadataOutFilegz
 #Checked data and there are no duplicate values, this code is uneccesary
 #python3 averageValues.py
