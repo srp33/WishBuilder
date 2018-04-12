@@ -1,7 +1,5 @@
 <h1><center>CCLE_mRNA_isoform_kallisto_Tatlow</center></h1>
-<h2><center> Status: Failed </center></h2>
-<center>Apr 10, 18 16:04PM MST</center>
-
+<h2><center> Status: In Progress </center></h2>
 
 ### Testing Directory . . .
 
@@ -62,133 +60,9 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
+&#10060;	"OUMS27_BONE" does not have enough features to test (min: 2)
+
 &#9989;	test_metadata.tsv contains enough test cases (24; min: 8)
 
-#### Results: PASS
----
-
-### First 5 columns and 5 rows of data.tsv.gz:
-
-|	Sample	|	ENST00000000233.9	|	ENST00000000412.7	|	ENST00000000442.10	|	ENST00000001008.5	|
-|	---	|	---	|	---	|	---	|	---	|
-|	CORL24_LUNG	|	119.261	|	53.0379	|	6.99391	|	77.702	|
-|	HSC3_UPPER_AERODIGESTIVE_TRACT	|	86.1598	|	106.027	|	13.0669	|	67.9185	|
-|	KMS11_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE	|	101.817	|	79.8547	|	5.65856	|	116.169	|
-|	C2BBE1_LARGE_INTESTINE	|	149.497	|	155.488	|	9.85457	|	110.965	|
-
-**Columns: 199170 Rows: 923**
-
----
-### "data.tsv.gz" Test Cases (from rows in test file). . .
-
-&#9989;	First column of file is titled "Sample"
-
-&#9989;	Row 1: Success
-
-&#9989;	Row 2: Success
-
-&#9989;	Row 3: Success
-
-&#9989;	Row 4: Success
-
-&#9989;	Row 5: Success
-
-&#9989;	Row 6: Success
-
-&#9989;	Row 7: Success
-
-&#9989;	Row 8: Success
-
-&#10060;	Row: 9 - CNV__A1BG is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 10 - CNV__SCO2 is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 11 - CNV__A1BG is not found in "data.tsv.gz" column headers
-
-&#10060;	Row: 12 - CNV__SCO2 is not found in "data.tsv.gz" column headers
-
 #### Results: **<font color="red">FAIL</font>**
----
-### First 3 columns and 5 rows of metadata.tsv.gz:
-
-|	Sample	|	Variable	|	Value	|
-|	---	|	---	|	---	|
-|	CORL24_LUNG	|	Gender	|	M	|
-|	CORL24_LUNG	|	Site Primary	|	lung	|
-|	CORL24_LUNG	|	Histology	|	carcinoma	|
-|	CORL24_LUNG	|	Hist Subtype1	|	small_cell_carcinoma	|
-
-**Columns: 3 Rows: 178199**
-
----
-### "metadata.tsv.gz" Test Cases (from rows in test file). . .
-
-&#9989;	First column of file is titled "Sample"
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Oncomap" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
-
-<p><font color="orange" size="+2">&#9888;	</font>The value for variable "Hybrid Capture Sequencing" for all samples is the same ("yes"). This variable has been removed from metadata.tsv.gz</p>
-
-&#9989;	Row 1: Success
-
-&#9989;	Row 2: Success
-
-&#9989;	Row 3: Success
-
-&#9989;	Row 4: Success
-
-&#9989;	Row 5: Success
-
-&#9989;	Row 6: Success
-
-&#9989;	Row 7: Success
-
-&#9989;	Row 8: Success
-
-&#9989;	Row 9: Success
-
-&#9989;	Row 10: Success
-
-&#9989;	Row 11: Success
-
-&#9989;	Row 12: Success
-
-&#9989;	Row 13: Success
-
-&#9989;	Row 14: Success
-
-&#9989;	Row 15: Success
-
-&#9989;	Row 16: Success
-
-&#9989;	Row 17: Success
-
-&#9989;	Row 18: Success
-
-&#9989;	Row 19: Success
-
-&#9989;	Row 20: Success
-
-&#9989;	Row 21: Success
-
-&#9989;	Row 22: Success
-
-&#10060;	Row 23: Fail
-- "OUMS27_BONE	SomaticMutation	TP53" is not found.
-
-&#10060;	Row 24: Fail
-- "OUMS27_BONE	SomaticMutation	FMN2" is not found.
-
-#### Results: **<font color="red">FAIL</font>**
----
-### Comparing samples in both files . . .
-
-&#9989;	Samples are the same in both "data.tsv.gz" & "metadata.tsv.gz"
-
-#### Results: PASS
-
----
-### Testing Directory after cleanup . . .
-
-#### Results: PASS
 ---
