@@ -60,9 +60,7 @@ Executing parse.sh: Success
 
 &#9989;	test_metadata.tsv contains enough unique samples to test
 
-&#10060;	"OUMS27_BONE" does not have enough features to test (min: 2)
+&#9989;	test_metadata.tsv contains enough test cases (23; min: 8)
 
-&#9989;	test_metadata.tsv contains enough test cases (24; min: 8)
-
-#### Results: **<font color="red">FAIL</font>**
+#### Results: PASS
 ---
