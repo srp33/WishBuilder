@@ -1,6 +1,6 @@
 <h1><center>TCGA_BreastCancer_DNAMethylation</center></h1>
 <h2><center> Status: Failed </center></h2>
-<center>Apr 20, 18 16:04PM MST</center>
+<center>Apr 25, 18 14:04PM MST</center>
 
 
 ### Testing Directory . . .
@@ -60,6 +60,14 @@ The following objects are masked from ‘package:stats’:
 The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
+
+
+Attaching package: ‘tidyselect’
+
+The following objects are masked from ‘package:dplyr’:
+
+    contains, ends_with, everything, matches, num_range, one_of,
+    starts_with
 
 Error: Unknown TZ UTC
 In addition: Warning message:
