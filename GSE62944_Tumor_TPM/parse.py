@@ -1,9 +1,10 @@
 import sys, gzip
 import numpy as np
+from io import StringIO
 
 metadata = sys.argv[1]
 PatientCancerType = sys.argv[2]
-tumorTPM = sys.argv[3]
+tumorFeatureCounts = sys.argv[3]
 dataOutFile = sys.argv[4]
 metadataOutFile = sys.argv[5]
 namesToAbbreviations = sys.argv[6]
@@ -11,18 +12,20 @@ namesToAbbreviations = sys.argv[6]
 def writeMetaData(ofMeta, metaDataList, code) :
     allNA = True
     notAvailableMetaVariables = []
+
     for i in range(len(metaDataList)) :
-        if(metaDataList[i].decode(code) != "NA" and metaDataList[i].decode(code) != "[Not Applicable]") : #exclude NA and [Not Applicable] keep [Not Available]
-            if(metaDataList[i].decode(code) != "[Not Available]") :
-                ofMeta.write((lineList[0]  + '\t' + metadataDict["header"][i].decode(code) + '\t' + metaDataList[i].decode(code) + '\n').encode())
-                allNA = False
-            else :
-                #If all the values are [Not Available] we do not want to include them because we won't have any metavariables for the patient
-                notAvailableMetaVariables.append(i)
+        metaValue = metaDataList[i].decode(code)
+
+        if metaValue not in ["[Not Applicable]", "[Not Available]", "NA"]:
+            ofMeta.write((lineList[0]  + '\t' + metadataDict["header"][i].decode(code) + '\t' + metaValue + '\n').encode())
+            allNA = False
+        else:
+            #If all the values are [Not Available] we do not want to include them because we won't have any metavariables for the patient
+            notAvailableMetaVariables.append(i)
 
     if allNA  == False :
         for i in notAvailableMetaVariables : #Include the metavariables if not all of them are NA, [Not Applicable], and [Not Available]
-            ofMeta.write((lineList[0]  + '\t' + metadataDict["header"][i].decode(code)  + '\t' + metaDataList[i].decode(code) + '\n').encode())
+            ofMeta.write((lineList[0]  + '\t' + metadataDict["header"][i].decode(code)  + '\t' + "NA" + '\n').encode())
 
 
 ## Read the namesToAbbreviation
@@ -49,7 +52,7 @@ with gzip.open(metadata, 'r') as f :
         metadataDict[line[0]] = line[3:]
 
 #read Tumor expression info and print out files
-with gzip.open(tumorTPM, 'r') as iF:
+with gzip.open(tumorFeatureCounts, 'r') as iF:
     with gzip.open(dataOutFile, 'w') as ofData:
         with gzip.open(metadataOutFile, 'w') as ofMeta:
             data = np.genfromtxt(iF,delimiter='\t',dtype=str)

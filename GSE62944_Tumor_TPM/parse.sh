@@ -8,9 +8,10 @@ tcgaHtml=$redirectedTempFolder/"tcga_abbreviations.html"
 nameToAbbreviation=$redirectedTempFolder/"nameToAbbreviation.txt"
 dataOut=data.tsv.gz
 metadataOut=metadata.tsv.gz
-
+metaDataConverted=Clinical.tsv.gz
 #source activate WishBuilderDependencies
 
 Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
-python parse.py $metaData $patientCancerType $tumorTPM $dataOut $metadataOut $nameToAbbreviation
+python3 parse.py $metaData $patientCancerType $tumorTPM $dataOut $metadataOut $nameToAbbreviation
+python3 translate.py $metadataOut $metaDataConverted
 
