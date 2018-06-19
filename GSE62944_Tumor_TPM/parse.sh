@@ -14,3 +14,7 @@ metaDataConverted=Clinical.tsv.gz
 Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
 python3 parse.py $metaData $patientCancerType $tumorTPM $dataOut $metadataOut $nameToAbbreviation
 python3 translate.py $metadataOut $metaDataConverted
+<<<<<<< HEAD
+=======
+
+>>>>>>> 882b5bc7f15b51d8e83e55a4df86e4dd972436d8
