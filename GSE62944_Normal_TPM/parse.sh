@@ -12,4 +12,4 @@ metadataOutFileTranslated=Clinical.tsv.gz
 
 Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
 python parse.py $PatientCancerType $NormalTPM $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
-python translate.py $metadataOutFilegz $metadataOutFileTranslated
+python3 convertTallFormatToWide.py $metadataOutFilegz $metadataOutFileTranslated
