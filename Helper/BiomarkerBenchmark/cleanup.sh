@@ -7,3 +7,5 @@ rm -f parse.sh
 rm -f cleanup.sh
 rm -f descriptionData*
 rm -f newDescription
+rm -f Clinical.tsv.gz
+rm -f translate.py
