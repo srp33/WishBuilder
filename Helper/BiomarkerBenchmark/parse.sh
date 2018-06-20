@@ -18,4 +18,4 @@ python parse.py $Clinical $Expression $dataOutFile $metadataOutFile
 gzip $metadataOutFile
 gzip $dataOutFile
 
-python3 translate.py $metadataOutFilegz $metadataOutTranslated
+python3 convertTallFormatToWide.py $metadataOutFilegz $metadataOutTranslated
