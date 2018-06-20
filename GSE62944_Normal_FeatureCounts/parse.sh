@@ -13,4 +13,4 @@ clinicalDataOut=Clinical.tsv.gz
 
 Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
 python parse.py $PatientCancerType $NormalFeatureCounts $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
-python translate.py $metadataOutFilegz $clinicalDataOut
+python convertTallFormatToWide.py $metadataOutFilegz $clinicalDataOut
