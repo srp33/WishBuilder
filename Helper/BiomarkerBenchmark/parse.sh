@@ -6,8 +6,8 @@ Clinical=$redirectedTempFolder/Clinical
 dataOutFile=data.tsv
 metadataOutFile=metadata.tsv
 dataOutFilegz=data.tsv.gz
-metadataOutFilegz=Clinical.tsv.gz
-convertedMetaOut=metadata.tsv.gz
+metadataOutFilegz=metadata.tsv.gz
+convertedMetaOut=Clinical.tsv.gz
 
 rm -f $metadataOutFilegz
 rm -f $dataOutFilegz
