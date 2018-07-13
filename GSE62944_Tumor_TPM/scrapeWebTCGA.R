@@ -1,6 +1,7 @@
 install.packages("XML", repos = "https://cran.r-project.org/")
+
 library(XML)
-library(data.table)
+
 
 args = commandArgs(trailingOnly=TRUE)
 
