@@ -18,6 +18,3 @@ gzip $metadataOutFile
 gzip $dataOutFile
 
 python3 convertTallFormatToWide.py $metadataOutFilegz $convertedMetaOut
-
-
-
