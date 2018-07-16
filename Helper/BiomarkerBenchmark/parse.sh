@@ -8,6 +8,7 @@ metadataOutFile=metadata.tsv
 dataOutFilegz=data.tsv.gz
 metadataOutFilegz=metadata.tsv.gz
 convertedMetaOut=Clinical.tsv.gz
+
 rm -f $metadataOutFilegz
 rm -f $dataOutFilegz
 
