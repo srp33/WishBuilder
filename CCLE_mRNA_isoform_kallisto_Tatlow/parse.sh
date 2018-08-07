@@ -19,4 +19,4 @@ python3 parse.py $expressionData $clinicalAnnotations $dataOutFile $metadataOutF
 gzip $metadataOutFile
 gzip $dataOutFile
 
-python3 convertTallFormatToWide.py $metadataOutFile $convertedMetaOut
+python3 convertTallFormatToWide.py $metadataOutFilegz $convertedMetaOut
