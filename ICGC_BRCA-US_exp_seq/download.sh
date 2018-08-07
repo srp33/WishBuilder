@@ -20,3 +20,6 @@ function downloadData {
 # Let's invoke the function that we just declared, for each file we want to download.
 downloadData "https://dcc.icgc.org/api/v1/download?fn=/release_25/Projects/BRCA-US/donor.BRCA-US.tsv.gz"
 downloadData "https://dcc.icgc.org/api/v1/download?fn=/release_25/Projects/BRCA-US/exp_seq.BRCA-US.tsv.gz"
+
+mv donor.BRCA-US.tsv.gz tmp/ 
+mv exp_seq.BRCA-US.tsv.gz tmp/ 
