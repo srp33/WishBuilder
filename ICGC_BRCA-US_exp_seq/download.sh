@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir tmp
+
 # Because we will need to download two files, let's create a bash function that performs the steps necessary to download a file.
 function downloadData {
   # This function accepts one parameter, the URL.
