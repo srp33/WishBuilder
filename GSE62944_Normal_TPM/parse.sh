@@ -10,6 +10,5 @@ metadataOutFilegz=metadata.tsv.gz
 metadataOutFileTranslated=Clinical.tsv.gz
 #source activate WishBuilderDependencies
 
-Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
 python parse.py $PatientCancerType $NormalTPM $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
 python3 convertTallFormatToWide.py $metadataOutFilegz $metadataOutFileTranslated
