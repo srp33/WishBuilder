@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# Copy helper files over
 cp ../Helper/BiomarkerBenchmark/download.sh .
 cp ../Helper/BiomarkerBenchmark/parse.py .
 cp ../Helper/BiomarkerBenchmark/parse.sh .
