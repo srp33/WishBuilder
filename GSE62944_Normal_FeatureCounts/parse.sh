@@ -10,3 +10,4 @@ clinicalDataOut=Clinical.tsv.gz
 
 python parse.py $PatientCancerType $NormalFeatureCounts $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
 python convertTallFormatToWide.py $metadataOutFilegz $clinicalDataOut
+rm -f metadata.tsv.gz
