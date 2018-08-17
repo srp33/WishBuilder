@@ -11,6 +11,5 @@ clinicalDataOut=Clinical.tsv.gz
 
 #source activate WishBuilderDependencies
 
-Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
 python parse.py $PatientCancerType $NormalFeatureCounts $dataOutFilegz $metadataOutFilegz $nameToAbbreviation
 python convertTallFormatToWide.py $metadataOutFilegz $clinicalDataOut
