@@ -17,4 +17,4 @@ with open(inFilePath, "r") as inFile:
         outFile.write(("\t".join(headerItems) + "\n").encode())
 
         for line in inFile:
-            outFile.write(line.decode().encode())
+            outFile.write(line.encode())
