@@ -17,4 +17,10 @@ with open(inFilePath, "r") as inFile:
         outFile.write(("\t".join(headerItems) + "\n").encode())
 
         for line in inFile:
-            outFile.write(line.encode())
+            lineItems = line.rstrip("\n").split("\t")
+            for i in range(1, len(lineItems)):
+                if lineItems[i] == "":
+                    lineItems[i] = "NA"
+
+            outLine = "\t".join(lineItems) + "\n"
+            outFile.write(outLine.encode())
