@@ -37,7 +37,7 @@ def getSampleValue(dataDict, sample, gene, vc):
     return "No"
 
 for vc in vcs:
-    outFilePath = "{}_Variant.tsv.gz".format(vc)
+    outFilePath = "Variant_{}.tsv.gz".format(vc)
 
     vcDict = {}
     vcGenes = set()
