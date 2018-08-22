@@ -14,6 +14,12 @@ function downloadData {
   then
     echo Downloading "$fileName"
     curl -o "tmp/$fileName" -L "$url"
+
+    if [ ! -f "tmp/$fileName" ]
+    then
+      echo "Trying $fileName again"
+      curl -o "tmp/$fileName" -L "$url"
+    fi
   fi
 }
 

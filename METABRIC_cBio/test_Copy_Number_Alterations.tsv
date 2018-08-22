@@ -1,10 +1,9 @@
 Sample	Variable	Value
-MB-0000	A1BG	Normal
-MB-0045	A1BG	Heterozygous deletion
-MB-0045	A1BG	High-level amplification
+MB-0002	A1BG	Normal
+MB-0022	A1BG	Heterozygous deletion
+MB-0022	AARD	High-level amplification
+MB-0022	ABL2	Low-level amplification
 MB-7186	A4GALT	Homozygous deletion
-MB-0045	AANAT	Low-level amplification
-MB-7188	A1BG	Normal
-MB-7148	A1BG-AS1	Normal
-MB-0120	ZZEF1	Low-level amplification
-MB-0120	ZZZ3	Low-level amplification
+MB-0046	ABCD2	Normal
+MB-0120	ZZEF1	Heterozygous deletion
+MB-0120	ZZZ3	Heterozygous deletion
