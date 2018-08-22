@@ -12,6 +12,7 @@ function downloadData {
   # Check to see if the file has been downloaded already. If not, download it.
   if [ ! -f "tmp/$fileName" ]
   then
+    echo Downloading "$fileName"
     curl -o "tmp/$fileName" -L "$url"
   fi
 }
