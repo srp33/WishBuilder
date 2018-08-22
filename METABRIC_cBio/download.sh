@@ -22,4 +22,5 @@ mkdir -p tmp
 for f in data_clinical_patient.txt data_clinical_sample.txt data_CNA.txt data_mutations_extended.txt data_expression.txt
 do
   downloadData https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/brca_metabric/$f
+  break
 done
