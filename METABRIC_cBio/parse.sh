@@ -12,4 +12,4 @@ python3 ParseMutations.py tmp/data_mutations_extended.txt
 #python3 keep_common_samples.py *.tsv.gz
 
 ## Remove this because it has no Yes values
-#rm -f Variant_5_prime_UTR.tsv.gz
+rm -f Variant_5_prime_UTR.tsv.gz
