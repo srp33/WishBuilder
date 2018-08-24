@@ -39,9 +39,18 @@ with gzip.open(inFilePath, 'r') as inFile:
             if not shouldKeepColumn(values):
                 continue
 
+            # This variable has some values that are inconsistent, so ignoring this variable for now
+            if variableName in ["chemo_concurrent_fractions_total", "cyto_abnormality_type_other", "her2_and_cent17_scale_other", "hpv_types_other", "i_131_radiation_subsequent_tx", "new_tumor_event_melanoma_count", "radiation_therapy_xrt_dose"]:
+                continue
+
             for i in range(len(sampleIDs)):
                 #sampleID = sampleIDs[i][:15]
                 sampleID = sampleIDs[i]
                 value = values[i]
+
+                #This variable is giving us problems because it has a string value mixed in with numbers,
+                #so we'll list it as missing for now.
+                if variableName == "cent17_copy_number" and value == "polisomy":
+                    value = "NA"
 
                 outFile.write("{}\t{}\t{}\n".format(sampleID, variableName, value).encode())
