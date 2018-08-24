@@ -40,7 +40,7 @@ with gzip.open(inFilePath, 'r') as inFile:
                 continue
 
             # This variable has some values that are inconsistent, so ignoring this variable for now
-            if variableName == "chemo_concurrent_fractions_total":
+            if variableName in ["chemo_concurrent_fractions_total", "cyto_abnormality_type_other"]:
                 continue
 
             for i in range(len(sampleIDs)):
