@@ -44,4 +44,9 @@ with gzip.open(inFilePath, 'r') as inFile:
                 sampleID = sampleIDs[i]
                 value = values[i]
 
+                #This variable is giving us problems because it has a string value mixed in with numbers,
+                #so we'll list it as missing for now.
+                if variableName == "cent17_copy_number" and value == "polisomy":
+                    value = "NA"
+
                 outFile.write("{}\t{}\t{}\n".format(sampleID, variableName, value).encode())
