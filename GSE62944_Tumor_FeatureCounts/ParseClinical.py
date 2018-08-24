@@ -39,6 +39,10 @@ with gzip.open(inFilePath, 'r') as inFile:
             if not shouldKeepColumn(values):
                 continue
 
+            # This variable has some values that are inconsistent, so ignoring this variable for now
+            if variableName == "chemo_concurrent_fractions_total":
+                continue
+
             for i in range(len(sampleIDs)):
                 #sampleID = sampleIDs[i][:15]
                 sampleID = sampleIDs[i]
