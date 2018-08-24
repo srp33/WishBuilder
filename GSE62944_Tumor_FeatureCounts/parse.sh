@@ -1,17 +1,8 @@
 #! /bin/bash
 
-redirectedTempFolder=tmp
-metaData=$redirectedTempFolder/GSE62944_06_01_15_TCGA_24_548_Clinical_Variables_9264_Samples.txt.gz
-patientCancerType=$redirectedTempFolder/GSE62944_06_01_15_TCGA_24_CancerType_Samples.txt.gz
-tumorFeatureCounts=$redirectedTempFolder/GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FeatureCounts.txt.gz
-tcgaHtml=$redirectedTempFolder/"tcga_abbreviations.html"
-nameToAbbreviation=$redirectedTempFolder/"nameToAbbreviation.txt"
-dataOut=data.tsv.gz
-metadataOut=metadata.tsv.gz
-metadataTranslated=Clinical.tsv.gz
+python3 ParseCancerType.py tmp/GSE62944_06_01_15_TCGA_24_CancerType_Samples.txt.gz nameToAbbreviation.txt tmp/Clinical.tsv.gz
+python3 ParseClinical.py tmp/GSE62944_06_01_15_TCGA_24_548_Clinical_Variables_9264_Samples.txt.gz tmp/Clinical.tsv.gz
+python3 convertTallFormatToWide.py tmp/Clinical.tsv.gz Clinical.tsv.gz
 
-#source activate WishBuilderDependencies
-
-Rscript scrapeWebTCGA.R $tcgaHtml $nameToAbbreviation
-python3 parse.py $metaData $patientCancerType $tumorFeatureCounts $dataOut $metadataOut $nameToAbbreviation
-python3 translate.py $metadataOut $metadataTranslated
+python3 TransposeData.py tmp/GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FeatureCounts.txt.gz tmp/Gene_Expression.tsv.gz
+python3 SetFirstColumnHeader.py tmp/Gene_Expression.tsv.gz Sample Gene_Expression.tsv.gz

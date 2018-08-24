@@ -1,3 +1,3 @@
-rm -f Gene_Expression.tsv.gz
-rm -f Clinical.tsv.gz
+rm -f *.tsv.gz
 rm -rf tmp
+rm -f convertTallFormatToWide.py
