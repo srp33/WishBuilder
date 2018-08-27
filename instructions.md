@@ -26,7 +26,7 @@ Please complete the following steps to get started as a contributor.
   
     E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a title, paste the public key from your clipboard, and click on "Add SSH key."
 
-### Processing a New Dataset
+### Processing a new dataset
 
 For each new dataset that you would like to prepare, you will need to complete the following steps. [Here](https://github.com/srp33/WishBuilder/tree/master/ICGC_BRCA-US_exp_seq/) you can see an example set of scripts to process a dataset.
 
@@ -40,18 +40,18 @@ For each new dataset that you would like to prepare, you will need to complete t
 
 3. At the command line, clone your forked WishBuilder repository using the URL you just retrieved. Then ```cd``` into the WishBuilder directory. Below is an example:
 
-  ```
-  git clone git@github.com:glenrs/WishBuilder.git
-  cd WishBuilder
-  ```
+    ```
+    git clone git@github.com:glenrs/WishBuilder.git
+    cd WishBuilder
+    ```
 
 4. This directory is your own separate version of WishBuilder, so you can make changes without affecting the main WishBuilder project.
 
 5. Create a new branch on your forked reposity. Replace `<new-branch-name>` with a unique ID for the dataset you are working with.
 
-  ```
-  git checkout -b <new-branch-name>
-  ```
+    ```
+    git checkout -b <new-branch-name>
+    ```
 
 6. Create a new directory within your branched repository; the name of this directory should be the same ID you used for the branch name.
 
