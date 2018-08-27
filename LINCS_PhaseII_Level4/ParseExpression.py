@@ -6,6 +6,15 @@ gctxFileName = sys.argv[1]
 geneFile = sys.argv[2]
 dataOut = sys.argv[3]
 
+f = h5py.File(gctxFileName, "r")
+
+grpname = f.require_group('/0')
+subgrpMeta = grpname.require_group('/0/META')
+colgrp = subgrpMeta.require_group('/0/META/ROW')
+rowgrp = subgrpMeta.require_group('/0/META/COL')
+subgrpData = grpname.require_group('/0/DATA')
+subsubgrpData = subgrpData.require_group('/0/DATA/0')
+
 geneDict = {}
 with gzip.open(geneFile, 'r') as f :
     headerLine = f.readline().decode()
@@ -14,46 +23,26 @@ with gzip.open(geneFile, 'r') as f :
         list = line.decode().strip('\n').split('\t')
         geneDict[list[0]] = list[1]
 
-f = h5py.File(gctxFileName, "r")
-
-grpname = f.require_group('/0')
-
-subgrpMeta = grpname.require_group('/0/META')
-colgrp = subgrpMeta.require_group('/0/META/ROW')
-rowgrp = subgrpMeta.require_group('/0/META/COL')
-
-subgrpData = grpname.require_group('/0/DATA')
-subsubgrpData = subgrpData.require_group('/0/DATA/0')
-
-print("Writing expression file")
-
+print("writing expression file")
 f = gzip.open(dataOut, 'w')
 
 try :
     f.write("Sample".encode())
     for value in colgrp["id"] :
-        f.write(('\t' + geneDict[value.decode()]).encode())
+        f.write(('\t' + geneDict[str(int(value))]).encode())
     f.write('\n'.encode())
 
     index = 0
-    outText = ""
     for line in subsubgrpData["matrix"] :
-        sample = rowgrp["id"][index].decode()
-        values = [sample] + [str(x) for x in line.tolist()]
+        a = np.asarray(line).astype(str)
+        number = rowgrp["id"][index].decode()
 
-        outText += "\t".join(values) + '\n'
-
+        f.write((number + '\t' + '\t'.join(a) + '\n').encode())
         index = index + 1
-#        if index == 10:
+#        if index % 100 == 0 :
 #            break
-        if index % 1000 == 0:
-            print(str(index) + " of 345976 expression data")
-            sys.stdout.flush()
+        if index % 1000 == 0 :
+            print(str(index))
 
-            f.write(outText.encode())
-            outText = ""
-
-    if outText != "":
-        f.write(outText.encode())
 finally :
     f.close()
