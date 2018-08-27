@@ -2,129 +2,68 @@
 
 Please complete the following steps to get started as a contributor.
 
-1. You will need an account on the BYU Supercomputer. If you don't currently have an active account, please go to https://marylou.byu.edu and click on "Request an Account." Read the information on that page. Then request an account, listing me as a mentor. When it asks what type of work you plan to perform, explain briefly that you will execute custom Python scripts, that you expect to execute only single-core jobs, and that these jobs will typically require 1-16 GB of memory per job.
+1. You will need an account on a Linux computer. If you a student in the Piccolo lab, please request access to the ```daniel``` computer for this. 
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
-### 3. Setting Up Your SSH Key
+3. Log in to the Linux computer. If you haven't already done so, you'll need to generate an SSH key.
 
-A. **After you receive access to the Supercomputer**, log in to it. At the command line, enter the following commands (but substitute your actual email address where it says `your_email@example.com`):
+    A. At the command line, enter the following command:
 
-  ```
-  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-  ```
+    ```
+    ssh-keygen -t rsa
+    ```
 
-B. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
+    B. When it asks you to "Enter a file in which to save the key," press Enter. This uses the default file location.
 
-C. When it asks you to enter a passphrase, press Enter (twice).
+    C. When it asks you to enter a passphrase, press Enter (twice).
 
-D. Now there should be a file at ~/.ssh/id_rsa.pub. Enter the following command to display the contents of this file. Then copy the output to your clipboard. This is your public key and enables you to connect from Linux to GitHub without a password.
+    D. Now there should be a file at ~/.ssh/id_rsa.pub. This is your public key and enables you to connect from Linux to GitHub without a password. Enter the following command to display the contents of this file. Then copy the output to your clipboard.
 
-  ```
-  cat ~/.ssh/id_rsa.pub
-  ```
+    ```
+    cat ~/.ssh/id_rsa.pub
+    ```
   
-E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a Title (maybe "FSL"), paste the public key from your clipboard, and click on "Add SSH key."
+    E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a title, paste the public key from your clipboard, and click on "Add SSH key."
 
-### 4. Creating Your Forked Repository 
+### Processing a New Dataset
 
-A. Please create your own forked repository of WishBuilder by clicking on "Fork" (upper right hand corner of the webpage). Please make all of your future pull requests from your forked repository.
+For each new dataset that you would like to prepare, you will need to complete the following steps. [Here](https://github.com/srp33/WishBuilder/tree/master/ICGC_BRCA-US_exp_seq/) you can see an example set of scripts to process a dataset.
 
-B. Please find your repository api by navigating to your new forked repository and clicking on "clone or download". Your repository api should look something like this:
+1. "Fork" the WishBuilder GitHub repository by clicking on "Fork" (upper right hand corner of the webpage). You will make all of your future changes for this dataset on this forked repository.
+
+2. Find your repository URL by navigating to your new forked repository and clicking on "Clone or download". Your repository URL should look something like this:
+
+    ```
+    git@github.com:glenrs/WishBuilder.git
+    ```
+
+3. At the command line, clone your forked WishBuilder repository using the URL you just retrieved. Then ```cd``` into the WishBuilder directory. Below is an example:
 
   ```
-  git@github.com:glenrs/WishBuilder.git
-  ```
-
-C. At the command line on the Supercomputer, clone your forked WishBuilder git repository using this api you just retrieved:
-
-  ```
-  git clone <your-forked-repository-api>
+  git clone git@github.com:glenrs/WishBuilder.git
   cd WishBuilder
   ```
 
-D. In this directory, you can make GitHub commands. This directory is your cloned repository so you are now certified to make branches on your repository, which you will be able to use to make pull requests to add your data sets to the master branch on srp33/WishBuilder.
+4. This directory is your own separate version of WishBuilder, so you can make changes without affecting the main WishBuilder project.
 
-### 5. Setting Up WishBuilder Dependencies
-
-A. The container that will be running automated test scripts will require certain dependencies. We have created [this](https://github.com/glenrs/WishBuilderData/blob/master/ManagingWishBuilder/installWishBuilderDependencies.sh) script. Please run this script on the supercomputer. It will create a anaconda environment that will store all dependencies.
-
-B. In order for you to easily use this environment you will need to add miniconda to your path on the supercomputer. Please open your .bash_profile in your root directory and add the following code:
-
-```
-export PATH=$PATH
-PATH=~/Software/miniconda/bin:$PATH
-export PATH
-```
-
-C. Your data set may require additional software to run commands that will download, parse, and filter. You might wish to add these additional software packages to this package on the supercomputer and the container used for testing. You can easily install more software in this package on the supercomputer by opening the environment, and using the "conda install" function to easily install anything that is necessary. For example:
-
-```
-  source activate WishBuilderDependencies 
-  conda install -y -c bioconda r-sleuth
-  conda install -y -c r r-xml=3.98_1.5
-  conda install -y gcc
-  Rscript installRPackages.R
-  source deactivate WishBuilderDependencies
-```
-
-D. Before you submit, please comment out the environment. Remember this environment is created for the supercomputer and is not on the container, so if you try to activate the environment in your code this container will not find it. You can easily download the needed software without making the environment. For example:
-
-```
-  #source activate WishBuilderDependencies 
-  conda install -y -c bioconda r-sleuth
-  conda install -y -c r r-xml=3.98_1.5
-  conda install -y gcc
-  Rscript installRPackages.R
-  #source deactivate WishBuilderDependencies
-```
-
-E. Each time you would like to use the environment, you can easily activate it and use it in your code. This will commonly be used in the parse.sh (will be discussed below). Make sure that you comment out the environment activation commands before creating a pull request because this environment is not found on the container.
-
-On the supercomputer
-```
-  source activate WishBuilderDependencies 
-  <execute-your-code>
-  source deactivate WishBuilderDependencies
-```
-
-Submitted pull requests
-```
-  #source activate WishBuilderDependencies 
-  <execute-your-code>
-  #source deactivate WishBuilderDependencies
-```
-
-## Preparing a Dataset
-
-Please complete the following steps for each dataset that you prepare. Let me know if you have any questions or run into any problems.
-
-1. Examine the list of [open issues](https://github.com/srp33/WishBuilder/issues). Each "issue" represents a dataset that needs to be prepared. Identify one issue that you would like to work on (and that nobody else is currently working on).
-
-2. Send an email to me indicating which issue you would like to work on.
-
-3. Make sure your forked repository is up to date:
-
-  ```
-  git checkout master
-  git pull git@github.com:srp33/WishBuilder.git master
-  ```
-
-5. Create a new branch on your forked reposity (see below). Replace `<new-branch-name>` with the ID of the dataset you are working with (the ID will be listed under the issue).
+5. Create a new branch on your forked reposity. Replace `<new-branch-name>` with a unique ID for the dataset you are working with.
 
   ```
   git checkout -b <new-branch-name>
   ```
 
-6. Create a new directory within your branched repository; the name of this directory should also be the ID of the dataset you are working with.
+6. Create a new directory within your branched repository; the name of this directory should be the same ID you used for the branch name.
 
-7. Now `cd` into the new directory.
+7. `cd` into this new directory.
 
-8. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
+8. Write a bash script called `install.sh` that installs any software needed to parse the data. In most cases, this script will be empty because WishBuilder already has installed commonly used software, such as the Python and R runtime environments.
 
-9. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
+9. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory.
 
-10. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
+10. Open the data file(s) in a text editor and examine them to understand how they are structured. (If the data file is too large for a text editor, use commands such as head, tail, and less to examine the file.)
+
+11. Using a text editor, create test files called `test_metadata.tsv` and `test_data.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured. You can see examples [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
 11. Write a bash script called `parse.sh`. This script should parse the downloaded data file(s) and reformat the data (as needed) into the output format described [below](#output-file-format). In most cases, `parse.sh` will invoke script(s) written in Python. The name of the output files *must* be `metadata.tsv.gz` and `data.tsv.gz`. _Recommendation: work with a smaller version of the data file(s) initially, so it is easier to test._ You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
