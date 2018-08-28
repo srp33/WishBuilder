@@ -69,7 +69,7 @@ For each new dataset that you would like to prepare, you will need to complete t
 
 13. Create a [Markdown-formatted](https://guides.github.com/features/mastering-markdown/) file called `description.md` that provides a brief description of the dataset. The first line of the file should be a 2nd-level header (starting with `## `) that briefly describes the dataset. The rest of the file should contain additional details about the dataset, including its source, what the data can be used for, etc. Please separate each paragraph with 2 newline characters. You can see an example [here](https://github.com/srp33/WishBuilder/blob/master/ICGC_BRCA-US_exp_seq/).
 
-14. Create a [YAML-formatted](https://en.wikipedia.org/wiki/YAML) file called `config.yaml` that indicates additional information about the data set. Below is an example of how this file should look. The `title` is a user-friendly description of the dataset. This title will be displayed on the Geney web site. The `featureDescription` indicates what type of biological entity is being profiled in the "data" (not metadata). In the example below, gene-expression levels are being profiled, so we put the word "gene" (in lower case). Alternatively, if transcript or protein levels were being profiled, we might put "transcript" or "protein," respectively. Specifying these values enables us to customize the way each dataset is described in Geney. The `featureDescriptionPlural` is a plural version of `featureDescription`; it is not always easy for a computer to determine the plural version of a singular noun, so we specify it explicitly.
+14. Create a [YAML-formatted](https://en.wikipedia.org/wiki/YAML) file called `config.yaml` that indicates additional information about the data set. Below is an example of how this file should look. The `title` is a user-friendly description of the dataset. This title will be displayed on the Geney web site. The `featureDescription` indicates what type of biological entity is being profiled. In the example below, gene-expression levels are being profiled, so we put the word "gene" (in lower case). Alternatively, if transcript or protein levels were being profiled, we might put "transcript" or "protein," respectively. Specifying these values enables us to customize the way datasets are described in Geney. The `featureDescriptionPlural` is a plural version of `featureDescription`; it is not always easy for a computer to determine the plural version of a singular noun, so we specify it explicitly.
 
     ```
     title: Predicting Relapse in Favorable Histology Wilms Tumor Using Gene Expression
@@ -77,7 +77,7 @@ For each new dataset that you would like to prepare, you will need to complete t
     featureDescriptionPlural: genes
     ```
 
-15. Add, commit, and push your changes to the branch that you created earlier. Replace `<message>` with a brief messages that describes the work you have done. Replace `<new-branch-name>` with the name of the branch you created previously.
+15. Add, commit, and push your changes to the branch that you created earlier. Follow the example below, but replace `<message>` with a brief message that describes the work you have done, and replace `<new-branch-name>` with the name of the branch you created previously.
 
     ```
     git add --all
@@ -85,17 +85,25 @@ For each new dataset that you would like to prepare, you will need to complete t
     git push origin <new-branch-name>
     ```
 
-16. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Before navigating to any branches, please click on "compare accross forks". Put "srp33/Wishbuilder" as the base fork and "master" as the base branch and your repository as the head for and your new branch as the compare branch. Click on "Create pull request". We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository. You can check the status [here](https://srp33.github.io/WishBuilder/docs/dataSets). It may take hours (or even days) to finish processing, depending on the size of your data. 
+16. Go [here](https://github.com/srp33/WishBuilder/compare?expand=1) to create a GitHub pull request. Before navigating to any branches, please click on "compare accross forks". Put "srp33/Wishbuilder" as the base fork and "master" as the base branch and your repository as the head for and your new branch as the compare branch. Click on "Create pull request". We will check to make sure your code is working properly. If it is, we will integrate your code into the master branch of the WishBuilder repository.
 
 ## Notes
 
-- Python 3.5 is installed on the Supercomputer; use `module load python/3/5`.
-- R is also installed on the Supercomputer; use `module load r/3/3`.
-- As you write your parsing scripts, please make sure they use no more than 4 GB of memory.
-- For larger datasets, avoid reading the whole file into memory. You can test your parse.sh script on the Supercomputer. But **please request no more than 4 GB of memory**.
-- You can download files when you are executing code on the *interactive* nodes of the Supercomputer. But the *compute* nodes do not have access to the Internet.
+- Python (version 3.6.3) and R (version 3.4.4) are installed within the environment used to test WishBuilder scripts. The environment also includes popular Python modules are R packages. If you would like to know whether a particular module/package is installed, or if you would like to request an additional module/package, please let us know by submitting an [issue](https://github.com/srp33/WishBuilder/issues).
 - If you create temporary files, please store these within the same directory as your scripts (or a subdirectory). This will ensure that everything needed to process each dataset is contained within the same location.
 - When you specify file or directory paths in your scripts, please use *relative* rather than *absolute* paths.
+
+## Output File Format
+
+Your scripts should produce at least one tab-delimited text files containing parsed data. The table below illustrates how these data files should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample".
+
+| Sample       | Expressed_Gene1 | Expressed_Gene2 | Expressed_Gene3 | ... |
+|--------------|---------------- |---------------- |---------------- |-----|
+| TCGA-01-1234 | 5.23            | 5.11            | 7.42            | ... |
+| TCGA-02-5678 | 4.67            | 9.82            | -0.98           | ... |
+| ...          | ...             | ...             | ...             | ...   |
+
+ These files should be gzipped, and the names of these files should reflect the data stored in them. For example, you might have one file containing clinical data that you call `Clinical.tsv.gz`, and you might have another file called `Gene_Expression.tsv.gz` that contains gene-expression data for the same patients. The sample identifiers used in these files should overlap with each other.
 
 ## Test Files
 
@@ -115,22 +123,4 @@ The following table shows how your test files should be structured. The files sh
 | TCGA-02-5678 | BRCA2    | 1     |
 | ...          | ...      | ...   |
 
-You should create two test files: `test_metadata.tsv` and `test_data.tsv`. The first (`test_metadata.tsv`) should contain metadata values as described in the GitHub issue for your dataset. The second (`test_data.tsv`) should contain regular data values as described in the GitHub issue.
-
-Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and at least two different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far-left side of each input file and at least one from the far-right side of each input file.
-
-## Output File Format
-
-Your scripts should produce two tab-delimited text files: `metadata.tsv.gz` and `data.tsv.gz` (see below). Geney will import these data files.
-
-`metadata.tsv.gz` should be structured the same as `test_metadata.tsv`, except that it should contain all metadata values and should be gzipped. Do not include any rows in `metadata.tsv.gz` that would have blank or empty values in the "Value" column. If the value to be parsed in a file is blank or empty, skip it.
-
-The table below illustrates how `data.tsv.gz` should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample". This file should be gzipped.
-
-| Sample       | Expressed_Gene1 | Expressed_Gene2 | Expressed_Gene3 | ... |
-|--------------|---------------- |---------------- |---------------- |-----|
-| TCGA-01-1234 | 5.23            | 5.11            | 7.42            | ... |
-| TCGA-02-5678 | 4.67            | 9.82            | -0.98           | ... |
-| ...          | ...             | ...             | ...             | ...   |
-
-The sample identifiers listed in `metadata.tsv.gz` and `data.tsv.gz` should overlap with each other. Neither file should contain any sample identifier that is not listed in both files (all non-overlapping samples should be excluded from both files).
+You should create one test file for each data file that your scripts generate. For example, if your scripts generate data files called `Clinical.tsv.gz` and `Gene_Expression.tsv.gz`, you will need to create test files called `test_Clinical.tsv` and `test_Gene_Expression.tsv`. Each of these files should have at least 8 lines of data (not including the header). These lines should contain data values that you have extracted by hand from the input file(s). Please include data values for at least two different samples and at least two different variables in each input file. Include at least one sample/variable from the beginning of each file and at least one from the ending of each file. Also include as least one sample/variable from the far-left side of each input file and at least one from the far-right side of each input file. **Create these test files based on what you see in the original data files, not in the output files that your code generates.**
