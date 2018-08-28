@@ -92,6 +92,7 @@ For each new dataset that you would like to prepare, you will need to complete t
 - Python (version 3.6.3) and R (version 3.4.4) are installed within the environment used to test WishBuilder scripts. The environment also includes popular Python modules are R packages. If you would like to know whether a particular module/package is installed, or if you would like to request an additional module/package, please let us know by submitting an [issue](https://github.com/srp33/WishBuilder/issues).
 - If you create temporary files, please store these within the same directory as your scripts (or a subdirectory). This will ensure that everything needed to process each dataset is contained within the same location.
 - When you specify file or directory paths in your scripts, please use *relative* rather than *absolute* paths.
+- For additional information about creating branches and pull requests, read [this](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
 
 ## Output File Format
 
