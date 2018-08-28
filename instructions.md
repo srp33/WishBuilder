@@ -97,7 +97,7 @@ For each new dataset that you would like to prepare, you will need to complete t
 
 Your scripts should produce at least one tab-delimited text files containing parsed data. The table below illustrates how these data files should be structured. All of the sample names should be unique. All of the column names should be unique. The name of the first column should be "Sample".
 
-| Sample       | Expressed_Gene1 | Expressed_Gene2 | Expressed_Gene3 | ... |
+| Sample       | Gene1 | Gene2 | Gene3 | ... |
 |--------------|---------------- |---------------- |---------------- |-----|
 | TCGA-01-1234 | 5.23            | 5.11            | 7.42            | ... |
 | TCGA-02-5678 | 4.67            | 9.82            | -0.98           | ... |
