@@ -4,7 +4,6 @@ import os
 myMInFile = argv[1]
 myMOutFile = argv[2]
 
-
 def translate(myMInFile, myMOutFile):
     with open(myMInFile, 'r') as inFile:
         with open(myMOutFile, 'w') as outFile:
