@@ -1,4 +1,4 @@
-import sys, gzip
+import sys
 
 inFilePath = sys.argv[1] #"expression_main.txt"
 outFilePath = sys.argv[2] #"metaData.txt"
@@ -38,9 +38,9 @@ uniqueSampleIDs = sorted(list(uniqueSampleIDs))
 
 
 # Create output file
-with gzip.open(outFilePath, 'w') as outFile:
+with open(outFilePath, 'w') as outFile:
     outText = "\t".join(["Sample","Variable","Value"]) + "\n"
-    outFile.write(outText.encode())
+    outFile.write(outText)
 
     for sampleID in uniqueSampleIDs:
         dataItems = [] #To be filled with gene Values
@@ -51,10 +51,10 @@ with gzip.open(outFilePath, 'w') as outFile:
              color = metaData[2]
 
              outText = "\t".join([sample,"Sex",gender]) + "\n"
-             outFile.write(outText.encode())
+             outFile.write(outText)
 
              outText = "\t".join([sample,"Germline Hras1 status",genotype]) + "\n"
-             outFile.write(outText.encode())
+             outFile.write(outText)
 
              outText = "\t".join([sample,"Color",color]) + "\n"
-             outFile.write(outText.encode())
+             outFile.write(outText)
