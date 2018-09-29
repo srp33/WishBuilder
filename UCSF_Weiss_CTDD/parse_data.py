@@ -1,8 +1,8 @@
-import sys, gzip
+import sys
 
-inFilePath = sys.argv[1] #"expression_main.txt"    
+inFilePath = sys.argv[1] #"expression_main.txt"
 crypticPath = sys.argv[2] #"probe_attributes.txt"  #The gene types are cryptic, this file identifies them
-outFilePath = sys.argv[3] #"data.txt" 
+outFilePath = sys.argv[3] #"data.txt"
 
 uniqueSampleIDs = []
 uniqueGeneIDs = []
@@ -26,7 +26,7 @@ with open(crypticPath, 'r') as crypticFile:
         if isRefSeq == "true":
             isRefSeq = True
         if isRefSeq == "false":
-            isRefSeq = False	
+            isRefSeq = False
         #Linking cryptic identifier to gene, and boolean for later reference
         #Gene is index #0, isRefSeq is index #1
         probeAttributes[identifier] = [geneSymbol,isRefSeq]
@@ -68,9 +68,9 @@ uniqueSampleIDs = sorted(list(uniqueSampleIDs))
 uniqueGeneIDs = sorted(list(uniqueGeneIDs))
 
 # Create output file
-with gzip.open(outFilePath, 'w') as outFile:
+with open(outFilePath, 'w') as outFile:
     outText = "\t".join(["Sample"] + uniqueGeneIDs) + "\n"
-    outFile.write(outText.encode())
+    outFile.write(outText)
 
     for sampleID in uniqueSampleIDs:
         dataItems = [] #To be filled with gene Values
@@ -80,4 +80,4 @@ with gzip.open(outFilePath, 'w') as outFile:
              geneValue = "{0:.4f}".format(geneValue/geneCount)
              dataItems.append(geneValue)
         outText = "\t".join([sampleID] + dataItems) + "\n"
-        outFile.write(outText.encode())
+        outFile.write(outText)

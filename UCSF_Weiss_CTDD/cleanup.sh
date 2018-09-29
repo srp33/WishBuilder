@@ -1,4 +1,3 @@
-rm metadata.tsv.gz
-rm data.tsv.gz
+rm *.tsv
 rm *.zip
 rm -r tmp
