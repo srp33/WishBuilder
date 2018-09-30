@@ -62,12 +62,16 @@ with gzip.open(instInfoFile, 'r') as instInfo:
                     if value in cellInfoDict: # At least one cell line is not in the cell_info file
                         sampleDict.update(cellInfoDict[value])
 
+                    sampleDict[variable] = value
+
                 elif variable == "pert_id":
                     if value in pertInfoDict:
                         sampleDict.update(pertInfoDict[value])
 
                     if value in pertMetricsDict:
                         sampleDict.update(pertMetricsDict[value])
+
+                    sampleDict[variable] = value
 
                 elif variable == "pert_time_unit":
                     continue # All values are the same
