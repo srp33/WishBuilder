@@ -68,8 +68,12 @@ with gzip.open(instInfoFile, 'r') as instInfo:
 
                     if value in pertMetricsDict:
                         sampleDict.update(pertMetricsDict[value])
+
                 elif variable == "pert_time_unit":
                     continue # All values are the same
+
+                else:
+                    sampleDict[variable] = value
 
             for variable, value in sampleDict.items():
                  metaOut.write("{}\t{}\t{}\n".format(sample, variable, value))

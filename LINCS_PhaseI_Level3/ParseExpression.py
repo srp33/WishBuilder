@@ -6,8 +6,6 @@ gctxFileName = sys.argv[1]
 geneFile = sys.argv[2]
 dataOut = sys.argv[3]
 
-#np.savetxt(dataOut, h5py.File(gctxFileName)['/0/DATA/0/matrix'], '%g', '\t')
-
 f = h5py.File(gctxFileName, "r")
 
 grpname = f.require_group('/0')
@@ -44,7 +42,8 @@ try :
 
         if index % 1000 == 0 :
             print(str(index) + " expression rows")
-            break
+            sys.stdout.flush()
+            #break
 
 finally :
     f.close()

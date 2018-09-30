@@ -46,4 +46,4 @@ def translate(myMInFile, myMOutFile):
 
 
 translate(myMInFile, myMOutFile)
-os.remove(myMInFile)
+#os.remove(myMInFile)
