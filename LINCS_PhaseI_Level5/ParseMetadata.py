@@ -37,7 +37,7 @@ def checkMissing(value):
 cellInfoDict = readIntoDict(cellInfo, 1)
 pertInfoDict = readIntoDict(pertInfo, 3)
 pertMetricsDict = readIntoDict(pertMetrics, 3)
-sigMetricsDict = readIntoDict(pertMetrics, 4)
+sigMetricsDict = readIntoDict(sigMetrics, 4)
 
 with gzip.open(sigInfoFile, 'r') as sigInfo:
     with open(metadataOut, 'w') as metaOut:
@@ -56,17 +56,15 @@ with gzip.open(sigInfoFile, 'r') as sigInfo:
             sample = rowList[0]
             sampleDict = {}
 
+            # Add signature metrics values for this signature
+            for key, value in sigMetricsDict[sample].items():
+                sampleDict[key] = value
+
             for i in range(1, len(rowList)):
                 variable = headerList[i]
                 value = checkMissing(rowList[i])
 
-                if variable == "sig_id":
-                    if value in sigMetricsDict:
-                        sampleDict.update(sigMetricsDict[value])
-
-                    sampleDict[variable] = value
-
-                elif variable == "cell_id":
+                if variable == "cell_id":
                     if value in cellInfoDict: # At least one cell line is not in the cell_info file
                         sampleDict.update(cellInfoDict[value])
 
