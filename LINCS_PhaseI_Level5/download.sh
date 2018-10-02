@@ -19,5 +19,5 @@ downloadFile "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE92742&format=fil
 downloadFile "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE92742&format=file&file=GSE92742%5FBroad%5FLINCS%5Fpert%5Fmetrics%2Etxt%2Egz" "GSE92742_Broad_LINCS_pert_metrics.txt.gz"
 downloadFile "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE92742&format=file&file=GSE92742%5FBroad%5FLINCS%5Fsig%5Fmetrics%2Etxt%2Egz" "GSE92742_Broad_LINCS_sig_metrics.txt.gz"
 
-downloadFile "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE92742&format=file&file=GSE92742%5FBroad%5FLINCS%5FLevel5%5FCOMPZ%2EMODZ%5Fn473647x12328%2Egctx%2Egz" "LINCS_PhaseI_Level5.gctx.gz"
-gunzip "tmp/LINCS_PhaseI_Level5.gctx.gz"
+#downloadFile "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE92742&format=file&file=GSE92742%5FBroad%5FLINCS%5FLevel5%5FCOMPZ%2EMODZ%5Fn473647x12328%2Egctx%2Egz" "LINCS_PhaseI_Level5.gctx.gz"
+#gunzip "tmp/LINCS_PhaseI_Level5.gctx.gz"
