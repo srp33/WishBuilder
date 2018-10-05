@@ -2,7 +2,7 @@
 
 Please complete the following steps to get started as a contributor.
 
-1. You will need an account on a Linux computer. If you a student in the Piccolo lab, please request access to the ```daniel``` computer for this. 
+1. You will need an account on a Linux computer. If you a student in the Piccolo lab, you can use the ```daniel``` computer for this (talk to me if you need access). Or you can use the Supercomputer. 
 
 2. If you haven't already done so, create a [GitHub](https://github.com) account.
 
