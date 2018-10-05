@@ -5,8 +5,8 @@ myMInFile = argv[1]
 myMOutFile = argv[2]
 
 def translate(myMInFile, myMOutFile):
-    with open(myMInFile, 'r') as inFile:
-        with open(myMOutFile, 'w') as outFile:
+    with open(myMInFile, 'r', encoding="utf-8") as inFile:
+        with open(myMOutFile, 'w', encoding="utf-8") as outFile:
             counter = 0
             varList = set()
             myDict = {}

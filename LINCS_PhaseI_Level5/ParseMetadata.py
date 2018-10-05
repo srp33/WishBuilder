@@ -40,7 +40,7 @@ pertMetricsDict = readIntoDict(pertMetrics, 3)
 sigMetricsDict = readIntoDict(sigMetrics, 4)
 
 with gzip.open(sigInfoFile, 'r') as sigInfo:
-    with open(metadataOut, 'w') as metaOut:
+    with open(metadataOut, 'w', encoding="utf-8") as metaOut:
         headerList = sigInfo.readline().decode().rstrip('\n').split('\t')
 
         metaOut.write("Sample\tVariable\tValue\n")
@@ -86,4 +86,4 @@ with gzip.open(sigInfoFile, 'r') as sigInfo:
                     sampleDict[variable] = value
 
             for variable, value in sampleDict.items():
-                 metaOut.write("{}\t{}\t{}\n".format(sample, variable, value))
+                metaOut.write("{}\t{}\t{}\n".format(sample, variable, value))
