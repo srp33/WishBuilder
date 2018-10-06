@@ -8,18 +8,20 @@ pertInfo = sys.argv[3]
 sigMetrics = sys.argv[4]
 metadataOut = sys.argv[5]
 
-def readIntoDict(filePath, startIndex):
+def readIntoDict(filePath, keyColumn, ignoreColumns):
     infoDict = {}
     with gzip.open(filePath) as f:
         headerList = f.readline().decode().rstrip('\n').split('\t')
+        keyIndex = headerList.index(keyColumn)
+        headerIndices = [i for i in range(len(headerList)) if headerList[i] not in ignoreColumns]
 
         for line in f:
             lineList = line.decode().rstrip('\n').split('\t')
-            sample = lineList[0]
+            sample = lineList[keyIndex]
 
             infoDict[sample] = {}
 
-            for i in range(1, len(lineList)):
+            for i in headerIndices:
                 variable = headerList[i]
                 value = checkMissing(lineList[i])
 
@@ -33,9 +35,9 @@ def checkMissing(value):
 
     return value
 
-cellInfoDict = readIntoDict(cellInfo, 1)
-pertInfoDict = readIntoDict(pertInfo, 3)
-sigMetricsDict = readIntoDict(sigMetrics, 4)
+cellInfoDict = readIntoDict(cellInfo, "cell_id", [])
+pertInfoDict = readIntoDict(pertInfo, "pert_id", ["pert_iname", "pert_type"])
+sigMetricsDict = readIntoDict(sigMetrics, "sig_id", ["", "pert_id", "pert_iname", "pert_type"])
 
 with gzip.open(sigInfoFile, 'r') as sigInfo:
     with open(metadataOut, 'w', encoding="utf-8") as metaOut:
@@ -73,9 +75,6 @@ with gzip.open(sigInfoFile, 'r') as sigInfo:
                         sampleDict.update(pertInfoDict[value])
 
                     sampleDict[variable] = value
-
-                elif variable == "pert_time_unit":
-                    continue # All values are the same
 
                 else:
                     sampleDict[variable] = value
