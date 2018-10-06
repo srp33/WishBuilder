@@ -1,6 +1,6 @@
-import h5py
 import numpy as np
 import sys, gzip
+import time
 
 sigInfoFile = sys.argv[1]
 cellInfo = sys.argv[2]
@@ -8,77 +8,77 @@ pertInfo = sys.argv[3]
 sigMetrics = sys.argv[4]
 metadataOut = sys.argv[5]
 
-print("writing metadata file")
+def readIntoDict(filePath, startIndex):
+    infoDict = {}
+    with gzip.open(filePath) as f:
+        headerList = f.readline().decode().rstrip('\n').split('\t')
 
-cellHeaderList = []
-cellInfoDict = {}
-f = gzip.open(cellInfo, 'r')
-try :
-    cellHeaderList = f.readline().decode().strip('\n').split('\t')[1:]
-    for line in f :
-        lineList = line.decode().strip('\n').split('\t')
-        cellInfoDict[lineList[0]] = lineList[1:]
-finally:
-    f.close()
+        for line in f:
+            lineList = line.decode().rstrip('\n').split('\t')
+            sample = lineList[0]
 
-pertInfoHeaderList = []
-pertInfoDict = {}
-f = gzip.open(pertInfo, 'r')
-try :
-    pertInfoHeaderList = f.readline().decode().strip('\n').split('\t')[1:3]
-    for line in f :
-        lineList = line.decode().strip('\n').split('\t')
-        pertInfoDict[lineList[0]] = lineList[1:3]
-finally:
-    f.close()
+            infoDict[sample] = {}
 
-sigMetricsHeaderList = []
-sigMetricsDict = {}
-f = gzip.open(sigMetrics, 'r')
-try:
-    firstLineList = f.readline().decode().strip('\n').split('\t')
-    sigMetricsHeaderList = firstLineList[2:4] + firstLineList[7:]
-    for line in f:
-        lineList = line.decode().strip('\n').split('\t')
-        sigMetricsDict[lineList[1]] = lineList[2:4] + lineList[7:]
-finally:
-    f.close()
+            for i in range(1, len(lineList)):
+                variable = headerList[i]
+                value = checkMissing(lineList[i])
 
-sigInfo =  gzip.open(sigInfoFile, 'r')
-metaOut = gzip.open(metadataOut, 'w')
-try:
-    headerList = sigInfo.readline().decode().strip('\n').split('\t')
-    sigId = "Sample"
-    metaOut.write("Sample\tVariable\tValue\n".encode())
-    for row in sigInfo :
-        rowList = row.decode().strip('\n').split('\t')[:7]
-        for i in range(len(rowList) - 1 ):
-            if(str(rowList[i + 1]) != "-666") :
-                metaOut.write((str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + '\n').encode())
+                infoDict[sample][variable] = value
 
-                if (rowList[0] != sigId) :
-                    sigMetricsList = sigMetricsDict[rowList[0]] ##This will add the sigMetrics metadata to the metadata.tsv.gz
-                    for j in range(len(sigMetricsList)) :
-                        if(str(sigMetricsList[j]) != "-666") :
-                            metaOut.write((str(rowList[0]) + '\t' + str(sigMetricsHeaderList[j]) + '\t' + str(sigMetricsList[j]) + '\n').encode())
-                    sigId = rowList[0]
+    return infoDict
 
-                if (headerList[i + 1] == "cell_id") :
-                    try :
-                        cellIdList = cellInfoDict[rowList[i + 1]] ##This will add the cellInfo to the metadata.tsv.gz
-                        for j in range(len(cellIdList)) :
-                            if(str(cellIdList[j]) != "-666") :
-                                metaOut.write((str(rowList[0]) + '\t' + str(cellHeaderList[j]) + '\t' + str(cellIdList[j]) + '\n').encode())
-                    except :
-                        continue ## This catches SNUC4 that doesn't have any cellInfo, but is included in the sigInfo file
-                elif (headerList[i + 1] == "pert_id") :
-                    try :
-                        pertInfoIdList = pertInfoDict[rowList[i + 1]] ##This will add the pertInfo metadata to the metadata.tsv.gz
-                        for j in range(len(pertInfoIdList)) :
-                            if(str(pertInfoIdList[j]) != "-666") :
-                                metaOut.write((str(rowList[0]) + '\t' + str(pertInfoHeaderList[j]) + '\t' + str(pertInfoIdList[j]) + '\n').encode())
-                    except :
-                        continue
-finally:
-    sigInfo.close()
-    metaOut.close()
+def checkMissing(value):
+    if value in ("-666.0", "-666"):
+        value = "NA"
+
+    return value
+
+cellInfoDict = readIntoDict(cellInfo, 1)
+pertInfoDict = readIntoDict(pertInfo, 3)
+sigMetricsDict = readIntoDict(sigMetrics, 4)
+
+with gzip.open(sigInfoFile, 'r') as sigInfo:
+    with open(metadataOut, 'w', encoding="utf-8") as metaOut:
+        headerList = sigInfo.readline().decode().rstrip('\n').split('\t')
+
+        metaOut.write("Sample\tVariable\tValue\n")
+        index = 0
+        for row in sigInfo:
+            rowList = row.decode().strip('\n').split('\t')
+
+            index = index + 1
+            if index % 1000 == 0:
+                print(str(index) + " of metadata")
+                sys.stdout.flush()
+
+            sample = rowList[0]
+            sampleDict = {}
+
+            # Add signature metrics values for this signature
+            for key, value in sigMetricsDict[sample].items():
+                sampleDict[key] = value
+
+            for i in range(1, len(rowList)):
+                variable = headerList[i]
+                value = checkMissing(rowList[i])
+
+                if variable == "cell_id":
+                    if value in cellInfoDict: # At least one cell line is not in the cell_info file
+                        sampleDict.update(cellInfoDict[value])
+
+                    sampleDict[variable] = value
+
+                elif variable == "pert_id":
+                    if value in pertInfoDict:
+                        sampleDict.update(pertInfoDict[value])
+
+                    sampleDict[variable] = value
+
+                elif variable == "pert_time_unit":
+                    continue # All values are the same
+
+                else:
+                    sampleDict[variable] = value
+
+            for variable, value in sampleDict.items():
+                metaOut.write("{}\t{}\t{}\n".format(sample, variable, value))
