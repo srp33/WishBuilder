@@ -1,16 +1,18 @@
+#! /bin/bash
 
-#Downloading data
-url="{urlExpression}"
-wget -P tmp "$url"
+url="$1"
 
-#Dealing with Tar and Gzipped files
+if [[ "$url" == "" ]]
+then
+  echo "No URL was specified."
+  exit 1
+fi
+
+rm -rf tmp
+mkdir -p tmp
+
 cd tmp
-tar -xvf download?version=4 
-gzip -d *Expression.txt.gz
+wget -O data.tar.gz "$url"
 
-#Renaming files to be generic names
-mv *Clinical.txt Clinical
-mv *Expression.txt Expression
-mv *Description.md ../newDescription
-#return to main directory
-cd ..
+tar -zxvf data.tar.gz
+gunzip *Expression.txt.gz

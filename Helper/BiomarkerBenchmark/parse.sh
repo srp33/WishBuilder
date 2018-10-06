@@ -1,16 +1,4 @@
 #! /bin/bash
 
-redirectedTempFolder=tmp
-Expression=$redirectedTempFolder/Expression
-Clinical=$redirectedTempFolder/Clinical
-dataOutFile=data.tsv
-metadataOutFile=metadata.tsv
-dataOutFile=Gene_Expression.tsv
-metadataOutFile=metadata.tsv
-convertedMetaOut=Clinical.tsv
-
-rm -f $metadataOutFile
-rm -f $dataOutFile
-
-python parse.py $Clinical $Expression $dataOutFile $metadataOutFile 
-python convertTallFormatToWide2.py $metadataOutFile $convertedMetaOut
+python3 ../Helper/BiomarkerBenchmark/parse.py tmp/*Clinical.txt tmp/*Expression.txt Gene_Expression.tsv tmp/Clinical.tsv
+python3 ../Helper/convertTallFormatToWide2.py tmp/Clinical.tsv Clinical.tsv
