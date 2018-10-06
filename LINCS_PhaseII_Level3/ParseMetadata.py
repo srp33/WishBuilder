@@ -1,69 +1,77 @@
 import numpy as np
 import sys, gzip
+import time
 
-instInfoFile = sys.argv[1]
+sigInfoFile = sys.argv[1]
 cellInfo = sys.argv[2]
 pertInfo = sys.argv[3]
 metadataOut = sys.argv[4]
 
-print("writing metadata file")
+def readIntoDict(filePath, keyColumn, ignoreColumns):
+    infoDict = {}
+    with gzip.open(filePath) as f:
+        headerList = f.readline().decode().rstrip('\n').split('\t')
+        keyIndex = headerList.index(keyColumn)
+        headerIndices = [i for i in range(len(headerList)) if headerList[i] not in ignoreColumns]
 
-cellHeaderList = []
-cellInfoDict = {}
-f = gzip.open(cellInfo, 'r')
-try :
-    cellHeaderList = f.readline().decode().strip('\n').split('\t')[1:]
-    for line in f :
-        lineList = line.decode().strip('\n').split('\t')
-        cellInfoDict[lineList[0]] = lineList[1:]
-finally:
-    f.close()
+        for line in f:
+            lineList = line.decode().rstrip('\n').split('\t')
+            sample = lineList[keyIndex]
 
-pertInfoHeaderList = []
-pertInfoDict = {}
-f = gzip.open(pertInfo, 'r')
-try :
-    pertInfoHeaderList = f.readline().decode().strip('\n').split('\t')[1:3]
-    for line in f :
-        lineList = line.decode().strip('\n').split('\t')
-        pertInfoDict[lineList[0]] = lineList[1:3]
-finally:
-    f.close()
+            infoDict[sample] = {}
 
-instInfo =  gzip.open(instInfoFile, 'r')
-metaOut = gzip.open(metadataOut, 'w')
-try:
-    headerList = instInfo.readline().decode().strip('\n').split('\t')
-    sigId = ""
-    metaOut.write("Sample\tVariable\tValue\n".encode())
-    indeci = 0
-    for row in instInfo :
-        indeci = indeci + 1
-        print(str(indeci) + " of 345976 molecular data")
-        rowList = row.decode().strip('\n').split('\t')
-        for i in range(len(rowList) - 1 ):
-            if(str(rowList[i + 1]) != "-666") and (str(rowList[i + 1]) != "-666.0") :
-                if(str(headerList[i + 1]) == "pert_time") :
-                    metaOut.write((str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + " " + str(rowList[i + 2]) + '\n').encode())
-                    break
-                metaOut.write((str(rowList[0]) + '\t' + str(headerList[i + 1]) + '\t' + str(rowList[i + 1]) + '\n').encode())
+            for i in headerIndices:
+                variable = headerList[i]
+                value = checkMissing(lineList[i])
 
-            if (headerList[i + 1] == "cell_id") :
-                try :
-                    cellIdList = cellInfoDict[rowList[i + 1]] ##This will add the cellInfo to the metadata.tsv.gz
-                    for j in range(len(cellIdList)) :
-                        if(str(cellIdList[j]) != "-666") :
-                            metaOut.write((str(rowList[0]) + '\t' + str(cellHeaderList[j]) + '\t' + str(cellIdList[j]) + '\n').encode())
-                except :
-                    continue ## This catches SNUC4 that doesn't have any cellInfo, but is included in the sigInfo file
-            elif (headerList[i + 1]  == "pert_id") :
-                try :
-                    pertInfoIdList = pertInfoDict[rowList[i + 1]] ##This will add the pertInfo metadata to the metadata.tsv.gz
-                    for j in range(len(pertInfoIdList)) :
-                        if(str(pertInfoIdList[j]) != "-666") :
-                            metaOut.write((str(rowList[0]) + '\t' + str(pertInfoHeaderList[j]) + '\t' + str(pertInfoIdList[j]) + '\n').encode())
-                except :
-                    continue
-finally:
-    instInfo.close()
-    metaOut.close()
+                infoDict[sample][variable] = value
+
+    return infoDict
+
+def checkMissing(value):
+    if value in ("-666.0", "-666"):
+        value = "NA"
+
+    return value
+
+cellInfoDict = readIntoDict(cellInfo, "cell_id", [])
+pertInfoDict = readIntoDict(pertInfo, "pert_id", ["pert_iname", "pert_type"])
+
+with gzip.open(sigInfoFile, 'r') as sigInfo:
+    with open(metadataOut, 'w', encoding="utf-8") as metaOut:
+        headerList = sigInfo.readline().decode().rstrip('\n').split('\t')
+
+        metaOut.write("Sample\tVariable\tValue\n")
+        index = 0
+        for row in sigInfo:
+            rowList = row.decode().strip('\n').split('\t')
+
+            index = index + 1
+            if index % 1000 == 0:
+                print(str(index) + " of metadata")
+                sys.stdout.flush()
+
+            sample = rowList[0]
+            sampleDict = {}
+
+            for i in range(1, len(rowList)):
+                variable = headerList[i]
+                value = checkMissing(rowList[i])
+
+                if variable == "cell_id":
+                    if value in cellInfoDict: # At least one cell line is not in the cell_info file
+                        sampleDict.update(cellInfoDict[value])
+
+                    sampleDict[variable] = value
+
+                elif variable == "pert_id":
+                    if value in pertInfoDict:
+                        sampleDict.update(pertInfoDict[value])
+
+                    sampleDict[variable] = value
+
+                else:
+                    sampleDict[variable] = value
+
+            for variable, value in sampleDict.items():
+                metaOut.write("{}\t{}\t{}\n".format(sample, variable, value))
