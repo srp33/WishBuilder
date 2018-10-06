@@ -5,16 +5,12 @@ Expression=$redirectedTempFolder/Expression
 Clinical=$redirectedTempFolder/Clinical
 dataOutFile=data.tsv
 metadataOutFile=metadata.tsv
-dataOutFilegz=data.tsv.gz
-metadataOutFilegz=metadata.tsv.gz
-convertedMetaOut=Clinical.tsv.gz
+dataOutFile=Gene_Expression.tsv
+metadataOutFile=metadata.tsv
+convertedMetaOut=Clinical.tsv
 
-rm -f $metadataOutFilegz
-rm -f $dataOutFilegz
+rm -f $metadataOutFile
+rm -f $dataOutFile
 
 python parse.py $Clinical $Expression $dataOutFile $metadataOutFile 
-
-gzip $metadataOutFile
-gzip $dataOutFile
-
-python3 convertTallFormatToWide.py $metadataOutFilegz $convertedMetaOut
+python convertTallFormatToWide2.py $metadataOutFile $convertedMetaOut
