@@ -1,4 +1,4 @@
-import sys, gzip
+import sys
 
 clinicalInfo = sys.argv[1]
 expressionInfo = sys.argv[2]
@@ -18,8 +18,8 @@ with open(expressionInfo, 'r')  as f1:
                     file1IDSet.add(lineFile1List[0])
 
                 rowsOfInterest2 = [i for i in range(len(file2List))  if file2List[i].strip('\n').split('\t')[0] in file1IDSet]
-                
-                ofMeta.write("Sample\tVariable\tValue\n")                
+
+                ofMeta.write("Sample\tVariable\tValue\n")
                 headerList = file2List[0].strip('\n').split('\t')
                 ofNorm.write("Sample" + '\t' + '\t'.join(file1List[0].strip('n').split('\t')[1:]) + '\n')
                 for index in range(len(rowsOfInterest2)):
