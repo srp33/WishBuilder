@@ -23,26 +23,27 @@ with gzip.open(geneFile, 'r') as f :
         list = line.decode().strip('\n').split('\t')
         geneDict[list[0]] = list[1]
 
-print("writing expression file")
-f = gzip.open(dataOut, 'w')
+print("Writing expression file")
+f = open(dataOut, 'w', encoding="utf-8")
 
 try :
-    f.write("Sample".encode())
+    f.write("Sample")
     for value in colgrp["id"] :
-        f.write(('\t' + geneDict[str(int(value))]).encode())
-    f.write('\n'.encode())
+        f.write('\t' + geneDict[str(int(value))])
+    f.write('\n')
 
     index = 0
     for line in subsubgrpData["matrix"] :
         a = np.asarray(line).astype(str)
         number = rowgrp["id"][index].decode()
 
-        f.write((number + '\t' + '\t'.join(a) + '\n').encode())
+        f.write(number + '\t' + '\t'.join(a) + '\n')
         index = index + 1
-#        if index % 100 == 0 :
-#            break
+
         if index % 1000 == 0 :
-            print(str(index))
+            print(str(index) + " expression rows")
+            sys.stdout.flush()
+            #break
 
 finally :
     f.close()
