@@ -37,7 +37,7 @@ def checkMissing(value):
 
 cellInfoDict = readIntoDict(cellInfo, "cell_id", [])
 pertInfoDict = readIntoDict(pertInfo, "pert_id", ["pert_iname", "pert_type"])
-pertMetricsDict = readIntoDict(pertInfo, "pert_id", ["pert_iname", "pert_type"])
+pertMetricsDict = readIntoDict(pertMetrics, "pert_id", ["pert_iname", "pert_type"])
 
 with gzip.open(sigInfoFile, 'r') as sigInfo:
     with open(metadataOut, 'w', encoding="utf-8") as metaOut:
