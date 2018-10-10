@@ -10,10 +10,10 @@ RACS=$redirectedTempFolder/RACS_in_cell_lines.xlsx
 variants=$redirectedTempFolder/WES_variants.xlsx
 expression=$redirectedTempFolder/sanger1018_brainarray_ensemblgene_rma.txt.gz
 expressiontmp=$redirectedTempFolder/expressiontmp.tsv.gz
-dataOutFilegz=Gene_Expression.tsv.gz
-metadataOutFilegz=metadata.tsv.gz
+dataOutFile=Gene_Expression.tsv
+metadataOutFile=metadata.tsv
 
-python3 parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFilegz $expressiontmp $dataOutFilegz 
+python3 parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFile $expressiontmp $dataOutFile 
 
-python convertTallFormatToWide.py $metadataOutFilegz Annotations.tsv.gz
-rm -f $metadataOutFilegz
+python ../Helper/convertTallFormatToWide2.py $metadataOutFile Annotations.tsv
+rm -f $metadataOutFile
