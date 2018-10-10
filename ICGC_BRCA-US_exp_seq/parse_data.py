@@ -52,11 +52,11 @@ with gzip.open(inFilePath, 'r') as inFile:
             print(numLines)#with gzip.open(inFilePath, 'r') as inFile:
 
 # Create output file
-with gzip.open(outFilePath, 'wb') as outFile:
+with open(outFilePath, 'wb') as outFile:
     outText = "\t".join(["Sample"] + uniqueGeneIDs) + "\n"
-    outFile.write(outText.encode())
+    outFile.write(outText)
 
     for sampleID in uniqueSampleIDs:
         dataItems = [dataDict[sampleID][geneID] for geneID in uniqueGeneIDs]
         outText = "\t".join([sampleID] + dataItems) + "\n"
-        outFile.write(outText.encode())
+        outFile.write(outText)
