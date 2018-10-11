@@ -52,7 +52,7 @@ with gzip.open(inFilePath, 'r') as inFile:
             print(numLines)#with gzip.open(inFilePath, 'r') as inFile:
 
 # Create output file
-with open(outFilePath, 'wb') as outFile:
+with open(outFilePath, 'w') as outFile:
     outText = "\t".join(["Sample"] + uniqueGeneIDs) + "\n"
     outFile.write(outText)
 

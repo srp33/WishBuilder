@@ -8,7 +8,7 @@ outFilePath = sys.argv[2]
 columnsOfInterest = set(["submitted_donor_id", "donor_sex", "donor_vital_status", "disease_status_last_followup", "donor_age_at_diagnosis", "donor_age_at_last_followup", "donor_survival_time", "donor_interval_of_last_followup"])
 
 with gzip.open(inFilePath, 'rb') as inFile:
-    with open(outFilePath, 'wb') as outFile:
+    with open(outFilePath, 'w') as outFile:
         inHeaderItems = inFile.readline().decode().rstrip("\n").split("\t")
 
         outFile.write("Sample\tVariable\tValue\n")
