@@ -12,4 +12,4 @@ python3 ParseExpression.py "tmp/data_expression.txt" "Gene_Expression.tsv"
 python3 keep_common_samples.py *.tsv
 
 ## Remove this because it has no Yes values
-rm -f Variant_5_prime_UTR.tsv.gz
+rm -f Variant_5_prime_UTR.tsv
