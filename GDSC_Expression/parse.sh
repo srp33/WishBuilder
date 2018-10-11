@@ -9,7 +9,7 @@ screenedComponents=$redirectedTempFolder/Screened_Compounds.xlsx
 RACS=$redirectedTempFolder/RACS_in_cell_lines.xlsx
 variants=$redirectedTempFolder/WES_variants.xlsx
 expression=$redirectedTempFolder/sanger1018_brainarray_ensemblgene_rma.txt.gz
-expressiontmp=$redirectedTempFolder/expressiontmp.tsv.gz
+expressiontmp=$redirectedTempFolder/expressiontmp.tsv
 dataOutFile=Gene_Expression.tsv
 metadataOutFile=metadata.tsv
 
