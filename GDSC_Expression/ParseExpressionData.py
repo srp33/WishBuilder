@@ -51,7 +51,7 @@ with open(transposedExpression, 'r') as openExpression:
             lineCount += 1
             if lineCount == 1:
                 splitLine = line.rstrip().split("\t")
-                outputFile.write("Sample" + "\t" + "\t".join(splitLine[1:]))
+                outputFile.write("Sample" + "\t" + "\t".join(splitLine[1:]) + "\n")
             else:
                 splitLine = line.rstrip().split("\t")
                 cellLine = splitLine[0]
