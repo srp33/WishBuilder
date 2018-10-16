@@ -43,18 +43,38 @@ with pd.ExcelFile(reference) as openReference:
     for i in range(len(cellLines) - 1):
         cellLineDictionary[str(int(cellLines[i]))] = samples[i]
 
-
+expressionValueDictionary = {}
 with open(transposedExpression, 'r') as openExpression:
     with open("Gene_Expression.tsv", 'w') as outputFile:
         lineCount = 0
         for line in openExpression:
             lineCount += 1
             if lineCount == 1:
-                outputFile.write(line)
+                splitLine = line.rstrip().split("\t")
+                outputFile.write("Sample" + "\t" + "\t".join(splitLine[1:]))
             else:
                 splitLine = line.rstrip().split("\t")
                 cellLine = splitLine[0]
                 remainder = splitLine[1:]
-                if cellLine in cellLineDictionary:
-                    newLine = str(cellLineDictionary[cellLine]) + "\t" + "\t".join(remainder) + "\n"
+                if cellLine not in expressionValueDictionary:
+                    expressionValueDictionary[cellLine] = [remainder]
+                else:
+                    expressionValueDictionary[cellLine].append(remainder)
+        for key, val in expressionValueDictionary.items():
+            writeValues = []
+            if len(val) > 1:
+                averagedValues = []
+                for i in range(len(val[0])):
+                    sum = 0
+                    numItems = 0
+                    for list in val:
+                        sum += float(list[i])
+                        numItems += 1
+                    averaged = sum/numItems
+                    averagedValues.append(str(averaged))
+                writeValues = [averagedValues]
+            else:
+                writeValues = val
+            if key in cellLineDictionary:
+                newLine = str(cellLineDictionary[key]) + "\t" + "\t".join(writeValues[0]) + "\n"
                 outputFile.write(newLine)
