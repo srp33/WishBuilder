@@ -1,0 +1,5 @@
+Sample	GDSC Tissue descriptor 1	Cancer Type	Screen Medium	Site
+A253	aero_dig_tract	NA	D/F12	salivary_gland
+COLO-205	large_intestine	Colon adenocarcinoma and Rectum adenocarcinoma	R	large_intestine
+U-CH2	bone	NA	D/F12	bone
+ACN	NA	NA	NA	autonomic_ganglia
