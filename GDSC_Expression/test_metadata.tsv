@@ -1,5 +1,9 @@
-Sample	GDSC	Tissue descriptor 1	Cancer Type	Screen Medium	Site
-A253	aero_dig_tract	NA	D/F12	salivary_gland
-COLO-205	large_intestine	Colon adenocarcinoma and Rectum adenocarcinoma	R	large_intestine
-U-CH2	bone	NA	D/F12	bone
-ACN	NA	NA	NA	autonomic_ganglia
+Sample	Variable	Value
+A253	Cancer Type	NA
+A253		Site	salivary_gland
+COLO-205	Screen Medium	R
+COLO-205	Cancer Type	Colon adenocarcinoma and Rectum adenocarcinoma
+U-CH2	GDSC Tissue descriptor 1	bone
+U-CH2	Microsatellite instability Status	MSS/MSI-L
+ACN	Screen Medium	NA
+ACN	Site	autonomic_ganglia
