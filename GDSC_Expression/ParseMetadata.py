@@ -105,7 +105,7 @@ with pd.ExcelFile(reference) as openReference:
 dictionaryList = [tissue1Dictionary, tissue2Dictionary, cancerTypeDictionary, microsatelliteDictionary, screenMediumDictionary, growthPropertiesDictionary, siteDictionary, histologyDictionary]
 headerList = ["Sample", "GDSC Tissue descriptor 1", "GDSC Tissue descriptor 2", "Cancer Type", "Microsatellite instability Status", "Screen Medium", "Growth Properties", "Site", "Histology"]
 
-#write data to output file
+#write to metadata file
 with open(metadata, 'w') as outFile:
     outFile.write("\t".join(headerList) + "\n")
     for key, val in secondCellLineDictionary.items():
@@ -127,6 +127,7 @@ with xlrd.open_workbook(screenedCompounds) as openScreenedCompounds:
     for i in range(1, len(drugID)):
         drugNameDictionary[drugID[i]] = drugName[i]
         drugList.append(drugName[i])
+    uniqueDrugList = list(set(drugList))
 
 def compileResponseValues(dataColumn, valueDictionary, outputFile, convertedToCellLines, convertedToDrugNames):
     for i in range(1, len(convertedToCellLines)):
@@ -138,15 +139,15 @@ def compileResponseValues(dataColumn, valueDictionary, outputFile, convertedToCe
             valueDictionary[line] = {drug:dataColumn[i]}
  
     with open(outputFile,'w') as openOutput:
-        strDrugList = map(str, drugList)
+        strDrugList = map(str, uniqueDrugList)
         openOutput.write("Sample" + "\t" + "\t".join(strDrugList) + "\n")
         for key, valDictionary in valueDictionary.items():
             floatValues = valDictionary.values()
             strValues = map(str, floatValues)
             responseValues = []
-            for i in range(len(drugList)):
-                if drugList[i] in valDictionary:
-                    responseValues.append(str(valDictionary[drugList[i]]))
+            for i in range(len(uniqueDrugList)):
+                if uniqueDrugList[i] in valDictionary:
+                    responseValues.append(str(valDictionary[uniqueDrugList[i]]))
                 else:
                     responseValues.append("NA")
             openOutput.write(str(key) + "\t" + "\t".join(responseValues) + "\n")
