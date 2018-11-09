@@ -1,0 +1,10 @@
+Sample	Variable	Value
+201T	cnaLUAD1 (CDKN2A)	Deletion
+201T	cnaBRCA16	Normal
+201T	cnaLUAD7	Normal
+NCI-H1944	cnaLUAD1 (CDKN2A)	Deletion
+NCI-H1944	cnaBRCA16	Normal
+NCI-H1944	cnaLUAD7	Deletion
+ZR-75-30	cnaLUAD1 (CDKN2A)	Normal
+ZR-75-30	cnaBRCA16	Amplification
+ZR-75-30	cnaLUAD7	Normal

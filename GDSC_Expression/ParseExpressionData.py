@@ -2,13 +2,13 @@ import sys
 import pandas as pd
 import gzip
 
-reference = sys.argv[1]
-expression = sys.argv[2]
-transposedExpression = sys.argv[3]
+#reference = sys.argv[1]
+#expression = sys.argv[2]
+#transposedExpression = sys.argv[3]
 
-#reference = "tmp/Cell_Lines_Details.xlsx"
-#expression = "tmp/sanger1018_brainarray_ensemblgene_rma.txt.gz"
-#transposedExpression = "transposed_expression.tsv"
+reference = "tmp/Cell_Lines_Details.xlsx"
+expression = "tmp/sanger1018_brainarray_ensemblgene_rma.txt.gz"
+transposedExpression = "transposed_expression.tsv"
 
 #transpose data
 def readMatrixFromFile(filepath):
@@ -36,12 +36,19 @@ writeMatrixToFile(transposedMatrix, transposedExpression)
 
 #convert COSMIC identifiers to sample names
 cellLineDictionary = {}
+secondCellLineDictionary = {}
 with pd.ExcelFile(reference) as openReference:
     firstSheet = openReference.parse("Cell line details")
     cellLines = firstSheet["COSMIC identifier"]
     samples = firstSheet["Sample Name"]
+    tissueSheet = openReference.parse("COSMIC tissue classification")
+    secondCellLines = tissueSheet["COSMIC_ID"]
+    secondSamples = tissueSheet["Line"]
+    #use -1 to ignore total row at bottom
     for i in range(len(cellLines) - 1):
         cellLineDictionary[str(int(cellLines[i]))] = samples[i]
+    for i in range(len(secondCellLines)):
+        secondCellLineDictionary[str(int(secondCellLines[i]))] = secondSamples[i]
 
 expressionValueDictionary = {}
 with open(transposedExpression, 'r') as openExpression:
@@ -77,4 +84,11 @@ with open(transposedExpression, 'r') as openExpression:
                 writeValues = val
             if key in cellLineDictionary:
                 newLine = str(cellLineDictionary[key]) + "\t" + "\t".join(writeValues[0]) + "\n"
+                outputFile.write(newLine)
+            elif key in secondCellLineDictionary:
+                newLine = str(secondCellLineDictionary[key]) + "\t" + "\t".join(writeValues[0]) + "\n"
+                outputFile.write(newLine)
+            else:
+                modifiedID = "COSMIC_" + key
+                newLine = modifiedID + "\t" + "\t".join(writeValues[0]) + "\n"
                 outputFile.write(newLine)

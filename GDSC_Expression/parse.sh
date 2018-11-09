@@ -18,8 +18,9 @@ transposedExpression="transposed_expression.tsv"
 
 #python3 parse.py $cellLine $doseResponse $screenedComponents $RACS $variants $expression $metadataOutFile $expressiontmp $dataOutFile 
 
-python3 ParseExpressionData.py $reference $expression $transposedExpression
+python3 ParseExpressionData.py
 rm -f $transposedExpression
+python3 ParseMetadata.py
 
 #python ../Helper/convertTallFormatToWide2.py $metadataOutFile Annotations.tsv
 #rm -f $metadataOutFile
