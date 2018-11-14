@@ -22,18 +22,10 @@ symbolsAndIDs <- c()
 for (i in 1:length(genes)) {
   ensembl_ID = genes[i]
 
-  #geneSymbol <- geneSymbols$hgnc_symbol[grepl(ensembl_ID, geneSymbols$ensembl_gene_id)]
   matching_indices = which(geneSymbols$ensembl_gene_id == ensembl_ID)
-  geneSymbol <- geneSymbols$hgnc_symbol[matching_indices]
+  geneSymbol <- paste(geneSymbols$hgnc_symbol[matching_indices], collapse="|")
 
-  if (len(matching_indices) > 1)
-  {
-    print(ensemb_ID)
-    print(geneSymbol)
-    stop("Cannot continue")
-  }
-
-  if (length(geneSymbol) == 0 || geneSymbol == "") {
+  if (length(matching_indices) == 0 || geneSymbol == "") {
     symbolsAndIDs[i] <- ensembl_ID
     }
   else {
