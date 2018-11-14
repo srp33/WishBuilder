@@ -22,21 +22,21 @@ symbolsAndIDs <- c()
 for (i in 1:length(genes)) {
   geneSymbol <- geneSymbols$hgnc_symbol[grepl(genes[i], geneSymbols$ensembl_gene_id)]
   if (length(geneSymbol) == 0 || geneSymbol == "") {
-    symbolsAndIDs[i] <- NA
+    symbolsAndIDs[i] <- genes[i]
     }
   else {
     symbolsAndIDs[i] <- paste0(geneSymbol, " (", genes[i], ")") 
   }
 }
 
-print("Create list of NA symbol indices (basically those that are missing from the online database)")
-missingSymbols <- which(is.na(symbolsAndIDs))
+#print("Create list of NA symbol indices (basically those that are missing from the online database)")
+#missingSymbols <- which(is.na(symbolsAndIDs))
 
-print("Remove columns with missing symbols from data and list of GeneSymbols")
-if (length(missingSymbols > 0)) {
-  data <- data[,-missingSymbols]
-  symbolsAndIDs <- symbolsAndIDs[-missingSymbols]
-}
+#print("Remove columns with missing symbols from data and list of GeneSymbols")
+#if (length(missingSymbols > 0)) {
+#  data <- data[,-missingSymbols]
+#  symbolsAndIDs <- symbolsAndIDs[-missingSymbols]
+#}
 
 print("Add sampleIDs column to front of data")
 data <- cbind(sampleIDs, data)
