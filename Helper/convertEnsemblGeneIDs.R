@@ -20,12 +20,24 @@ geneSymbols <- getBM(filters="ensembl_gene_id", attributes = c("ensembl_gene_id"
 print("Combine symbols and IDs")
 symbolsAndIDs <- c()
 for (i in 1:length(genes)) {
-  geneSymbol <- geneSymbols$hgnc_symbol[grepl(genes[i], geneSymbols$ensembl_gene_id)]
+  ensembl_ID = genes[i]
+
+  #geneSymbol <- geneSymbols$hgnc_symbol[grepl(ensembl_ID, geneSymbols$ensembl_gene_id)]
+  matching_indices = which(geneSymbols$ensembl_gene_id == ensembl_ID)
+  geneSymbol <- geneSymbols$hgnc_symbol[matching_indices]
+
+  if (len(matching_indices) > 1)
+  {
+    print(ensemb_ID)
+    print(geneSymbol)
+    stop("Cannot continue")
+  }
+
   if (length(geneSymbol) == 0 || geneSymbol == "") {
-    symbolsAndIDs[i] <- genes[i]
+    symbolsAndIDs[i] <- ensembl_ID
     }
   else {
-    symbolsAndIDs[i] <- paste0(geneSymbol, " (", genes[i], ")") 
+    symbolsAndIDs[i] <- paste0(geneSymbol, " (", ensembl_ID, ")") 
   }
 }
 
