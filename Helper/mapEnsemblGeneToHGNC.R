@@ -11,8 +11,7 @@ geneIDs = colnames(dataPeek)[2:ncol(dataPeek)]
 #mart <- useDataset("hsapiens_gene_ensembl", useMart("ensembl"))
 mart <- useMart(biomart = "ENSEMBL_MART_ENSEMBL", 
                 dataset = "hsapiens_gene_ensembl", 
-                host = "www.ensembl.org",
-                ensemblRedirect = FALSE)
+                host = "www.ensembl.org")
 
 geneSymbols <- getBM(filters="ensembl_gene_id", attributes = c("ensembl_gene_id", "hgnc_symbol"), values = geneIDs, mart=mart)
 
