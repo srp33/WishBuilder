@@ -33,4 +33,4 @@ for (i in 1:length(geneIDs)) {
 colnames(data) = c("Sample", symbolsAndIDs)
 write_tsv(data, args[1])
 
-write_tsv(aliasData, args[2], col_names=FALSE)
+write_tsv(as_tibble(aliasData), args[2], col_names=FALSE)
