@@ -33,4 +33,4 @@ for (i in 1:length(geneIDs)) {
 colnames(data) = c("Sample", symbolsAndIDs)
 write_tsv(data, args[1])
 
-write.table(aliasData, args[2], sep="\t", quote=FALSE, col_names=NA, row.names=FALSE)
+write.table(aliasData, args[2], sep="\t", quote=FALSE, col.names=NA, row.names=FALSE)
