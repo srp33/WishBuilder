@@ -5,7 +5,7 @@ library(biomaRt)
 
 args = commandArgs(trailingOnly=TRUE)
 
-data = read_tsv(args[1], n_max=0)
+data = read_tsv(args[1])
 geneIDs = colnames(data)[2:ncol(data)]
 
 mart = useEnsembl(biomart = "ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl", mirror = "uswest", verbose = TRUE)
