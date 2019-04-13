@@ -5,32 +5,33 @@ library(biomaRt)
 
 args = commandArgs(trailingOnly=TRUE)
 
-dataPeek = read_tsv(args[1], n_max=0)
-geneIDs = colnames(dataPeek)[2:ncol(dataPeek)]
+data = read_tsv(args[1], n_max=0)
+geneIDs = colnames(data)[2:ncol(data)]
 
-#mart <- useDataset("hsapiens_gene_ensembl", useMart("ensembl"))
-#mart <- useMart(biomart = "ENSEMBL_MART_ENSEMBL", 
-#                dataset = "hsapiens_gene_ensembl", 
-#                host = "www.ensembl.org")
 mart = useEnsembl(biomart = "ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl", mirror = "uswest", verbose = TRUE)
 
-geneSymbols <- getBM(filters="ensembl_gene_id", attributes = c("ensembl_gene_id", "hgnc_symbol"), values = geneIDs, mart=mart)
+geneSymbols = getBM(filters="ensembl_gene_id", attributes = c("ensembl_gene_id", "hgnc_symbol"), values = geneIDs, mart=mart)
 
-symbolsAndIDs <- c()
+symbolsAndIDs = c()
+symbols = c()
 for (i in 1:length(geneIDs)) {
   ensembl_ID = geneIDs[i]
 
   matching_indices = which(geneSymbols$ensembl_gene_id == ensembl_ID)
-  geneSymbol <- paste(geneSymbols$hgnc_symbol[matching_indices], collapse="|")
+  geneSymbol = paste(geneSymbols$hgnc_symbol[matching_indices], collapse="|")
 
   if (length(matching_indices) == 0 || geneSymbol == "") {
-    symbolsAndIDs[i] <- ensembl_ID
+    symbolsAndIDs[i] = ensembl_ID
+    symbols = ""
     }
   else {
-    symbolsAndIDs[i] <- paste0(geneSymbol, " (", ensembl_ID, ")") 
+    symbolsAndIDs[i] = paste0(geneSymbol, " (", ensembl_ID, ")") 
+    symbols = geneSymbol
   }
 }
 
-combined <- as_tibble(cbind(geneIDs, symbolsAndIDs))
+colnames(data) = c("Sample", symbolsAndIDs)
+write_tsv(data, args[1])
 
-write_tsv(combined, args[2], col_names=FALSE)
+aliasData = as_tibble(cbind(symbolsAndIDs, symbols))
+write_tsv(aliasData, args[2], col_names=FALSE)
