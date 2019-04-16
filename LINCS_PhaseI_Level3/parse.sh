@@ -7,7 +7,7 @@ pertInfo=tmp/GSE92742_Broad_LINCS_pert_info.txt.gz
 pertMetrics=tmp/GSE92742_Broad_LINCS_pert_metrics.txt.gz
 gctxFileName=tmp/LINCS_PhaseI_Level3.gctx
 
-python ParseMetadata.py $instInfoFileName $cellInfo $pertInfo $pertMetrics tmp/Metadata.tsv
-python ../Helper/convertTallFormatToWide2.py tmp/Metadata.tsv Metadata.tsv
+python3 ParseMetadata.py $instInfoFileName $cellInfo $pertInfo $pertMetrics tmp/Metadata.tsv
+python3 ../Helper/convertTallFormatToWide2.py tmp/Metadata.tsv Metadata.tsv
 
-python ParseExpression.py $gctxFileName $geneFile Gene_Expression.tsv
+python3 ParseExpression.py $gctxFileName $geneFile Gene_Expression.tsv
