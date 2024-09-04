@@ -24,7 +24,7 @@ Please complete the following steps to get started as a contributor.
     cat ~/.ssh/id_rsa.pub
     ```
   
-    E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a title, paste the public key from your clipboard, and click on "Add SSH key."
+    E. Go to https://github.com/settings/keys. This should display the SSH keys that are currently specified for your GitHub account. Click on "New SSH key", enter a title, paste the public key from your clipboard, and click on "New SSH key."
 
 ### Processing a new dataset
 
