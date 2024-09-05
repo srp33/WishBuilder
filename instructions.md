@@ -59,7 +59,7 @@ For each new dataset that you would like to prepare, you will need to complete a
 
 8. Write a bash script called `install.sh` that installs any software needed to parse the data. In most cases, this script will be empty because WishBuilder already has installed commonly used software, such as the Python and R runtime environments.
 
-9. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can use the `curl` utility to download files.
+9. Write a bash script called `download.sh` that downloads the data file(s) from the source location to the current directory. You can use the `curl` or `wget` utilities to download files.
 
 10. In most cases, you will want to split the data into different categories. For example, some of your data might be "Clinical" data and the rest of your data might be "Gene Expression" data. Using a text editor, open the data files that you will be parsing and decide which categories you would like to use. For each of these categories, you will need to use a text editor to create a test file called `test_<Category>.tsv`, but you will replace `<Category>` with the actual category name. So if it were Clinical data, the name of this file would be `test_Clinical.tsv`. [Below](#test-files) you can learn about the purpose of these files and how they should be structured.
 
