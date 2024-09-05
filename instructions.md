@@ -47,7 +47,7 @@ For each new dataset that you would like to prepare, you will need to complete a
 
 4. This directory is your own separate version of WishBuilder, so you can make changes without affecting the main WishBuilder project.
 
-5. Create a new branch on your forked reposity. Replace `<new-branch-name>` with a unique name for the dataset you are working with.
+5. Create a new branch on your forked repository. Replace `<new-branch-name>` with a unique name for the dataset you are working with.
 
     ```
     git checkout -b <new-branch-name>
